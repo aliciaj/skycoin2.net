@@ -1,2 +1,30 @@
 @import "imports/fonts.css";
 @import "imports/variables.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+    font-family: "SkycoinSans", sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+strong,
+b {
+    font-family: 'SkycoinSansBold', sans-serif;
+    font-weight: normal;
+  }

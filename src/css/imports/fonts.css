@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'SkycoinSansBold';
+	src: url('../fonts/skycoin-bold-webfont.woff2') format('woff2'),
+		   url('../fonts/skycoin-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'SkycoinSans';
+	src: url('../fonts/skycoin-regular-webfont.woff2') format('woff2'),
+		   url('../fonts/skycoin-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'SkycoinSansBoldItalic';
+	src: url('../fonts/skycoin-bold-italic-webfont.woff2') format('woff2'),
+		   url('../fonts/skycoin-bold-italic-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'SkycoinSansItalic';
+	src: url('../fonts/skycoin-regular-italic-webfont.woff2') format('woff2'),
+		   url('../fonts/skycoin-regular-italic-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'InconsolataBold';
+	src: url('../fonts/inconsolata-bold-webfont.woff2') format('woff2'),
+		   url('../fonts/inconsolata-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('../fonts/inconsolata-regular-webfont.woff2') format('woff2'),
+		   url('../fonts/inconsolata-regular-webfont.woff') format('woff');
+}  
