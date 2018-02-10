@@ -1,0 +1,28 @@
+:root {
+	--color-lightest: #FFF;
+	--color-light: #FBFBFB;
+	--color-mid: #CECFD0;
+	--color-dark: #23262B;
+	--color-darkest: #000;
+    --color-brand: #0072FF;
+    --color-brand-secondary: #FFC125;
+
+    --gradient-brand: linear-gradient(45deg, #1D5FFF, #00C4FF);
+
+    --font-brand-regular: "SkycoinSans", Arial, Helvetica, sans-serif;
+    --font-brand-italic: "SkycoinSansItalic", Arial, Helvetica, sans-serif;
+	--font-brand-bold: "SkycoinBold", Arial, Helvetica, sans-serif;
+    --font-brand-bold-italic: "SkycoinBoldItalic", Arial, Helvetica, sans-serif;
+    --font-brand-serif: "Inconsolata", monospace, serif;
+    --font-brand-serif-bold: "InconsolataBold", monospace, serif;
+
+    --max-width: 1200px;
+    --standard-padding-desktop: 30px;
+    --standard-padding-mobile: 30px;
+}
+
+@custom-media --large (width >= 64em);
+
+@custom-media --medium (width >= 52em);
+
+@custom-media --small (width >= 40em);
