@@ -6,7 +6,7 @@
 		<ul>
 			{{ range .context.Site.Menus.main }}
 				<li>
-					<a class="" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+					<a class="nav-link nav-item-{{ .Identifier }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
 				</li>
 			{{ end }}
 		</ul>
