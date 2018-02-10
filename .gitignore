@@ -2,6 +2,7 @@ ico/
 node_modules
 
 # Hugo output directory
+dist/
 /public
 
 yarn.lock
