@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitcoin on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/bitcoin/</link>
+    <description>Recent content in Bitcoin on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>암호화 시장 및 개발 업데이트 동향</title>
+      <link>https://www.skycoin.net/ko/statement/state-of-the-crypto-market-development-updates/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/state-of-the-crypto-market-development-updates/</guid>
+      <description>Q&amp;amp;A 현재 비트코인 시장 요약 새 지갑 코인하워 스카이코인 (DEX) 분산 거래소 지원 스마트계약 체결에 대한 스카이코인 프로젝트 계획 CX 스카이코인 로드맵 완료 스카이코인 플랫폼 상의 최초 분산 소셜 미디어 플랫폼 출시 스카이코인 OTC 시장  Q&amp;amp;A  백서의 재-작업에 대한 언급은 없습니다. 이것은 당신의 마케팅이 참조 자료를 가지고 시작하도록 하기 위한 우선순위가 아니어야 합니다. 이것은 기술적인 코인이므로 문서를 최신 상태로 유지할 필요가 있습니다.
+ 모두가 너무 바쁩니다.</description>
+    </item>
+    
+    <item>
+      <title>비트코인이 있다고 생각하는 곳으로 나아가기</title>
+      <link>https://www.skycoin.net/ko/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>이것은 2014년 4월 23일 비트코인토크에 게시된 내용입니다.
+ 출처 : JFK01, 2014년 4월 23일, 01:54:50 PM
+아마도 스카이코인은 단지 위험요인을 테스트하고 싶어하는 것 같습니다. 거기에는 아무런 문제가 없습니다. 그들은 기술자이며 모든 것을 테스트하려고 합니다. 그들은 개발에서도 매우 신중했습니다. 이것은 매우 좋은 일입니다. 당신이 잘 하는 것을 하십시오. 이 프로젝트는 장기간에 걸쳐 진행됩니다.
+ 인기 코인인 피어 코인, 리플, 비트코인, 넥스트, 라이트코인을 보면, 비트코인의 보안모델에 대한 근본적인 개선을 한 대부분의 코인이 매우 잘 만들어졌음을 분명히 알 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obelisk on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/tags/obelisk/</link>
+    <description>Recent content in Obelisk on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/tags/obelisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Por qué construimos Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/why-we-built-skycoin/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/why-we-built-skycoin/</guid>
+      <description>Satoshi imaginó a Bitcoin como una moneda digital descentralizada. Las redes de cadena de bloques estaban destinadas a democratizar las finanzas, eliminando el control corporativo y extendiendo el poder entre los usuarios. Sin embargo, Bitcoin y las monedas relacionadas se han centralizado debido a su dependencia en los algoritmos de Prueba de Trabajo (PoW) y Prueba de Participación (PoS), así como en el uso de la minería para crear monedas.</description>
+    </item>
+    
+    <item>
+      <title>Motivaciones del diseño del algoritmo de consenso Obelisk</title>
+      <link>https://www.skycoin.net/es/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>Esta es una publicación archivada del foro BitcoinTalks el 19 de Junio del 2014
+ Cita de: yxxyun en Junio 19, 2014, 02:52:38 AM
+ Cita de: skycoin en Junio 19, 2014, 02:31:59 AM
+ Cita de: FrictionlessCoin en Junio 18, 2014, 09:15:07 PM
+ Cita de: skycoin en Junio 18, 2014, 09:08:56 PM
+Actualización del desarrollo:
+Hemos descubierto una forma de prevenir un ataque Sybil usando un sistema Proof of Stake híbrido.</description>
+    </item>
+    
+    <item>
+      <title>¿Puede Skycoin ser atacado al 51%?</title>
+      <link>https://www.skycoin.net/es/statement/can-skycoin-be-51-attacked/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/can-skycoin-be-51-attacked/</guid>
+      <description>Esta es una publicación archivada del hilo de bitcointalks el 16 de Febrero del 2015
+ Cita de: iamback Febrero 16, 2015, 09:28:38 AM
+Un consenso sin PoW no tendrá vida. Ya que no hay suficiente tiempo para identificar sus problemas y confiar en él antes de que la economía global comience a colapsar en 2016. Por ejemplo, el ataque de minado no había sido descubierto (o digamos ampliamente probado y reconocido) hasta años después de que Satoshi publicara el PoW.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: El Algoritmo de Consenso de Skycoin | Páginas de Información</title>
+      <link>https://www.skycoin.net/es/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Puntos destacados acerca del consenso  Por qué el consenso Alta escalabilidad y bajo consumo de energía Robusto ante ataques coordinados El ataque del 51 por ciento Direcciones IP ocultas Independencia de la sincronización de reloj Dos tipos de nodos: de Consenso y de Creación de Bloques  Cómo funciona el Algoritmo de Consenso de Skycoin Referencias  Puntos destacados acerca del consenso Por qué el consenso El Algoritmo de Consenso de Skycoin (&amp;ldquo;Obelisk&amp;rdquo;) sincroniza el estado de la &amp;lsquo;blockchain&amp;rsquo; (cadena de bloques) de Skycoin en todos los nodos de la red.</description>
+    </item>
+    
+  </channel>
+</rss>

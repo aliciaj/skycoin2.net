@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/skywire/</link>
+    <description>Recent content in Skywire on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire: Интернет следующего поколения</title>
+      <link>https://www.skycoin.net/ru/skywire/skywire-the-next-internet/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/skywire/skywire-the-next-internet/</guid>
+      <description>Весной 2017 года Федеральная Комиссия по Связи внесла предложение согласно которому интернет провайдерам дается разрешение на сбор и продажу информации о том, как их пользователи используют сеть интернет. Интернет провайдерам разрешено делать это без согласия пользователей. И у пользователей нет возможности запретить использование своих данных. Проще говоря, если вы клиент такой компании - это значит что вы платите за то что за вами следят.
+Отслеживание пользователей, ненадежное покрытие, высокие цены, медленная и некачественная поддержка - причины по которым интернет провайдеры в Америке являются лидерами по жалобам в их сторону.</description>
+    </item>
+    
+    <item>
+      <title>Способы мотивации в архитектуре алгоритма консенсуса Obelisk</title>
+      <link>https://www.skycoin.net/ru/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>Это старое сообщение в одной из тем на bitcointalks от 19 Июня 2014
+ Цитата от: yxxyun 19 июня, 2014, 02:52:38 AM
+ Цитата от: skycoin 19 июня, 2014, 02:31:59 AM
+ Цитата от: FrictionlessCoin 18 июня, 2014, 09:15:07 PM
+ Цитата от: skycoin 18 июня, 2014, 09:08:56 PM
+Выдержка из апдейта:
+Мы нашли способ предотвращения &amp;ldquo;атаки Sybil&amp;rdquo;, благодаря использованию гибридной системы &amp;ldquo;Proof of State&amp;rdquo;.
+Для того, чтобы создать узел, Вы должны доказать наличие у вас монет.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin или Skywire</title>
+      <link>https://www.skycoin.net/ru/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin и Skywire - это два отдельных компонента Проекта Skycoin.
+Skycoin это блокчейн. Skywire это ячеистая сеть.
+Skycoin был построен первым. Он может работать сам по себе. Он предлагает решение проблем, которые, к сожалению, являются частью биткойна. Самая большая проблема, с которой сталкивается биткойн, это &amp;ldquo;майнинг&amp;rdquo;, что на практике приводит к централизации биткойна. Другие проблемы биткойна в основном связаны с криптографией или ошибками программного обеспечения, например переносимость транзакций.
+Команда Skycoin разработала новый алгоритм консенсуса, названный Obelisk, который не требует &amp;ldquo;майнинга&amp;rdquo; (или другой его альтернативы типа Proof-of-Stake).</description>
+    </item>
+    
+    <item>
+      <title>Skywire - Проект Ячеистой Сети Skycoin</title>
+      <link>https://www.skycoin.net/ru/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>Введение Маршрутизация: Обзор Стимулирование: Протокол Платежей Маршрутизация от источника: Канальное шифрование  Пример протокола: ноды A и B Возможные улучшения:  IPv4 шлюз: обход существующих интернет-провайдеров  Пример один Пример два  Архитектура демона Skywire  Пример сервиса: синхронизация блокчейна  Маршрутизация нескольких сетей и объединение каналов Маршрутизация ячеистой сети: Хранение и пересылка Хранение и пересылка: использование емкости Хранение и пересылка: примеры  Пример обычной операции Пример с переполнением Пример с потерей пакета  Хранение и пересылка: задержки и пропускная способность Хранение и пересылка: использование пропускной способности, качество и обслуживание Маршрутизация от источника: множественные маршруты для мобильного подключения Маршрутизация от источника: ноды-стражи Маршрутизация от источника: ограничения BGP Виртуальные маршруты: масштабирование топологии сети Skywire Маршрутизация от источника: виртуальные маршруты и топология SONET Маршрутизация от источника: асимметричные соединения Маршрутизация от источника: открытие маршрутов    Введение  Объекты Skywire: * Улучшают высокороскоростной доступ к контенту.</description>
+    </item>
+    
+    <item>
+      <title>Вопросы скорости работы и конфиденциальности ячеистой сети (meshnet)</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>Этот пост ссылается на Skywire до запуска сети и даже до того, как проект ячеистой сети получил это название. Адаптированный пост с bitcointalk от 09 августа 2014 года.
+Цитата пользователя CraigM от 9 августа, 2014, 07:20:24
+ Ячеистая сеть предназначена для того, чтобы быть хорошим инструментом конфиденциальности с преимуществами, сравнимыми с Тором, но с меньшей задержкой работы, правильно?
+Правильно ли, что ячеистая сеть позволит финансировать узлы (ноды), используя Skycoin для покрытия затрат на передачу трафика?</description>
+    </item>
+    
+    <item>
+      <title>Skywire and Viscript</title>
+      <link>https://www.skycoin.net/ru/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/skywire/skywire-and-viscript/</guid>
+      <description>Введение Viscript Viscript это кроссплатформенный CLI, а также лаунчер для приложений и панель управления кластерами. Он основан на библиотеке сигналов в качестве сигнального сервера, поэтому может управлять сигнальными клиентами, такими как узел (нода) и компоненты в Skywire. Он может быть запущен либо в режиме графического интерфейса (GUI), либо в безголовом режиме (headless mode).
+Скриншот Viscript GUI: Мы можем добавить конфигурацию приложения в файл config.yaml, как meshnet-socks-server:
+ meshnet-socks-server: daemon: true desc: DESCRIPTION GOES HERE path: bin/meshnet/meshnet-run-socks-server default_args: [] help: | [1] Текстовое наименование приложения (должно быть уникальным).</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Нас часто спрашивают, в чём существенная разница между CXO и IPFS?
+File Coin преследует схожие с нашими цели, не являясь при этом частью инфраструктуры Skycoin. Их система работает с использованием трёх протоколов:
+ IPLD IPFS Multi-formats  где
+ IPLD является языком репрезентации для неизменяемых объектов данных и хэшей. – IPFS это файловая система – Multi-Formats – самоописываемый стандарт данных  CXO имеет всё то же самое в рамках среды Skycoin:</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Свободный и открытый интернет</title>
+      <link>https://www.skycoin.net/ru/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Интернет даёт нам иллюзию контроля. Мы можем общаться, потреблять, делать бизнес онлайн посредством сервисов, предоставляемых Google, Facebook, Apple и Amazon. Не правда ли, очень удобно? Но это лишь до тех пор, пока вы не задумаетесь о том, что вы сдали позиции.
+Мы не контролируем нашу жизнь в сети. Большие корпорации и интернет-сервис провайдеры (ISP) собирают наши данные, отслеживают наши действия и предопределяют наш опыт. Каждый раз, когда мы используем интернет, мы отдаёмся под полный контроль этим компаниям.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BBS on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/bbs/</link>
+    <description>Recent content in BBS on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/bbs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS v5.0 анонс релиза</title>
+      <link>https://www.skycoin.net/ru/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/bbs/bbs-release-v5.0/</guid>
+      <description>Наконец-то мы выпустили Skycoin BBS v5.0 - и с множеством изменений под капотом!
+Тонкий клиент Наиболее очевидным изменением является введение тонкого клиента. Теперь вы можете получить доступ к Skycoin BBS без настройки узла! Просто перейдите по ссылке bbs.skycoin.net.
+В предыдущих версиях можно (и нужно) получать доступ или отправлять контент только через веб-интерфейс пользователя, который обслуживается локально. Поскольку этот веб-интерфейс (и API, который он вызывает) имеет прямой контроль над самим узлом и подписывает контент с закрытыми ключами, которые хранятся в нём (или на стороне сервера), то нецелесообразно подвергать его публичности.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS: Социальные медиа для вас</title>
+      <link>https://www.skycoin.net/ru/statement/skycoinbbs/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skycoinbbs/</guid>
+      <description>Вывод: Для корпоративных социальных сетей вы - продукт. Компании управляют вашими данными. Они хранят их на своих серверах и продают рекламодателям. Как только вы напишите пост, он принадлежит им - навсегда. Вы не контролируете свою конфиденциальность, технологию и даже вашу индивидуальность. Почему вы должны соглашаться на это?
+Пришло время для революции в социальных сетях. Skycoin возвращает социальные медиа вам, пользователю. Мы рады объявить о запуске альфа-сервера Skycoin BBS: первой распределенной платформы социальных медиа в экосистеме Skycoin.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 Описание релиза</title>
+      <link>https://www.skycoin.net/ru/bbs/skycoin-bbs-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/bbs/skycoin-bbs-v3.1/</guid>
+      <description>Опубликован финальный релиз Skycoin BBS v3.1!
+Изменения:  Обновлена и подготовлена к использованию последняя версия системы CXO. Обновлена реализация структуры данных CXO для упрощения управлением изменениями. Введен модуль views для упрощения реализации различных способов представления данных. Реализован импорт/экспорт досок объявлений в/из файла Реализованы функции &amp;ldquo;отслеживать&amp;rdquo; (follow) и &amp;ldquo;избегать&amp;rdquo; определенных пользователей Улучшен UI (пользовательский интерфейс, работа продолжается). Автоматизирована &amp;ldquo;peer-to-peer&amp;rdquo; передача веток обсуждений.  Исполняемые файлы Выложены версии для 64бит windows, mac и linux.</description>
+    </item>
+    
+  </channel>
+</rss>

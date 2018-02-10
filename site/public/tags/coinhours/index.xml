@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CoinHours on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/coinhours/</link>
+    <description>Recent content in CoinHours on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/coinhours/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of the Crypto Market and Development Updates</title>
+      <link>https://www.skycoin.net/statement/state-of-the-crypto-market-development-updates/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/state-of-the-crypto-market-development-updates/</guid>
+      <description>Q&amp;amp;A Summary of the Current Bitcoin Market New Wallet CoinHours Skycoin (DEX) Distributed Exchange Support Skycoin Projects Position on the Smart Contracts Fad CX Skycoin Roadmap Finished First Distributed Social Media Platform on Skycoin Platform Launches Skycoin OTC Market  Q&amp;amp;A  There is no mention of a re-working of the whitepapers. Should this not be a priority so that your marketing that has started has reference material. This is a technical coin and so the documentation needs to be up to date.</description>
+    </item>
+    
+  </channel>
+</rss>

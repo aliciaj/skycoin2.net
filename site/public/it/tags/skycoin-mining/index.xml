@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin Mining on Skycoin Blog</title>
+    <link>https://www.skycoin.net/it/tags/skycoin-mining/</link>
+    <description>Recent content in Skycoin Mining on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/it/tags/skycoin-mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire: una connessione Internet gratuita e aperta</title>
+      <link>https://www.skycoin.net/it/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Internet ci dà l&amp;rsquo;illusione del controllo. Possiamo socializzare, spendere e fare affari istantaneamente attraverso i servizi forniti da Google, Facebook, Apple e Amazon. Sembra conveniente, giusto? Lo è - finché non consideri ciò che stai rinunciando.
+Non controlliamo le nostre vite online. Le grandi aziende e i provider di servizi Internet (ISP) raccolgono i nostri dati, tracciano i nostri movimenti e plasmano le nostre esperienze. Ogni volta che usiamo internet, diamo a queste società un potere totale su di noi.</description>
+    </item>
+    
+  </channel>
+</rss>

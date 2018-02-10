@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin Blog</title>
+    <link>https://www.skycoin.net/it/categories/skywire/</link>
+    <description>Recent content in Skywire on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/it/categories/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/it/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin e Skywire sono due componenti separate del progetto Skycoin. Skycoin è la blockchain. Skywire è la rete a maglie.
+Skycoin è stato costruito per primo. Può esistere da solo. È stato creato per affrontare i problemi che ha Bitcoin. Il più grande problema che ha Bitcoin è il mining, che porta alla centralizzazione di Bitcoin. Gli altri problemi che affliggevano Bitcoin erano per lo più legati alla crittografia o ai bug del software, causando problemi simili come malleabilità delle transazioni.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: una connessione Internet gratuita e aperta</title>
+      <link>https://www.skycoin.net/it/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Internet ci dà l&amp;rsquo;illusione del controllo. Possiamo socializzare, spendere e fare affari istantaneamente attraverso i servizi forniti da Google, Facebook, Apple e Amazon. Sembra conveniente, giusto? Lo è - finché non consideri ciò che stai rinunciando.
+Non controlliamo le nostre vite online. Le grandi aziende e i provider di servizi Internet (ISP) raccolgono i nostri dati, tracciano i nostri movimenti e plasmano le nostre esperienze. Ogni volta che usiamo internet, diamo a queste società un potere totale su di noi.</description>
+    </item>
+    
+  </channel>
+</rss>

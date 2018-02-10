@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development Updates on 天空币博客</title>
+    <link>https://www.skycoin.net/zh/categories/development-updates/</link>
+    <description>Recent content in Development Updates on 天空币博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/zh/categories/development-updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>天空币BBS v5.0发布公告</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-release-v5.0/</guid>
+      <description>天空币BBS v5.0终于发布了，我们这次做了很多的更新呢！
+轻客户端 最明显的变化就是轻客户端的推出。您现在可以在不需要设置节点的情况下访问Skycoin BBS！只需要简单的前往bbs.skycoin.net.
+在以前的版本中，只能（也应该）通过本地提供的Web用户界面访问/提交内容。由于这个网络接口（以及它所调用的API）可以直接控制节点本身，并且使用存储在节点（或服务器端）中的私钥对内容进行签名，因此将其暴露给公众是不合适,不安全的。
+因此，引入轻客户端的时候, 我们需要用户管理以及签名提交内容的过程，以便客户端的处理。这需要全新改进的内容提交端点（或多于一个端点），并对前端进行大量更改。 有关新内容提交过程的详细信息可以在BBS Wiki: github.com/skycoin/bbs/wiki/Content-Submission-Process上找到.
+目前，前端加载非常缓慢。这是由于使用 GopherJS来处理种子和公钥/私钥生成以及数据的签名和验证所致。在将来的版本中，我们将使用原生JavaScript库来提高性能。
+命令行接口(Command-line Interface) 引入公开可见的简化客户端之后，我们删除了处理管理控制的API端点，并引入了一个命令行接口(command-line interface)来处理这种交互。
+更多信息可以在这里找到：: github.com/skycoin/bbs/tree/master/cmd/bbscli.
+其他改进  导入/导出的改进（不幸的是，这不能与BBS v4.x的导入/导出向后兼容） 简化代码和性能改进，以便与Skycoin Messenger进行远程提交和交互。请用更新并且使用最新的Messenger。 改进的文件管理性能。 更好地处理无效的CXO根(roots)。 更好的处理断开连接。  ##下载
+要下载BBS，请前往 github.com/skycoin/bbs/releases (源代码也在这里）。
+请注意，您也可以通过 bbs.skycoin.net 访问BBS。
+文档 我们在github.com/skycoin/bbs/wiki上启动了一个wiki页面。
+请理解，这还在进行中。
+社区 我们有一个电报频道: @skycoinbbs.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v4.1 发布公告</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1发布了！
+
+修改日志  用户界面改善 实现了服务发现（和其他节点的连接可以自动化管理） 改善了公告板内容的远程提交（通过服务发现来实现） 简化了公告板创建和运行过程 改善了CXO的数据结构  下一个发布版会带来更多令人激动的特性！ 关注这里获取最新消息
+二进制包 以下二进制包可以运行在64位的windows, mac 和 linux系统
+ https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_windows_amd64.zip  源代码 可以在GitHub上获取
+社区 点击这里在Telegram上参与讨论</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1终于发布了</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1终于发布了！
+更新日志  使用最新的CXO更新代码。 重新实现的CXO数据结构，以方便更容易地实现差异化管理 引入“views”模块，方便实施不同的查看方式。 实现从文件导出/导入论坛板块。 初步实现关注/忽略用户。 改进的UI（正在进行中）。 自动点对点转发板块。  二进制文件 这些文件分别用于64位Windows系统，苹果系统和linux系统。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_windows_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_osx_amd64.zip  源代码 在GitHub上的源代码地址如下:
+https://github.com/evanlinjin/bbs
+社区 点击这里加入Telegram讨论！!(需翻墙)</description>
+    </item>
+    
+    <item>
+      <title>天空币BBS开发更新#2</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-development-update-2/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-development-update-2/</guid>
+      <description>自版本0.1发布以来已经有一个多月了，0.2即将到来！
+更改如下：
+ 使用最新的CXO版本（点对点自复制数据库）。 重新实现CXO对象和树（为新功能准备）。 引入“views”模块，轻松实现多种“查看”内容的不同方式。 初始实现用户关注/忽略。 完全改版的UI.  CXO变更 CXO已被大量重构，现在更快更稳定。 API已经被更好地与散列数组一起使用 - 具有恒定的访问时间，更快的复制速度和直接使用给定散列值访问元素的能力。
+CXO的这些变化促使BBS跟着改变了大部分的代码库。 在这里查看CXO仓库.
+CXO数据结构变更 对数据结构的更改是为了解决以下问题：
+1.实现一个结构，以便将来可以将用户数据迁移到自己独立的根。 2.轻松确定根序列之间的“差异”（a.k.a变化）。 这将对编译视图和向最终用户提供实时更新非常有用。 3.轻松确定不同根类型的根对象类型。
+RootPage对象决定了root的类型。 目前，所有数据都在每个板块上的一根根树下累积。 在未来，主题(线索)和用户将有自己的根。
+在将来，“BoardPage”将有一个公钥列表，而不是主题的hrefs，因为主题将有自己的根。 这使主题易于在板之间迁移。
+DiffPage用于确定“BoardPage”根的根序列之间的变化。 这本质上是一组不断增加的数组，其中长度的增加被解释为变化。
+UsersPage将成为一个公钥列表（这些将是一个公告板上的“参与者”）。 每个用户将有自己的根。
+视图模块实现 视图本质上只是一个接口：
+type View interface { // Init initiates the view. 	Init(pack *skyobject.Pack, headers *pack.Headers, mux *sync.Mutex) error // Update updates the view. 	Update(pack *skyobject.Pack, headers *pack.Headers, mux *sync.Mutex) error // Get obtains information from the view.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS开发 更新＃1</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-development-update-1/</guid>
+      <description>An Introduction BBS(Bulletin Board System) 代表电子布告栏系统。虽然传统的BBS系统不再被广泛使用，BBS现在现代成为了社会服务的代表。
+Skycoin BBS是skycoin生态系统的第一个Web应用程序之一。 Skycoin试图彻底改变互联网，使其去中心化，并默认地使用加密协议。
+Skycoin BBS 的根基是一个名为CXO（Skycoin生态系统的一部分），一个点对点，自我复制的网络数据库。它具有像Golang 对象一样，不可变的树结构。所有对象都通过自己的哈希值一起定义图式引用。每棵树都有一个树根对象和对公/私钥对签名。要更新树，树根有增量的版本称为“序列”。这种设计实现快速，高效的带宽数据复制。
+数据结构 Skycoin BBS（0.2版本 - 正在开发）的数据结构包含不同的板，主题和帖子。板和帖子都可以给与正／负评。 这是大概CXO树的样子：
+这是一个简化图。
+所有提交的对象（主题，帖子和投票），都可以通过提交用户的公钥提供的签名和进行验证。
+每根包含用于表示／存储每一个板的数据。 Board－Page包含“内容”; 板的本身，主题和帖子。主题是由“主题”对象的哈希所反映，而帖子同样被“帖子”本身的哈希所翻译。因此，帖子和主题一经提交就不能能被修改。
+Thread－Votes－Pages，Post－Votes－Pages存储了投票的内容。该Vote－Page的“引用（ref）”字段包含相关内容的哈希值。在“投票”字段存储了扳票中的指定的内容。 Vote－Pages是由BBS节点到存储的结构，所以能够迅速的获得“投票概览”。
+投票和内容是分开存储以减少因为每一次投票而改变的树的节点数目。它还允许通过投票的编译器得到更容易票数据操作。
+发布 目前，我们只发布了一个稳定的Skycoin BBS。目前的功能是十分基本的，但CXO数据结构比上面所指的更复杂。内容增加和投票产生使得那个根在每个动作之上以倍数增长。
+BBS（目前正在开发）的0.2版，不仅提高了性能和代码的清晰度，同时也将实现以下新的特点：
+ 改进内容加载 - 我们将利用客户端和服务器之间的WebSocket连接（S）的，允许实时更新，更有效的内容加载。 内容投票/观看改善 - 无论从用户的角度来看，或是实际表现和流动性。垃圾邮件的报告也将陆续展开。 权限 - 现在可以设置权限限制谁可以执行有一些操作（如提交内容/投票权）。屏蔽／拉黑用户的功能也将会推出。  Participate 欢迎加入我们的电报小组. 已得到最新Skycoin BBS的开发消息。 Skycoin BBS是開源的。源代碼可以遊覽這裏。需要注意的是0.2版本的開發是在“V0.2”分支。</description>
+    </item>
+    
+    <item>
+      <title>开发更新 #132</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-132/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-132/</guid>
+      <description> Update:
+重要项目管理／组织事项  我们正在获得一个管理营销任务的看板 我们有新的全职项目经理负责管理开发团队和开发任务板 我们已经签约了两个公关公司，用于区块链/加密货币营销 完成了视频制作的第一个故事板(分镜) 我们正在为天空币项目的各个方面准备新闻稿，并将推給相关的合作渠道 我们正在创建一个新的网站 一旦新网站上线，它将被淘汰，因为我们已经在设计一个新的第四版网站 我们正在准备路线图（过去和未来）以展示天空币项目的历史和未来 我们正在网站上创建一个有关分发计划和方案的页面。 在接下来的两个月内，我们公布了三个准备公开发行的项目（并尝试做新闻稿） 我们想在两个月内开始给运行Skywire节点的人员分发代币 我们将网站翻译任务做成悬赏计划 我们开完会,计划在较大的交易所安排上市 我们构建了一个新的钱包，修复性能问题，并有一个区块下载进度条。我们将很快发布电子钱包19版 我们正在从头开始写一个新的钱包，像字节雪球的风格，可以选择作为瘦客户机运行  </description>
+    </item>
+    
+    <item>
+      <title>开发更新 #131</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-131/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-131/</guid>
+      <description>错误修复: 我们昨晚发现一个错误，当尝试创建一个新的块时，节点进入无限循环，让网上交易事务停止了。
+该节点将5个事务组合成一个块，然后由于两个事务尝试花费相同的输出而失败。 然后失败并等待几秒钟，然后用相同的结果再次尝试。
+现在新代码被启用以支持获取待处理事务的列表，并从列表中添加随机事务，一次一个，丢弃已经添加到块中的事务，使该块对当前未使用的输出集不可执行。
+该错误已经修复了。
+我们可以通过添加随机化或启用标志来阻止这些错误停止网络; 但是我们正在运行网络模式，其中的错误将完全阻止网络并严格验证，以便我们可以检测到这些边缘情况并确保它们得到修复。 否则我们不会注意到这些边缘案件处理不当。</description>
+    </item>
+    
+    <item>
+      <title>开发更新 #130</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-130/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-130/</guid>
+      <description>天空币造市机器人: 我们有一个造市机器人，将在以下交易所对天空币出价和询价
+ Poloniex C2CX Bittrex Cryptopia。  机器人是用java编写的，并有三种不同的交易策略，你可以设置。 它是由第三方开发的，将被公开发布。
+你可以设置规则，比如一个差价，如果两个交易所之间的价差超过5%这样一个区间,机器人将自动套利差价，帮你赚钱。
+另一个策略是通过在移动平均线附近出价和询价来增加订单的深度，这样，你可以从类似悠悠球摇摆不定的价格波动中获利。
+C2CX 天空币 / Bitcoin订单 我们正在尝试将C2CX的天空币成交额列在coinmarket的交易量上，并实现了APIs。
+我们也打算开放SKY / BTC订单，所以天空币不仅只与人民币挂钩。
+信息图表 我们正在绘制很多的信息图表。 我们将有各种主题的大约240张信息图表，解释天空币的内在和使用情况。
+这些是未经校正的示例，有很多错误。
+视频和营销： 我们现在有全职人士负责视频故事板。
+我们将进行重大的清理，然后开始将较旧的内容移植到博客上。
+我们将为视频开始故事板制作。 我们将有八个有关各种主题的视频。
+开发: 我们试图让前两个应用程序可以发布，只处理返回日志。
+新钱包: 我们完全重写钱包
+ 支持多个代币 瘦客户端钱包 基于字节雪球和以太坊的新UI 固定钱包大小（以像素为单位），从而可以精确地控制布局以避免杂乱  这个钱包会:  强制您在启动时备份您的钱包种子 如果您不想下载整个区块链，将能够作为瘦客户机运行  我们正在从钱包中移出完整的区块浏览器，因为它是一个错误，并且太凌乱。 区块浏览器将是一个单独的应用程序，我们将它与节点打包在一起。
+我们还将开始开发“共识浏览器”，允许用户订阅参与协商一致的所有节点，并查看网络状态和全局共识状态。
+我们还必须开始开发分布式日志记录系统，允许节点记录和可选地发布公共事件，例如
+ 共识状态更新 收到块时的时间 接收到事务的时间 节点对等连接和断开连接事件  这种日志记录系统将允许我们验证网络共识的数学不变量是否满足（网络分离检测，非传播事务的早期检测，块洪泛攻击的早期检测，事务洪泛攻击的早期检测）。
+日志记录守护程序还将实现一个远程RPC（天空币命令和控制RPC），允许使用受控或选择的远程公钥来修改软节点设置（连接池大小，连接/断开连接，交易重播），并允许我们在运行的网络上进行做网络战争。
+ 例如，如果网络被40,000个事务积压淹没，我们可能会使用命令基础设施将每个块的事务设置为10,000并清除积压。 或者可能会增加交易的最小币时费用以结束垃圾(交易)攻击  我们将有三种类型的连接：  用户定义的硬编码连接（是那些您的节点必须连接到的节点,由节点操作员选择的节点） 对等节点（通过点对点进程选择的随机节点） 可选的自动推荐连接（用于优化块/事务/带宽可用性的命令服务器的建议）  另外在下一代架构中：  区块分发将被移动到CXO 事务传播将被移动到CXO 事务中继功能将被禁用或启用，独立于节点中的其他功能 区块链历史信息和索引的键值存储将是可以启用或禁用的，而与节点中的其他功能无关 钱包功能将被重构迁移出节点，将可以被启用或禁用 在API级别瘦客户端和完整节点之间的钱包操作上没有差异，本地节点和通过网络运行的远程节点之间的API使用率没有差异 区块链历史数据库将使用范围查询，用户将能够配置是否索引并存储自成立以来的完整历史记录，也可以仅存储最后几百万个块，或者是否在一定范围限制之后开始修剪索引。每种类型的索引数据的关键值存储最终将是暴露RPC的独立程序，可以完全在不同的节点上运行。本地运行和远程节点之间没有区别。这是BlockDB架构的一部分（但是优先级低，可能需要两年才能完成）。  命名： 我们可能会将天空币交易标准模型UXTO重命名为UXTX。</description>
+    </item>
+    
+    <item>
+      <title>开发更新 #129</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-129/</link>
+      <pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-129/</guid>
+      <description>这个边缘案例发生: 为了修复这个边缘案例我们 这也应该解决不相关的错误： 这个错误通过下面方式被解决了:     指数回补与零对等节点错误 对等交换错误    我们现在正在进行一些琐碎的质量控制和主要的错误修复
+我们修复了在windows上不使用electron构建的一些错误和路径、目录问题。 包括打包脚本中出现错误，资源文件被复制到错误的路径，可执行文件无法在开始时找到资源文件，服务端终止。
+这会在钱包版本15中修复
+我们正在寻找和修复交易规则问题，其中由于某些竞争条件，少量的TX散列不会传播到所有节点。 我们认为这个问题已经被修复了，但仍在测试。 我们已经实施了交易重新广播功能，但默认情况下禁用它，因为未确认池中TX的新状态信息标志应该可以解决这个问题。
+ 一个节点如果可以针对当前的未使用的输出集进行执行，则只能广播一个TX 如果创建了一个新的块，但节点接收到TX消耗在下一个块中创建的UX输出，但该节点尚未接收到新的块，则该节点将不会通知TX散列值 然后当接收到新的块时，事务的状态变为有效/可执行，但UX对象未被广播 该节点将忽略该TX的所有将来的TX公告，而不广播该散列值，因为TX对象已经在未用的输出集。  这个边缘案例发生:  如果在下一个块中创建TX消费UXTO对象时，在块之前进入了（如果快速连续执行交易，有时在交换是发生） 如果节点在离线几个小时后刚刚启动，并且接收到TX集，同时仍然在努力赶上最新的区块集  为了修复这个边缘案例我们  确保节点在连接上时才宣布其整个未使用的TX集合的散列（我们认为这是已被实现了的但不是） 默认情况下设置UXTO中的持久事务（现已启用） 添加了一个通过CLI手动 进行重新广播TX JSON的功能 （原文有错别字) 使用布尔标志跟踪交易状态。 如果未使用的输出池中的TX对象从未执行的可执行文件变为可执行的，则会自动触发该TX的广播  这也应该解决不相关的错误：  TX被注入没有对等体的节点 节点连接到一个或多个对等端，但TX对象从不传播  这个错误通过下面方式被解决了:  密钥值在节点重新启动之间默认存储未使用的TX池，让它持久化 在节点之间的连接上的时候，默认情况下，在未使用的输出池中公布所有TX  指数回补与零对等节点错误 如果互联网关闭时，对等节点列表中的所有对等节点都将被指数退避算法列入黑名单。
+当连接低于2时，我们正在重置针对对等连接尝试的指数退避时间。
+这将在互联网关闭一段时间后，让节点加快重新连接网络。
+对等交换错误 默认情况下，对等体交换已被禁用， 需要更多的测试。 处理未经请求的连接和环回自动断开有问题，以防止两个连接到同一个节点。</description>
+    </item>
+    
+    <item>
+      <title>开发更新  #128</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-128/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-128/</guid>
+      <description> 新电子钱包版本: 天空币钱包版本15已经发布在网站上，该版本修复了数十个UI bug。
+ 交易状态现在应该正常工作了 有一个整合了Windows 32/64位的安装程序 Windows路径问题已修复 对等连接和PEX（对等交换机）现在启用   我们正在开发的钱包在日志方面有一个巨大的改进
+我们必须决定我们将重点关注下下面这些项目
+ 市场营销/信息图表/视频/转换 2.0钱包，钱包可用性改进和QA 发布天空币网络演示应用程序  </description>
+    </item>
+    
+    <item>
+      <title>开发更新 #127</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-127/</link>
+      <pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-127/</guid>
+      <description>天空币终于弄好一个Order book(交易委托订单)。 这花了太久了
+ 下一次交易所升级/重写时天空币对比特币将浮动  博客将在明天做好准备，我们将开始迁移内容。
+我们要与大型主流机构宣布几个合作伙伴关系，所以必须清理一堆东西，并且会迁移与博客相关的任何内容。
+我们将把很多我们还没有透露的内容放在博客上。
+ 关于币分配计划和任何松散的信息的将在博客上 对于我们正在使用hugo的博客，其将标记中的平面文件生成并生成静态html文件。 所以将在IPFS并最终在CXO上工作。  我们正在重写和改进
+ http://skycoin.net 上网站的叙述 人们可以更容易地从网站上简单的了解长期项目目标，什么是天空币等 我们将测试一个 新的，更简单的叙述，看看人们的反应。 我们会强调软件和基础设施方面  我们需要在网站上展示平台/生态系统的第一个应用程序。
+区块链接浏览器发布了,位于
+ http://explorer.skycoin.net  我们正在做第三代天空币钱包，并完全重做钱包前端和设计，开始多媒体支持（对于天空币，Bitcoin，Ethereum和Qtum）。 新的钱包将基于Byteballs钱包的设计。
+我们正在招聘更多的开发人员，专注于改进项目管理流程，进一步扩大开发团队。
+不可变数据对象和CXO守护程序的CXO标准几乎完成了
+ http://github.com/skycoin/cxo 天空币块和事务最终将通过网络存储，同步和交换为CXO对象。 天空币 Blockheaders和天空币块中的交易列表将被存储为单独的对象，以允许头部首先下载。  完成网状网络的拥塞控制。 我们必须有大约4个tickets才会正常工作。 它的核心功能非常好，每秒2 MB / s，但需要优化，拥塞控制仍然存在瓶颈。
+我们现在有一个天空币介绍录视频。 我们需要找到一个很好的叙述和信息。</description>
+    </item>
+    
+    <item>
+      <title>Development Update #125</title>
+      <link>https://www.skycoin.net/zh/development-updates/development-update-125/</link>
+      <pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/development-updates/development-update-125/</guid>
+      <description>区块浏览器基本完成. 查看GitHub. 新的网站        区块浏览器基本完成. 查看GitHub.  github.com/skycoin/skycoin  新的网站  skycoin.net  交易所API和自动化存取款功能已经测试了数月. 小的bug已经修复. - 我们以“讲故事”的方式阐明了天空币和比特币之间的差异，以及两者之间达成共识过程的不同之处. - 制作了一个视频以更清楚的说明天空币项目. - 发布了第一个应用，以便用户可以消费及获取天空币.
+代币领域充斥着大量垃圾币，我们需要一个非常清楚、明确和系统化的市场营销策略. 我们应当回到项目的本质上，多专注天空币项目和天空币的内在价值，而非把精力消耗在我们的文章和生态系统上，因为它实在太复杂了，需要长期持续地才能理顺.</description>
+    </item>
+    
+  </channel>
+</rss>

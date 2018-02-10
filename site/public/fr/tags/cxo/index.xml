@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CXO on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/tags/cxo/</link>
+    <description>Recent content in CXO on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/tags/cxo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publication de la version 3.1 de Skycoin BBS</title>
+      <link>https://www.skycoin.net/fr/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/bbs/bbs-release-v3.1/</guid>
+      <description>La version 3.1 de Skycoin BBS a enfin été publiée !
+Journal des modifications  Utilisation de la dernière version de CXO. Réimplémentation de la structure de données CXO pour une gestion plus facile des diff. Introduction d&amp;rsquo;un module &amp;ldquo;views&amp;rdquo; pour une implémentation plus facile de différentes manières de regarder les données. Implémentation des tableaux d&amp;rsquo;exportation et d&amp;rsquo;importation vers ou depuis un fichier. Implémentation initiale du suivi/blocage d&amp;rsquo;utilisateur. Amélioration de l&amp;rsquo;interface utilisateur (Travail toujours en cours).</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS - Mise à jour de développement #2</title>
+      <link>https://www.skycoin.net/fr/bbs/bbs-development-update-2/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/bbs/bbs-development-update-2/</guid>
+      <description>Cela fait un peu plus d&amp;rsquo;un mois depuis la dernière publication de la version 0.1 et la version 0.2 est bientôt prête !
+Les changements sont les suivants :
+ Utilise la dernière version de CXO (base de données auto-réplicante pair à pair). Réimplémentation des objets et de l&amp;rsquo;arbre du CXO (en préparation pour de nouvelles fonctionnalités) Introduction à un module de &amp;ldquo;vues&amp;rdquo; pour faciliter l&amp;rsquo;implémentation de différentes façons de &amp;ldquo;visualiser&amp;rdquo; le contenu.</description>
+    </item>
+    
+  </channel>
+</rss>

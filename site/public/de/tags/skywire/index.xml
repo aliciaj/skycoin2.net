@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/tags/skywire/</link>
+    <description>Recent content in Skywire on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/tags/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire: Das nächste Internet</title>
+      <link>https://www.skycoin.net/de/skywire/skywire-the-next-internet/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/skywire/skywire-the-next-internet/</guid>
+      <description>Im Frühling 2017 hat die FCC einen Antrag gestellt, in welchem es den Internetdienstanbietern (ISP) erlaubt ist Informationen über Browser-Gewohnheiten zu sammeln, zu nutzen und zu verkaufen. ISPs können das ohne die Erlaubnis des Users machen. Kunden können sich nicht dagegen entscheiden. Ein Kunde dieser Firmen zu sein, bedeutet schlicht und ergreifend, dass man dafür bezahlt ausgespäht zu werden.
+Mit Kundenüberwachung, unverlässlicher Abdeckung, hohen Gebühren, langen Wartezeiten und schlechtem Kundenservice, sind die ISPs die meist gehassten Firmen in Amerika geworden.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/de/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Wir wurden gefragt, was der Unterschied zwischen CXO und IPFS ist.
+FileCoin hat dieselben Ziele, wie ein Teil der Skycoin-Infrastruktur, aber wählt einen anderen Ansatz. Sie haben drei separate Protokolle:
+ IPLD IPFS Multi-formats  wohingegen,
+ IPLD ist eine Repräsentationssprache für unveränderbare Datenobjekte und Hashes ist. IPFS ein Dateisystem ist. Multi-formats ein sich selbstdefinierender Datenstandard ist.  Bei Skycoin erfüllt CXO diese drei Sachen auf einmal.
+ Multi-formats ist nur ein &amp;ldquo;Schema&amp;rdquo; in CXO IPLD ist einfach CXO (unveränderbare Datenstrukturen, Hashketten, Replikation, Merkle-Bäume etc.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Ein freies und unzensiertes Internet</title>
+      <link>https://www.skycoin.net/de/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Das Internet gibt uns die Illusion von Kontrolle. Wir können Kontakte knüpfen, konsumieren und Geschäfte in einem Augenblick tätigen - alles durch bereitgestellte Dienste von Google, Facebook, Apple und Amazon. Scheint sehr komfortabel zu sein, richtig ? Ist es - bis man bedenkt was man dafür aufgibt.
+Wir kontrollieren unser Online-Leben nicht. Große Unternehmen und Internetdienstanbieter(ISP/IDA) sammeln unsere Daten, verfolgen unsere Bewegungen und beeinflussen so unsere Umweltwahrnehmung. Jedes Mal, wenn wir das Internet benutzen, geben wir diesen Unternehmen die absolute Macht über uns.</description>
+    </item>
+    
+  </channel>
+</rss>

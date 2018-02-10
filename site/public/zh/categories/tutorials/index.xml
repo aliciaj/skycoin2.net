@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on 天空币博客</title>
+    <link>https://www.skycoin.net/zh/categories/tutorials/</link>
+    <description>Recent content in Tutorials on 天空币博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/zh/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CX教程：使用可供性建立一个小型文字冒险游戏</title>
+      <link>https://www.skycoin.net/zh/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>引言 质询 - 响应架构 启示系统 对象 结论  引言 本教程提供一个基于文本的“游戏”（用户和程序没有相互影响，同时不能影响游戏之中人物的决策），它使用一个挑战-响应架构 ，以确定哪些是游戏中的人物可以做的动作。完整的源代码中可以在 CX的存储库 找到，在文件 examples/text-based-adventure.cx.
+游戏描述了旅行者从怪物的追踪中逃跑的冒险（万圣节快到了!）。如果旅行者能够生存若干小时（当然，这只是一个在*Loop循环*中的迭代），怪物就会停止追逐旅行者。以下是一个例子：
+旅行者继续沿着车道，忘记了身上的痛。 嚎叫和咆哮，怪物来了。 勇敢进入眼前，希望再多活一天。 天真，甚至愚蠢，但旅客的行为使这个怪物麻木。 北，东，西，南。任何方向都很好， 只要没有怪物可以找到我。 嚎叫和咆哮，怪物来了。 旅客逃跑了，懦弱让他活了一天。 你活了下来  如果旅客决定和怪物决一死战但他的英勇尝试失败了的话，游戏结束。游戏结局的一个例子是：
+北，东，西，南。任何方向都很好， 只要没有怪物可以找到我。 嚎叫和咆哮，怪物来了。 勇敢进入眼前，希望再多活一天。 但失败的就是失败，突然之间，这个冒险就结束了。 你死了。 Call&#39;s State: flag:	true nonAssign_32:	&amp;quot;&amp;quot; halt() Arguments: 0: &amp;quot;You died.&amp;quot; 65: call to halt  正如你所看到的，如果你死了，将引发程序错误（这是合适的，就如程序员看见了一个程序错误一般的可怕）。
+质询 - 响应架构 在此架构下，一个的问题提出了,不同的代理（在这种情况下，是一个函数）必须回答这个问题。有一个简单的问题“谁能在这一刻被执行?”所有允许执行的函数都可以。
+下面的函数原型表示可以旅行者的冒险过程中发生的可能的行动。
+func walk (flag bool) () {} func noise (flag bool) () {} func consider (flag bool) () {} func chance (flag bool) () {} func fightResult (flag bool) () {} func theEnd (flag bool) () {}  启示系统 另一个函数必须先和函数调用协调。在这种情况下，CX的启示系统会用来确定操作是否允许运行或否。</description>
+    </item>
+    
+  </channel>
+</rss>

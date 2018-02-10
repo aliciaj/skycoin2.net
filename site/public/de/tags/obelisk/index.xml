@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obelisk on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/tags/obelisk/</link>
+    <description>Recent content in Obelisk on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/tags/obelisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Warum wir Skycoin entwickelt haben</title>
+      <link>https://www.skycoin.net/de/statement/why-we-built-skycoin/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/statement/why-we-built-skycoin/</guid>
+      <description>Satoshi stellte sich Bitcoin als dezentrale, digitale Währung vor. Blockchain Netzwerke beabsichtigten das Finanzwesen zu demokratisieren, unternehmerische Kontrolle zu eliminieren und die Macht unter den Nutzern aufzuteilen. Allerdings haben sich Bitcoin und ähnliche Währungen, aufgrund ihrer Abhängigkeit vom Proof of Work und Proof of Stake Algorithmus, sowie ihrer Nutzung des Mining um Münzen zu erschaffen, zentralisiert. Diese Zentralisierungstendenzen vereiteln den ursprüngliche Zweck digitaler Währungen.
+Wir haben Skycoin entwickelt um diese Fehler zu korrigieren.</description>
+    </item>
+    
+    <item>
+      <title>Funktioniert die 51%-Attacke bei Skycoin?</title>
+      <link>https://www.skycoin.net/de/statement/can-skycoin-be-51-attacked/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/statement/can-skycoin-be-51-attacked/</guid>
+      <description>Dies ist ein archivierter Post aus dem Bitcointalksthread vom 16. Februar 2015.
+ Zitat von: iamback am 16. Februar 2015 um 09:28:38 morgens
+Ein nicht PoW-basierter Konsens ist bei der Fertigstellung bereits tot (DOA), denn es ist nicht genügend Zeit übrig um die Probleme zu beseitigen, bevor die globale Wirtschaft in 2016 zusammenbrechen wird. Zum Beispiel wurden die eigennützigen Miningattacken jahrelang nicht erkannt (oder sagen wir mal, weitgehend geprüft und anerkannt), nachdem Satoshi PoW vorgestellt hat.</description>
+    </item>
+    
+  </channel>
+</rss>

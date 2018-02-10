@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/skycoin/</link>
+    <description>Recent content in Skycoin on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/skycoin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Overview</title>
+      <link>https://www.skycoin.net/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/skycoin-overview/</guid>
+      <description>Skycoin Introduction Innovations And Flaws With Bitcoin And The Current Blockchain Protocols Innovations Produced By Bitcoin Major Flaws Of Bitcoin Desirable Properties For Systems Of Distributed Consensus For Financial Ledgers Skycoin Security Philosophy Transparency And Security: Obelisk And Public Broadcast Channels Obelisk Simple Binary Consensus Algorithm: Choosing Between Two Blocks Consensus On Multiple Concurrent Branch Choices  Skycoin Introduction Skycoin is based on technology which introduces a new cryptographic primitive known as a public broadcast channel.</description>
+    </item>
+    
+  </channel>
+</rss>

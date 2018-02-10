@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meshnet on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/meshnet/</link>
+    <description>Recent content in Meshnet on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/meshnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire - Проект Ячеистой Сети Skycoin</title>
+      <link>https://www.skycoin.net/ru/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>Введение Маршрутизация: Обзор Стимулирование: Протокол Платежей Маршрутизация от источника: Канальное шифрование  Пример протокола: ноды A и B Возможные улучшения:  IPv4 шлюз: обход существующих интернет-провайдеров  Пример один Пример два  Архитектура демона Skywire  Пример сервиса: синхронизация блокчейна  Маршрутизация нескольких сетей и объединение каналов Маршрутизация ячеистой сети: Хранение и пересылка Хранение и пересылка: использование емкости Хранение и пересылка: примеры  Пример обычной операции Пример с переполнением Пример с потерей пакета  Хранение и пересылка: задержки и пропускная способность Хранение и пересылка: использование пропускной способности, качество и обслуживание Маршрутизация от источника: множественные маршруты для мобильного подключения Маршрутизация от источника: ноды-стражи Маршрутизация от источника: ограничения BGP Виртуальные маршруты: масштабирование топологии сети Skywire Маршрутизация от источника: виртуальные маршруты и топология SONET Маршрутизация от источника: асимметричные соединения Маршрутизация от источника: открытие маршрутов    Введение  Объекты Skywire: * Улучшают высокороскоростной доступ к контенту.</description>
+    </item>
+    
+    <item>
+      <title>Вопросы скорости работы и конфиденциальности ячеистой сети (meshnet)</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>Этот пост ссылается на Skywire до запуска сети и даже до того, как проект ячеистой сети получил это название. Адаптированный пост с bitcointalk от 09 августа 2014 года.
+Цитата пользователя CraigM от 9 августа, 2014, 07:20:24
+ Ячеистая сеть предназначена для того, чтобы быть хорошим инструментом конфиденциальности с преимуществами, сравнимыми с Тором, но с меньшей задержкой работы, правильно?
+Правильно ли, что ячеистая сеть позволит финансировать узлы (ноды), используя Skycoin для покрытия затрат на передачу трафика?</description>
+    </item>
+    
+  </channel>
+</rss>

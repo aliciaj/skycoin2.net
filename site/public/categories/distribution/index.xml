@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distribution on Skycoin Blog</title>
+    <link>https://www.skycoin.net/categories/distribution/</link>
+    <description>Recent content in Distribution on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/categories/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Distribution</title>
+      <link>https://www.skycoin.net/statement/skycoin-distribution/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-distribution/</guid>
+      <description>The current ICO landscape is dominated by coins that are all image and no substance. Backed by millions of dollars in funding, ICOs for new cryptocurrencies seem to offer tantalizing opportunities to investors. A large ICO is often seen as an indicator of a coin’s potential – hence the buzz surrounding recent ICOs.
+However, the buzz isn’t borne out by the facts. With the explosion of pump-and-dump schemes in the cryptocurrency market, it’s becoming clear that most large upfront ICOs are vehicles built to generate quick money.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Distribution Event - August 2017</title>
+      <link>https://www.skycoin.net/statement/skycoin-distribution-event/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-distribution-event/</guid>
+      <description>Skycoin is holding a distribution event on August 8, 2017 beginning at 12:00PM GMT.
+Up to 1,000,000 SKY, or 1% of all SKY, will be offered at a price of 0.002BTC/SKY (500SKY/BTC).
+The event ends August 31, 2017 12:00PM GMT.
+Distribution will be done through the Skycoin website and through a telegram bot on the Skycoin telegram.
+This event was originally scheduled for July 24, 2017 but has been rescheduled to August 8, 2017 due to uncertainty in the Bitcoin network during this time period.</description>
+    </item>
+    
+  </channel>
+</rss>

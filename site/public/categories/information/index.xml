@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information on Skycoin Blog</title>
+    <link>https://www.skycoin.net/categories/information/</link>
+    <description>Recent content in Information on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/categories/information/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Perspective on Monetary Policy</title>
+      <link>https://www.skycoin.net/drafts/skycoin-perspective-on-monetary-policy/</link>
+      <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/skycoin-perspective-on-monetary-policy/</guid>
+      <description>What makes me the most sad, is that there are developers who bought in to Bitcoin at pennies. They made a lot of money already and very few of them gave back to the community or created something that moved the community forward. Everything is a money grab.
+We have hundreds of money grab altcoins. Gimmicks. Whole cartels devoted to pump and dumps. Bitcoin is still in a penny stock and show pony, gimmick mentality.</description>
+    </item>
+    
+    <item>
+      <title>Musings on the Origin of Skycoin</title>
+      <link>https://www.skycoin.net/drafts/musings-on-the-origin-of-skycoin/</link>
+      <pubDate>Sat, 23 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/musings-on-the-origin-of-skycoin/</guid>
+      <description>Skycoin development started two years after Bitcoin was released. The Skycoin Project is almost as old as Litecoin. I cant even remember if Bitcoin had hit a dollar yet or if there were even exchanges when project started.
+The first version was in python and was completely working. Then codebase was moved to C++, then moved to Golang. So it has already gone through three language changes. The longest working Skycoin blockchain was running for four months.</description>
+    </item>
+    
+    <item>
+      <title>How Well Does the Meshnet Work?</title>
+      <link>https://www.skycoin.net/drafts/how-well-does-the-meshnet-work/</link>
+      <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/how-well-does-the-meshnet-work/</guid>
+      <description>Quote from: Korean on September 26, 2014, 05:45:00 AM &amp;gt;How well does the Meshnet work right now? &amp;gt;Can it get pass the great firewall of China? &amp;gt;Is there a standard hardware that you recommend?
+Yes. It was designed explicitly to defeat existing state-full packet inspection hardware. This includes the great firewall.
+There is no fixed port, no protocol headers. There is not a single byte of plain text traffic in wire protocol, which can be used for identification of the protocol type.</description>
+    </item>
+    
+    <item>
+      <title>Quorum Proof of Stake</title>
+      <link>https://www.skycoin.net/drafts/quorum-proof-of-stake/</link>
+      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/quorum-proof-of-stake/</guid>
+      <description>Comment: Quote from: iruu on May 18, 2014, 10:40:39 AM &amp;gt;A decentralized distributed consensus currency, so to speak. At least aiming to be decentralized. &amp;gt;I don&amp;rsquo;t really get the why. Why not some variation of proof of stake? For example a version where one stake equals one virtual node. No need for trust when there&amp;rsquo;s financial interest.
+Yes. We actually have two layers of proof-of-stake. There is the blockchain consensus, then within the blockchain we have coinhours, which are burned as fees.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Economic Policy</title>
+      <link>https://www.skycoin.net/drafts/skycoin-economic-policy/</link>
+      <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/skycoin-economic-policy/</guid>
+      <description>We have been talking to a large Bitcoin market marker about how we can prevent a repeat of the Auroacoin crash and deter speculators.
+We have a data guy doing models.
+This is the linear scale Bitcoin price over time
+This is log scale Bitcoin price, with regression line. When Bitcoin is over the line its over priced, when its below the line its underpriced.
+This is the total number of subscribers in /r/bitcoin This is the daily growth rate of subscribers in /r/bitcoin .</description>
+    </item>
+    
+    <item>
+      <title>Clarification on the Personal Blockchain</title>
+      <link>https://www.skycoin.net/drafts/clarification-on-the-personal-blockchain/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/clarification-on-the-personal-blockchain/</guid>
+      <description>This is an archived post from the bitcointalks thread on May 06 2014
+ Quote from: FrictionlessCoin on May 06, 2014, 01:08:09 PM
+I still however am have trouble understanding how the protocol works and this notion of &amp;lsquo;personal blockchains&amp;rsquo;. Can you point me to the documentation that describes this better?
+ For a personal blockchain, you generate a public key. To be valid you have to sign each block with your private key.</description>
+    </item>
+    
+    <item>
+      <title>Comparing Skycoin to Ripple</title>
+      <link>https://www.skycoin.net/drafts/comparing-skycoin-to-ripple/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/comparing-skycoin-to-ripple/</guid>
+      <description>In Ripple you have a bunch of node. If a peer rejects a transaction, then to achieve consensus, the connection&amp;rsquo;s peers will drop the transaction and the rejection of the transaction propagates through the network. That means that a single bad node can freeze the assets in a particular address.
+Ripple is must more vulnerable to government influence and control than Bitcoin, because control of the network is centralized in financial institutions.</description>
+    </item>
+    
+    <item>
+      <title>Is Skycoin Decentralized?</title>
+      <link>https://www.skycoin.net/drafts/is-skycoin-decentralized/</link>
+      <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/is-skycoin-decentralized/</guid>
+      <description>To prototype Skycoin, we used a mix of centralized and decentralized components for prototyping. We prototyped Skycoin and the emphasis was getting each component working. Over time the centralized components have been replaced by fully decentralized components. Skycoin will be fully independent of any developer run servers and infrastructure by the time Obelisk is finished.
+Right now - the ledger is decentralized, everyone has a copy of the transaction ledger - transactions are decentralized and the transaction relay is peer to peer - blockchain consensus requires Obelisk for full decentralization</description>
+    </item>
+    
+    <item>
+      <title>Cross Blockchain Transactions:</title>
+      <link>https://www.skycoin.net/drafts/cross-blockchain-transactions/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/cross-blockchain-transactions/</guid>
+      <description>Comment: Quote from: CraigM on April 15, 2014, 07:11:29 AM &amp;gt;It seem like most of these proposed features (enforceable contracts, distributed trust-less exchanges, reputation systems etc) all come from the core feature of cross chain transactions. Cross chain transactions allow adding other currencies/goods to the economy that can be securely exchanged. This is a very powerful feature which solves tons of problems including the scalability ones (you can shard the currency if the distributed consensus becomes too expensive, or even add ultra low transaction cost centralized sub-currencies that can be converted back to any other currency)</description>
+    </item>
+    
+    <item>
+      <title>Obelisk Explained</title>
+      <link>https://www.skycoin.net/drafts/oblelisk-explained/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/oblelisk-explained/</guid>
+      <description>What is Obelisk? Obelisk is what makes Skycoin, Bitcoin 2.0. Obelisk is a sustainable alternative to proof-of-work. Obelisk is a system that replaces proof of work for blockchain consensus and eliminates the possibility of a 51% attack.
+Obelisk was inspired by academic research into adversarial distributed time-stamping and algorithms such as Ben-Or&amp;rsquo;s, Paxos, and the Castro-Liskov PBFT algorithm. Obelisk is a new solution to the Byzantine Generals problem which offers strong mathematical security guarantees, even when the majority of nodes are hostile.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Marketing and Speculation</title>
+      <link>https://www.skycoin.net/drafts/thoughts-on-marketing-and-speculation/</link>
+      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/thoughts-on-marketing-and-speculation/</guid>
+      <description>Thoughts on Marketing and Speculation: Skycoin marketing is highly targeted at influence groups and communities who need to know about Skycoin. The objective of Skycoin marketing is to build out the community and build awareness. Skycoin is not doing broad marketing aimed at public to &amp;ldquo;pump&amp;rdquo; prices to unsustainable levels. Skycoin will not be paying Lady Gaga to make a Skycoin music video.
+Marketing tactics designed to cause bubbles and bursts are great for speculators, day trading and people organizing the pumps, but conflict with Skycoin&amp;rsquo;s objective of low volatility and stable price levels.</description>
+    </item>
+    
+    <item>
+      <title>TwoStep: Post Quantum Secure Transactions</title>
+      <link>https://www.skycoin.net/drafts/two-step-post-quantum-secure-transactions/</link>
+      <pubDate>Sat, 11 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/two-step-post-quantum-secure-transactions/</guid>
+      <description>TwoStep: Post Quantum Secure Transactions Future advances in mathematics may render Bitcoin insecure. This is a draft protocol for securing cryptocoin transactions against future advances in mathematics or computing which render discrete logarithm based public key cryptography insecure.
+TwoStep is part of QuantumEclipse, a suite of next-gen cryptocoin protocols developed under OP Darknet Plan for the Skycoin Project.
+This protocol is - simple - adaptable to Bitcoin - lower overhead than Lamport Signatures - works with SHA256 preimages equally as well as Secp256k1 signatures - not dependent on the security of discrete logarithm based public key cryptography</description>
+    </item>
+    
+    <item>
+      <title>Overview of Obelisk: Distributed Consensus </title>
+      <link>https://www.skycoin.net/drafts/overview-of-obelisk/</link>
+      <pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/overview-of-obelisk/</guid>
+      <description>Overview of Obelisk: Distributed Consensus In Obelisk, each person runs their own Obelisk nodes. Each node has a set of trust relationships with other nodes. Each node has a list of servers it &amp;ldquo;trusts&amp;rdquo;. A new node can be initialized by randomly choosing a few dozen existing nodes to trust, with only two or three of the nodes being nodes run by trusted institutions or persons.
+Servers publish &amp;ldquo;blocks&amp;rdquo; every 5 seconds.</description>
+    </item>
+    
+  </channel>
+</rss>

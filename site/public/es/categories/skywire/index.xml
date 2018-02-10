@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/skywire/</link>
+    <description>Recent content in Skywire on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>El desmantelamiento de la neutralidad de la red y cómo Skycoin puede derrotarlo</title>
+      <link>https://www.skycoin.net/es/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</guid>
+      <description>En el 2015, la FCC instituyó reglas de neutralidad de red clasificando a la Internet como una utilidad pública. Esto impidió que los proveedores de servicios de Internet (ISP) priorizaran ciertos sitios web sobre otros y fomentó una internet libre y abierta donde todas las empresas y personas pudieran prosperar.
+Ahora, bajo el mandato del presidente de la FCC designado por Trump, Ajit Pai, se avecina una votación para recortar las protecciones de la neutralidad de la red.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: El próximo Internet</title>
+      <link>https://www.skycoin.net/es/statement/the-next-internet/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/the-next-internet/</guid>
+      <description>En la primavera de 2017, la FCC hizo una propuesta en la que los proveedores de servicio de Internet pueden recopilar, usar, y vender información sobre los hábitos de navegación del cliente. Los ISPs (proveedores de servicio de Internet) pueden hacer esto sin permiso. Los clientes no pueden optar por no participar. Ser cliente de una de estas corporaciones significa que se estará pagando por ser rastreado, simple y llanamente.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin y Skywire son dos componentes separados del Proyecto Skycoin. Skycoin es la cadena de bloques. Skywire es la red en malla.
+Skycoin fue construido primero. Puede mantenerse por sí mismo. Fue creado para resolver los problemas que tiene Bitcoin. El mayor problema que tiene Bitcoin es la minería, lo que lleva a la centralización de Bitcoin. Los otros problemas que ha tenido Bitcoin se relacionaban principalmente con criptografía o errores de software, lo que generó defectos como la maleabilidad de transacciones.</description>
+    </item>
+    
+    <item>
+      <title>Skywire y Viscript</title>
+      <link>https://www.skycoin.net/es/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/skywire/skywire-and-viscript/</guid>
+      <description>Introducción Viscript Viscript es una interfaz de línea de comandos multiplataforma, y un iniciador de aplicaciones y eventualmente será un administrador de clúster. Está basado en la biblioteca &amp;ldquo;signal&amp;rdquo; como un servidor &amp;ldquo;signal&amp;rdquo;, por lo que puede gestionar los clientes de &amp;ldquo;signal&amp;rdquo;, como el nodo y los componentes en Skywire. Se puede ejecutar con interfaz grafica o sin ella.
+Captura de pantalla de la interfaz gráfica de Viscript: Podemos agregar configuraciones de aplicaciones en el archivo config.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Una Internet Libre y Transparente</title>
+      <link>https://www.skycoin.net/es/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skywire-a-free-and-open-internet/</guid>
+      <description>La internet nos da una ilusión de control. Podemos socializar, consumir, y hacer negocios instantáneamente a través de servicios proporcionados por Google, Facebook, Apple, y Amazon. ¿Se ve muy útil, no? Lo es —Hasta que consideras lo que das a cambio.
+No controlamos nuestras vidas en línea. Las grandes compañías y los proveedores de internet (ISPs) almacenan nuestra información, monitorean nuestros movimientos, y moldean nuestras experiencias. Cada vez que usamos la internet, le damos a esas compañías el control total sobre nosotros.</description>
+    </item>
+    
+  </channel>
+</rss>

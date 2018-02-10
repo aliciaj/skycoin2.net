@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin Mining on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/skycoin-mining/</link>
+    <description>Recent content in Skycoin Mining on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/skycoin-mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스카이와이어 채굴기 : 차세대 인터넷을 위한 하드웨어</title>
+      <link>https://www.skycoin.net/ko/statement/skywire-miner-hardware-for-the-next-internet/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skywire-miner-hardware-for-the-next-internet/</guid>
+      <description>Sign up to our mailing list for Skywire Miner updates: http://eepurl.com/c4DyAv
+진정으로 자유롭고 개방적인 인터넷을 어떻게 만들 수 있습니까? 이 질문에 답하기 위해 우리는 새로운 대체 인터넷인 스카이와이어를 개발했습니다. 스카이와이어는 대형 인터넷 서비스 제공 업체(ISP)로부터 통제권을 얻어 사용자에게 다시 되돌려주는 지금까지의 상식을 깨는 혁신적인 기술입니다. 이 P2P(peer-to-peer)모델은 중단, 속도저하 또는 감시없이 네트워크 중립성 및 콘텐츠 공유를 활성화 합니다. Skywire의 개방형 액세스 네트워크는 개인 정보를 보호하고 언론의 자유를 보장합니다. 스카이와이어를 만드는 우리의 사명은 보다 나은 인터넷의 미래를 만드는 데 기여하는 것입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 : 자유롭고 열린 인터넷</title>
+      <link>https://www.skycoin.net/ko/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skywire-a-free-and-open-internet/</guid>
+      <description>인터넷의 우리에게 통제의 환영을 부여합니다. 우리는 구글, 페이스북, 애플 및 아마존에서 제공하는 서비스를 통해 즉각적인 사회활동, 소비 및 사업을 할 수 있습니다. 편리하다고 생각하십니까? 당신이 무엇을 포기하는지를 고려할 때 이것은 여전히 -입니다.
+우리는 우리의 온라인 생활을 통제하지 않습니다. 대기업 및 인터넷 서비스 제공 업체(ISP)는 데이터를 수집하고 움직임을 추적하며 우리의 경험을 공유합니다. 우리가 인터넷을 사용할 때마다, 우리는 이 회사들에게 힘을 부여합니다. 우리는 인터넷 생활을 소유하지 않습니다.
+점점 더 악화되고 있습니다. 기업 및 정부 기관은 인터넷의 자유를 위협하고 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

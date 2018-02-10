@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bounty Program on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/bounty-program/</link>
+    <description>Recent content in Bounty Program on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/bounty-program/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Bounty Program 1</title>
+      <link>https://www.skycoin.net/statement/skycoin-bounty-program-1/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-bounty-program-1/</guid>
+      <description>Updated August 30, 2017. Remove GIF bounties.
+Updated again August 29, 2017. Added translation bounties.
+Updated August 29, 2017. Added reddit activity bonus. Increased GIF bounty to 20.
+Updated September 3, 2017. Added French to translation bounties.
+Updated September 12, 2017. Increase infographics bounty reward to 30.
+Updated November 8, 2017. Graphics and video bounties are handled on a case-per-case basis in the bounty channel.
+Update December 7, 2017. Add Português</description>
+    </item>
+    
+  </channel>
+</rss>

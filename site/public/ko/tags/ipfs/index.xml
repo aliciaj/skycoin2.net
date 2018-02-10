@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPFS on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/ipfs/</link>
+    <description>Recent content in IPFS on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스카이코인/CXO vs 파일코인/IPFS</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>우리는 CXO 와 IPFS의 차이점에 대해 물어볼 수 있습니다.
+파일 코인은 스카이코인 인프라의 일부와 동일한 목표를 가지고 있지만, 다른 접근 방식을 취하고 있습니다. 그들에는 3 개의 다른 프로토콜이 있습니다:
+ IPLD IPFS 다중-포맷  어느 곳에,
+ IPLD는 불변의 데이터 객체와 해시를 표현하는 언어입니다. IPFS는 파일 시스템입니다. 다중 포맷은 자체 기술 데이터 표준입니다.  스카이코인에서 CXO는 이 세 가지를 모두 수행합니다.
+ 멀티 포맷은 CXO의 &amp;ldquo;스키마&amp;rdquo;일 뿐입니다. IPLD는 CXO(불변의 데이터 구조, 해시 체인, 복제, 머클 트리 등)일 뿐입니다.</description>
+    </item>
+    
+    <item>
+      <title>개발 업데이트 #64</title>
+      <link>https://www.skycoin.net/ko/development-updates/development-update-64/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/development-updates/development-update-64/</guid>
+      <description>IPFS 데모: 이것은 IPFS이며, Bitorrent의 후속작 입니다.
+https://www.youtube.com/watch?v=8CMxDNuuAiQ
+스카이코인 Merkle-dag 시스템은 이를 기반으로 합니다.  디렉토리는 노드의 목록입니다. 노드의 ID는 해시이며, 이는 직렬화 되어 있습니다. 각 노드는 폴더 또는 파일입니다. 파일의 내용은 해시입니다. 소유자는 개인키를 사용하여 루트 해시에 서명합니다. 노드 메타 데이터 및 파일은 P2P(peer-to-peer)로 복제됩니다. 디렉터리는 하나로 표시됩니다.  사용자는 그들이 업로드한 파일을 업데이트 할 수 있습니다. 자바 스크립트 파일이 있는 경우, 서버에서 파일을 다시 요청하는 대신 페이지가 로드될 때 마다 해당 파일의 해시 이름이 지정됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

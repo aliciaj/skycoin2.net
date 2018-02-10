@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitcoin on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/bitcoin/</link>
+    <description>Recent content in Bitcoin on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of the Crypto Market and Development Updates</title>
+      <link>https://www.skycoin.net/statement/state-of-the-crypto-market-development-updates/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/state-of-the-crypto-market-development-updates/</guid>
+      <description>Q&amp;amp;A Summary of the Current Bitcoin Market New Wallet CoinHours Skycoin (DEX) Distributed Exchange Support Skycoin Projects Position on the Smart Contracts Fad CX Skycoin Roadmap Finished First Distributed Social Media Platform on Skycoin Platform Launches Skycoin OTC Market  Q&amp;amp;A  There is no mention of a re-working of the whitepapers. Should this not be a priority so that your marketing that has started has reference material. This is a technical coin and so the documentation needs to be up to date.</description>
+    </item>
+    
+    <item>
+      <title>Getting to Where We Think Bitcoin Should Be</title>
+      <link>https://www.skycoin.net/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>This is an archived post from the bitcointalks thread on April 23 2014
+ Quote from: JFK01 on April 23, 2014, 01:54:50 PM
+I guess that Skycoin just want to test the water first. There is nothing wrong with that. They are engineers and want to do testing for everything. They have been very cautious for the development as well. This is something they are good at. Just do what you are good at.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Marketing and Speculation</title>
+      <link>https://www.skycoin.net/drafts/thoughts-on-marketing-and-speculation/</link>
+      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/thoughts-on-marketing-and-speculation/</guid>
+      <description>Thoughts on Marketing and Speculation: Skycoin marketing is highly targeted at influence groups and communities who need to know about Skycoin. The objective of Skycoin marketing is to build out the community and build awareness. Skycoin is not doing broad marketing aimed at public to &amp;ldquo;pump&amp;rdquo; prices to unsustainable levels. Skycoin will not be paying Lady Gaga to make a Skycoin music video.
+Marketing tactics designed to cause bubbles and bursts are great for speculators, day trading and people organizing the pumps, but conflict with Skycoin&amp;rsquo;s objective of low volatility and stable price levels.</description>
+    </item>
+    
+    <item>
+      <title>TwoStep: Post Quantum Secure Transactions</title>
+      <link>https://www.skycoin.net/drafts/two-step-post-quantum-secure-transactions/</link>
+      <pubDate>Sat, 11 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/two-step-post-quantum-secure-transactions/</guid>
+      <description>TwoStep: Post Quantum Secure Transactions Future advances in mathematics may render Bitcoin insecure. This is a draft protocol for securing cryptocoin transactions against future advances in mathematics or computing which render discrete logarithm based public key cryptography insecure.
+TwoStep is part of QuantumEclipse, a suite of next-gen cryptocoin protocols developed under OP Darknet Plan for the Skycoin Project.
+This protocol is - simple - adaptable to Bitcoin - lower overhead than Lamport Signatures - works with SHA256 preimages equally as well as Secp256k1 signatures - not dependent on the security of discrete logarithm based public key cryptography</description>
+    </item>
+    
+    <item>
+      <title>Overview of Obelisk: Distributed Consensus </title>
+      <link>https://www.skycoin.net/drafts/overview-of-obelisk/</link>
+      <pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/overview-of-obelisk/</guid>
+      <description>Overview of Obelisk: Distributed Consensus In Obelisk, each person runs their own Obelisk nodes. Each node has a set of trust relationships with other nodes. Each node has a list of servers it &amp;ldquo;trusts&amp;rdquo;. A new node can be initialized by randomly choosing a few dozen existing nodes to trust, with only two or three of the nodes being nodes run by trusted institutions or persons.
+Servers publish &amp;ldquo;blocks&amp;rdquo; every 5 seconds.</description>
+    </item>
+    
+  </channel>
+</rss>

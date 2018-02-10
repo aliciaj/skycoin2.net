@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin Blog</title>
+    <link>https://www.skycoin.net/categories/skywire/</link>
+    <description>Recent content in Skywire on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/categories/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Net Neutrality Rollback and How Skycoin Can Defeat It</title>
+      <link>https://www.skycoin.net/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</guid>
+      <description>In 2015, the FCC instituted net neutrality rules classifying the internet as a public utility. This prevented internet service providers (ISPs) from prioritizing certain websites over others and encouraged a free and open internet where all businesses and individuals could thrive.
+Now, under Trump-appointed FCC chairman Ajit Pai, a vote to slash net neutrality protections is looming. Pai was nominated for a second five-year term on October 2 despite widespread outcry over his agenda.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: The Next Internet</title>
+      <link>https://www.skycoin.net/skywire/skywire-the-next-internet/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/skywire/skywire-the-next-internet/</guid>
+      <description>In spring 2017, the FCC made a proposal in which internet service providers can collect, use, and sell information about customer browsing habits. ISPs can do this without permission. Customers can’t opt out. Being a customer of one of these corporations means that you’re paying to be tracked, plain and simple.
+With customer tracking, unreliable coverage, high rates, long hold times and poor customer service, ISPs have become some of the most hated companies in America.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin and Skywire are two separate components of the Skycoin Project. Skycoin is the blockchain. Skywire is the mesh network.
+Skycoin was built first. It can stand on its own. It was created to address problems that Bitcoin has. The biggest problem that Bitcoin has is mining, which leads to the centralization of Bitcoin. The other problems that Bitcoin had mostly related to cryptography or software bugs, leading to problems such as transaction malleability.</description>
+    </item>
+    
+    <item>
+      <title>Skywire - Skycoin Meshnet Project</title>
+      <link>https://www.skycoin.net/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>Introduction Routing: Overview Incentives: Payment Protocol Source Routing: Link Layer Encryption  Example Protocol: Nodes A and B Possible Improvements:  IPv4 Gateway: Bypassing Existing ISPs  Example One Example Two  Skywire Daemon Services Architecture  Example Service: Blockchain Sync  Finding Peers Sending and Receiving Messages   Multi-Home Routing and Link Aggregation Meshnet Routing: Store and Forward Store and Forward: Capacity Utilization Store and Forward: Examples  Example of normal operation Example with congestion Example with packet loss  Store and Forward: Bandwidth Latency Product Store and Forward: Capacity Utilization, Quality and Service Source Routing: Multi-Route Mobile Connectivity Source Routing: Guard Nodes Source Routing: Limitations of BGP Virtual Routes: Skywire Network Topology at Scale Source Routing: Virtual Routes, SONET Topology Source Routing: Asymmetric Connectivity Source Routing: Route Discovery  Introduction Skywire objectives:</description>
+    </item>
+    
+    <item>
+      <title>Question Regarding Latency and Privacy of the Meshnet</title>
+      <link>https://www.skycoin.net/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>This post refers to Skywire earlier on in its formation, before it was named Skywire. Adapted from a bitcointalk post dated August 09, 2014.
+Quote from: CraigM on August 09, 2014, 07:20:24 AM
+ The meshnet is intended to be a nice privacy tool with benefits comparable to tor, but lower latency correct?
+The meshnet is intended to allow funding nodes via micropayments in skycoin to cover bandwidth costs correct?</description>
+    </item>
+    
+    <item>
+      <title>Skywire and Viscript</title>
+      <link>https://www.skycoin.net/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/skywire/skywire-and-viscript/</guid>
+      <description>Introduction Viscript Viscript is a cross platform CLI, and application launcher and for cluster management eventually. It is based on signal library as a signal server, so it can manage the signal clients, like node and the components in skywire. It can be run in GUI mode or headless mode.
+Viscript GUI Screenshot: We can add app configurations in the config.yaml file, like the meshnet-socks-server:
+ meshnet-socks-server: daemon: true desc: DESCRIPTION GOES HERE path: bin/meshnet/meshnet-run-socks-server default_args: [] help: | [1] Text name of app, must be unique [2] Node address which app will be talked with.</description>
+    </item>
+    
+    <item>
+      <title>Skywire Miner: Hardware for the Next Internet</title>
+      <link>https://www.skycoin.net/statement/skywire-miner-hardware-for-the-next-internet/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skywire-miner-hardware-for-the-next-internet/</guid>
+      <description>Sign up to our mailing list for Skywire Miner updates: http://eepurl.com/c4DyAv
+How can we create a truly free and open internet? To answer this question, we developed Skywire, the new alternative internet. Skywire is a groundbreaking, novel technology that takes control from large internet service providers (ISPs) and gives it back to the users. Its peer-to-peer model promotes net neutrality and sharing of content without blocking, slowdowns, or censorship. Skywire’s open-access network preserves privacy and encourages free speech.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: A Free and Open Internet</title>
+      <link>https://www.skycoin.net/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skywire-a-free-and-open-internet/</guid>
+      <description>The internet gives us the illusion of control. We can socialize, consume, and do business instantly through services provided by Google, Facebook, Apple, and Amazon. Seems convenient, right? It is – until you consider what you’re giving up.
+We don’t control our lives online. Large companies and internet service providers (ISPs) collect our data, track our movements, and shape our experiences. Every time we use the internet, we give these companies total power over us.</description>
+    </item>
+    
+  </channel>
+</rss>

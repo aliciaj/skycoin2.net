@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/tutorials/</link>
+    <description>Recent content in Tutorials on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial de CX: Uso de Affordances para construir una pequeña aventura basada en texto</title>
+      <link>https://www.skycoin.net/es/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>Introducción Arquitectura desafio-respuesta Sistema de Affordance Objetos Conclusión  Introducción Este tutorial presenta un &amp;ldquo;juego&amp;rdquo; basado en texto (el usuario no interactúa con el programa y no puede influir en las decisiones del personaje) que usa una Arquitectura desafio-respuesta para determinar cuáles son las posibles acciones que puede hacer el personaje del juego. El código fuente completo se puede encontrar en el repositorio de CX, en el archivo examples/text-based-adventure.</description>
+    </item>
+    
+  </channel>
+</rss>

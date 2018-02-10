@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distribution on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/categories/distribution/</link>
+    <description>Recent content in Distribution on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/categories/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Распространение Skycoin</title>
+      <link>https://www.skycoin.net/ru/statement/skycoin-distribution/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skycoin-distribution/</guid>
+      <description>Сегодня поле ICO занято криптовалютами с внешностью, но без внутреннего содержания. Поддерживаемые миллионными вливаниями, ICO для новых криптосистем на деле всего лишь дразнят инвесторов своими возможностями. Считается, что чем шире размах ICO той или иной монеты, тем больше её инвестиционный потенциал – такое впечатление складывается от информационного шума вокруг последних из них.
+Но шум в данном случае не подкреплён фактами. Со взрывным ростом памп-энд-дамп схем на криптовалютном рынке, становится понятно, что большая часть крупных ICO первого эшелона созданы только для получения быстрых денег.</description>
+    </item>
+    
+    <item>
+      <title>Ивент по распространению Skycoin - Август 2017</title>
+      <link>https://www.skycoin.net/ru/statement/skycoin-distribution-event/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skycoin-distribution-event/</guid>
+      <description>C 8го августа 2017, начиная c 12:00PM GMT начнется новый раунд продажи Skycoin.
+До 1,000,000 SKY или 1% от общего количества,будет предложено по цене 0.002BTC/SKY (500SKY/BTC).
+Это событие окончится 31го августа 2017 в 12:00PM GMT.
+Дистрибьюция будет организована через веб-сайт Skycoin и через telegram бота на основном telegram-канале Skycoin.
+Изначально это событие было запланировано 24 июля 2017, но было отложено на 8 августа 2017 в связи с нестабильностью сети биткоин в соответствующий период времени.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distribution on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/distribution/</link>
+    <description>Recent content in Distribution on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>현재 코인 배포 이벤트(ICO)는 없습니다.</title>
+      <link>https://www.skycoin.net/ko/statement/no-coin-distribution-event-at-this-time/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/no-coin-distribution-event-at-this-time/</guid>
+      <description>우리는 현재 ICO를 하지 않습니다. 2017년 8월 31일, 배포 이벤트가 끝났습니다.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Distribution Event - August 2017</title>
+      <link>https://www.skycoin.net/ko/statement/skycoin-distribution-event/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skycoin-distribution-event/</guid>
+      <description>스카이코인 배포 이벤트가 2017년 8월 8일 12:00PM GMT 부터 시작됩니다.
+최대 1,000,000 SKY, 또는 전체의 1% SKY가 0.002BTC/SKY가격에 제공됩니다.(500SKY/BTC).
+이 이벤트는 2017년 8월 31일 12:00PM GMT부로 종료됩니다.
+배포는 Skycoin 웹 사이트 및 Skycoin 텔레그램 봇을 통해 수행됩니다.Skycoin 텔레그램.
+이 이벤트는 원래 2017년 7월 24일로 예정되었지만 이 기간동안 비트코인 네트워크의 불안정성 때문에 2017년 8월 8일로 재조정되었습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

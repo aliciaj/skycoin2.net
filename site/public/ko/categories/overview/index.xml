@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/categories/overview/</link>
+    <description>Recent content in Overview on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/categories/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obelisk: 스카이코인 합의 알고리즘 | 정보 페이지</title>
+      <link>https://www.skycoin.net/ko/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>합의 알고리즘 핵심내용  왜 합의 알고리즘인가? 높은 확장성과 낮은 에너지 소비 치밀한 협동 공격 &amp;ldquo;51-퍼센트 공격&amp;rdquo; 숨겨진 IP 주소 시간 동기화의 독립성 두 가지 유형의 노드 : 합의 및 블록-생성  스카이코인 합의 알고리즘 작동 방식 참고 문헌  합의 알고리즘 핵심내용 왜 합의 알고리즘인가? 스카이코인 합의 알고리즘( &amp;ldquo;Obelisk&amp;rdquo;)은 모든 네트워크 노드에 걸쳐서 스카이코인 블록 체인 상태를 동기화합니다. 결과적으로 일관된 회계 처리가 이루어지는데, 즉, 주어진 공개키(또는 주소)에 대한 잔고를 계산할 때, 계산을 수행한 각 노드에서 동일한 값이 산출됩니다.</description>
+    </item>
+    
+    <item>
+      <title>CX 개요</title>
+      <link>https://www.skycoin.net/ko/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/cx-overview/</guid>
+      <description>CX 소개 프로젝트 레파지토리 문법 어포던스  제한 사항 타입 제한 존재 제한 식별자 제한 사항 경계 제한 사용자 정의 제한사항  엄격한 타이핑 시스템 컴파일 및 해석  읽기 - 평가 - 출력 루프 메타 프로그래밍 명령 스테핑 대화식 디버깅  통합 진화 알고리즘 직렬화  CX 소개 CX는 어포던스 이론에 기반하여 새로운 프로그래밍 패러다임을 수용하도록 설계된 지침 및 프로그래밍 언어입니다. 어포던스는 프로그램이 어떤 어떤 작업을 할 수 있는지, 없는지를 알려줍니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 - 스카이코인 메쉬넷(Meshnet) 프로젝트</title>
+      <link>https://www.skycoin.net/ko/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>소개 라우팅 : 개요 보상 : 보상 프로토콜 소스 라우팅 : 링크 계층 암호화  프로토콜 예시 : Nodes A and B 가능성 있는 개선사항:  IPv4 게이트웨이 : 현재의 IPS를 경유하는  예제 1 예제 2  스카이와이어 데몬 서비스 아키텍쳐  서비스 예제 : 블럭체인 동기화  멀티-홈 라우팅 및 링크 집계 메쉬넷 라우팅 : 저장 및 전송 저장 및 전송 : 용량 활용 저장 및 전송 : 예제  정상 작동의 예 혼잡이 있는 경우의 예 패킷 손실이 있는 경우의 예  소스라우팅 : 대역폭 시간지연 작업 저장 및 전송 : 용량 활용도, 서비스 품질 소스 라우팅 : 다중 경로 모바일 연결 소스 라우팅 : 노드 보안 소스 라우팅 : BGP의 제한 가상 경로 : 스카이와이어 네트워크 토폴로지 규모 소스 라우팅 : 가상 경로, SONET 기술 소스 라우팅 : 비대칭 연결 소스 라우팅 : 경로 검색  소개 스카이와이어의 목표 :</description>
+    </item>
+    
+    <item>
+      <title>스카이코인 개요</title>
+      <link>https://www.skycoin.net/ko/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/skycoin-overview/</guid>
+      <description>스카이코인 소개 비트코인과 현재 블록체인 프로토콜의 발전과 문제점 비트코인에 의한 혁신 비트코인의 주요 문제점 금융 원장을 위한 분산된 합의 시스템에 대한 바람직한 속성 스카이코인 보안 원칙 투명성과 보안 : Obelisk와 공개 브로드캐스트 채널 Obelisk 간단한 바이너리 합의 알고리즘 : 두 블록 사이에서 선택 다중 동시 분기점 선택에 대한 합의  스카이코인 소개 스카이코인은 공개 브로드캐스트 채널이라고 알려진 새로운 암호화 프리미티브를 도입한 기술을 기반으로 합니다. 이것은 또한 Obelisk라고 하는 새로운 합의 알고리즘 구현을 도입하여, 비트코인의 기반이 되는 작업 증명 및 마이닝 프로세스에서 발생하는 신뢰 문제를 완화시켜, 다음과 관련된 여러가지 보안문제를 해결합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

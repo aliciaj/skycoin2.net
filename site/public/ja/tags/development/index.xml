@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Skycoin Blog</title>
+    <link>https://www.skycoin.net/ja/tags/development/</link>
+    <description>Recent content in Development on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ja/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>プロジェクトフォーカスアップデート</title>
+      <link>https://www.skycoin.net/ja/statement/project-focus-update/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/statement/project-focus-update/</guid>
+      <description>モバイルウォレット Skycoinモバイルウォレットが完成しました。
+https://play.google.com/apps/testing/net.skycoin.mobile
+ブランディング、デザイン Skycoinのウェブサイトのコンテンツページを改訂しています。
+また、今、私たちは新しいロゴを用意しています。
+報奨金プログラムは始まって1カ月間経ちます。 もしあなたがSkycoinのビデオを作りたいと考えているならば、Telegramで報奨金プログラムをチェックしてください。
+Skycoin Branding Kit
+Skywire Skywireは動作していますが、skycoin/netネットワーキングライブラリを使用するために書き直しています。
+クラスタ管理（ノードマネージャ）とグローバルネットワークダッシュボードのダッシュボードは現在開発中です。
+そして、ネットワークは、VPN・Socks5プロキシのためのフル機能が一般利用可能になる予定です。 我々は新しいネームスペースにアプリケーションを移動し始めるでしょう。
+新しいウォレット ウォレットのバージョン20がリリースされています。 これはゼロから作り上げた新しいウォレットで、１カ月間前からSkycoinのgithub開発ブランチに置いてあります。
+バージョン20は、古いウォレットより数十倍高速です。
+プロジェクトの焦点  引用: LiskEnterprise on 2017年9月14日, 11:03:15 PM
+このフォーラムは死んでおり、価格は死んでいます&amp;hellip; 何らかの相関関係があるのかも知れません。 なぜなら皆Telegramに移動したので、ここには生産的な会話はありません。 BTCの話は、暗号通貨に携わる人が最初に学ぶことです。 彼らがここで見るべきものは何もありません。
+ 価格は死んでいません。
+私たちが市場にコインを売ると、価格が上がります。
+人々が望む価格で購入することは不可能であり、誰もそのコインを売りたくありません。 Byteballsや他のコインのように、3ヶ月で0.05ドルから600ドルになることができれば、コインを売る理由はありません。 これは、コイン市場がどのように動いているかを過去8年間見てきた人々にとっては、よく理解されている動きです。 特に、金融資産やバブルの心理学において明らかです。
+IOTA、Litecoin、Byteballs、Bitcoinのようなコインはすべて非常に長い潜伏期間を持っていました。
+これは小さなユーザーコミュニティからの急激な成長、１日あたり１％の成長であっても、それが世間一般に認められるまで数年かかります。 ユーザーコミュニティーとテクノロジーは継続的かつ一定の速度で成長するが、資産評価は突然かつ猛烈に行われます（それはコイン、資産、マーケットの認知度があるレベルを突破した途端に行われます）。 それから、数ヶ月以上前に2,3回聞いたことが突然あらゆる場面で現れます。 ユーザーの成長は一定で線形ですが、一般的な認識や注意は閾値のような性格を持っています。 ユーザーコミュニティが100人で、成長率が1％/日であれば、1日に1人の新規ユーザーになります。 私たちのTelegramは過去２カ月間で８倍に増えました。直近の２カ月間はまだ広告やマーケティング活動さえ行っていません。 また、動画も殆どなく、公開されたマーケティングも無く、大きな取引所にはまだ公開されていません。
+価格も問題にはなりません。 ほとんどまともな働きをせず、価値がなく、大規模な運営コスト（負のキャッシュフロー、損失）を抱え、Skycoinの時価総額の120倍で取引しているプロジェクトがそこらじゅうにあります。 実際に開発者がユーザーコミュニティを持ち、実際のテクノロジーやユーザー基盤を保つブロックチェーンプロジェクトはごくわずかです。
+Skycoinのアクティブなユーザ基盤指標は8倍に増加しましたが、価格は安定しています。 価格は最適な指標ではありません。 それは技術、開発、マーケティング、ユーザーコミュニティーに数ヵ月あるいは数年遅れているからです。
+内部的には、価格を指標として使用するのではなく、以下のような要素を見ていきます。
+ 技術開発と準備状況 ユーザーコミュニティの成長 活動とアプリケーションの適応状況 ユーザビリティの向上 マーケティング努力とSkycoinの構造/組織の改善（報奨金プログラムでは何人の人が活躍しているか）  我々がコインとマーケティングを改善するにつれて、人々は売ろうと思わなくなり、Skycoinの取引量は減少しました。 主要なニュースをリリースしても、Skycoinの価格は上昇せず、むしろ市場価格で売却する人が少なくなるため取引量は減少します。 私たちがテスト用にコインを配布したとき、Skycoinの価格は市場に売り出すのと同じ程度に上昇しました。
+通常、係数は負です。 コインをＸだけ市場に売ると、市場価格はYだけ下がるはずです。 しかし、市場価格は上昇します。 マーケット応答関数の係数は、間違った符号を持っています。 「より多くのコインが売れば増えるほど、Skycoinの価格は上がる」</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v4.1 リリースのお知らせ</title>
+      <link>https://www.skycoin.net/ja/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1がついにリリースされました！
+
+変更ログ  ユーザーインターフェイスの改善 サービス検出の実装（他のノードへの接続が自動的に管理されるようになりました） ボードコンテンツのリモート依頼の改善（サービス検出によって実装されました） ボードの作成とホスティングプロセスの簡略化 CXOデータ構造の改善 次のリリースでは、より多くのエキサイティングな機能がもたらされます！ このブログで最新の情報をチェックしてください。  バイナリ これらは、64ビットのWindows、Mac、Linuxで使用できます。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_windows_amd64.zip  ソースコード Githubで利用可能 https://github.com/skycoin/bbs
+コミュニティ クリックしてTelegramでの議論に参加しましょう!</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 リリースのお知らせ</title>
+      <link>https://www.skycoin.net/ja/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1がついにリリースされました！
+変更ログ  最新のCXOへのアップデート より簡単な差分管理のためのCXOデータ構造の再実装 さまざまな方法でデータを表示しやすくするための「ビュー」モジュールの導入 ボードへのto/fromファイルのエクスポート/インポートの実装 ユーザーのフォロー/回避の初期実装 UIの改善（作業中） ボードの自動P2Pリレー  バイナリ これらは、64ビットのWindows、Mac、Linuxで使用できます。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_windows_amd64.zip  ソースコード GitHubで利用可能
+https://github.com/evanlinjin/bbs
+コミュニティ クリックしてTelegramでの議論に参加しましょう!</description>
+    </item>
+    
+  </channel>
+</rss>

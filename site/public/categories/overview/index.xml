@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Skycoin Blog</title>
+    <link>https://www.skycoin.net/categories/overview/</link>
+    <description>Recent content in Overview on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/categories/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obelisk: Skycoin Consensus Algorithm | Information Pages</title>
+      <link>https://www.skycoin.net/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Consensus highlights  Why consensus High scalability and low-energy consumption Robust to coordinated attacks The “51-percent Attack” Hidden IP addresses Independence of clock synchronization Two type of nodes: Consensus and Block-making  How Skycoin Consensus Algorithm works References  Consensus highlights Why consensus Skycoin Consensus Algorithm (&amp;ldquo;Obelisk&amp;rdquo;) synchronizes the state of Skycoin blockchain across all the network nodes. This results in consistent accounting, i.e. when calculating coin balance for a given public key (or address) yields same value at each node that performed the calculation.</description>
+    </item>
+    
+    <item>
+      <title>CX Overview</title>
+      <link>https://www.skycoin.net/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/cx-overview/</guid>
+      <description>CX Introduction Project&amp;rsquo;s Repository Syntax Affordances  Arity Restrictions Type Restrictions Existential Restrictions Identifier Restrictions Boundaries Restrictions User-defined Restrictions  Strict Typing System Compiled and Interpreted  Read-Eval-Print Loop Meta-programming Commands Stepping Interactive Debugging  Integrated Evolutionary Algorithm Serialization  CX Introduction CX is both a specification and a programming language designed to embrace a new programming paradigm based on the concept of affordances. Affordances allow a program to know what actions can and cannnot be done by it.</description>
+    </item>
+    
+    <item>
+      <title>Skywire - Skycoin Meshnet Project</title>
+      <link>https://www.skycoin.net/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>Introduction Routing: Overview Incentives: Payment Protocol Source Routing: Link Layer Encryption  Example Protocol: Nodes A and B Possible Improvements:  IPv4 Gateway: Bypassing Existing ISPs  Example One Example Two  Skywire Daemon Services Architecture  Example Service: Blockchain Sync  Finding Peers Sending and Receiving Messages   Multi-Home Routing and Link Aggregation Meshnet Routing: Store and Forward Store and Forward: Capacity Utilization Store and Forward: Examples  Example of normal operation Example with congestion Example with packet loss  Store and Forward: Bandwidth Latency Product Store and Forward: Capacity Utilization, Quality and Service Source Routing: Multi-Route Mobile Connectivity Source Routing: Guard Nodes Source Routing: Limitations of BGP Virtual Routes: Skywire Network Topology at Scale Source Routing: Virtual Routes, SONET Topology Source Routing: Asymmetric Connectivity Source Routing: Route Discovery  Introduction Skywire objectives:</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Overview</title>
+      <link>https://www.skycoin.net/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/skycoin-overview/</guid>
+      <description>Skycoin Introduction Innovations And Flaws With Bitcoin And The Current Blockchain Protocols Innovations Produced By Bitcoin Major Flaws Of Bitcoin Desirable Properties For Systems Of Distributed Consensus For Financial Ledgers Skycoin Security Philosophy Transparency And Security: Obelisk And Public Broadcast Channels Obelisk Simple Binary Consensus Algorithm: Choosing Between Two Blocks Consensus On Multiple Concurrent Branch Choices  Skycoin Introduction Skycoin is based on technology which introduces a new cryptographic primitive known as a public broadcast channel.</description>
+    </item>
+    
+  </channel>
+</rss>

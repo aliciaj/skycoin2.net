@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Net Neutrality on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/categories/net-neutrality/</link>
+    <description>Recent content in Net Neutrality on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/categories/net-neutrality/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin может помочь преодолеть последствия отмены сетевого нейтралитета</title>
+      <link>https://www.skycoin.net/ru/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</guid>
+      <description>В 2015 году FCC установила правила сетевого нейтралитета, запрещающие провайдерам интернет-услуг (ISP) устанавливать приоритет одних ресурсов над другими, и поощряющие бесплатный и открытый Интернет для процветания компаний и предпринимателей.
+Теперь же, при назначенным Трампом председателе FCC Аджит Паи, намечается голосование по отмене правил сетевого нейтралитета. Пай был назначен на второй пятилетний срок 2 октября, несмотря на широкомасштабные протесты против проводимой им политики. Петиции с десятками тысяч подписей не помогли предотвратить голосование.</description>
+    </item>
+    
+  </channel>
+</rss>

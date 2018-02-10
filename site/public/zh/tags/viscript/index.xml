@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Viscript on 天空币博客</title>
+    <link>https://www.skycoin.net/zh/tags/viscript/</link>
+    <description>Recent content in Viscript on 天空币博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/zh/tags/viscript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire 及 Viscript</title>
+      <link>https://www.skycoin.net/zh/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/skywire/skywire-and-viscript/</guid>
+      <description>介绍Viscript Viscript Viscript 是一个跨平台脚本语言，用于应用程序启动器和集群管理。 它有一个基于信号库的信号服务器，因此可以管理信号客户端，如节点和Skywire中的组件。 它可以在GUI模式或无头模式(注：无头模式意味没有显示器、键盘、鼠标等）下运行。
+Viscript GUI Screenshot: 我们可以在config.yaml文件中添加应用程序配置，比如meshnet-socks-server：
+ meshnet-socks-server: daemon: true desc: DESCRIPTION GOES HERE path: bin/meshnet/meshnet-run-socks-server default_args: [] help: | [1] Text name of app, must be unique [2] Node address which app will be talked with. ex 101.202.34.56:9000 [3] Port which socks server will use for connecting with target host. ex 8000 Full Example Command: start meshnet-socks-server sockssrv0 101.202.34.56:9000 8001  重启viscript后，我们可以通过命令应用检查那些通过viscript启动的应用程序。
+正如你可以在屏幕截图中看到的，我们可以使用短命令（apptracker 127.0.0.1:20000）启动应用程序。</description>
+    </item>
+    
+  </channel>
+</rss>

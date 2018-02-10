@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/development/</link>
+    <description>Recent content in Development on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS v5.0 анонс релиза</title>
+      <link>https://www.skycoin.net/ru/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/bbs/bbs-release-v5.0/</guid>
+      <description>Наконец-то мы выпустили Skycoin BBS v5.0 - и с множеством изменений под капотом!
+Тонкий клиент Наиболее очевидным изменением является введение тонкого клиента. Теперь вы можете получить доступ к Skycoin BBS без настройки узла! Просто перейдите по ссылке bbs.skycoin.net.
+В предыдущих версиях можно (и нужно) получать доступ или отправлять контент только через веб-интерфейс пользователя, который обслуживается локально. Поскольку этот веб-интерфейс (и API, который он вызывает) имеет прямой контроль над самим узлом и подписывает контент с закрытыми ключами, которые хранятся в нём (или на стороне сервера), то нецелесообразно подвергать его публичности.</description>
+    </item>
+    
+    <item>
+      <title>Фокус проекта обновлен</title>
+      <link>https://www.skycoin.net/ru/statement/project-focus-update/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/project-focus-update/</guid>
+      <description>Мобильный кошелек Готов мобильный кошелек Skycoin.
+https://play.google.com/apps/testing/net.skycoin.mobile
+Бренд, дизайн Обновляется содержимое сайта Skycoin.
+У нас появился новый логотип.
+Программа вознаграждений работает уже месяц. Если кто-то хочет сделать видео про Skycoin, проверьте канал программы вознаграждений в Telegram.
+Бренд Skycoin, ассеты
+Skywire Skywire работает, но нужно переписать некоторые библиотеки для использования связи сеть/skycoin.
+В настоящее время разрабатывается панель управления для мониторинга кластеров (для узлов) и панель управления для глобальной сети.
+Затем сеть будет подготовлена для использования в качестве VPN, шлюзов Socks5 и мы начнем переводить приложение в пространство имен новой сети.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 Описание релиза</title>
+      <link>https://www.skycoin.net/ru/bbs/skycoin-bbs-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/bbs/skycoin-bbs-v3.1/</guid>
+      <description>Опубликован финальный релиз Skycoin BBS v3.1!
+Изменения:  Обновлена и подготовлена к использованию последняя версия системы CXO. Обновлена реализация структуры данных CXO для упрощения управлением изменениями. Введен модуль views для упрощения реализации различных способов представления данных. Реализован импорт/экспорт досок объявлений в/из файла Реализованы функции &amp;ldquo;отслеживать&amp;rdquo; (follow) и &amp;ldquo;избегать&amp;rdquo; определенных пользователей Улучшен UI (пользовательский интерфейс, работа продолжается). Автоматизирована &amp;ldquo;peer-to-peer&amp;rdquo; передача веток обсуждений.  Исполняемые файлы Выложены версии для 64бит windows, mac и linux.</description>
+    </item>
+    
+    <item>
+      <title>Skywire and Viscript</title>
+      <link>https://www.skycoin.net/ru/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/skywire/skywire-and-viscript/</guid>
+      <description>Введение Viscript Viscript это кроссплатформенный CLI, а также лаунчер для приложений и панель управления кластерами. Он основан на библиотеке сигналов в качестве сигнального сервера, поэтому может управлять сигнальными клиентами, такими как узел (нода) и компоненты в Skywire. Он может быть запущен либо в режиме графического интерфейса (GUI), либо в безголовом режиме (headless mode).
+Скриншот Viscript GUI: Мы можем добавить конфигурацию приложения в файл config.yaml, как meshnet-socks-server:
+ meshnet-socks-server: daemon: true desc: DESCRIPTION GOES HERE path: bin/meshnet/meshnet-run-socks-server default_args: [] help: | [1] Текстовое наименование приложения (должно быть уникальным).</description>
+    </item>
+    
+  </channel>
+</rss>

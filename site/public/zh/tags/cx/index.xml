@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CX on 天空币博客</title>
+    <link>https://www.skycoin.net/zh/tags/cx/</link>
+    <description>Recent content in CX on 天空币博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/zh/tags/cx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CX教程：使用可供性建立一个小型文字冒险游戏</title>
+      <link>https://www.skycoin.net/zh/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>引言 质询 - 响应架构 启示系统 对象 结论  引言 本教程提供一个基于文本的“游戏”（用户和程序没有相互影响，同时不能影响游戏之中人物的决策），它使用一个挑战-响应架构 ，以确定哪些是游戏中的人物可以做的动作。完整的源代码中可以在 CX的存储库 找到，在文件 examples/text-based-adventure.cx.
+游戏描述了旅行者从怪物的追踪中逃跑的冒险（万圣节快到了!）。如果旅行者能够生存若干小时（当然，这只是一个在*Loop循环*中的迭代），怪物就会停止追逐旅行者。以下是一个例子：
+旅行者继续沿着车道，忘记了身上的痛。 嚎叫和咆哮，怪物来了。 勇敢进入眼前，希望再多活一天。 天真，甚至愚蠢，但旅客的行为使这个怪物麻木。 北，东，西，南。任何方向都很好， 只要没有怪物可以找到我。 嚎叫和咆哮，怪物来了。 旅客逃跑了，懦弱让他活了一天。 你活了下来  如果旅客决定和怪物决一死战但他的英勇尝试失败了的话，游戏结束。游戏结局的一个例子是：
+北，东，西，南。任何方向都很好， 只要没有怪物可以找到我。 嚎叫和咆哮，怪物来了。 勇敢进入眼前，希望再多活一天。 但失败的就是失败，突然之间，这个冒险就结束了。 你死了。 Call&#39;s State: flag:	true nonAssign_32:	&amp;quot;&amp;quot; halt() Arguments: 0: &amp;quot;You died.&amp;quot; 65: call to halt  正如你所看到的，如果你死了，将引发程序错误（这是合适的，就如程序员看见了一个程序错误一般的可怕）。
+质询 - 响应架构 在此架构下，一个的问题提出了,不同的代理（在这种情况下，是一个函数）必须回答这个问题。有一个简单的问题“谁能在这一刻被执行?”所有允许执行的函数都可以。
+下面的函数原型表示可以旅行者的冒险过程中发生的可能的行动。
+func walk (flag bool) () {} func noise (flag bool) () {} func consider (flag bool) () {} func chance (flag bool) () {} func fightResult (flag bool) () {} func theEnd (flag bool) () {}  启示系统 另一个函数必须先和函数调用协调。在这种情况下，CX的启示系统会用来确定操作是否允许运行或否。</description>
+    </item>
+    
+    <item>
+      <title>CX Overview</title>
+      <link>https://www.skycoin.net/zh/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/overview/cx-overview/</guid>
+      <description>CX 简介 项目仓库 语法 Affordances  数量限制 类型限制 存在性限制 标识符限制 边界限制 用户自定义限制  严格的类型系统 编译和解释  读-求值-打印循环 元编程命令 步进 交互性调试  集成的进化算法 序列化  CX 简介 CX既是一种规范又是一门编程语言，旨在基于affordance(译者注: affordance没有好的中文翻译词，保留原单词)概念来接受新的编程范式。affordances允许程序知道它可以做什么不可以做什么。我们可以问程序什么样的参数可以被传给函数，程序就会返回一系列可能的动作。当选定这一系列动作中哪个是合适的，我们就可以在其中做出一个选择，然后程序会按照选择的动作执行。由于CX的affordances系统，基因编程算法就可以建立在其基础之上并作为一个原生函数，这可以用来优化程序的运行时结构。
+CX规范指出程序员对编译器和解释器必须是可访问的。解释器可以通过读取-求值-打印(read-eval-print)的这一循环来访问，在这个循环里面，程序员可以交互式的增加和删除程序里面的元素。一旦程序运行结束，它可以被编译出来以增强程序的性能。
+最后，一个CX程序可以被完全的序列化为字节数组，并保持程序运行状态和结构。被序列化的程序之后又可以反序列化，并可以继续运行在安装有CX解释器/编译器的设备上。
+在接下来的章节中，会对在上述段落中讨论的CX的特性进行更加详细的描述。
+项目仓库 这个项目的源码可以在Github仓库下载:https://github.com/skycoin/cx. 该仓库包含了说明书，文档，例子和源码本身。
+语法 正如在概述中提到，CX既是一种规范又是一门编程语言。 CX规范并没有对语法进行限定死=，而是规定了CX规范的结构和满足CX规范的CX方言必须实现的过程（process）。因此，可以实现两种像这样CX方言，一种类Lisp语法，一种类C语法。这种底层语言叫做基于CX的语言，或者叫做“基础语言”。 在文档中，有一种实现用来展示CX规范的能力，它的目的不仅仅是作为学术工具，而是作为一门完整并且健壮的通用编程语言。
+CX在本文档中的目标是尽可能做到和Go语言语法相似。
+Affordances 程序员在构建程序的时候往往需要做出大量的决策，比如说，函数需要接受和返回多少个参数，需要哪些语句才能得到想要的功能，需要给函数传递什么参数，诸如此类。CX规范中的Affordances系统可以通过查询得到一系列可能的可应用在某个元素（element)的动作(action)，其中函数（function)，结构（struct)，模块 （module）和表达式(expression)都是元素的例子。
+没有一系列的规则和事实指导什么是必要的逻辑和程序背后的意图，人们至少可以决定一些保证程序语义正确的基本约束。affordance系统提供这样的第一层约束。接下来会详细解释。
+数量限制 CX中的表达式可以返回多个值。由于接受表达式输出的参数需要匹配表达式操作符的输出数量，这对affordance系统构成了一个挑战。
+out1, out2, ..., outN := op(inp1, inp2, ..., inpM)  如果上面的例子是正确的，那么*op*需要输出*N*个参数。这个问题可能会变得更有挑战性如果我们考虑到*op*的定义可以由affordance系统自己改变或者被将来的用户改变。只要*op*的定义改变了，新的affordances可以应用到任何使用*op*作为它的操作符的表达式。因为接收*op*的输出参数的变量个数现在已经不匹配了。
+从之前的推理来看，如果接收的参数和表达式的操作符输出的参数个数相匹配，那么增加新的接收变量的操作将永远不会执行。
+数量限制同样适用于表达式中的输入参数，例如，如果函数调用已经定义了所有的输入参数，那么affordance系统不应该再列出增加另一个参数作为可能的行为。同样，如果表达式试着调用操作符的参数少于所需参数，那么affordance系统在需要的时候，应该告诉程序员新增一个函数调用的参数也是可行的。
+Example:
+注意: 字符串连接功能还未实现。同样，print函数总是在要被打印的字符串后面增加一个新行。在将来的CX的实现版本中会解决这些问题。
+var age i32 = 18 var steps i32 = 23 func advance (direction str, numberSteps i32) () { printStr(&amp;quot;Advancing:&amp;quot;) printStr(direction) printStr(&amp;quot;Number of steps:&amp;quot;) printI32(numberSteps) } func main () () { advance(&amp;quot;North&amp;quot;) }  上面的例子中，*main*函数中的*advance*调用缺少一个参数。如果查询affordance系统，系统会列出一些列行为类似于:</description>
+    </item>
+    
+  </channel>
+</rss>

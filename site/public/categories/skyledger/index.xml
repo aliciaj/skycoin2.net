@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skyledger on Skycoin Blog</title>
+    <link>https://www.skycoin.net/categories/skyledger/</link>
+    <description>Recent content in Skyledger on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/categories/skyledger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solar Bankers is One Example of a Company Adopting the Revolutionary Skycoin Blockchain</title>
+      <link>https://www.skycoin.net/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</guid>
+      <description>Better speed, better security, better privacy – Skycoin offers all these advantages through its open-source platform. The innovative technology that powers Skycoin is available to all. Today, more and more companies are taking note of Skycoin’s benefits and using it to build their businesses.
+One example is Solar Bankers, a revolutionary new energy company. Solar Bankers is using the power of blockchain to decentralize the energy sector. With Solar Bankers, users can generate solar electricity at their homes through high-tech, patented solar devices.</description>
+    </item>
+    
+    <item>
+      <title>Skyledger: Blockchain’s Real Future</title>
+      <link>https://www.skycoin.net/statement/skyledger-blockchains-real-future/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skyledger-blockchains-real-future/</guid>
+      <description>Bitcoin was supposed to usher in a new economy built on decentralized blockchain technology – but it didn’t. And it can’t. Bitcoin has major technical flaws that prevent it from ever achieving its original goals. Built on faulty concepts and manipulated to the point of corruption, this cryptocurrency is incapable of creating the new world its users hoped for.
+Skycoin developers realized that Bitcoin was destined to fail, and set out to create a solution.</description>
+    </item>
+    
+  </channel>
+</rss>

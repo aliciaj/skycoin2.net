@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Viscript on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/viscript/</link>
+    <description>Recent content in Viscript on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/viscript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire and Viscript</title>
+      <link>https://www.skycoin.net/ru/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/skywire/skywire-and-viscript/</guid>
+      <description>Введение Viscript Viscript это кроссплатформенный CLI, а также лаунчер для приложений и панель управления кластерами. Он основан на библиотеке сигналов в качестве сигнального сервера, поэтому может управлять сигнальными клиентами, такими как узел (нода) и компоненты в Skywire. Он может быть запущен либо в режиме графического интерфейса (GUI), либо в безголовом режиме (headless mode).
+Скриншот Viscript GUI: Мы можем добавить конфигурацию приложения в файл config.yaml, как meshnet-socks-server:
+ meshnet-socks-server: daemon: true desc: DESCRIPTION GOES HERE path: bin/meshnet/meshnet-run-socks-server default_args: [] help: | [1] Текстовое наименование приложения (должно быть уникальным).</description>
+    </item>
+    
+  </channel>
+</rss>

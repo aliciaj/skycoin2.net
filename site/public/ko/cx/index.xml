@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cxes on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/cx/</link>
+    <description>Recent content in Cxes on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/cx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CX 튜토리얼 : 어포던스를 이용한 소규모 텍스트 기반 어드벤처 구축</title>
+      <link>https://www.skycoin.net/ko/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>소개 시도-응답  어포던스 시스템 객체 결론  소개 이 튜토리얼은 텍스트 기반 &amp;ldquo;게임&amp;rdquo;(사용자가 프로그램과 상호작용하지 않으며, 캐릭터의 결정에 영향을 줄 수 없으)으로 설명할 수 있으며, 이 게임은 시도-응답 아키텍처를 사용하여 게임의 캐릭터가 할 수 있는 행동을 결정합니다. 전체 소스코드는 CX 저장소의, examples/text-based-adventure.cx 파일에서 확인할 수 있습니다..
+이 게임은 괴물을 피해다니는 여행자의 모험을 묘사합니다.(할로윈이 다음달이군요, 드디어) 만약 여행자가 정해진 시간 안에 살아남는다면 (물론, 이것은 단순한 for 루프의 반복입니다만), 괴물은 여행자를 쫓는 것을 멈출 것입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

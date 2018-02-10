@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CX on Skycoin Blog</title>
+    <link>https://www.skycoin.net/ja/tags/cx/</link>
+    <description>Recent content in CX on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ja/tags/cx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CXチュートリアル: アフォーダンスを使って小さなテキストベースのアドベンチャーを構築する</title>
+      <link>https://www.skycoin.net/ja/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>イントロダクション チャレンジ-レスポンス アーキテクチャ アフォーダンスシステム オブジェクト 結論  イントロダクション このチュートリアルでは、チャレンジ-レスポンス アーキテクチャを使用して、ゲームのキャラクターが実行可能なアクションが何であるかを判断する、テキストベースの「ゲーム」（ユーザーがプログラムとやりとりすることはなく、キャラクターの意思決定に影響を与えることはできない）を示します 。 完全なソースコードは、 CXのリポジトリの*examples/text-based-adventure.cx*ファイルにあります。
+このゲームは、モンスターから逃れる旅行者の冒険を描いています（ハロウィンはとうとう来月に迫っています）。 旅行者が特定の時間を生き抜いた場合（これは*for*ループの繰り返しです）、モンスターは旅行者の追跡をやめます。 セッションの例は次のとおりです。
+The traveler keeps following the lane, making sure to ignore any pain. Howling and growling, the monster is coming. Bravery comes into sight, in the hope of living for another night. Naive, and even dumb, but the traveler&#39;s act leaves the monster numb. North, east, west, south. Any direction is good, as long as no monster can be found.</description>
+    </item>
+    
+    <item>
+      <title>CXの概要</title>
+      <link>https://www.skycoin.net/ja/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/overview/cx-overview/</guid>
+      <description>序文 プロジェクトのリポジトリ 構文 アフォーダンス  引数の個数の制約 型の制約 存在の制約 識別子の制約 境界の制約 ユーザー定義の制約  強い型付けシステム コンパイルと逐次実行  Read-Eval-Print Loop メタプログラミングコマンド ステッピング 対話的なデバッグ  統合された進化的アルゴリズム シリアライゼーション  序文 CXとは、アフォーダンスの概念に基づいた新しいプログラミングパラダイムを採用して設計された、仕様とプログラミング言語の両方を指します。 アフォーダンスは、何ができて、何ができないのかをプログラムが知ることを可能にします。 たとえば、関数にどのような引数を送ることができるかをプログラムに照会することができ、プログラムは可能なアクションのリストを返します。 リストからどのようなアクションが適切であるかを決定した後、選択肢の1つを選び、そのアクションをプログラムが実行します。 CXのアフォーダンスシステムの重要な要素は、遺伝的プログラミングアルゴリズムが構築されると、実行時にプログラムの構造を最適化するために使用できるネイティブ関数として提供される事です。
+CXの仕様では、プログラマはコンパイラとインタプリタの両方にアクセス可能でなければならないとされています。 インタプリタは、プログラマが対話的に要素をプログラムに追加したり削除したりできるREPL(Read-eval-print loop)を通じてアクセスできます。 プログラムが完成すると、そのパフォーマンスを向上させるためにコンパイルすることができます。
+CXの型システムは非常に厳格です。 唯一の &amp;ldquo;暗黙の型変換&amp;rdquo;は、パーサーが整数、浮動小数点数、ブール値、文字列、または配列を判別するときに発生します。 たとえば、関数が64ビット整数を必要とする場合、明示的に必要な型に変換するためには、キャスト関数を使用する必要があります。
+最後に、CXプログラムをバイト配列に完全にシリアライズして、実行状態と構造を維持することができます。 このシリアライズされたバージョンのプログラムは、後でデシリアライズして、CXインタープリタ/コンパイラを持つ任意のデバイスでその実行を再開することができます。
+以下のセクションでは、上で説明したCXの機能について詳しく説明します。
+プロジェクトのリポジトリ プロジェクトのソースコードは、Githubリポジトリhttps://github.com/skycoin/cx からダウンロードできます。 リポジトリには、仕様ファイル、ドキュメント、サンプル、およびソースコードが含まれています。
+構文 はじめに述べたように、CXは仕様とプログラミング言語の両方を指します。 CX仕様は構文を規定するのではなく、むしろCXとみなすためにCX言語が実装しなければならない構造とプロセスを規定しています。 結果として、2つのCX言語を実装することができ、1つはLispのような構文で、もう1つはCのような構文です。 この基礎となる言語は、CX Base、すなわち「基本言語」と呼ばれています。 このドキュメントでは、実装は仕様の機能を示すために使用されていますが、その目的は学術ツールとしての機能だけでなく、一般的な目的に使用できる完全で堅牢な言語となることです。
+このドキュメントで使用されているCXは、Goの構文にできるだけ似た構文を持つことを目標としています。
+アフォーダンス プログラマは、関数が受け取るパラメータの数、戻すパラメータの数、目的の機能を得るために必要な記述、文関数にパラメータとして送る必要がある引数など、プログラムを構築する際に非常に多くの決定をする必要があります。 CXのアフォーダンスシステムでは、要素に適用できる可能なアクションのリストを取得するための照会を受けることができます。 この文脈では、要素の例は、関数、構造体、モジュール、および式です。
+プログラムの背後にある、ロジックと目的が何であるべきかを指示する一連のルールとファクトを持たずに、少なくともプログラムが意味論的に正しいことを保証する基本的な制約をいくつか決めることができます。 アフォーダンスシステムは、第1のフィルタリング層として、以下で説明する制約を提供します。
+引数の個数の制約 CXの式は複数の値を返すことができます。 これは、式の出力引数を受け取る変数の数が、式の演算子で定義された出力の数と一致する必要があるため、アフォーダンスシステムの仕事となります。
+out1, out2, ..., outN := op(inp1, inp2, .</description>
+    </item>
+    
+  </channel>
+</rss>

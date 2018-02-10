@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CX on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/tags/cx/</link>
+    <description>Recent content in CX on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/tags/cx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vue d&#39;ensemble de CX</title>
+      <link>https://www.skycoin.net/fr/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/overview/cx-overview/</guid>
+      <description>Introduction du CX Dépot du projet Syntaxe Attributions  Restrictions d&amp;rsquo;arité Restrictions de type Restrictions existentielles Restrictions d&amp;rsquo;identifiant Restrictions de limite Restrictions définies par l&amp;rsquo;utilisateur  Système de typage strict Compilé et interprété  Boucle Lecture-Evaluation-Affichage Commandes de méta-programmation Stepping Débogage interactif  Algorithme évolutif intégré Serialisation  Introduction de CX CX est une spécification et un language de programmation conçu pour embracer un nouveau paradigme de language basé sur le concept d&amp;rsquo;attribution.</description>
+    </item>
+    
+  </channel>
+</rss>

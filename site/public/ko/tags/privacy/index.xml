@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/privacy/</link>
+    <description>Recent content in Privacy on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>메쉬넷의 대기시간과 개인정보보호에 관한 질문</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>이 글은 스카이와이로 불려지기 전의 스카이와이어 초기 형성에 대해 설명합니다. 2014년 8월 9일 자 비트코인 토크 게시글에서 인용하였습니다.
+출처 : CraigM 2014년 8월 9일, 오전 07:20:24
+ 메쉬넷은 tor보다 더 좋은 개인정보보호 도구이나, 대기시간이 더 적은 것이 맞습니까?
+모든 노드 운영자가 그들의 노드를 통해 데이터를 보내는 모든 사람에게 모든 트랜잭션을 설명하는 상세하며, 공개된 로그(개인 블록체인)를 기록하도록 강제하지 않습니까? 이것은 당신이 연결에 접속할 필요가 없다는 것을 제외하고, 제3자가 트래픽 관련 공격을 tor에서와 비슷하게 할 수 있는 것처럼 보입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

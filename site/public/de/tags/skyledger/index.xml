@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skyledger on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/tags/skyledger/</link>
+    <description>Recent content in Skyledger on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/tags/skyledger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skyledger: Die wahre Zukunft der Blockchain</title>
+      <link>https://www.skycoin.net/de/statement/skyledger-blockchains-real-future/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/statement/skyledger-blockchains-real-future/</guid>
+      <description>Bitcoin sollte eine neue Ökonomie, basierend auf dezentralisierter Blockchaintechnologie, einführen - hat und wird er aber nicht. Bitcoin hat elementare technische Mängel die ihn davon abhalten jemals seine ursprünglichen Ziele zu erreichen. Gebaut auf fehlerhaften Konzepten und manipuliert in einem Maße, das schon an Korruption grenzt, ist diese Währung nicht fähig die neue Welt zu erschaffen, auf welche die Nutzer gehofft haben.
+Die Entwickler von Skycoin haben verstanden, dass Bitcoin dazu verdammt war zu scheitern und haben sich demzufolge aufgemacht eine Lösung zu kreieren.</description>
+    </item>
+    
+  </channel>
+</rss>

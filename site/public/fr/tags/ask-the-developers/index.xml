@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ask the Developers on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/tags/ask-the-developers/</link>
+    <description>Recent content in Ask the Developers on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/tags/ask-the-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Question à propos de la Latence et la confidentialité du Meshnet </title>
+      <link>https://www.skycoin.net/fr/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>*Cette publication fait référence à Skywire à ses débuts, avant qu&amp;rsquo;il ne soit nommé Skywire.Elle est tirée d&amp;rsquo;une publication parue sur Bitcointalk le 19 Aout 2014.
+Citation de : CraigM le 9 aout 2014, 7:20:24 AM
+ Le Meshnet est prévu pour être un outil de confidentialité avec des avantages comparables à TOR, mais avec une latence plus faible. C&amp;rsquo;est correct?
+Le Meshnet est prévu pour permettre le financement des nœuds à travers des micro-paiements en Skycoin afin de couvrir les couts de la bande passante, correct?</description>
+    </item>
+    
+  </channel>
+</rss>

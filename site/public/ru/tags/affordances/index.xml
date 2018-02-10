@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Affordances on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/affordances/</link>
+    <description>Recent content in Affordances on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/affordances/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CX Руководство: Использование доступностей (affordances) при создании небольшой текстовой игры-приключения</title>
+      <link>https://www.skycoin.net/ru/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>Введение Архитектура &amp;ldquo;вызов-ответ&amp;rdquo; Affordance System Объекты Заключение  Введение В данном руководстве представлена текстовая «игра» (где пользователь не взаимодействует с программой напрямую и не может влиять на решения персонажа), которая использует архитектуру &amp;ldquo;вызов-ответ&amp;rdquo;, чтобы определить какие действия герой игры может предпринять. Исходный код можно найти в CX&amp;rsquo;s repository, файл - examples/text-based-adventure.cx.
+В игре описывается приключение путешественника, который убегает от монстра (в следующем месяце хэллоуин, в конце концов). Если путешественник выживает на протяжении определенного количество часов (это просто итерация в цикле for), монстр перестанет преследовать путешественника.</description>
+    </item>
+    
+  </channel>
+</rss>
