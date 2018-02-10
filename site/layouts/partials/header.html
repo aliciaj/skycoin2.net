@@ -1,25 +1,27 @@
 <header class="site-header">
-	<a href="/" class="logo-{{ .logoColor }}">Skycoin</a>
+	<div class="logo-container">
+		<a href="/" class="logo logo-{{ .logoColor }}"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			{{ range .context.Site.Menus.main }}
+				<li>
+					<a class="" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+				</li>
+			{{ end }}
+		</ul>
+	</nav>
+		
 	<div class="js-dropdown header-dropdown">
-		{{ $currentLang := .Site.Language.LanguageName }}
+		{{ $currentLang := .context.Site.Language.LanguageName }}
 		<div class="js-dropdown-current header-dropdown__current">{{ $currentLang }}</div>
 		<div class="js-dropdown-list header-dropdown__list">
-		{{ range .Site.Menus.languages }}
+		{{ range .context.Site.Menus.languages }}
 			<a class="js-dropdown-item header-dropdown__item {{ if eq $currentLang .Name }} header-dropdown__item_active {{ end }}" href="{{ .URL }}">{{ string .Name }}</a>
 		{{ end }}
 		</div>
 	</div>
-	<a href="{{ .Site.Params.rss }}" target="_blank" class="btn btn--pill btn--outline btn--blue header__btn">Subscribe (RSS)</a>
+	<a href="{{ .context.Site.Params.rss }}" target="_blank" class="btn btn--pill btn--outline btn--blue header__btn">Subscribe (RSS)</a>
 	</div>
-
-	<a href="/">
-	<img class="logo" alt="Skycoin Blog" src="{{ "/images/logo-outlined.svg" | relURL }}" />
-	</a>
-
-	<nav class="nav">
-	{{ $currentPage := . }}
-	{{ range .Site.Menus.main }}
-		<a class="nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}nav__item--active{{end}}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-	{{ end }}
-	</nav>
+	
 </header>

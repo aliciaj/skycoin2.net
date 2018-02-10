@@ -1,5 +1,5 @@
 header {
-	padding: 0 var(--standard-padding-mobile);
+	padding: 1.5em var(--standard-padding-mobile) var(--standard-padding-mobile);
 }
 
 .logo {
@@ -10,10 +10,35 @@ nav {
 	width: 75%;
 }
 
+.logo {
+	background-size: 100%;
+	display: block;
+	height: 36px;
+	position: relative;
+	width: 150px;
+}
+
+.logo-dark {
+	background: url("/images/logo.svg") 0 0 no-repeat;
+}
+
+.logo-light {
+	background: url("/images/logo-white.svg") 0 0 no-repeat;
+}
+
+.logo span {
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+
 @media(--large) {
 	header {
 		margin: 0 auto;
 		max-width: var(--max-width);
-		padding: 0 var(--standard-padding-desktop);
+		padding: 44px var(--standard-padding-desktop) var(--standard-padding-desktop);
 	}
 }
