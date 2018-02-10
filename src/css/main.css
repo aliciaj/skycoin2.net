@@ -1,2 +1,11 @@
+/* Variables */
 @import "imports/fonts.css";
 @import "imports/variables.css";
+
+/* Base styling */
+@import "imports/base.css";
+
+/* Partials */
+@import "partials/navigation.css";
+
+/* Pages */

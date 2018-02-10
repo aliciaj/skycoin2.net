@@ -23,20 +23,35 @@ pygmentsStyle = "murphy"
     note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Posts"
-    identifier = "posts"
+    name = "Technology"
+    identifier = "technology"
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "Categories"
-    identifier = "categories"
-    url = "/categories/"
+    name = "Whitepapers"
+    identifier = "whitepapers"
+    url = "/whitepapers/"
     weight = 2
 [[menu.main]]
-    name = "Tags"
-    identifier = "tags"
-    url = "/tags/"
+    name = "Roadmap"
+    identifier = "roadmap"
+    url = "/roadmap/"
     weight = 3
+[[menu.main]]
+    name = "Downloads"
+    identifier = "downloads"
+    url = "/downloads/"
+    weight = 4
+[[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    url = "/blog/"
+    weight = 5
+[[menu.main]]
+    name = "Buy"
+    identifier = "markets"
+    url = "/markets/"
+    weight = 6
 
 [[menu.footer]]
   name = "skycoin.net"

@@ -1,9 +1,11 @@
 ![skycoin.net logo](https://user-images.githubusercontent.com/26845312/32426914-084fdf62-c283-11e7-9d7e-9f35568138b4.png)
 
 skycoin.net
-============
+===========
 
 https://www.skycoin.net/
+
+[![Build Status](https://travis-ci.org/skycoin/skycoin.net.svg?branch=master)](https://travis-ci.org/skycoin/skycoin.net)
 
 This website uses [hugo](https://gohugo.io/) to generate a static website from markdown files.
 
@@ -19,12 +21,12 @@ If you are here for the translation bounty program and need help submitting a tr
 Content: Create or Amend Posts
 ==============================
 
-Look in the `content/` folder.  Posts are written in markdown.
+Look in the `site/content/` folder.  Posts are written in markdown.
 
 Locally, the blog can be previewed with:
 
 ```sh
-hugo serve
+npm start
 ```
 
 Make sure that your posts compile without error. Check the formatting.
@@ -41,30 +43,27 @@ https://gohugo.io/content-management/multilingual/
 If the language is not currently supported by the blog,
 add a language config statement to config.toml (see the file for an example).
 
-The blog posts are in a subdirectory in `content/`.
+The blog posts are in a subdirectory in `site/content/`.
 To add a translation of an existing post, change the extension from `.md` to `.$LANG.md`.
 
-For example, to add a German translation of `content/statement/Skycoin Distribution.md`,
-name the file `content/statement/Skycoin Distribution.de.md`.
+For example, to add a German translation of `site/content/statement/Skycoin Distribution.md`,
+name the file `site/content/statement/Skycoin Distribution.de.md`.
 
-Themes: Layout and Styling
-==========================
+Development: Layout and Styling
+===============================
 
-Skycoin uses a custom hugo theme with styling produced using SCSS, when editing any styles you **must** edit the `.scss` files only. If any changes are made to the SCSS partials within `static/css/scss/`, you must re-compile with the following commands.
+Skycoin uses a modified Hugo theme with styling produced using post-css. Layout files are located in `site/layouts`, CSS is located at `src/css`, and JavaScript is in `src/js`. All should be getting bundled and compiled with the following commands.
 
-Move into the theme directory
+Install the dependencies
 ```sh
-  cd themes/skycoin/
+	yarn
+	# or
+	npm install
 ```
 
-Install the dependencies such as `node-sass`
+Start your local development server
 ```sh
-  yarn
-  # or
-  npm install
-```
-
-Compile and build the SCSS
-```sh
-  yarn build:css
+	npm start
+	# or
+	yarn start
 ```
