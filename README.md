@@ -1,11 +1,11 @@
-![skycoin blog logo](https://user-images.githubusercontent.com/26845312/32426756-27c29fd4-c282-11e7-8c9b-b0aa179a03ab.png)
+![skycoin.net logo](https://user-images.githubusercontent.com/26845312/32426914-084fdf62-c283-11e7-9d7e-9f35568138b4.png)
 
-Skycoin Blog
+skycoin.net
 ============
 
-https://www.skycoin.net/blog/
+https://www.skycoin.net/
 
-This blog uses [hugo](https://gohugo.io/) to generate a static website from markdown files.
+This website uses [hugo](https://gohugo.io/) to generate a static website from markdown files.
 
 Refer to hugo documentation for full detail.
 
@@ -29,9 +29,9 @@ hugo serve
 
 Make sure that your posts compile without error. Check the formatting.
 
-Then, commit the changes and push.
+Then, commit the changes and push to a new branch and submit a pull request against the `master` branch.
 
-If there are no problems, then https://www.skycoin.net/blog/ will automatically update in a few minutes.
+If there are no problems, then https://www.skycoin.net/ will automatically update in a few minutes.
 
 Translations
 ============
@@ -50,7 +50,7 @@ name the file `content/statement/Skycoin Distribution.de.md`.
 Themes: Layout and Styling
 ==========================
 
-Skycoin Blog uses a custom hugo theme with styling produced using SCSS, when editing any styles you **must** edit the `.scss` files only. If any changes are made to the SCSS partials within `static/css/scss/`, you must re-compile with the following commands.
+Skycoin uses a custom hugo theme with styling produced using SCSS, when editing any styles you **must** edit the `.scss` files only. If any changes are made to the SCSS partials within `static/css/scss/`, you must re-compile with the following commands.
 
 Move into the theme directory
 ```sh
