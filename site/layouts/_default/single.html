@@ -1,13 +1,14 @@
 {{ partial "document-head.html" . }}
-{{ partial "header.html" (dict "context" . "logoColor" "dark") }}
 
 <section id="main">
-    <h1 id="title">{{ .Title }}</h1>
-    <div>
-        <article id="content">
-            {{ .Content }}
-        </article>
+	<div class="hero {{if .Params.herobg}}{{.Params.herobg}}{{end}}">
+		{{ partial "header.html" (dict "context" . "logoColor" "dark") }}
+	    <h1 id="title">{{ .Title }}</h1>
     </div>
+
+    <article id="content">
+        {{ .Content }}
+    </article>
 
     
     {{ if .Params.signup }}

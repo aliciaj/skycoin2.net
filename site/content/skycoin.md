@@ -1,10 +1,10 @@
 ---
-title: "Skycoin"
+title: "Skycoin: A cryptocurrency incentivizing decentralization, powering the blockchain internet"
 date: 2018-02-10T16:10:22-08:00
 signup: true
+herobg: hero-skycoin
 ---
 
-<h1>Skycoin: A cryptocurrency incentivizing decentralization, powering the blockchain internet  </h1>
 
 <h2>Skycoin is the only cryptocurrency that doesn’t build in economic incentives for centralization</h2>
 
