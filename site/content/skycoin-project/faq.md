@@ -4,6 +4,7 @@ date: 2018-02-11T11:15:15-08:00
 herobg: bg-gray-light
 ---
 
+<div class="container">
 <nav>
 	<ul>
 		<li><a class="js-anchor-link" href="#nav-skycoin">SkyCoin</a></li>
@@ -240,3 +241,4 @@ herobg: bg-gray-light
 
 
 
+</div>

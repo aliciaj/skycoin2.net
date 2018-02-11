@@ -4,6 +4,10 @@
 	list-style: none;
 }
 
+.accordion h3 {
+	color: var(--color-brand);
+}
+
 /* Thumb */
 .accordion-thumb {
 	margin: 0;
@@ -22,7 +26,7 @@
 		vertical-align: middle;
 		border-right: 1px solid;
 		border-bottom: 1px solid;
-		transform: rotate(-45deg);
+		transform: rotate(-135deg);
 		transition: transform .2s ease-out;
 	}
 }
@@ -30,6 +34,7 @@
 /* Panel */
 .accordion-panel {
 	margin: 0;
+	margin-left: 2em;
 	padding-bottom: .8rem;
 	display: none;
 }
@@ -37,4 +42,6 @@
 /* Active */
 .accordion-item.is-active .accordion-thumb::before {
 	transform: rotate(45deg);
+	top: -4px;
+	position: relative;
 }
