@@ -1,3 +1,8 @@
+.container {
+    padding: 0 var(--standard-padding-mobile);
+    width: 100%;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +22,12 @@
 }
 
 @media (--large) {
+    .container {
+        margin: 0 auto;
+        max-width: var(--max-width);
+        padding: 0 var(--standard-padding-desktop);
+    }
+
     .grid {
         margin: 0 auto;
         max-width: var(--max-width);
