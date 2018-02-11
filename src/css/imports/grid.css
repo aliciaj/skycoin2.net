@@ -1,0 +1,32 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column--full,
+.column--half,
+.column--thirds {
+    width: 100%;
+}
+
+@media (--medium) {
+    .column--thirds {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (--large) {
+    .grid {
+        margin: 0 auto;
+        max-width: var(--max-width);
+    }
+
+    .column--thirds {
+        width: calc(33.33% - 10px);
+    }
+
+    .column--half {
+        width: calc(50% - 10px);
+    }
+}

@@ -1,6 +1,7 @@
 /* Variables */
 @import "imports/fonts.css";
 @import "imports/variables.css";
+@import "imports/grid.css";
 
 /* Base styling */
 @import "imports/base.css";

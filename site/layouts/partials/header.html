@@ -1,26 +1,27 @@
-<header class="site-header">
+<header class="site-header color-{{ .logoColor }}">
 	<div class="logo-container">
-		<a href="/" class="logo logo-{{ .logoColor }}"><span>Skycoin</span></a>
+		<a href="/" class="logo"><span>Skycoin</span></a>
 	</div>
 	<nav class="nav">
 		<ul>
 			{{ range .context.Site.Menus.main }}
+				{{ if .HasChildren }}
+				<li class="has-dropdown">
+					<span class="nav-link">{{ .Name }}</span>
+					<ul>
+						{{ range .Children }}
+						<li>
+							<a class="dropdown-item nav-item-{{ .Identifier }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+						</li>
+						{{ end }}
+					</ul>
+				</li>
+				{{ else }}
 				<li>
 					<a class="nav-link nav-item-{{ .Identifier }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
 				</li>
+				{{ end }}
 			{{ end }}
 		</ul>
-	</nav>
-		
-	<div class="js-dropdown header-dropdown">
-		{{ $currentLang := .context.Site.Language.LanguageName }}
-		<div class="js-dropdown-current header-dropdown__current">{{ $currentLang }}</div>
-		<div class="js-dropdown-list header-dropdown__list">
-		{{ range .context.Site.Menus.languages }}
-			<a class="js-dropdown-item header-dropdown__item {{ if eq $currentLang .Name }} header-dropdown__item_active {{ end }}" href="{{ .URL }}">{{ string .Name }}</a>
-		{{ end }}
-		</div>
-	</div>
-	<a href="{{ .context.Site.Params.rss }}" target="_blank" class="btn btn--pill btn--outline btn--blue header__btn">Subscribe (RSS)</a>
-	
+	</nav>	
 </header>
