@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statement on Skycoin Blog</title>
+    <link>https://www.skycoin.net/el/tags/statement/</link>
+    <description>Recent content in Statement on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/el/tags/statement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obelisk: The Skycoin Consensus Algorithm</title>
+      <link>https://www.skycoin.net/el/statement/obelisk-the-skycoin-consensus-algorithm/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/el/statement/obelisk-the-skycoin-consensus-algorithm/</guid>
+      <description>Το blockchain του Skycoin κάνει χρήση ενός νέου τύπου αλγόριθμου συναίνεσης που ονομάζεται &amp;ldquo;Οβελίσκος&amp;rdquo; και αντικαθιστά τόσο την απόδειξη εργασίας (&amp;ldquo;PoW&amp;rdquo;) όσο και την απόδειξη της συμμετοχής (&amp;ldquo;PoS&amp;rdquo;).
+Ο στόχος των προγραμματιστών του Skycoin ήταν να διορθώσουν τις σημαντικές αδυναμίες της ασφάλειας και τις &amp;ldquo;συγκεντρωτικές τάσεις&amp;rdquo; που συνδέονται με τα δίκτυα blockchain στα οποία η συναίνεση βασίζεται σε αλγόριθμους PoW ή PoS και η δημιουργία κερμάτων συνδέεται με την διαδικασία της εξόρυξης (mining).</description>
+    </item>
+    
+    <item>
+      <title>Digital Gold</title>
+      <link>https://www.skycoin.net/el/statement/digital-gold/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/el/statement/digital-gold/</guid>
+      <description>Το αρχικό όραμα του Satoshi για το Bitcoin ήταν επαναστατικό. Ένα παγκόσμιο νόμισμα που υπήρξε πέρα των ορίων κάθε κράτους και έθνους, ανέγκιχτο του πληθωρισμού και χωρίς θέματα εμπιστοσύνης, το Bitcoin θα έπρεπε ήδη να έχει επηρεάσει τις βάσεις και τον πυρήνα του οικονομικού κόσμου. Αλλά το όραμα αυτό απέτυχε. Αντί να αναγγείλει μια νέα εποχή αποκέντρωσης, το ίδιο Bitcoin βρέθηκε συγκεντρωμένο. Η δύναμη του συγκεντρώθηκε σε τρεις μεγάλες τοποθεσίες παραγωγής (mining pools).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/categories/</link>
+    <description>Recent content in Categories on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ask the Developers</title>
+      <link>https://www.skycoin.net/fr/categories/ask-the-developers/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/ask-the-developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development Updates</title>
+      <link>https://www.skycoin.net/fr/categories/development-updates/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/development-updates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distribution</title>
+      <link>https://www.skycoin.net/fr/categories/distribution/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://www.skycoin.net/fr/categories/overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/overview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skyledger</title>
+      <link>https://www.skycoin.net/fr/categories/skyledger/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/skyledger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skywire</title>
+      <link>https://www.skycoin.net/fr/categories/skywire/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/skywire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statement</title>
+      <link>https://www.skycoin.net/fr/categories/statement/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/categories/statement/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

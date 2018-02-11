@@ -1,10 +1,56 @@
-<footer class="footer">
-    <div>
-      {{ range .Site.Menus.footer }}
-        <a class="footer__link" href="{{ .URL }}">{{ .Name }}</a>
-      {{ end }}
-    </div>
-  </footer>
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="/skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                {{ range .Site.Menus.footer }}
+                    <li><a class="footer__link" href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
 
   <script>
     var dropdown = document.querySelector('.js-dropdown'),

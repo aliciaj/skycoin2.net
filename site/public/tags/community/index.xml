@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/community/</link>
+    <description>Recent content in Community on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Community Links</title>
+      <link>https://www.skycoin.net/statement/skycoin-community-links/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-community-links/</guid>
+      <description>Talk with the Skycoin Team The Skycoin team is most active on Telegram.
+ Skycoin Telegram Channel Skycoin BBS Channel Skycoin News Channel Skycoin Bounty Program Channel
+ Skycoin Slack
+ Skycoin Discord
+  Mailing List  Skycoin Mailing List  News Updates  Skycoin Blog Skycoin Twitter Skycoin Reddit Skycoin Facebook  Media  Skycoin Youtube Skycoin Instagram  Software All code is published to github. Contributors and testers are encouraged.</description>
+    </item>
+    
+  </channel>
+</rss>

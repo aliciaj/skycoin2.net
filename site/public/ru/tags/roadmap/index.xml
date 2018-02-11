@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roadmap on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/roadmap/</link>
+    <description>Recent content in Roadmap on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Фокус проекта обновлен</title>
+      <link>https://www.skycoin.net/ru/statement/project-focus-update/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/project-focus-update/</guid>
+      <description>Мобильный кошелек Готов мобильный кошелек Skycoin.
+https://play.google.com/apps/testing/net.skycoin.mobile
+Бренд, дизайн Обновляется содержимое сайта Skycoin.
+У нас появился новый логотип.
+Программа вознаграждений работает уже месяц. Если кто-то хочет сделать видео про Skycoin, проверьте канал программы вознаграждений в Telegram.
+Бренд Skycoin, ассеты
+Skywire Skywire работает, но нужно переписать некоторые библиотеки для использования связи сеть/skycoin.
+В настоящее время разрабатывается панель управления для мониторинга кластеров (для узлов) и панель управления для глобальной сети.
+Затем сеть будет подготовлена для использования в качестве VPN, шлюзов Socks5 и мы начнем переводить приложение в пространство имен новой сети.</description>
+    </item>
+    
+  </channel>
+</rss>

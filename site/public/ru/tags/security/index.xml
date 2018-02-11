@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/security/</link>
+    <description>Recent content in Security on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin: вопросы безопасности криптовалюты следующего поколения</title>
+      <link>https://www.skycoin.net/ru/statement/skycoin-security-for-next-generation-cryptocurrency/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skycoin-security-for-next-generation-cryptocurrency/</guid>
+      <description>В 2011 году команда Skycoin запустила крупный исследовательский проект по исправлению недостатков, присущих биткойну. Мы переработали биткойн с нуля, чтобы создать криптовалюту следующего поколения, которая была быстрее, удобнее и безопаснее любой монеты прошлого. В результате появился Skycoin: следующий шаг в эволюции криптовалют.
+Философия дизайна Skycoin основана на идее, что простая, удобная в использовании система обеспечивает максимальную безопасность для своих пользователей. Создавая децентрализованную сеть, оптимизированную для удобства использования, Skycoin защищает от атак и поощряет прозрачность.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/overview/</link>
+    <description>Recent content in Overview on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obelisk: El Algoritmo de Consenso de Skycoin | Páginas de Información</title>
+      <link>https://www.skycoin.net/es/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Puntos destacados acerca del consenso  Por qué el consenso Alta escalabilidad y bajo consumo de energía Robusto ante ataques coordinados El ataque del 51 por ciento Direcciones IP ocultas Independencia de la sincronización de reloj Dos tipos de nodos: de Consenso y de Creación de Bloques  Cómo funciona el Algoritmo de Consenso de Skycoin Referencias  Puntos destacados acerca del consenso Por qué el consenso El Algoritmo de Consenso de Skycoin (&amp;ldquo;Obelisk&amp;rdquo;) sincroniza el estado de la &amp;lsquo;blockchain&amp;rsquo; (cadena de bloques) de Skycoin en todos los nodos de la red.</description>
+    </item>
+    
+    <item>
+      <title>Visión general de CX</title>
+      <link>https://www.skycoin.net/es/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/overview/cx-overview/</guid>
+      <description>Introducción a CX Repositorio del Proyecto Sintaxis &amp;lsquo;Affordances&amp;rsquo;  Restricciones de Aridad Restricciones de Tipo Restricciones Existenciales Restricciones de Identificador Restricciones de Límites Restricciones Definidas por el Usuario  Sistema de Tipado Estricto Compilado e Interpretado  &amp;lsquo;Loop&amp;rsquo; de Read-Eval-Print Comandos de Meta-Programación &amp;lsquo;Stepping&amp;rsquo; &amp;lsquo;Debugging&amp;rsquo; Interactivo  Algoritmo Evolutivo Integrado Serialización  Introducción a CX CX es tanto una especificación como un lenguaje de programación diseñado para adoptar un nuevo paradigma de programación basado en el concepto de &amp;lsquo;affordances&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Visión general de Skycoin</title>
+      <link>https://www.skycoin.net/es/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/overview/skycoin-overview/</guid>
+      <description>Introducción a Skycoin Innovaciones e imperfecciones de Bitcoin y los protocolos actuales de cadena de bloques Innovaciones producidas por Bitcoin Defectos importantes de Bitcoin Cualidades convenientes para los sistemas de consenso distribuido para los registros financieros Filosofía de seguridad de Skycoin Seguridad y transparencia: Obelisk y canales de transmisión pública Obelisk Algoritmo de consenso binario simple: Elección entre dos bloques Consenso sobre múltiples opciones de ramas concurrentes  Introducción a Skycoin Skycoin se basa en una tecnología que presenta un nuevo fundamento criptográfico conocido como canal de transmisión pública.</description>
+    </item>
+    
+  </channel>
+</rss>

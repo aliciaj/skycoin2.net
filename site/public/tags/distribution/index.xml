@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distribution on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/distribution/</link>
+    <description>Recent content in Distribution on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>No Coin Distribution Event (ICO) At This Time</title>
+      <link>https://www.skycoin.net/statement/no-coin-distribution-event-at-this-time/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/no-coin-distribution-event-at-this-time/</guid>
+      <description>We are not doing an ICO at this time. The previous distribution event ended August 31, 2017.</description>
+    </item>
+    
+    <item>
+      <title>Remarks on Skycoin&#39;s Distribution</title>
+      <link>https://www.skycoin.net/ask-the-developers/remarks-on-skycoin-distribution/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ask-the-developers/remarks-on-skycoin-distribution/</guid>
+      <description>Quote from: dr blowfin on August 08, 2017, 09:43:24 PM
+ I don&amp;rsquo;t get this ICO. Only just a little over 5% of this coin is circulating - the rest of the premine is held by skycoin. This is creating an artificially high price. 1 skycoin = 0.0012 on cryptopia right now. Yet the ICO price is 0.002!!! Good luck with that. There is no credibility here.
+ The whole point of this distribution was for the tech VC, whale cartel, and Korean/Japanese whales.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Distribution</title>
+      <link>https://www.skycoin.net/statement/skycoin-distribution/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-distribution/</guid>
+      <description>The current ICO landscape is dominated by coins that are all image and no substance. Backed by millions of dollars in funding, ICOs for new cryptocurrencies seem to offer tantalizing opportunities to investors. A large ICO is often seen as an indicator of a coin’s potential – hence the buzz surrounding recent ICOs.
+However, the buzz isn’t borne out by the facts. With the explosion of pump-and-dump schemes in the cryptocurrency market, it’s becoming clear that most large upfront ICOs are vehicles built to generate quick money.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Distribution Event - August 2017</title>
+      <link>https://www.skycoin.net/statement/skycoin-distribution-event/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-distribution-event/</guid>
+      <description>Skycoin is holding a distribution event on August 8, 2017 beginning at 12:00PM GMT.
+Up to 1,000,000 SKY, or 1% of all SKY, will be offered at a price of 0.002BTC/SKY (500SKY/BTC).
+The event ends August 31, 2017 12:00PM GMT.
+Distribution will be done through the Skycoin website and through a telegram bot on the Skycoin telegram.
+This event was originally scheduled for July 24, 2017 but has been rescheduled to August 8, 2017 due to uncertainty in the Bitcoin network during this time period.</description>
+    </item>
+    
+    <item>
+      <title>Development Update #126</title>
+      <link>https://www.skycoin.net/development-updates/development-update-126/</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/development-updates/development-update-126/</guid>
+      <description>The blockchain explorer is up The next generation of the skycoin website is online Several bug fixes: We are : We also made a significant mathematical breakthrough on the skycoin economy:     Marketing        We are: Right now we want to package:     Coin Supply Update:    The blockchain explorer is up  http://explorer.</description>
+    </item>
+    
+    <item>
+      <title>Development Update #16</title>
+      <link>https://www.skycoin.net/development-updates/development-update-16/</link>
+      <pubDate>Mon, 21 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/development-updates/development-update-16/</guid>
+      <description>Summary:  The new developers for the meshnet are setup and working now. The source routing implementation is almost done. wifi controller library is working and just needs adhoc mode support and some bug fixes. Last gui changes to wallet are being made. One of the coin developers who was on vacation for past two weeks is coming back to project. First draft the of Obelisk white paper is done.</description>
+    </item>
+    
+  </channel>
+</rss>

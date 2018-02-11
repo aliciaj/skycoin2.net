@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exchange Listing on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/exchange-listing/</link>
+    <description>Recent content in Exchange Listing on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/exchange-listing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin launches trading on COIN918</title>
+      <link>https://www.skycoin.net/statement/skycoin-launches-trading-on-coin918/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoin-launches-trading-on-coin918/</guid>
+      <description>Skycoin recently announced that it will list on COIN918, a global digital currency trading platform. With the new listing, Skycoin brings its vision for a better cryptocurrency to even more users worldwide. It’s one more step towards a free and open network.
+About COIN918 COIN918 is owed by Australia COIN918 Fintech Group Pty. Ltd. in Sydney, Australia. It launched in beta in 2016 and currently is in version 5.0. The development time has paid off: today, COIN918 offers its users a high level of system reliability, with bank-quality user data encryption, dynamic authentication, and multi-level risk identification control.</description>
+    </item>
+    
+  </channel>
+</rss>

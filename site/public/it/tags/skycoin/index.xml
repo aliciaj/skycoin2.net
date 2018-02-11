@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin on Skycoin Blog</title>
+    <link>https://www.skycoin.net/it/tags/skycoin/</link>
+    <description>Recent content in Skycoin on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/it/tags/skycoin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Panoramica di Skycoin</title>
+      <link>https://www.skycoin.net/it/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/overview/skycoin-overview/</guid>
+      <description>Introduzione a Skycoin Innovazioni e Difetti del Bitcoin e gli Attuali Protocolli Blockchain Innovazioni Prodotte dal Bitcoin Maggiori Difetti del Bitcoin Proprietá Desiderabili per Sistemi di Consenso Distribuito per Registri Finanziari La Filosofia di Sicurezza di Skycoin Trasparenza e Sicurezza: Obelisk e Canali di Trasmissione Pubblici Obelisk Semplice Algoritmo di Consenso Binario: Scegliere tra Due Blocchi Consenso su Scelte Multiple Concomitanti Diramate  Introduzione a Skycoin Skycoin é basato su una tecnologia che introduce una nuova crittografica primitiva conosciuta come un canale di trasmissione pubblica.</description>
+    </item>
+    
+  </channel>
+</rss>

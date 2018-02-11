@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ripple on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/ripple/</link>
+    <description>Recent content in Ripple on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/ripple/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparing Skycoin to Ripple</title>
+      <link>https://www.skycoin.net/drafts/comparing-skycoin-to-ripple/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/comparing-skycoin-to-ripple/</guid>
+      <description>In Ripple you have a bunch of node. If a peer rejects a transaction, then to achieve consensus, the connection&amp;rsquo;s peers will drop the transaction and the rejection of the transaction propagates through the network. That means that a single bad node can freeze the assets in a particular address.
+Ripple is must more vulnerable to government influence and control than Bitcoin, because control of the network is centralized in financial institutions.</description>
+    </item>
+    
+  </channel>
+</rss>

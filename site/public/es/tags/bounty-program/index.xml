@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bounty Program on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/tags/bounty-program/</link>
+    <description>Recent content in Bounty Program on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/tags/bounty-program/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Programa de Recompensas de Skycoin 1</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-bounty-program-1/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-bounty-program-1/</guid>
+      <description>Actualizado el 29 de Agosto, 2017. Se ha añadido la bonificación por actividad en Reddit. Se ha incrementado la recompensa por GIFs a 20 SKY.
+Actualizado de nuevo el 29 de Agosto, 2017. Añadidas recompensas por traducciones.
+Actualizado el 30 de Agosto, 2017. Se han removido las recompensas por GIFs.
+Actualizado el 3 de Septiembre, 2017. Se ha añadido el francés a las recompensas por traducciones.
+Actualizado el 12 de Septiembre, 2017.</description>
+    </item>
+    
+  </channel>
+</rss>

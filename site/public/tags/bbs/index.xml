@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BBS on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/bbs/</link>
+    <description>Recent content in BBS on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/bbs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS v5.0 Release Announcement</title>
+      <link>https://www.skycoin.net/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-release-v5.0/</guid>
+      <description>Skycoin BBS v5.0 has finally been released with many changes under the hood!
+Thin Client The most apparent change of all, is the introduction of the thin client. You can now access Skycoin BBS without setting up a node! Just head to bbs.skycoin.net.
+In previous versions, one can only (and should only) access/submit content via a web user interface that is served locally. As this web-interface (and the API that it calls) has direct control over the node itself, and signs content with private keys that are stored in-node (or server-side), it is not appropriate to expose it to the public.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS: Social Media for You</title>
+      <link>https://www.skycoin.net/statement/skycoinbbs/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/skycoinbbs/</guid>
+      <description>Summary: On corporate social media, you’re the product. A company controls your data. They sell it to advertisers and store it on their servers. Once you make a post, it’s theirs – forever. You have no control over privacy, technology, or even your own identity. Why should we settle for that?
+It’s time for a social media revolution. Skycoin is bringing social media back to you, the user. We’re excited to announce the alpha launch of Skycoin BBS: the first distributed social media platform in the Skycoin ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v4.1 Release Announcement</title>
+      <link>https://www.skycoin.net/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1 has been released!
+
+Change Log  User interface improvements. Implemented service discovery (connections to other nodes are now automatically managed). Improved remote submission of board content (implemented via service discovery). Simplified process of board creation and hosting. Improvements to CXO data structure.  The next release will bring about even more exciting features! Watch this space to keep up to date.
+Binaries These are avaliable for 64bit windows, mac and linux.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 Release Announcement</title>
+      <link>https://www.skycoin.net/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1 has finally been released!
+Changelog  Updated to use latest CXO. Reimplemented CXO data structure for easier diff management. Introduction of a views module for easier implementation of different ways of viewing data. Implemented exporting/importing boards to/from file. Initial implementation of following/avoiding users. Improved UI (Work in progress). Automatic peer-to-peer relay of boards.  Binaries These are avaliable for 64bit windows, mac and linux.
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS Development Update #2</title>
+      <link>https://www.skycoin.net/bbs/bbs-development-update-2/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-development-update-2/</guid>
+      <description>It&amp;rsquo;s been a bit more than a month since the release of version 0.1, and 0.2 is soon to be ready!
+The changes are the following:
+ Uses the latest CXO version (peer to peer self-replicating database). Reimplementation of CXO objects and tree (in preparation for new features). Introduction to a views module for easy implementation of different ways of &amp;ldquo;viewing&amp;rdquo; content. Initial implementation of user following/avoiding. Completely revamped UI.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS Development Update #1</title>
+      <link>https://www.skycoin.net/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-development-update-1/</guid>
+      <description>An Introduction BBS stands for Bulletin Board System. Although traditional BBS systems are no longer widely used, BBS in the modern era is an icon for social services.
+Skycoin BBS is one of the first web applications to be implemented using the skycoin ecosystem. Skycoin attempts to revolutionize the internet; decentralizing it and encrypting protocols by default.
+Underlying Skycoin BBS is a peer-to-peer self-replicating database named CXO (part of the Skycoin ecosystem).</description>
+    </item>
+    
+  </channel>
+</rss>

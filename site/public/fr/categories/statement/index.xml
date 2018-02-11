@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statement on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/categories/statement/</link>
+    <description>Recent content in Statement on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/categories/statement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pourquoi nous avons créé Skycoin</title>
+      <link>https://www.skycoin.net/fr/statement/why-we-built-skycoin/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/why-we-built-skycoin/</guid>
+      <description>Satoshi envisageait Bitcoin comme une monnaie numérique décentralisée. Les réseaux de blockchain avaient pour but de démocratiser la finance, en éliminant le contrôle des entreprises et en répartissant le pouvoir entre les utilisateurs. Cependant, Bitcoin et les monnaies liées sont devenus centralisés en raison de leur confiance dans les algorithmes de Preuve de Travail (PoW) et de Preuve de Participation (PoS), ainsi que leur utilisation dans l&amp;rsquo;exploitation minière pour créer des pièces de monnaie.</description>
+    </item>
+    
+    <item>
+      <title>Plan de distribution de Skycoin</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-distribution-plan/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-distribution-plan/</guid>
+      <description>Ceci est une annonce officielle concernant la façon dont les Skycoin seront dorénavant distribués.
+La distribution de Skycoin a dans le passé était peu clair et a été géré jusqu&amp;rsquo;à présent de plusieurs manières.
+Actuellement, il n&amp;rsquo;y a plus d&amp;rsquo;ICO. Dans un futur proche, les Skycoin seront en vente directe continue, mais limitée en quantité, gérée par logiciel.
+La vente directe sera accessible depuis le portefeuille ou depuis le site internet.</description>
+    </item>
+    
+    <item>
+      <title>L&#39;équipe de Skycoin</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-team/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-team/</guid>
+      <description>Voici l&amp;rsquo;équipe actuelle de Skycoin.
+Marketing Michael Terpin (Coinovate, CoinAgenda, BitAngels) et Richard Kastelein (Blockchain News, CryptoAssets Design Group) sont conseillers du projet et aident au marketing.
+Une poignée d&amp;rsquo;autres se concentrent sur d&amp;rsquo;autres aspects de la communication, du marketing et de la production de contenu.
+Développement / Recherche / Gestion Synth est l&amp;rsquo;architecte et la figure de proue du projet. Il a des antécédents en mathématiques et en cryptographie.</description>
+    </item>
+    
+    <item>
+      <title>Les Cinq Piliers de Skycoin</title>
+      <link>https://www.skycoin.net/fr/statement/five-pillars-of-skycoin/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/five-pillars-of-skycoin/</guid>
+      <description>Le projet Skycoin est une plateforme logicielle/d&amp;rsquo;application intégrée hermétiquement qui fonctionne en parallèle et par dessus l&amp;rsquo;internet actuel tout en étant complètement indépendante.
+Les cinq piliers du projet Skycoin sont :
+(1) Skycoin, une monnaie meilleure que le Bitcoin de chaque point de vue technique :
+ Transactions plus rapides qu&amp;rsquo;une carte de crédit alors que le bitcoin met environ une heure. Taux de transaction illimité. Pas besoin de mineurs et de récompenses de blocs.</description>
+    </item>
+    
+    <item>
+      <title>Pas de distribution de pièces (ou ICO) en ce moment. </title>
+      <link>https://www.skycoin.net/fr/statement/no-coin-distribution-event-at-this-time/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/no-coin-distribution-event-at-this-time/</guid>
+      <description>Nous ne faisons pas d&amp;rsquo;ICO en ce moment. Le précédent événement de distribution a pris fin le 31 août 2017.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: L&#39;algorithme de consensus de Skycoin</title>
+      <link>https://www.skycoin.net/fr/statement/obelisk-the-skycoin-consensus-algorithm/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/obelisk-the-skycoin-consensus-algorithm/</guid>
+      <description>La chaîne de blocs (ou blockchain) de Skycoin utilise un nouvel algorithme de consensus appelé « Obelisk » qui remplace à la fois la Preuve de Travail (Proof of Work ou PoW) et la Preuve de Participation (Proof of Stake ou PoS).
+L&amp;rsquo;objectif des développeurs de Skycoin était de corriger les principaux défauts de sécurité et les tendances centralisées associés aux réseaux blockchain dans lesquels le consensus est basé sur des algorithmes PoW ou PoS et la création de pièces est liée à un processus de minage.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin et Skywire sont 2 composants distincts du projet Skycoin. Skycoin est la blockchain tandis que Skywire est le réseau maillé
+Skycoin a été conçu en premier et peut fonctionner par lui même. Il a été créé pour résoudre les problèmes de centralisation que rencontre le Bitcoin avec le minage ainsi que les autres problèmes pour la plupart liés à la cryptographie ou aux bugs logiciels, comme par exemple la malléabilité des transactions.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin n&#39;a rien à voir avec Skynet</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-has-nothing-to-do-with-skynet/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-has-nothing-to-do-with-skynet/</guid>
+      <description>Récemment, nous avons été interrogé à propos d&amp;rsquo;autres projets appelés &amp;ldquo;Skynet&amp;rdquo; ou &amp;ldquo;Superskynet&amp;rdquo;.
+Skycoin n&amp;rsquo;a jamais utilisé le nom &amp;ldquo;Skynet&amp;rdquo; car il est cliché et non original.
+En outre, nous nous opposons à ce que représente le «Skynet» du film Terminator: l&amp;rsquo;assujettissement de l&amp;rsquo;humanité aux machines contrôlées par quelques-uns.
+Le projet Skycoin n&amp;rsquo;a aucune relation avec les projets appelés &amp;ldquo;Skynet&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin - Liens de la Communauté</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-community-links/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-community-links/</guid>
+      <description>Parlez avec l&amp;rsquo;équipe de Skycoin L&amp;rsquo;équipe de Skycoin est la plus active sur Telegram
+ Le canal Telegram de Skycoin Canal BBS de Skycoin Canal d&amp;rsquo;informations de Skycoin Canal de récompenses de Skycoin
+ Slack de Skycoin
+ Discord de Skycoin
+  Mailing List  Skycoin Mailing List  Les dernières informations de Skycoin  Blog de Skycoin Twitter de Skycoin Reddit de Skycoin Facebook de Skycoin  Media  Youtube de Skycoin Instagram de Skycoin  Logiciel Tout le code est publié sur Github.</description>
+    </item>
+    
+    <item>
+      <title>L&#39;or digital</title>
+      <link>https://www.skycoin.net/fr/statement/digital-gold/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/digital-gold/</guid>
+      <description>La vision originale de Satoshi pour le Bitcoin était révolutionnaire. Une monnaie mondiale qui existait au-delà des nations, hors de portée des groupes de pouvoir et sans inflation aurait dû faire trembler le le monde financier jusque dans ses fondations. Mais la vision a échoué. Au lieu d&amp;rsquo;inaugurer une nouvelle ère de décentralisation, le Bitcoin est devenu centralisé. Puissance concentrée en trois grands groupes de mineur, vitesse de transaction ralentie en heures, les taxes qui ont grimpé en flèche à leur niveau actuel de 40$&amp;hellip; Aujourd&amp;rsquo;hui, tout indique que le Bitcoin n&amp;rsquo;a pas respecté sa promesse d&amp;rsquo;une monnaie digitale décentralisée.</description>
+    </item>
+    
+    <item>
+      <title>Mineur Skywire: Matériel pour l&#39;internet de demain</title>
+      <link>https://www.skycoin.net/fr/statement/skywire-miner-hardware-for-the-next-internet/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skywire-miner-hardware-for-the-next-internet/</guid>
+      <description>Comment pouvons-nous réellement créer un internet libre et ouvert ? Pour répondre à cette question, nous avons développé Skywire, un nouvel internet alternatif. Skywire est une nouvelle technologie révolutionnaire qui reprend le contrôle aux grands fournisseurs d&amp;rsquo;accès Internet (FAIs) et le rend aux utilisateurs. Son modèle de fonctionnement en pair à pair promeut la neutralité du réseau et permet le partage du contenu sans blocage, ralentissement ou censure. L&amp;rsquo;accès ouvert au réseau de Skywire préserve la vie privée et encourage la liberté d&amp;rsquo;expression.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Un internet libre et ouvert</title>
+      <link>https://www.skycoin.net/fr/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Internet nous donne l&amp;rsquo;illusion de contrôle. Nous pouvons socialiser, consommer et faire des affaires instantanément grâce aux services fournis par Google, Facebook, Apple et Amazon. Cela semble pratique, n&amp;rsquo;est-ce pas ? Ca l&amp;rsquo;est - jusqu&amp;rsquo;à ce que vous considériez ce que à quoi vous renoncez.
+Nous ne contrôlons pas nos vies en ligne. Les grandes entreprises et les fournisseurs de services Internet (ISP) collectent nos données, suivent nos mouvements et façonnent nos expériences.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin lance une vision du Nouvel Internet</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-launches-a-vision-for-the-new-internet/</link>
+      <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-launches-a-vision-for-the-new-internet/</guid>
+      <description>Skycoin, une Crypto-Monnaie nouvelle génération en développement depuis plus de 4 ans, se découvre au public en Juillet. Le projet Skycoin cherche à populariser les réseaux décentralisés en réglant les problèmes rencontrés par le Bitcoin. Plus de 80 développeurs sur Github et ailleurs ont contribué à ce projet depuis 2012.
+Skycoin est une monnaie rapide, sécurisée et fiable pour les transactions en ligne. Elle utilise un algorithme de consensus redesigné conçu pour améliorer le Bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Distribution évenementielle de Skycoin - Août 2017</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-distribution-event/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-distribution-event/</guid>
+      <description>Skycoin organise une distribution évenementielle le 8 août 2017 à partir de 12h00 GMT.
+Jusqu&amp;rsquo;à 1,000,000 SKY, soit 1% de l&amp;rsquo;ensemble de SKY, seront offerts au prix de 0.002BTC / SKY (500SKY / BTC).
+L&amp;rsquo;événement se termine le 31 août 2017 à 12h00 GMT.
+La distribution se fera via le site internet de Skycoin et via un bot sur le télégramme de Skycoin.
+Cet événement était initialement prévu pour le 24 juillet 2017 mais a été reporté au 8 août 2017 en raison de l&amp;rsquo;incertitude sur le réseau Bitcoin pendant cette période.</description>
+    </item>
+    
+  </channel>
+</rss>

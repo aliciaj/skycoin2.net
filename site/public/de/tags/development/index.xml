@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/tags/development/</link>
+    <description>Recent content in Development on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS Entwicklungsupdate #1</title>
+      <link>https://www.skycoin.net/de/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/bbs/bbs-development-update-1/</guid>
+      <description>Eine Einführung BBS steht für schwarzes Brett-System (bulletin board system). Obwohl traditionelle BBS-System nicht mehr wirklich benutzt werden, waren BBS in der modernen Ära ein Vorreiter für soziale Netzwerke.
+Skycoin BBS ist eine der ersten Webapplikationen, welche unter Verwendung des Skycoin-Ökosystems implementiert werden. Skycoin versucht das Internet zu revolutionieren; Dezentralisierung und Verschlüsselung der Protokolle sind Standard.
+Skycoin BBS liegt eine selbstreplizierende Peer-to-Peer Datenbank mit dem Namen CXO (ein Teil des Skycoin-Ökosystems) zugrunde.</description>
+    </item>
+    
+  </channel>
+</rss>

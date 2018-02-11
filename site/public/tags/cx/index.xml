@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CX on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/cx/</link>
+    <description>Recent content in CX on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/cx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of the Crypto Market and Development Updates</title>
+      <link>https://www.skycoin.net/statement/state-of-the-crypto-market-development-updates/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/state-of-the-crypto-market-development-updates/</guid>
+      <description>Q&amp;amp;A Summary of the Current Bitcoin Market New Wallet CoinHours Skycoin (DEX) Distributed Exchange Support Skycoin Projects Position on the Smart Contracts Fad CX Skycoin Roadmap Finished First Distributed Social Media Platform on Skycoin Platform Launches Skycoin OTC Market  Q&amp;amp;A  There is no mention of a re-working of the whitepapers. Should this not be a priority so that your marketing that has started has reference material. This is a technical coin and so the documentation needs to be up to date.</description>
+    </item>
+    
+    <item>
+      <title>CX Tutorial: Using Affordances to Build a Small Text-based Adventure</title>
+      <link>https://www.skycoin.net/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>Introduction Challenge-response Architecture Affordance System Objects Conclusion  Introduction This tutorial presents a text-based &amp;ldquo;game&amp;rdquo; (the user does not interact with the program, and can not influence the character&amp;rsquo;s decisions) that uses a challenge-response architecture to determine what are the possible actions the game&amp;rsquo;s character can do. The full source-code can be found in CX&amp;rsquo;s repository, in the file examples/text-based-adventure.cx.
+The game describes the adventure of a traveler that is escaping from a monster (Halloween is coming next month, after all).</description>
+    </item>
+    
+    <item>
+      <title>CX Overview</title>
+      <link>https://www.skycoin.net/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/cx-overview/</guid>
+      <description>CX Introduction Project&amp;rsquo;s Repository Syntax Affordances  Arity Restrictions Type Restrictions Existential Restrictions Identifier Restrictions Boundaries Restrictions User-defined Restrictions  Strict Typing System Compiled and Interpreted  Read-Eval-Print Loop Meta-programming Commands Stepping Interactive Debugging  Integrated Evolutionary Algorithm Serialization  CX Introduction CX is both a specification and a programming language designed to embrace a new programming paradigm based on the concept of affordances. Affordances allow a program to know what actions can and cannnot be done by it.</description>
+    </item>
+    
+  </channel>
+</rss>

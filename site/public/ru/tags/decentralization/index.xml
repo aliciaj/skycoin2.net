@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decentralization on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/decentralization/</link>
+    <description>Recent content in Decentralization on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/decentralization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Давайте разберемся, каким, по нашему мнению, должен был быть биткойн</title>
+      <link>https://www.skycoin.net/ru/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>Перед вами комментарий из архива форума bitcointalk от 23 апреля, 2014 г
+ Цитата пользователя: JFK01 23 Апреля 2014, 13:54:50
+Я предполагаю, что Skycoin просто хочет сначала сделать предварительную оценку ситуации. В этом нет ничего плохого. Они ведь инженеры и хотят все протестировать. Они очень внимательно относятся к разработке. Это у них отлично получается. Так делай то, в чем ты хорош. Этот проект - настоящая авантюра.
+ Если взглянуть на самые ходовые монеты, такие как Peer Coin, Ripple, Bitcoin, Nxt, Litecoin, становится ясно, что большинство из них основываются на инновационной, фундаментальной модели безопасности биткойн, которая сама по себе хороша.</description>
+    </item>
+    
+    <item>
+      <title>Что такое Aether</title>
+      <link>https://www.skycoin.net/ru/statement/the-meaning-of-aether/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/the-meaning-of-aether/</guid>
+      <description>Это заархивированное сообщение с форума bitcointalks от 5 мая 2014
+Оригинальный дизайн Aether развился в то, что теперь называется CXO (CX Object System)
+*Цитата из: Tobo от 4 мая 2014 в 14:11:12* &amp;gt; Я заметил, что вы ранее использовали название ether, которое использовалось Ethereum. Теперь вы изменили его на aether, который использовался некоторыми другими людьми на этом форуме. Почему вам так понравились эти два названия?
+Ether (эфир) пронизывает пространство. Затем мы узнали, что ether - это алкоголь, который люди нюхают, получая максимальное удовольствие, а aether - это мистическое вещество, которое пронизывает пространство.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin - криптовалюта следующего поколения</title>
+      <link>https://www.skycoin.net/ru/statement/skycoin-next-generation/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/skycoin-next-generation/</guid>
+      <description>Перед вами архивный поста с форума bitcointalks от 6 мая 2014 г.
+ Цитата пользователя: -Greed- on May 05, 2014, 16:25:46 Ставлю +1 за то, что Skycoin – на самом деле монета второго поколения. По-моему мнению, биткойн и все его форки – это все первое поколение.
+ Сейчас мы работаем и закладываем основы для валюты третьего поколения. Действующая, пригодная к использованию монета с чистым кодом, хорошей защитой, без майнинга, без атаки 51% и причины использовать монеты именно второго поколения.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transaction Malleability on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/transaction-malleability/</link>
+    <description>Recent content in Transaction Malleability on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/transaction-malleability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Давайте разберемся, каким, по нашему мнению, должен был быть биткойн</title>
+      <link>https://www.skycoin.net/ru/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>Перед вами комментарий из архива форума bitcointalk от 23 апреля, 2014 г
+ Цитата пользователя: JFK01 23 Апреля 2014, 13:54:50
+Я предполагаю, что Skycoin просто хочет сначала сделать предварительную оценку ситуации. В этом нет ничего плохого. Они ведь инженеры и хотят все протестировать. Они очень внимательно относятся к разработке. Это у них отлично получается. Так делай то, в чем ты хорош. Этот проект - настоящая авантюра.
+ Если взглянуть на самые ходовые монеты, такие как Peer Coin, Ripple, Bitcoin, Nxt, Litecoin, становится ясно, что большинство из них основываются на инновационной, фундаментальной модели безопасности биткойн, которая сама по себе хороша.</description>
+    </item>
+    
+  </channel>
+</rss>

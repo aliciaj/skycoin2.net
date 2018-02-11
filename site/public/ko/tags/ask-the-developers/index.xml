@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ask the Developers on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/ask-the-developers/</link>
+    <description>Recent content in Ask the Developers on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/ask-the-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>텔레그램 로그 - 백서, 노예제도와 무정부주의</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/telegram-log---whitepapers-slavery-anarchy/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/telegram-log---whitepapers-slavery-anarchy/</guid>
+      <description>Artem Kotelskiy
+안녕하세요.
+나는 obelisk 합의 알고리즘에 관한 두 논문이 실수 때문에 arxiv에서 철회된 것을 알게되었습니다. 이것은 사실입니까?
+팀의 누군가가 이 문제를 해결할 수 있습니까?
+Monty Crypto (Xa no)
+음, obelisk에 대해서요? 우리는 기본적인 로직에 대해 적어도 5 개 이상의 논문을 가지고 있지만, 이전에 obelisk에 대해 특별히 공개된 것이 있는지는 모르겠군요.
+어떤 논문이 제외되었나요?
+Synth [Artem Kotelskiy에게 답글]
+아뇨. Chen은 사람들이 arxiv 대신에 더 권위있다고 여겨지는 ACM 저널을 통해 그것을 접하기를 원했기 때문에 그것들을 철회하였습니다.</description>
+    </item>
+    
+    <item>
+      <title>사람들은 쓰레기 코인을 원한다.</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/people-want-shitcoins/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/people-want-shitcoins/</guid>
+      <description>텔레그램 채널에서 발췌
+ 질문： 만약 스카이코인이 좋다면 다른 것을 제쳐두고 제 사업을 위해 확실히 사용하겠지만, 우리가 어디에서 그 근거를 찾을 수 있습니까? 테스트와 다른 것은요? 더 많은 정보와 데이터가 있는 웹 사이트가 있습니까? 이미 많은 노드를 보유하고 있는 강력한 네트워크입니까?
+ 사람들은 쓰레기코인을 원합니다.
+초창기의 비트코인과 현재의 스카이코인은 거대한 지식과 기술적 장벽을 가지고 있습니다.
+스카이코인은 새롭게 생성되었으며 500여 개의 ERC20 토큰과 같은 복제 동전이 아니므로, 거래를 위해 그들이 실제로 해야하는 작업의 리스트을 작성해야 합니다.</description>
+    </item>
+    
+    <item>
+      <title>메쉬넷의 대기시간과 개인정보보호에 관한 질문</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>이 글은 스카이와이로 불려지기 전의 스카이와이어 초기 형성에 대해 설명합니다. 2014년 8월 9일 자 비트코인 토크 게시글에서 인용하였습니다.
+출처 : CraigM 2014년 8월 9일, 오전 07:20:24
+ 메쉬넷은 tor보다 더 좋은 개인정보보호 도구이나, 대기시간이 더 적은 것이 맞습니까?
+모든 노드 운영자가 그들의 노드를 통해 데이터를 보내는 모든 사람에게 모든 트랜잭션을 설명하는 상세하며, 공개된 로그(개인 블록체인)를 기록하도록 강제하지 않습니까? 이것은 당신이 연결에 접속할 필요가 없다는 것을 제외하고, 제3자가 트래픽 관련 공격을 tor에서와 비슷하게 할 수 있는 것처럼 보입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이코인/CXO vs 파일코인/IPFS</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>우리는 CXO 와 IPFS의 차이점에 대해 물어볼 수 있습니다.
+파일 코인은 스카이코인 인프라의 일부와 동일한 목표를 가지고 있지만, 다른 접근 방식을 취하고 있습니다. 그들에는 3 개의 다른 프로토콜이 있습니다:
+ IPLD IPFS 다중-포맷  어느 곳에,
+ IPLD는 불변의 데이터 객체와 해시를 표현하는 언어입니다. IPFS는 파일 시스템입니다. 다중 포맷은 자체 기술 데이터 표준입니다.  스카이코인에서 CXO는 이 세 가지를 모두 수행합니다.
+ 멀티 포맷은 CXO의 &amp;ldquo;스키마&amp;rdquo;일 뿐입니다. IPLD는 CXO(불변의 데이터 구조, 해시 체인, 복제, 머클 트리 등)일 뿐입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이코인 AMA 기록(ark.io에서 개최)</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/skycoin-ama-log-ark/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/skycoin-ama-log-ark/</guid>
+      <description>원본은 2017년 7월 2일자ark.io 슬랙 에 있습니다.
+synth는 이 AMA에서 스카이코인의 대표자로 참석했습니다.
+boldninja 모두 SkyCoin.net의 @synth를 따뜻하게 환영해 주시기 바라며, AMA를 시작하겠습니다.
+synth 안녕하세요.
+mike synth 안녕하세요.
+jakethepanda 헤이 @synth
+thrice.pi 헤이 synth
+dr10 안녕하세요.
+boldninja 이제 시작할 수 있겠군요. - 모두 어떻게 할 지 알고 있겠죠. 그에게 답변할 수 있는 시간을 주세요. (그가 답변할 수 있도록 백로그에 2-3개의 질문만 남겨주세요.)
+dr10 당신의 어떻게 - 쉽고 간단한 단어로 - 스카이코인의 장점을 언론(매거진)과 암호화코인을 모르는 사람들에게 홍보할 것입니까?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/community/</link>
+    <description>Recent content in Community on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스카이코인 커뮤니티 링크 모음</title>
+      <link>https://www.skycoin.net/ko/statement/skycoin-community-links/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skycoin-community-links/</guid>
+      <description> 스카이코인 개발팀과 이야기를 나눠보세요. Skycoin 팀은 텔레그램에서 가장 활발한 팀입니다.
+ 스카이코인 텔레그램 채널 스카이코인 BBS 채널 스카이코인 뉴스 채널 스카이코인 바운티 프로그램 채널
+ 스카이코인 슬랙
+ 스카이코인 Discord
+  Mailing List  Skycoin Mailing List  새로운 뉴스 업데이트  스카이코인 블로그 스카이코인 트위터 스카이코인 래딧 스카이코인 Facebook  Media  스카이코인 Youtube 스카이코인 Instagram  소프트웨어 모든 코드는 github에 게시됩니다. 투자자와 테스터는 참고하시기 바랍니다.
+ 스카이코인 Github 주소 스카이코인 코어&amp;amp;지갑 스카이코인 모바일 지갑 Skywire (Meshnet) 스카이코인 BBS 스카이코인 CX 스카이코인 CXO 스카이코인 메신저 스카이코인 웹사이트 스카이코인 블로그  </description>
+    </item>
+    
+  </channel>
+</rss>

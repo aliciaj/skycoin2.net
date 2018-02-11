@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BBS on 天空币博客</title>
+    <link>https://www.skycoin.net/zh/tags/bbs/</link>
+    <description>Recent content in BBS on 天空币博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/zh/tags/bbs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>天空币BBS v5.0发布公告</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-release-v5.0/</guid>
+      <description>天空币BBS v5.0终于发布了，我们这次做了很多的更新呢！
+轻客户端 最明显的变化就是轻客户端的推出。您现在可以在不需要设置节点的情况下访问Skycoin BBS！只需要简单的前往bbs.skycoin.net.
+在以前的版本中，只能（也应该）通过本地提供的Web用户界面访问/提交内容。由于这个网络接口（以及它所调用的API）可以直接控制节点本身，并且使用存储在节点（或服务器端）中的私钥对内容进行签名，因此将其暴露给公众是不合适,不安全的。
+因此，引入轻客户端的时候, 我们需要用户管理以及签名提交内容的过程，以便客户端的处理。这需要全新改进的内容提交端点（或多于一个端点），并对前端进行大量更改。 有关新内容提交过程的详细信息可以在BBS Wiki: github.com/skycoin/bbs/wiki/Content-Submission-Process上找到.
+目前，前端加载非常缓慢。这是由于使用 GopherJS来处理种子和公钥/私钥生成以及数据的签名和验证所致。在将来的版本中，我们将使用原生JavaScript库来提高性能。
+命令行接口(Command-line Interface) 引入公开可见的简化客户端之后，我们删除了处理管理控制的API端点，并引入了一个命令行接口(command-line interface)来处理这种交互。
+更多信息可以在这里找到：: github.com/skycoin/bbs/tree/master/cmd/bbscli.
+其他改进  导入/导出的改进（不幸的是，这不能与BBS v4.x的导入/导出向后兼容） 简化代码和性能改进，以便与Skycoin Messenger进行远程提交和交互。请用更新并且使用最新的Messenger。 改进的文件管理性能。 更好地处理无效的CXO根(roots)。 更好的处理断开连接。  ##下载
+要下载BBS，请前往 github.com/skycoin/bbs/releases (源代码也在这里）。
+请注意，您也可以通过 bbs.skycoin.net 访问BBS。
+文档 我们在github.com/skycoin/bbs/wiki上启动了一个wiki页面。
+请理解，这还在进行中。
+社区 我们有一个电报频道: @skycoinbbs.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS: 为你而来的社交媒体</title>
+      <link>https://www.skycoin.net/zh/statement/skycoinbbs/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/statement/skycoinbbs/</guid>
+      <description>摘要: 在中心化社交媒体上，你是内容制造者。软件公司控制你的数据，并把这些数据卖给广告商。一旦你发了一个帖子，这条帖子就会永远变成 他们的了。你的隐私、理念甚至身份都毫无保障，这时我们该怎么办呢？
+现在是时候来场社交网络革命了！skycoin正在给用户编制一个真正的社交网络应用程序，我们很高兴宣布skycoin生态系统中第一个分布式 社交平台-skycoin bbs的推出。
+Skycoin BBS是建立在Skycoin平台和不可变数据结构（CXO）之上的点对点的社交媒体应用程序。功能包括：
+ 能保证隐私和自由的去中心化网络； 发帖、赞、踩、评论； 支持用户自行配置； 用币或币时打赏； 网络高可用性； 支持用户用公钥和信任列表过滤垃圾邮件发送者，机器人和不可信用户；  想加入吗？下载链接：https://www.skycoin.net/downloads/.
+下面的链接可以让你了解skycoin的开发，并和开发人员沟通：https://t.me/skycoinbbs.
+开发进度更新：https://t.me/skycoinbbs.
+想了解skycoin BBS技术可以看这：https://www.skycoin.net/blog/bbs/bbs-development-update-1/.
+这个链接可以让你跟踪skycoin BBS的GitHub代码：https://github.com/skycoin/bbs.
+如何获取要连接的节点列表以及要订阅的版块：https://t.me/skycoinbbshosting.
+YouTube上skycoin BBS的发展历程小视频：https://www.youtube.com/watch?v=6ZqwgefYauU.
+我们的愿景： Skycoin BBS是一个点对点的社交媒体应用程序，建立在Skycoin平台的不可变数据结构（CXO）上。它为用户提供了一个交流平台，Skycoin BBS才是真正社交媒体该有的样子。
+Skycoin BBS是最早建立在Skycoin生态系统上的应用程序之一。Skycoin使网络去中心化，并使用加密协议通信。由于Skycoin没有中心化服务器，所以数据不受任何中央管理机构的控制。在skycoin BBS上，每个人都拥有自己的隐私和自由。
+BBS，即网络论坛。传统意义上，BBS是用户可以自由交互和分享内容的地方。新的BBS提出了更高的要求：BBS的掌控权要掌握在用户而不是软件公司手中。Skycoin BBS从传统BBS脱胎出来，并创造出去中心化的、以用户为中心的新时代社交平台。
+Skycoin BBS使用的是一种之前被称为Aether，现在被称为Skycoin CXO的数据库。用户使用符合Skycoin公钥间机器通信的TOX标准(github.com/skycoin/net) 的Sky Messenger进行发帖。
+有了Skycoin BBS，用户就可以畅游社交媒体而不用担心泄露自己的数据。现有功能包括用户可配置文件，发帖，赞，踩和评论，用币时或币打赏。Skycoin BBS是以用户为中心的，我们也会根据需求增加更多功能。
+在Skycoin BBS上，投票和内容管理是透明的。社区可以通过密码验证数据，轻松发现投票造假。用户可以投票决定白名单用户和垃圾邮件发送者。可通过投票产生黑名单以阻止不法用户
+Skycoin BBS可以抵抗僵尸程序。用户可以将僵尸程序标记出来，并阻止其他人关注。尽管僵尸程序可以通过投票相互庇护，但人们不会将它们标记为可信用户或关注它们。等僵尸程序没有关注者后，算法就会将它们屏蔽。
+Skycoin BBS的好处不只是保护用户隐私和数据所有权。 Skycoin BBS也消除了企业和政府干预的危险。与大多数社交媒体网络不同，Skycoin BBS是去中心化的。不会因为中央服务器关闭而崩溃，也没有办法被监视，数据包可以直接被相应节点进行转发。这个点对点的系统保护了用户免受来自第三方和当局的控制。
+Skycoin BBS目前还在初级阶段，我们也在不断开发完善，早期用户可能会遇到一些bug或数据丢失的情况。出现问题您可以跟我们反馈，以帮助我们改进Skycoin BBS。凭借您的反馈，我们会让Skycoin BBS成为对社交媒体的一次真正革命。
+Skycoin BBS仅仅是个开始。借助Skycoin BBS，我们会在Skycoin生态上建立一个新的互联网。我们这样做是因为我们相信，互联网未来的关键是人，而不是软件公司。Skycoin BBS通过分布式点对点网络将去中心化的沟通方式带给用户，有了它，我们不必再为了沟通出卖自己的数字灵魂。
+Skycoin BBS，你值得拥有。</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v4.1 发布公告</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1发布了！
+
+修改日志  用户界面改善 实现了服务发现（和其他节点的连接可以自动化管理） 改善了公告板内容的远程提交（通过服务发现来实现） 简化了公告板创建和运行过程 改善了CXO的数据结构  下一个发布版会带来更多令人激动的特性！ 关注这里获取最新消息
+二进制包 以下二进制包可以运行在64位的windows, mac 和 linux系统
+ https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_windows_amd64.zip  源代码 可以在GitHub上获取
+社区 点击这里在Telegram上参与讨论</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1终于发布了</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1终于发布了！
+更新日志  使用最新的CXO更新代码。 重新实现的CXO数据结构，以方便更容易地实现差异化管理 引入“views”模块，方便实施不同的查看方式。 实现从文件导出/导入论坛板块。 初步实现关注/忽略用户。 改进的UI（正在进行中）。 自动点对点转发板块。  二进制文件 这些文件分别用于64位Windows系统，苹果系统和linux系统。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_windows_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_osx_amd64.zip  源代码 在GitHub上的源代码地址如下:
+https://github.com/evanlinjin/bbs
+社区 点击这里加入Telegram讨论！!(需翻墙)</description>
+    </item>
+    
+    <item>
+      <title>天空币BBS开发更新#2</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-development-update-2/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-development-update-2/</guid>
+      <description>自版本0.1发布以来已经有一个多月了，0.2即将到来！
+更改如下：
+ 使用最新的CXO版本（点对点自复制数据库）。 重新实现CXO对象和树（为新功能准备）。 引入“views”模块，轻松实现多种“查看”内容的不同方式。 初始实现用户关注/忽略。 完全改版的UI.  CXO变更 CXO已被大量重构，现在更快更稳定。 API已经被更好地与散列数组一起使用 - 具有恒定的访问时间，更快的复制速度和直接使用给定散列值访问元素的能力。
+CXO的这些变化促使BBS跟着改变了大部分的代码库。 在这里查看CXO仓库.
+CXO数据结构变更 对数据结构的更改是为了解决以下问题：
+1.实现一个结构，以便将来可以将用户数据迁移到自己独立的根。 2.轻松确定根序列之间的“差异”（a.k.a变化）。 这将对编译视图和向最终用户提供实时更新非常有用。 3.轻松确定不同根类型的根对象类型。
+RootPage对象决定了root的类型。 目前，所有数据都在每个板块上的一根根树下累积。 在未来，主题(线索)和用户将有自己的根。
+在将来，“BoardPage”将有一个公钥列表，而不是主题的hrefs，因为主题将有自己的根。 这使主题易于在板之间迁移。
+DiffPage用于确定“BoardPage”根的根序列之间的变化。 这本质上是一组不断增加的数组，其中长度的增加被解释为变化。
+UsersPage将成为一个公钥列表（这些将是一个公告板上的“参与者”）。 每个用户将有自己的根。
+视图模块实现 视图本质上只是一个接口：
+type View interface { // Init initiates the view. 	Init(pack *skyobject.Pack, headers *pack.Headers, mux *sync.Mutex) error // Update updates the view. 	Update(pack *skyobject.Pack, headers *pack.Headers, mux *sync.Mutex) error // Get obtains information from the view.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS开发 更新＃1</title>
+      <link>https://www.skycoin.net/zh/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/bbs/bbs-development-update-1/</guid>
+      <description>An Introduction BBS(Bulletin Board System) 代表电子布告栏系统。虽然传统的BBS系统不再被广泛使用，BBS现在现代成为了社会服务的代表。
+Skycoin BBS是skycoin生态系统的第一个Web应用程序之一。 Skycoin试图彻底改变互联网，使其去中心化，并默认地使用加密协议。
+Skycoin BBS 的根基是一个名为CXO（Skycoin生态系统的一部分），一个点对点，自我复制的网络数据库。它具有像Golang 对象一样，不可变的树结构。所有对象都通过自己的哈希值一起定义图式引用。每棵树都有一个树根对象和对公/私钥对签名。要更新树，树根有增量的版本称为“序列”。这种设计实现快速，高效的带宽数据复制。
+数据结构 Skycoin BBS（0.2版本 - 正在开发）的数据结构包含不同的板，主题和帖子。板和帖子都可以给与正／负评。 这是大概CXO树的样子：
+这是一个简化图。
+所有提交的对象（主题，帖子和投票），都可以通过提交用户的公钥提供的签名和进行验证。
+每根包含用于表示／存储每一个板的数据。 Board－Page包含“内容”; 板的本身，主题和帖子。主题是由“主题”对象的哈希所反映，而帖子同样被“帖子”本身的哈希所翻译。因此，帖子和主题一经提交就不能能被修改。
+Thread－Votes－Pages，Post－Votes－Pages存储了投票的内容。该Vote－Page的“引用（ref）”字段包含相关内容的哈希值。在“投票”字段存储了扳票中的指定的内容。 Vote－Pages是由BBS节点到存储的结构，所以能够迅速的获得“投票概览”。
+投票和内容是分开存储以减少因为每一次投票而改变的树的节点数目。它还允许通过投票的编译器得到更容易票数据操作。
+发布 目前，我们只发布了一个稳定的Skycoin BBS。目前的功能是十分基本的，但CXO数据结构比上面所指的更复杂。内容增加和投票产生使得那个根在每个动作之上以倍数增长。
+BBS（目前正在开发）的0.2版，不仅提高了性能和代码的清晰度，同时也将实现以下新的特点：
+ 改进内容加载 - 我们将利用客户端和服务器之间的WebSocket连接（S）的，允许实时更新，更有效的内容加载。 内容投票/观看改善 - 无论从用户的角度来看，或是实际表现和流动性。垃圾邮件的报告也将陆续展开。 权限 - 现在可以设置权限限制谁可以执行有一些操作（如提交内容/投票权）。屏蔽／拉黑用户的功能也将会推出。  Participate 欢迎加入我们的电报小组. 已得到最新Skycoin BBS的开发消息。 Skycoin BBS是開源的。源代碼可以遊覽這裏。需要注意的是0.2版本的開發是在“V0.2”分支。</description>
+    </item>
+    
+  </channel>
+</rss>

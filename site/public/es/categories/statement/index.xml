@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statement on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/statement/</link>
+    <description>Recent content in Statement on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/statement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solar Bankers es un ejemplo de una compañía que adopta la revolucionaria cadena de bloques de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</guid>
+      <description>Mejor velocidad, mejor seguridad, mejor privacidad —Skycoin ofrece todas estas ventajas a través de su plataforma de código abierto. La innovadora tecnología que impulsa a Skycoin está disponible para todos. En la actualidad, cada vez más empresas se dan cuenta de los beneficios de Skycoin y lo utilizan para construir sus negocios.
+Un ejemplo es Solar Bankers, una nueva y revolucionaria compañía de energía. Solar Bankers está utilizando el poder de la cadena de bloques para descentralizar el sector energético.</description>
+    </item>
+    
+    <item>
+      <title>Por qué construimos Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/why-we-built-skycoin/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/why-we-built-skycoin/</guid>
+      <description>Satoshi imaginó a Bitcoin como una moneda digital descentralizada. Las redes de cadena de bloques estaban destinadas a democratizar las finanzas, eliminando el control corporativo y extendiendo el poder entre los usuarios. Sin embargo, Bitcoin y las monedas relacionadas se han centralizado debido a su dependencia en los algoritmos de Prueba de Trabajo (PoW) y Prueba de Participación (PoS), así como en el uso de la minería para crear monedas.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS: Una Red Social para Ti</title>
+      <link>https://www.skycoin.net/es/statement/skycoinbbs/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoinbbs/</guid>
+      <description>Resumen: En las redes sociales corporativas, tú eres el producto. Una compañía controla tus datos. Los venden a anunciantes y los almacenan en sus servidores. Una vez que haces una publicación, es de ellos, para siempre. No tienes control sobre la privacidad, la tecnología o incluso tu propia identidad. ¿Por qué deberíamos conformarnos con eso?
+Es hora de una revolución en las redes sociales. Skycoin te devuelve las redes sociales a ti, el usuario.</description>
+    </item>
+    
+    <item>
+      <title>El Problema de Consenso de Segwit2x y Bitcoin – Por qué Skycoin es Superior</title>
+      <link>https://www.skycoin.net/es/statement/segwit2x/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/segwit2x/</guid>
+      <description>El miércoles, los desarrolladores de Bitcoin suspendieron los planes de introducir la controversial actualización de software Segwit2x. La actualización 2x habría incrementado el tamaño de cada bloque, de 1MB a 2MB, duplicando la capacidad de Bitcoin para realizar transacciones. Segwit2x ha sido planeada durante varios meses y debía entrar en vigencia alrededor del 16 de noviembre.
+Es evidente que Bitcoin tiene un problema de escalabilidad. Segwit2x estaba destinada a resolver ese problema mediante un incremento del tamaño de los bloques.</description>
+    </item>
+    
+    <item>
+      <title>Motivaciones del diseño del algoritmo de consenso Obelisk</title>
+      <link>https://www.skycoin.net/es/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>Esta es una publicación archivada del foro BitcoinTalks el 19 de Junio del 2014
+ Cita de: yxxyun en Junio 19, 2014, 02:52:38 AM
+ Cita de: skycoin en Junio 19, 2014, 02:31:59 AM
+ Cita de: FrictionlessCoin en Junio 18, 2014, 09:15:07 PM
+ Cita de: skycoin en Junio 18, 2014, 09:08:56 PM
+Actualización del desarrollo:
+Hemos descubierto una forma de prevenir un ataque Sybil usando un sistema Proof of Stake híbrido.</description>
+    </item>
+    
+    <item>
+      <title>Ha sido lanzada la v0.20.2 de la Cartera Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-wallet-v0.20.2-released/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-wallet-v0.20.2-released/</guid>
+      <description>Descarga la cartera Skycoin v0.20.2
+Esta versión solventa muchos de los problemas de la cartera anterior y tiene una nueva interfaz. Esta interfaz es una mejora de la versión 0.19, sin embargo solo será provisional hasta la v0.21 o v0.22.
+Cambios importantes:
+ Siempre muestra el balance correcto de la cartera. Corrige el archivo de cache corrupto de la base de datos de la cadena de bloques. No tiene problemas de rendimiento.</description>
+    </item>
+    
+    <item>
+      <title>Plan de Distribución de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-distribution-plan/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-distribution-plan/</guid>
+      <description>Este es un anuncio oficial con respecto a cómo se manejará la distribución de SKY de ahora en adelante.
+La distribución de Skycoin ha sido poco clara y manejada de diferentes formas durante su trayectoria.
+En el presente, no hay ICO. En un futuro cercano, estará en marcha una venta directa limitada, manejada por software.
+La venta directa será accesible desde la cartera y desde el sitio web.
+Tendrá un límite total, un límite diario, y un precio sujeto a cambios.</description>
+    </item>
+    
+    <item>
+      <title>¿Puede Skycoin ser atacado al 51%?</title>
+      <link>https://www.skycoin.net/es/statement/can-skycoin-be-51-attacked/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/can-skycoin-be-51-attacked/</guid>
+      <description>Esta es una publicación archivada del hilo de bitcointalks el 16 de Febrero del 2015
+ Cita de: iamback Febrero 16, 2015, 09:28:38 AM
+Un consenso sin PoW no tendrá vida. Ya que no hay suficiente tiempo para identificar sus problemas y confiar en él antes de que la economía global comience a colapsar en 2016. Por ejemplo, el ataque de minado no había sido descubierto (o digamos ampliamente probado y reconocido) hasta años después de que Satoshi publicara el PoW.</description>
+    </item>
+    
+    <item>
+      <title>Llegando a Donde Creemos que Bitcoin Debería Estar</title>
+      <link>https://www.skycoin.net/es/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>Esta es una publicación archivada del hilo bitcointalks del 23 de abril de 2014
+ Cita de: ** JFK01 ** el 23 de abril de 2014, 01:54:50 PM
+Supongo que Skycoin solo quiere probar las aguas primero. No hay nada malo con eso. Son ingenieros y quieren hacer pruebas para todo. Ellos también han sido muy cautelosos con el desarrollo. Esto es algo en lo que ellos son buenos. Solo haz las cosas para las que eres bueno.</description>
+    </item>
+    
+    <item>
+      <title>Equipo de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-team/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-team/</guid>
+      <description>Este es el equipo actual de Skycoin.
+Mercadotecnia Michael Terpin (Coinovate, CoinAgenda, BitAngels) y Richard Kastelein (Blockchain News, CryptoAssets Design Group) son asesores del proyecto y apoyan con el marketing.
+Otro conjunto de personas están enfocadas en varios aspectos de comunicación, marketing y producción de contenido.
+Desarrollo/Investigación/Administración Synth, el arquitecto y cabeza del proyecto. Tiene una formación en matemáticas y criptografía.
+ Telegram: @haltingstate  Steve, desarrollador y director del proyecto.</description>
+    </item>
+    
+    <item>
+      <title>Cinco Pilares de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/five-pillars-of-skycoin/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/five-pillars-of-skycoin/</guid>
+      <description>El proyecto Skycoin es una plataforma de software/aplicación herméticamente contenida, que opera por encima y paralelamente con la internet actual pero independientemente de ella.
+Los cinco pilares del proyecto Skycoin son:
+(1) Skycoin, una moneda mejor que Bitcoin en todos los sentidos técnicamente:
+ Transacciones más rápidas que las de tarjetas de crédito. Tasa de transacción ilimitada. No necesita mineros ni recompensas por bloque. Bajo consumo de energía. Todos los problemas de criptografía están arreglados (La maleabilidad de firmas por ejemplo).</description>
+    </item>
+    
+    <item>
+      <title>El Significado de Aether</title>
+      <link>https://www.skycoin.net/es/statement/the-meaning-of-aether/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/the-meaning-of-aether/</guid>
+      <description>Esta es una publicación archivada del hilo bitcointalks del 05 de mayo de 2014
+El diseño original de Aether se ha convertido en lo que ahora se llama CXO
+*Cita de: ** Tobo ** el 4 de mayo de 2014, 02:11:12 PM* &amp;gt;Noté que anteriormente usaron el nombre ether (éter, en español), el cual fue usado por Ethereum. Ahora lo cambiaron por aether (en español conocido también como éter), el cual ha sido utilizado por algunas otras personas en este foro.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin es una criptomoneda de ultima generación</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-next-generation/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-next-generation/</guid>
+      <description>Esta es una publicación archivada del hilo bitcointalks del 06 de mayo de 2014.
+Cita de: -Greed- el 5 de mayo de 2014, 04:25:46 p.m.+1 para que Skycoin sea verdaderamente una moneda de segunda generación. En mi opinión, Bitcoin y todos sus forks son de primera generación. Algunas de las cosas sobre las que estamos sentando las bases son de tercera generación. Una moneda utilizable, trabajable, con una base de código limpia y una buena seguridad, sin minería, sin el ataque de 51% y una razón para usar una moneda que es de segunda generación.</description>
+    </item>
+    
+    <item>
+      <title>No Hay un Evento de Distribución de Monedas (ICO) en este momento</title>
+      <link>https://www.skycoin.net/es/statement/no-coin-distribution-event-at-this-time/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/no-coin-distribution-event-at-this-time/</guid>
+      <description>No estamos haciendo una ICO actualmente. El evento de distribución anterior finalizó el 31 de agosto de 2017.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: El Algoritmo de Consenso de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/obelisk-the-skycoin-consensus-algorithm/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/obelisk-the-skycoin-consensus-algorithm/</guid>
+      <description>La cadena de bloques (blockchain) de Skycoin hace uso de un nuevo tipo de algoritmo de consenso llamado &amp;ldquo;Obelisk&amp;rdquo; que reemplaza tanto a la prueba de trabajo (&amp;ldquo;PoW&amp;rdquo;) como la prueba de participación (&amp;ldquo;PoS&amp;rdquo;).
+El objetivo de los desarrolladores de Skycoin era corregir los principales fallos de seguridad y las &amp;ldquo;tendencias centralizadoras&amp;rdquo; asociadas con las redes de cadenas de bloques en las que el consenso se basa en algoritmos PoW o PoS y la creación de monedas está ligada a un proceso de minería.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin y Skywire son dos componentes separados del Proyecto Skycoin. Skycoin es la cadena de bloques. Skywire es la red en malla.
+Skycoin fue construido primero. Puede mantenerse por sí mismo. Fue creado para resolver los problemas que tiene Bitcoin. El mayor problema que tiene Bitcoin es la minería, lo que lleva a la centralización de Bitcoin. Los otros problemas que ha tenido Bitcoin se relacionaban principalmente con criptografía o errores de software, lo que generó defectos como la maleabilidad de transacciones.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin no tiene nada que ver con Skynet</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-has-nothing-to-do-with-skynet/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-has-nothing-to-do-with-skynet/</guid>
+      <description>Recientemente nos han preguntado sobre otros proyectos llamados &amp;ldquo;Skynet&amp;rdquo; o &amp;ldquo;Superskynet&amp;rdquo;.
+Skycoin nunca ha utilizado el nombre &amp;ldquo;Skynet&amp;rdquo; porque es cliché y poco original.
+Además, nos oponemos a lo que representa &amp;ldquo;Skynet&amp;rdquo; de la película Terminator: el sometimiento de la humanidad ante las máquinas controladas por unos pocos.
+El Proyecto Skycoin no tiene ninguna relación con proyectos llamados &amp;ldquo;Skynet&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Programa de Recompensas de Skycoin 1</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-bounty-program-1/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-bounty-program-1/</guid>
+      <description>Actualizado el 29 de Agosto, 2017. Se ha añadido la bonificación por actividad en Reddit. Se ha incrementado la recompensa por GIFs a 20 SKY.
+Actualizado de nuevo el 29 de Agosto, 2017. Añadidas recompensas por traducciones.
+Actualizado el 30 de Agosto, 2017. Se han removido las recompensas por GIFs.
+Actualizado el 3 de Septiembre, 2017. Se ha añadido el francés a las recompensas por traducciones.
+Actualizado el 12 de Septiembre, 2017.</description>
+    </item>
+    
+    <item>
+      <title>Enlaces de la Comunidad de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-community-links/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-community-links/</guid>
+      <description>Conversa con el Equipo de Skycoin El equipo de Skycoin es más activo en Telegram.
+ Canal de Telegram de Skycoin Canal BBS de Skycoin Canal de Noticias de Skycoin Canal del Programa de Recompensas
+ Slack de Skycoin
+ Discord de Skycoin
+  Lista de Correo  Lista de Correo de Skycoin  Nuevas Actualizaciones  Blog de Skycoin Twitter de Skycoin Reddit de Skycoin Facebook de Skycoin  Media  Youtube de Skycoin Instagram de Skycoin  Software Todo el código es publicado en github.</description>
+    </item>
+    
+    <item>
+      <title>Oro Digital</title>
+      <link>https://www.skycoin.net/es/statement/digital-gold/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/digital-gold/</guid>
+      <description>La visión original de Satoshi para Bitcoin fue revolucionaria. Una moneda global que exististiese por encima de las naciones y fuera del alcance de la duda y la inflación. Bitcoin debió haber sacudido el núcleo del mundo financiero. Pero su visión fue un fracaso. En lugar de marcar el comienzo de una nueva era de descentralización, Bitcoin fue centralizada. El poder fue concentrado en tres pools de minería. La velocidad de transacción fue ralentizada.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Una Internet Libre y Transparente</title>
+      <link>https://www.skycoin.net/es/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skywire-a-free-and-open-internet/</guid>
+      <description>La internet nos da una ilusión de control. Podemos socializar, consumir, y hacer negocios instantáneamente a través de servicios proporcionados por Google, Facebook, Apple, y Amazon. ¿Se ve muy útil, no? Lo es —Hasta que consideras lo que das a cambio.
+No controlamos nuestras vidas en línea. Las grandes compañías y los proveedores de internet (ISPs) almacenan nuestra información, monitorean nuestros movimientos, y moldean nuestras experiencias. Cada vez que usamos la internet, le damos a esas compañías el control total sobre nosotros.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Lanza Una Visión Para La Nueva Internet</title>
+      <link>https://www.skycoin.net/es/statement/skycoin-launches-a-vision-for-the-new-internet/</link>
+      <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skycoin-launches-a-vision-for-the-new-internet/</guid>
+      <description>Skycoin, una criptomoneda de próxima generación con 4 años de desarrollo histórico, lanzada al público en Julio. El proyecto Skycoin busca popularizar la red descentralizada arreglando los problemas de Bitcoin. Más de 80 desarrolladores de Github y otras partes han contribuido al proyecto desde 2012.
+Skycoin es una divisa rápida, segura y confiable para transacciones online. Usa un algoritmo de consenso rediseñado que mejora el de Bitcoin, y es el primer algoritmo de su tipo desde PeerCoin.</description>
+    </item>
+    
+  </channel>
+</rss>

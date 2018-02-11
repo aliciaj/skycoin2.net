@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CX on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/tags/cx/</link>
+    <description>Recent content in CX on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/tags/cx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial de CX: Uso de Affordances para construir una pequeña aventura basada en texto</title>
+      <link>https://www.skycoin.net/es/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>Introducción Arquitectura desafio-respuesta Sistema de Affordance Objetos Conclusión  Introducción Este tutorial presenta un &amp;ldquo;juego&amp;rdquo; basado en texto (el usuario no interactúa con el programa y no puede influir en las decisiones del personaje) que usa una Arquitectura desafio-respuesta para determinar cuáles son las posibles acciones que puede hacer el personaje del juego. El código fuente completo se puede encontrar en el repositorio de CX, en el archivo examples/text-based-adventure.</description>
+    </item>
+    
+    <item>
+      <title>Visión general de CX</title>
+      <link>https://www.skycoin.net/es/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/overview/cx-overview/</guid>
+      <description>Introducción a CX Repositorio del Proyecto Sintaxis &amp;lsquo;Affordances&amp;rsquo;  Restricciones de Aridad Restricciones de Tipo Restricciones Existenciales Restricciones de Identificador Restricciones de Límites Restricciones Definidas por el Usuario  Sistema de Tipado Estricto Compilado e Interpretado  &amp;lsquo;Loop&amp;rsquo; de Read-Eval-Print Comandos de Meta-Programación &amp;lsquo;Stepping&amp;rsquo; &amp;lsquo;Debugging&amp;rsquo; Interactivo  Algoritmo Evolutivo Integrado Serialización  Introducción a CX CX es tanto una especificación como un lenguaje de programación diseñado para adoptar un nuevo paradigma de programación basado en el concepto de &amp;lsquo;affordances&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

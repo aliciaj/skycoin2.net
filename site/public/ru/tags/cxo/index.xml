@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CXO on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/cxo/</link>
+    <description>Recent content in CXO on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/cxo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS v5.0 анонс релиза</title>
+      <link>https://www.skycoin.net/ru/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/bbs/bbs-release-v5.0/</guid>
+      <description>Наконец-то мы выпустили Skycoin BBS v5.0 - и с множеством изменений под капотом!
+Тонкий клиент Наиболее очевидным изменением является введение тонкого клиента. Теперь вы можете получить доступ к Skycoin BBS без настройки узла! Просто перейдите по ссылке bbs.skycoin.net.
+В предыдущих версиях можно (и нужно) получать доступ или отправлять контент только через веб-интерфейс пользователя, который обслуживается локально. Поскольку этот веб-интерфейс (и API, который он вызывает) имеет прямой контроль над самим узлом и подписывает контент с закрытыми ключами, которые хранятся в нём (или на стороне сервера), то нецелесообразно подвергать его публичности.</description>
+    </item>
+    
+    <item>
+      <title>Что такое Aether</title>
+      <link>https://www.skycoin.net/ru/statement/the-meaning-of-aether/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/the-meaning-of-aether/</guid>
+      <description>Это заархивированное сообщение с форума bitcointalks от 5 мая 2014
+Оригинальный дизайн Aether развился в то, что теперь называется CXO (CX Object System)
+*Цитата из: Tobo от 4 мая 2014 в 14:11:12* &amp;gt; Я заметил, что вы ранее использовали название ether, которое использовалось Ethereum. Теперь вы изменили его на aether, который использовался некоторыми другими людьми на этом форуме. Почему вам так понравились эти два названия?
+Ether (эфир) пронизывает пространство. Затем мы узнали, что ether - это алкоголь, который люди нюхают, получая максимальное удовольствие, а aether - это мистическое вещество, которое пронизывает пространство.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 Описание релиза</title>
+      <link>https://www.skycoin.net/ru/bbs/skycoin-bbs-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/bbs/skycoin-bbs-v3.1/</guid>
+      <description>Опубликован финальный релиз Skycoin BBS v3.1!
+Изменения:  Обновлена и подготовлена к использованию последняя версия системы CXO. Обновлена реализация структуры данных CXO для упрощения управлением изменениями. Введен модуль views для упрощения реализации различных способов представления данных. Реализован импорт/экспорт досок объявлений в/из файла Реализованы функции &amp;ldquo;отслеживать&amp;rdquo; (follow) и &amp;ldquo;избегать&amp;rdquo; определенных пользователей Улучшен UI (пользовательский интерфейс, работа продолжается). Автоматизирована &amp;ldquo;peer-to-peer&amp;rdquo; передача веток обсуждений.  Исполняемые файлы Выложены версии для 64бит windows, mac и linux.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Нас часто спрашивают, в чём существенная разница между CXO и IPFS?
+File Coin преследует схожие с нашими цели, не являясь при этом частью инфраструктуры Skycoin. Их система работает с использованием трёх протоколов:
+ IPLD IPFS Multi-formats  где
+ IPLD является языком репрезентации для неизменяемых объектов данных и хэшей. – IPFS это файловая система – Multi-Formats – самоописываемый стандарт данных  CXO имеет всё то же самое в рамках среды Skycoin:</description>
+    </item>
+    
+  </channel>
+</rss>

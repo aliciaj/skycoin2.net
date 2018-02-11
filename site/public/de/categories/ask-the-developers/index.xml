@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ask the Developers on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/categories/ask-the-developers/</link>
+    <description>Recent content in Ask the Developers on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/categories/ask-the-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Die Leute möchten Shitcoins</title>
+      <link>https://www.skycoin.net/de/ask-the-developers/people-want-shitcoins/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/ask-the-developers/people-want-shitcoins/</guid>
+      <description>Auszug aus dem Telegram-Channel
+ Frage: Wenn Skycoin wirklich so gut ist, würde ich es definitiv für mein Unternehmen verwenden, aber wo können wir die Beweise dafür sehen? Tests und das Ganze? Gibt es eine Website mit weiteren Informationen und Daten? Ist das Netzwerk bereits durch viele Knoten geschützt, also strapazierfähig?
+ Die Leute möchten Shitcoins.
+Bitcoin hatte zu Beginn und Skycoin hat jetzt, große technische Barrieren und Bildungshürden.
+Skycoin ist neu und von Grund auf entwickelt, kein Klon wie diese 500 ERC20 Token.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/de/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Wir wurden gefragt, was der Unterschied zwischen CXO und IPFS ist.
+FileCoin hat dieselben Ziele, wie ein Teil der Skycoin-Infrastruktur, aber wählt einen anderen Ansatz. Sie haben drei separate Protokolle:
+ IPLD IPFS Multi-formats  wohingegen,
+ IPLD ist eine Repräsentationssprache für unveränderbare Datenobjekte und Hashes ist. IPFS ein Dateisystem ist. Multi-formats ein sich selbstdefinierender Datenstandard ist.  Bei Skycoin erfüllt CXO diese drei Sachen auf einmal.
+ Multi-formats ist nur ein &amp;ldquo;Schema&amp;rdquo; in CXO IPLD ist einfach CXO (unveränderbare Datenstrukturen, Hashketten, Replikation, Merkle-Bäume etc.</description>
+    </item>
+    
+  </channel>
+</rss>

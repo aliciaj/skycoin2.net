@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meshnet on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/meshnet/</link>
+    <description>Recent content in Meshnet on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/meshnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스카이와이어 - 스카이코인 메쉬넷(Meshnet) 프로젝트</title>
+      <link>https://www.skycoin.net/ko/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>소개 라우팅 : 개요 보상 : 보상 프로토콜 소스 라우팅 : 링크 계층 암호화  프로토콜 예시 : Nodes A and B 가능성 있는 개선사항:  IPv4 게이트웨이 : 현재의 IPS를 경유하는  예제 1 예제 2  스카이와이어 데몬 서비스 아키텍쳐  서비스 예제 : 블럭체인 동기화  멀티-홈 라우팅 및 링크 집계 메쉬넷 라우팅 : 저장 및 전송 저장 및 전송 : 용량 활용 저장 및 전송 : 예제  정상 작동의 예 혼잡이 있는 경우의 예 패킷 손실이 있는 경우의 예  소스라우팅 : 대역폭 시간지연 작업 저장 및 전송 : 용량 활용도, 서비스 품질 소스 라우팅 : 다중 경로 모바일 연결 소스 라우팅 : 노드 보안 소스 라우팅 : BGP의 제한 가상 경로 : 스카이와이어 네트워크 토폴로지 규모 소스 라우팅 : 가상 경로, SONET 기술 소스 라우팅 : 비대칭 연결 소스 라우팅 : 경로 검색  소개 스카이와이어의 목표 :</description>
+    </item>
+    
+    <item>
+      <title>메쉬넷의 대기시간과 개인정보보호에 관한 질문</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>이 글은 스카이와이로 불려지기 전의 스카이와이어 초기 형성에 대해 설명합니다. 2014년 8월 9일 자 비트코인 토크 게시글에서 인용하였습니다.
+출처 : CraigM 2014년 8월 9일, 오전 07:20:24
+ 메쉬넷은 tor보다 더 좋은 개인정보보호 도구이나, 대기시간이 더 적은 것이 맞습니까?
+모든 노드 운영자가 그들의 노드를 통해 데이터를 보내는 모든 사람에게 모든 트랜잭션을 설명하는 상세하며, 공개된 로그(개인 블록체인)를 기록하도록 강제하지 않습니까? 이것은 당신이 연결에 접속할 필요가 없다는 것을 제외하고, 제3자가 트래픽 관련 공격을 tor에서와 비슷하게 할 수 있는 것처럼 보입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 채굴기 : 차세대 인터넷을 위한 하드웨어</title>
+      <link>https://www.skycoin.net/ko/statement/skywire-miner-hardware-for-the-next-internet/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skywire-miner-hardware-for-the-next-internet/</guid>
+      <description>Sign up to our mailing list for Skywire Miner updates: http://eepurl.com/c4DyAv
+진정으로 자유롭고 개방적인 인터넷을 어떻게 만들 수 있습니까? 이 질문에 답하기 위해 우리는 새로운 대체 인터넷인 스카이와이어를 개발했습니다. 스카이와이어는 대형 인터넷 서비스 제공 업체(ISP)로부터 통제권을 얻어 사용자에게 다시 되돌려주는 지금까지의 상식을 깨는 혁신적인 기술입니다. 이 P2P(peer-to-peer)모델은 중단, 속도저하 또는 감시없이 네트워크 중립성 및 콘텐츠 공유를 활성화 합니다. Skywire의 개방형 액세스 네트워크는 개인 정보를 보호하고 언론의 자유를 보장합니다. 스카이와이어를 만드는 우리의 사명은 보다 나은 인터넷의 미래를 만드는 데 기여하는 것입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

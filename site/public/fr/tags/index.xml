@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/tags/</link>
+    <description>Recent content in Tags on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ask the Developers</title>
+      <link>https://www.skycoin.net/fr/tags/ask-the-developers/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/ask-the-developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BBS</title>
+      <link>https://www.skycoin.net/fr/tags/bbs/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/bbs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CX</title>
+      <link>https://www.skycoin.net/fr/tags/cx/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/cx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CXO</title>
+      <link>https://www.skycoin.net/fr/tags/cxo/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/cxo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>https://www.skycoin.net/fr/tags/community/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://www.skycoin.net/fr/tags/development/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distribution</title>
+      <link>https://www.skycoin.net/fr/tags/distribution/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meshnet</title>
+      <link>https://www.skycoin.net/fr/tags/meshnet/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/meshnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Obelisk</title>
+      <link>https://www.skycoin.net/fr/tags/obelisk/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/obelisk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://www.skycoin.net/fr/tags/privacy/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skycoin Mining</title>
+      <link>https://www.skycoin.net/fr/tags/skycoin-mining/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/skycoin-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skyledger</title>
+      <link>https://www.skycoin.net/fr/tags/skyledger/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/skyledger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skywire</title>
+      <link>https://www.skycoin.net/fr/tags/skywire/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/skywire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statement</title>
+      <link>https://www.skycoin.net/fr/tags/statement/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/tags/statement/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

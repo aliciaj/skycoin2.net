@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/skycoin/</link>
+    <description>Recent content in Skycoin on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/skycoin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스카이코인 개요</title>
+      <link>https://www.skycoin.net/ko/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/skycoin-overview/</guid>
+      <description>스카이코인 소개 비트코인과 현재 블록체인 프로토콜의 발전과 문제점 비트코인에 의한 혁신 비트코인의 주요 문제점 금융 원장을 위한 분산된 합의 시스템에 대한 바람직한 속성 스카이코인 보안 원칙 투명성과 보안 : Obelisk와 공개 브로드캐스트 채널 Obelisk 간단한 바이너리 합의 알고리즘 : 두 블록 사이에서 선택 다중 동시 분기점 선택에 대한 합의  스카이코인 소개 스카이코인은 공개 브로드캐스트 채널이라고 알려진 새로운 암호화 프리미티브를 도입한 기술을 기반으로 합니다. 이것은 또한 Obelisk라고 하는 새로운 합의 알고리즘 구현을 도입하여, 비트코인의 기반이 되는 작업 증명 및 마이닝 프로세스에서 발생하는 신뢰 문제를 완화시켜, 다음과 관련된 여러가지 보안문제를 해결합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

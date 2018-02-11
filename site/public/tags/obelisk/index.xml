@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obelisk on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/obelisk/</link>
+    <description>Recent content in Obelisk on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/obelisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> The Power of SKY; The Defense of Freedom (V1.0.3) (Author: Mao 驴占坑) </title>
+      <link>https://www.skycoin.net/guest-post/the-power-of-sky/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/guest-post/the-power-of-sky/</guid>
+      <description>Introduction Premise: Computer = Calculation + Storage + Network.
+On the most basic level, a computer is anything that processes data. It can be a physical device, like a PC, or an abstract, virtual system involved in information processing. Every computer consists of three elements: a CPU, a hard disk, and a network card.
+All computer hardware, virtualization, and computer languages include these elements, which allow computers to process data sets.</description>
+    </item>
+    
+    <item>
+      <title>Why We Built Skycoin</title>
+      <link>https://www.skycoin.net/statement/why-we-built-skycoin/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/why-we-built-skycoin/</guid>
+      <description>Satoshi envisioned Bitcoin as a decentralized digital currency. Blockchain networks were intended to democratize finance, eliminating corporate control and spreading power among users. However, Bitcoin and related currencies have become centralized due to their reliance on Proof of Work (PoW) and Proof of Stake (PoS) algorithms, as well as their use of mining to create coins. This centralization defeats the original purpose of digital currencies.
+We created the Skycoin blockchain to correct these flaws.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk Consensus Algorithm Design Motivations</title>
+      <link>https://www.skycoin.net/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>This is an archived post from the bitcointalks thread on June 19 2014
+ Quote from: yxxyun on June 19, 2014, 02:52:38 AM
+ Quote from: skycoin on June 19, 2014, 02:31:59 AM
+ Quote from: FrictionlessCoin on June 18, 2014, 09:15:07 PM
+ Quote from: skycoin on June 18, 2014, 09:08:56 PM
+Development Update:
+We figured out way of preventing Sybil attack using a hybrid Proof of Stake system.</description>
+    </item>
+    
+    <item>
+      <title>Can Skycoin be 51% Attacked?</title>
+      <link>https://www.skycoin.net/statement/can-skycoin-be-51-attacked/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/can-skycoin-be-51-attacked/</guid>
+      <description>This is an archived post from the bitcointalks thread on February 16 2015
+ Quote from: iamback on February 16, 2015, 09:28:38 AM
+A non-PoW consensus is DOA, because there isn&amp;rsquo;t enough time to thresh out the issues and trust it before the global economy begins to collapse in 2016. For example, the selfish mining attack wasn&amp;rsquo;t discovered (or let&amp;rsquo;s say widely proven and recognized) until years after Satoshi published PoW.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: Skycoin Consensus Algorithm | Information Pages</title>
+      <link>https://www.skycoin.net/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Consensus highlights  Why consensus High scalability and low-energy consumption Robust to coordinated attacks The “51-percent Attack” Hidden IP addresses Independence of clock synchronization Two type of nodes: Consensus and Block-making  How Skycoin Consensus Algorithm works References  Consensus highlights Why consensus Skycoin Consensus Algorithm (&amp;ldquo;Obelisk&amp;rdquo;) synchronizes the state of Skycoin blockchain across all the network nodes. This results in consistent accounting, i.e. when calculating coin balance for a given public key (or address) yields same value at each node that performed the calculation.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk Explained</title>
+      <link>https://www.skycoin.net/drafts/oblelisk-explained/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/oblelisk-explained/</guid>
+      <description>What is Obelisk? Obelisk is what makes Skycoin, Bitcoin 2.0. Obelisk is a sustainable alternative to proof-of-work. Obelisk is a system that replaces proof of work for blockchain consensus and eliminates the possibility of a 51% attack.
+Obelisk was inspired by academic research into adversarial distributed time-stamping and algorithms such as Ben-Or&amp;rsquo;s, Paxos, and the Castro-Liskov PBFT algorithm. Obelisk is a new solution to the Byzantine Generals problem which offers strong mathematical security guarantees, even when the majority of nodes are hostile.</description>
+    </item>
+    
+    <item>
+      <title>Overview of Obelisk: Distributed Consensus </title>
+      <link>https://www.skycoin.net/drafts/overview-of-obelisk/</link>
+      <pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/drafts/overview-of-obelisk/</guid>
+      <description>Overview of Obelisk: Distributed Consensus In Obelisk, each person runs their own Obelisk nodes. Each node has a set of trust relationships with other nodes. Each node has a list of servers it &amp;ldquo;trusts&amp;rdquo;. A new node can be initialized by randomly choosing a few dozen existing nodes to trust, with only two or three of the nodes being nodes run by trusted institutions or persons.
+Servers publish &amp;ldquo;blocks&amp;rdquo; every 5 seconds.</description>
+    </item>
+    
+  </channel>
+</rss>

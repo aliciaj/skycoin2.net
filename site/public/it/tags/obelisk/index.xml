@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obelisk on Skycoin Blog</title>
+    <link>https://www.skycoin.net/it/tags/obelisk/</link>
+    <description>Recent content in Obelisk on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/it/tags/obelisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Motivazioni per la progettazione dell&#39;algoritmo di consenso Obelisk</title>
+      <link>https://www.skycoin.net/it/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>Questo è un post archiviato da una discussione sul forum BitcoinTalks del 19 giugno 2014
+ Citazione di: yxxyun del 19 Giugno, 2014, 02:52:38 AM
+ Citazione di: skycoin del 19 Giugno, 2014, 02:31:59 AM
+ Citazione di: FrictionlessCoin del 18 Giugno, 2014, 09:15:07 PM
+ Citazione di: skycoin del 18 Giugno, 2014, 09:08:56 PM
+Aggiornamento di sviluppo:
+Abbiamo scoperto un modo per prevenire un attacco Sybil usando un sistema Proof of Stake ibrido.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: Skycoin Consensus Algorithm | Information Pages</title>
+      <link>https://www.skycoin.net/it/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Punti Salienti del Consenso  Perchè Consenso Elevata Scalabilità e Basso Consumo Energetico Robusto ad Attacchi Coordinati “Attacco del 51 Percento” Indirizzi IP Nascosti Indipendenza dalla Sincronizzazione d&amp;rsquo;Orologio Due Tipi di Nodi: Consenso e Block-making  Come Funziona l&amp;rsquo;Algoritmo di Consenso Skycoin Referenze  Punti Salienti del Consenso Perchè Consenso L&amp;rsquo;algoritmo di consenso skycoin (&amp;ldquo;Obelisk&amp;rdquo;) sincronizza lo stato della blockchain Skycoin attraverso tutti i nodi della rete. Ciò risulta in una contabilità coerente, es: quando si calcola il saldo per una data chiave pubblica (o indirizzo) si ottiene lo stesso valore su ciascun nodo che ha eseguito il calcolo.</description>
+    </item>
+    
+  </channel>
+</rss>

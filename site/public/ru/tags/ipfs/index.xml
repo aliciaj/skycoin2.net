@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPFS on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/ipfs/</link>
+    <description>Recent content in IPFS on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Нас часто спрашивают, в чём существенная разница между CXO и IPFS?
+File Coin преследует схожие с нашими цели, не являясь при этом частью инфраструктуры Skycoin. Их система работает с использованием трёх протоколов:
+ IPLD IPFS Multi-formats  где
+ IPLD является языком репрезентации для неизменяемых объектов данных и хэшей. – IPFS это файловая система – Multi-Formats – самоописываемый стандарт данных  CXO имеет всё то же самое в рамках среды Skycoin:</description>
+    </item>
+    
+  </channel>
+</rss>

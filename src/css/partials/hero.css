@@ -1,0 +1,16 @@
+.hero h1 {
+	color: white;
+	padding-bottom: 2em;
+}
+
+.hero-skywire {
+	background: url('/images/hero-skywire-f.jpg');
+}
+
+.hero-skycoin {
+	background: url('/images/hero-skycoin-f.jpg');
+}
+
+.hero-ledger {
+	background: url('/images/hero-skyledger-f.jpg');
+}

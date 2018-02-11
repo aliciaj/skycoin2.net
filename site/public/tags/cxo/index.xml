@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CXO on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/cxo/</link>
+    <description>Recent content in CXO on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/cxo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> The Power of SKY; The Defense of Freedom (V1.0.3) (Author: Mao 驴占坑) </title>
+      <link>https://www.skycoin.net/guest-post/the-power-of-sky/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/guest-post/the-power-of-sky/</guid>
+      <description>Introduction Premise: Computer = Calculation + Storage + Network.
+On the most basic level, a computer is anything that processes data. It can be a physical device, like a PC, or an abstract, virtual system involved in information processing. Every computer consists of three elements: a CPU, a hard disk, and a network card.
+All computer hardware, virtualization, and computer languages include these elements, which allow computers to process data sets.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v5.0 Release Announcement</title>
+      <link>https://www.skycoin.net/bbs/bbs-release-v5.0/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-release-v5.0/</guid>
+      <description>Skycoin BBS v5.0 has finally been released with many changes under the hood!
+Thin Client The most apparent change of all, is the introduction of the thin client. You can now access Skycoin BBS without setting up a node! Just head to bbs.skycoin.net.
+In previous versions, one can only (and should only) access/submit content via a web user interface that is served locally. As this web-interface (and the API that it calls) has direct control over the node itself, and signs content with private keys that are stored in-node (or server-side), it is not appropriate to expose it to the public.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v4.1 Release Announcement</title>
+      <link>https://www.skycoin.net/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1 has been released!
+
+Change Log  User interface improvements. Implemented service discovery (connections to other nodes are now automatically managed). Improved remote submission of board content (implemented via service discovery). Simplified process of board creation and hosting. Improvements to CXO data structure.  The next release will bring about even more exciting features! Watch this space to keep up to date.
+Binaries These are avaliable for 64bit windows, mac and linux.</description>
+    </item>
+    
+    <item>
+      <title>The Meaning of Aether</title>
+      <link>https://www.skycoin.net/statement/the-meaning-of-aether/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/statement/the-meaning-of-aether/</guid>
+      <description>This is an archived post from the bitcointalks thread on May 05 2014
+Aether&amp;rsquo;s original design has evolved into what is now called CXO
+*Quote from: Tobo on May 04, 2014, 02:11:12 PM* &amp;gt;I noticed that you previously used the name of ether which was used by Ethereum. Now you changed it to aether which has been used by some other people at this forum. Why did you like these two names so much?</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 Release Announcement</title>
+      <link>https://www.skycoin.net/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1 has finally been released!
+Changelog  Updated to use latest CXO. Reimplemented CXO data structure for easier diff management. Introduction of a views module for easier implementation of different ways of viewing data. Implemented exporting/importing boards to/from file. Initial implementation of following/avoiding users. Improved UI (Work in progress). Automatic peer-to-peer relay of boards.  Binaries These are avaliable for 64bit windows, mac and linux.
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS Development Update #2</title>
+      <link>https://www.skycoin.net/bbs/bbs-development-update-2/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-development-update-2/</guid>
+      <description>It&amp;rsquo;s been a bit more than a month since the release of version 0.1, and 0.2 is soon to be ready!
+The changes are the following:
+ Uses the latest CXO version (peer to peer self-replicating database). Reimplementation of CXO objects and tree (in preparation for new features). Introduction to a views module for easy implementation of different ways of &amp;ldquo;viewing&amp;rdquo; content. Initial implementation of user following/avoiding. Completely revamped UI.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>We have been asked what is the difference between CXO and IPFS.
+File Coin has the same objectives as a part of the Skycoin infrastructure, but is taking a different approach. They have three separate protocols:
+ IPLD IPFS Multi-formats  where,
+ IPLD is a representation language for immutable data objects and hashes. IPFS is a file system Mult-formats is a self describing data standard  In Skycoin, CXO does all three of those</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS Development Update #1</title>
+      <link>https://www.skycoin.net/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/bbs/bbs-development-update-1/</guid>
+      <description>An Introduction BBS stands for Bulletin Board System. Although traditional BBS systems are no longer widely used, BBS in the modern era is an icon for social services.
+Skycoin BBS is one of the first web applications to be implemented using the skycoin ecosystem. Skycoin attempts to revolutionize the internet; decentralizing it and encrypting protocols by default.
+Underlying Skycoin BBS is a peer-to-peer self-replicating database named CXO (part of the Skycoin ecosystem).</description>
+    </item>
+    
+    <item>
+      <title>Development Update #120</title>
+      <link>https://www.skycoin.net/development-updates/development-update-120/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/development-updates/development-update-120/</guid>
+      <description>We are at 90% launch readiness:     Infographics CXO Marketing    We are at 90% launch readiness:  Network is operating 3 of the 7 white papers are on the websites Deposits, withdrawals and done Skycoin order book is done CLI and WebRPC are done Skycoin.net website is 70% done (backlog of tickets) Over half the wallet builds are on website (but have backlog of UI bugs) Wallet explorer API is done.</description>
+    </item>
+    
+    <item>
+      <title>Development Update #102</title>
+      <link>https://www.skycoin.net/development-updates/development-update-102/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/development-updates/development-update-102/</guid>
+      <description>The first packet over the VPN, connected through the meshnet worked yesterday. - This is a major project milestone. - We have a multi-hop VPN client running over the Skycoin meshnet namespace. This is the first multi-hop VPN that I know of.
+The port of the wallet from Angular 1.0 to Angular 2.0 is in progress and almost done. This means the design firm can start on the mobile wallet and multi-coin wallet.</description>
+    </item>
+    
+    <item>
+      <title>Development Update #101</title>
+      <link>https://www.skycoin.net/development-updates/development-update-101/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/development-updates/development-update-101/</guid>
+      <description>Meshnet: Version one meshnet is almost done
+https://github.com/skycoin/skycoin/commit/f959d0875baf990e43ca3f045a9cba82d4d8f24a
+This is the sixth or eighth design iteration, so it is very clean conceptually. I was simulating the meshnet packet passing algorithms with punch cards and paper and it works well. You could implement it on a punch card sorting machine and telegraph lines if you wanted to.
+Exchange: Exchange is being refactored and fixed. We have a revolutionary exchange design, that simplifies the exchange, improves the security and enables easy support for multiple coins.</description>
+    </item>
+    
+  </channel>
+</rss>

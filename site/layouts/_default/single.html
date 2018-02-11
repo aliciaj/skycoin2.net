@@ -1,0 +1,19 @@
+{{ partial "document-head.html" . }}
+
+<section id="main">
+	<div class="hero {{if .Params.herobg}}{{.Params.herobg}}{{end}}">
+		{{ partial "header.html" (dict "context" . "logoColor" "dark") }}
+	    <h1 id="title">{{ .Title }}</h1>
+    </div>
+
+    <article id="content">
+        {{ .Content }}
+    </article>
+
+    
+    {{ if .Params.signup }}
+    {{ partial "signup.html" . }}
+    {{ end }}
+</section>
+
+{{ partial "footer.html" . }}

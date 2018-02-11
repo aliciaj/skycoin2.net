@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obelisk on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/obelisk/</link>
+    <description>Recent content in Obelisk on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/obelisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>왜 우리가 스카이코인을 만들었는가</title>
+      <link>https://www.skycoin.net/ko/statement/why-we-built-skycoin/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/why-we-built-skycoin/</guid>
+      <description>Satoshi는 비트코인을 분산된 디지털 통화로 계획했었습니다. 블록체인 네트워크는 금융을 민주화하고, 기업의 통제력을 제거하여 사용자들에게 권력을 분산시키기 위한 것이었습니다. 그러나 비트코인 및 관련 통화는 작업 증명(PoW) 및 스테이크 증명(PoS) 알고리즘에 의존하여 코인을 생성하기 위해 채굴을 사용했기 때문에 중앙집중화되었습니다. 이러한 중앙집중화는 디지털 통화의 원래 목적을 저해합니다.
+우리는 이러한 문제점을 바로잡기 위해 스카이코인 블록체인을 만들었습니다. 스카이코인 블록체인은 PoW 및 PoS를 대체하기 위해 새로운 합의 알고리즘을 사용합니다. 또한 다른 블록체인 네트워크와 관련된 보안 문제를 수정하고 코인 생성을 채굴 프로세스에서 분리합니다.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk 합의 알고리즘 개발 동기</title>
+      <link>https://www.skycoin.net/ko/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>이것은 2014 년 6월 19일 비트코인토크에 게시되었던 글입니다.
+ 출처 : yxxyun, 2014 년 6월 19일, 02:52:38 AM
+ 출처 : skycoin, 2014 년 6 월 19 일, 02:31:59 AM
+ 출처 : FrictionlessCoin, 2014 년 6월 18일, 09:15:07 PM
+ 출처 : skycoin, 2014년 6월 18일, 09:08:56 PM
+개발 업데이트 :
+우리는 하이브리드 증명 시스템(Proof of Stake system)을 사용하여 Sybil 공격을 예방하는 방법을 알아냈습니다.
+한 개의 노드를 만들기 위해서, 당신은 당신이 코인을 보유하고 있는지를 증명해야 합니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이코인에 51%공격을 할 수 있습니까?</title>
+      <link>https://www.skycoin.net/ko/statement/can-skycoin-be-51-attacked/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/can-skycoin-be-51-attacked/</guid>
+      <description>이 게시물은 2015년 2월 16일 비트코인토크 스레드에 게시된 글입니다.
+ 출처 : iamback 2015년 2월 16일, 09:28:38 AM
+하나의 비-PoW 합의알고리즘은 DOA이며, 2016년에 세계 경제가 붕괴되기 전에 문제를 해결하고 신뢰하기에 충분한 시간이 없었기 때문입니다. 예를 들면, 이기적인 채굴 공격은 발견되지 않았습니다. (또는 널리 알려지고 인정받았다고 가정해봅시다.) 사토시(Satoshi)가 PoW를 발표한 후 수 년동안 말입니다. 따라서, 진짜 시장은 새로운 비-PoW 합의를 신뢰하지 않습니다. 대신 저는 ASIC 경제학을 포함하여 비트코인의 고질적인 많은 문제를 해결하는 PoW 시스템을 설계했습니다.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: 스카이코인 합의 알고리즘 | 정보 페이지</title>
+      <link>https://www.skycoin.net/ko/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>합의 알고리즘 핵심내용  왜 합의 알고리즘인가? 높은 확장성과 낮은 에너지 소비 치밀한 협동 공격 &amp;ldquo;51-퍼센트 공격&amp;rdquo; 숨겨진 IP 주소 시간 동기화의 독립성 두 가지 유형의 노드 : 합의 및 블록-생성  스카이코인 합의 알고리즘 작동 방식 참고 문헌  합의 알고리즘 핵심내용 왜 합의 알고리즘인가? 스카이코인 합의 알고리즘( &amp;ldquo;Obelisk&amp;rdquo;)은 모든 네트워크 노드에 걸쳐서 스카이코인 블록 체인 상태를 동기화합니다. 결과적으로 일관된 회계 처리가 이루어지는데, 즉, 주어진 공개키(또는 주소)에 대한 잔고를 계산할 때, 계산을 수행한 각 노드에서 동일한 값이 산출됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

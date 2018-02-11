@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skyledger on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/skyledger/</link>
+    <description>Recent content in Skyledger on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/skyledger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solar Bankers es un ejemplo de una compañía que adopta la revolucionaria cadena de bloques de Skycoin</title>
+      <link>https://www.skycoin.net/es/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</guid>
+      <description>Mejor velocidad, mejor seguridad, mejor privacidad —Skycoin ofrece todas estas ventajas a través de su plataforma de código abierto. La innovadora tecnología que impulsa a Skycoin está disponible para todos. En la actualidad, cada vez más empresas se dan cuenta de los beneficios de Skycoin y lo utilizan para construir sus negocios.
+Un ejemplo es Solar Bankers, una nueva y revolucionaria compañía de energía. Solar Bankers está utilizando el poder de la cadena de bloques para descentralizar el sector energético.</description>
+    </item>
+    
+    <item>
+      <title>Skyledger: El verdadero futuro de la cadena de bloques</title>
+      <link>https://www.skycoin.net/es/statement/skyledger-blockchains-real-future/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/skyledger-blockchains-real-future/</guid>
+      <description>Se suponía que Bitcoin marcaria el comienzo de una nueva economía basada en la tecnología de la cadena de bloques descentralizada —pero no fue así. Y no puede. Bitcoin tiene fallas técnicas importantes que le impiden alcanzar sus objetivos originales. Construida sobre conceptos defectuosos y manipulada hasta el punto de corrupción, esta criptomoneda es incapaz de crear el nuevo mundo que sus usuarios esperaban.
+Los desarrolladores de Skycoin se dieron cuenta que Bitcoin estaba destinado a fallar y se propusieron crear una solución.</description>
+    </item>
+    
+  </channel>
+</rss>

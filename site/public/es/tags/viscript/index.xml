@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Viscript on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/tags/viscript/</link>
+    <description>Recent content in Viscript on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/tags/viscript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire y Viscript</title>
+      <link>https://www.skycoin.net/es/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/skywire/skywire-and-viscript/</guid>
+      <description>Introducción Viscript Viscript es una interfaz de línea de comandos multiplataforma, y un iniciador de aplicaciones y eventualmente será un administrador de clúster. Está basado en la biblioteca &amp;ldquo;signal&amp;rdquo; como un servidor &amp;ldquo;signal&amp;rdquo;, por lo que puede gestionar los clientes de &amp;ldquo;signal&amp;rdquo;, como el nodo y los componentes en Skywire. Se puede ejecutar con interfaz grafica o sin ella.
+Captura de pantalla de la interfaz gráfica de Viscript: Podemos agregar configuraciones de aplicaciones en el archivo config.</description>
+    </item>
+    
+  </channel>
+</rss>

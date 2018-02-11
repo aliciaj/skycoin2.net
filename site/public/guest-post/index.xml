@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guest-posts on Skycoin Blog</title>
+    <link>https://www.skycoin.net/guest-post/</link>
+    <description>Recent content in Guest-posts on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/guest-post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> The Power of SKY; The Defense of Freedom (V1.0.3) (Author: Mao 驴占坑) </title>
+      <link>https://www.skycoin.net/guest-post/the-power-of-sky/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/guest-post/the-power-of-sky/</guid>
+      <description>Introduction Premise: Computer = Calculation + Storage + Network.
+On the most basic level, a computer is anything that processes data. It can be a physical device, like a PC, or an abstract, virtual system involved in information processing. Every computer consists of three elements: a CPU, a hard disk, and a network card.
+All computer hardware, virtualization, and computer languages include these elements, which allow computers to process data sets.</description>
+    </item>
+    
+  </channel>
+</rss>

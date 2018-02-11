@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ask-the-developers on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/ask-the-developers/</link>
+    <description>Recent content in Ask-the-developers on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/ask-the-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Логи Telegram канала - Whitepaper, Рабство и Анархия</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/telegram-log---whitepapers-slavery-anarchy/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/telegram-log---whitepapers-slavery-anarchy/</guid>
+      <description>Artem Kotelskiy
+Привет
+Я обнаружил, что обе статьи по алгоритму консенсуса Obelisk были изъяты из arxiv из-за ошибок. Это правда?
+Может ли кто-нибудь из команды решить эту проблему, пожалуйста?
+Monty Crypto (Xa no)
+Ммм, про Obelisk? У нас есть как минимум 5 статей о лежащей в его основе логике, но не знал, что было что-то опубликовано специально про Obelisk
+Какие статьи отсутствуют?
+Synth [В ответ Artem Kotelskiy]
+Нет. Chen снял их, потому что хотел, чтобы люди цитировали статью из журнала ACM вместо arxiv, потому что его считают более престижным</description>
+    </item>
+    
+    <item>
+      <title>Народ хочет шиткойны</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/people-want-shitcoins/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/people-want-shitcoins/</guid>
+      <description>Взято из Telegram канала
+ Вопрос： Я имею в виду, если Skycoin настолько хорош, что я определенно буду использовать его для своего бизнеса, то где мы можем увидеть доказательства? Тесты и прочее? Есть ли сайт с дополнительной информацией и данными? Является ли сеть уже стабильной со многими узлами?
+ Народ хочет &amp;ldquo;шиткойны&amp;rdquo;.
+Как у биткойна на старте, так и у Skycoin сейчас есть гигантские образовательные и технические барьеры входа.
+Skycoin написан с нуля, это не токен-клон, подобно этим 500 ERC20 токенам, поэтому для включения в списки бирж должна быть проделана серьезная работу (которую они не хотят делать, так как 6 человек управляют биржей, поддерживающей 300+ шиткойнов).</description>
+    </item>
+    
+    <item>
+      <title>Вопросы скорости работы и конфиденциальности ячеистой сети (meshnet)</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>Этот пост ссылается на Skywire до запуска сети и даже до того, как проект ячеистой сети получил это название. Адаптированный пост с bitcointalk от 09 августа 2014 года.
+Цитата пользователя CraigM от 9 августа, 2014, 07:20:24
+ Ячеистая сеть предназначена для того, чтобы быть хорошим инструментом конфиденциальности с преимуществами, сравнимыми с Тором, но с меньшей задержкой работы, правильно?
+Правильно ли, что ячеистая сеть позволит финансировать узлы (ноды), используя Skycoin для покрытия затрат на передачу трафика?</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Нас часто спрашивают, в чём существенная разница между CXO и IPFS?
+File Coin преследует схожие с нашими цели, не являясь при этом частью инфраструктуры Skycoin. Их система работает с использованием трёх протоколов:
+ IPLD IPFS Multi-formats  где
+ IPLD является языком репрезентации для неизменяемых объектов данных и хэшей. – IPFS это файловая система – Multi-Formats – самоописываемый стандарт данных  CXO имеет всё то же самое в рамках среды Skycoin:</description>
+    </item>
+    
+    <item>
+      <title>Лог сессии вопросов и ответов про Skycoin AMA (в slack&#39;е ark.io)</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/skycoin-ama-log-ark/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/skycoin-ama-log-ark/</guid>
+      <description>Беседа происходила 2 июля 2017го года в slack&amp;rsquo;е ark.io
+synth - представитель Skycoin в этой сессии вопросов и ответов AMA (Ask Me Anything)
+boldninja Давайте все тепло поприветствуем @synth&amp;rsquo;а с проекта SkyCoin.net и поблагодарим его за то, что он нашёл время на эту сессию Ask Me Anything
+synth *Здравствуйте
+mike Привет Synth
+jakethepanda Хэй @synth
+thrice.pi Хэй synth
+dr10 Привет
+boldninja Думаю, мы можем начать - вы, ребята, знаете правила игры.</description>
+    </item>
+    
+    <item>
+      <title>Вопросы к разработчикам #1</title>
+      <link>https://www.skycoin.net/ru/ask-the-developers/ask-the-developers-1/</link>
+      <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/ask-the-developers/ask-the-developers-1/</guid>
+      <description>Вопросы к разработчикам - Сессия #1 Комментарий: Цитата: Eliavres от 22 декабря, 2013, 03:07:20 AM &amp;gt;Хммм…Этот проект может изменить правила игры..
+ Поскольку вы только анонсируете разработку, во имя любви к господу, только взгляните на ту вирусную волну, которая вынесла Dogecoin наверх. Я уже писал в другой теме следующее:
+ Цитата: Eliavres от 22 декабря, 2013, 03:02:58 AM &amp;gt; Вот чем мне нравится Dogecoin, так это тем, что он на деле доказывает то, что маркетинг, будь то притягательное имя или просто грамотное продвижение как таковое, играет основополагающую роль в успехе криптовалюты.</description>
+    </item>
+    
+  </channel>
+</rss>

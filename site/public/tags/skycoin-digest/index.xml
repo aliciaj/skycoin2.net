@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin Digest on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/skycoin-digest/</link>
+    <description>Recent content in Skycoin Digest on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/skycoin-digest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Digest: The 5 Pillars of Skycoin [INFOGRAPHIC]</title>
+      <link>https://www.skycoin.net/infographics/the-five-pillars-of-the-skycoin-cryptocurrency/</link>
+      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/infographics/the-five-pillars-of-the-skycoin-cryptocurrency/</guid>
+      <description>The 5 Pillars of Skycoin
+1. SKYCOIN A truly decentralized, 51% attack proof, lightning quick cryptocurrency that was designed to fulfill Satoshi’s original vision.
+2. SKYWIRE A mesh network that allows you to earn Skycoin for forwarding traffic/bandwidth. This is a similar to Tor or BitTorrent, except that you will be paid to participate.
+3. SKYLEDGER A platform similar to Ethereum’s ERC20 platform, in the way a 2018 Bugatti Chiron is similar to a 1992 Geo Metro.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Digest: Skycoin vs Skywire [INFOGRAPHIC]</title>
+      <link>https://www.skycoin.net/infographics/what-is-the-difference-skycoin-vs-skywire/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/infographics/what-is-the-difference-skycoin-vs-skywire/</guid>
+      <description>What’s the difference between Skycoin and Skywire? Skycoin is the cryptocurrency.  It was developed to address problems that Bitcoin could not solve. We created a revolutionary consensus algorithm called Obelisk that eliminates mining.
+ Skywire is the mesh network.  Skywire was developed to address problems with the internet itself. Skywire can operate independently from Skycoin. It’s not the first attempt at a global mesh network, but it will be the first to succeed.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Digest: What We Stand For [INFOGRAPHIC]</title>
+      <link>https://www.skycoin.net/infographics/skycoin-cryptocurrency-values/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/infographics/skycoin-cryptocurrency-values/</guid>
+      <description> Here&amp;rsquo;s what we stand for&amp;hellip;  Popularization of decentralization by fixing problems that Bitcoin can’t. Our Core Features are: Speed, Privacy, Security and Ecosystem. Security (51% attack proof). Decentralization – No miners holding the network hostage, no inflation. Privacy – Skywire brings truly anonymous Social networks, VPNs and messaging apps. Building a new internet free from government and corporate control.  </description>
+    </item>
+    
+    <item>
+      <title>Skycoin Digest: Why do we need a FREE Internet? [INFOGRAPHIC]</title>
+      <link>https://www.skycoin.net/infographics/why-do-we-need-a-free-internet/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/infographics/why-do-we-need-a-free-internet/</guid>
+      <description>Why are we building a free internet? It’s a long list so we’ll give you our top 3.
+1.) Freedom All over the world governments both deny and restrict their citizenries access to the internet as well as censor opposing voices. They have forgotten who they serve.
+2.) Privacy Governments &amp;amp; Corporations track and censor everything we do online. Whether it’s to get dirt on a political opponent or sell you the next new batman figurine… It’s wrong.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin Digest: What do you think of Bitcoin? [INFOGRAPHIC]</title>
+      <link>https://www.skycoin.net/infographics/what-do-you-think-about-bitcoin/</link>
+      <pubDate>Mon, 29 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/infographics/what-do-you-think-about-bitcoin/</guid>
+      <description>Bitcoin was Amazing We all love Satoshi but what Bitcoin has become is not what he intended. Time and growth have highlighted the limitations of Bitcoin and there is no easy fix.
+ Bitcoin is NOT decentralized. Three mining pools control all of Bitcoin. Transaction speeds can take hours or even days. Due to centralization, Bitcoin is highly vulnerable to a 51% attack. $40 transaction fees and climbing! Nodes can be arbitrarily taken over.</description>
+    </item>
+    
+  </channel>
+</rss>

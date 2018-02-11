@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/overview/</link>
+    <description>Recent content in Overview on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obelisk: Skycoin Consensus Algorithm | Information Pages</title>
+      <link>https://www.skycoin.net/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Consensus highlights  Why consensus High scalability and low-energy consumption Robust to coordinated attacks The “51-percent Attack” Hidden IP addresses Independence of clock synchronization Two type of nodes: Consensus and Block-making  How Skycoin Consensus Algorithm works References  Consensus highlights Why consensus Skycoin Consensus Algorithm (&amp;ldquo;Obelisk&amp;rdquo;) synchronizes the state of Skycoin blockchain across all the network nodes. This results in consistent accounting, i.e. when calculating coin balance for a given public key (or address) yields same value at each node that performed the calculation.</description>
+    </item>
+    
+  </channel>
+</rss>

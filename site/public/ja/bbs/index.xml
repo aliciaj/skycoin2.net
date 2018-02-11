@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bbs on Skycoin Blog</title>
+    <link>https://www.skycoin.net/ja/bbs/</link>
+    <description>Recent content in Bbs on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ja/bbs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS v4.1 リリースのお知らせ</title>
+      <link>https://www.skycoin.net/ja/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1がついにリリースされました！
+
+変更ログ  ユーザーインターフェイスの改善 サービス検出の実装（他のノードへの接続が自動的に管理されるようになりました） ボードコンテンツのリモート依頼の改善（サービス検出によって実装されました） ボードの作成とホスティングプロセスの簡略化 CXOデータ構造の改善 次のリリースでは、より多くのエキサイティングな機能がもたらされます！ このブログで最新の情報をチェックしてください。  バイナリ これらは、64ビットのWindows、Mac、Linuxで使用できます。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_windows_amd64.zip  ソースコード Githubで利用可能 https://github.com/skycoin/bbs
+コミュニティ クリックしてTelegramでの議論に参加しましょう!</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 リリースのお知らせ</title>
+      <link>https://www.skycoin.net/ja/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1がついにリリースされました！
+変更ログ  最新のCXOへのアップデート より簡単な差分管理のためのCXOデータ構造の再実装 さまざまな方法でデータを表示しやすくするための「ビュー」モジュールの導入 ボードへのto/fromファイルのエクスポート/インポートの実装 ユーザーのフォロー/回避の初期実装 UIの改善（作業中） ボードの自動P2Pリレー  バイナリ これらは、64ビットのWindows、Mac、Linuxで使用できます。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_windows_amd64.zip  ソースコード GitHubで利用可能
+https://github.com/evanlinjin/bbs
+コミュニティ クリックしてTelegramでの議論に参加しましょう!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/overview/</link>
+    <description>Recent content in Overview on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Obelisk: 스카이코인 합의 알고리즘 | 정보 페이지</title>
+      <link>https://www.skycoin.net/ko/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>합의 알고리즘 핵심내용  왜 합의 알고리즘인가? 높은 확장성과 낮은 에너지 소비 치밀한 협동 공격 &amp;ldquo;51-퍼센트 공격&amp;rdquo; 숨겨진 IP 주소 시간 동기화의 독립성 두 가지 유형의 노드 : 합의 및 블록-생성  스카이코인 합의 알고리즘 작동 방식 참고 문헌  합의 알고리즘 핵심내용 왜 합의 알고리즘인가? 스카이코인 합의 알고리즘( &amp;ldquo;Obelisk&amp;rdquo;)은 모든 네트워크 노드에 걸쳐서 스카이코인 블록 체인 상태를 동기화합니다. 결과적으로 일관된 회계 처리가 이루어지는데, 즉, 주어진 공개키(또는 주소)에 대한 잔고를 계산할 때, 계산을 수행한 각 노드에서 동일한 값이 산출됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

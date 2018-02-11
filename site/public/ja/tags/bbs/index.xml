@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BBS on Skycoin Blog</title>
+    <link>https://www.skycoin.net/ja/tags/bbs/</link>
+    <description>Recent content in BBS on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ja/tags/bbs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin BBS: あなたのためのソーシャルメディア</title>
+      <link>https://www.skycoin.net/ja/statement/skycoinbbs/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/statement/skycoinbbs/</guid>
+      <description>要約: 企業のソーシャルメディアでは、あなたは製品です。 会社があなたのデータを管理します。 彼らはそれを広告業者に販売し、それをサーバーに保管します。 一度あなたが投稿をしたら、それは永遠に彼らのものです。 あなたはプライバシー、技術、または自分のアイデンティティさえ制御できません。 私たちはそこに留まるべき理由がありますか？
+今こそソーシャルメディア革命の時です。 Skycoinはソーシャルメディアを、ユーザーであるあなたに戻します。 私たちは、Skycoinエコシステムの最初の分散型ソーシャルメディアプラットフォームである、Skycoin BBSのアルファ版公開を発表できることを大変嬉しく思っています。
+Skycoin BBSは、Skycoinプラットフォーム上にある不変データ構造（CXO）上に構築され、P2P複製されたソーシャルメディアアプリケーションです。
+ あなたのプライバシーと自由を保持する分散ネットワーク コンテンツの投稿、投票（賛成／反対）、およびコメントの機能 　ユーザープロフィール Coin HoursとSkycoinによるコンテンツへの投げ銭 ネットワーク障害に対する耐性 スパム発信者、bot、信頼できないユーザーをフィルタリングできる公開キーと信用リスト  参加する準備ができましたか？Skycoin BBSはここから始めましょう。: https://www.skycoin.net/downloads/.
+Skycoin BBSの開発についてご覧ください。開発者とチャット: https://t.me/skycoinbbs.
+開発状況をフォローする。: https://www.skycoin.net/blog/tags/bbs/.
+Skycoin BBSの技術的な側面をチェックする。: https://www.skycoin.net/blog/bbs/bbs-development-update-1/.
+Skycoin Githubリポジトリのコーディングのコミットを追跡する。: https://github.com/skycoin/bbs.
+接続するノードと購読するボードのリストを取得する。: https://t.me/skycoinbbshosting.
+開発ショーケースで実際のSkycoin BBSプラットフォームを見る。YouTubeのビデオ: https://www.youtube.com/watch?v=6ZqwgefYauU.
+私たちのビジョン: Skycoin BBSは、Skycoinプラットフォーム上にある不変データ構造（CXO）上に構築され、P2P複製されたソーシャルメディアアプリケーションです。 これは、ユーザによる、ユーザのための通信プラットフォームです。 Skycoin BBSは、ソーシャルメディアの正しい形です。
+この新しいWebアプリケーションは、Skycoinエコシステムを使用して最初に実装されたアプリケーションの1つです。 Skycoinはインターネットを分散化し、デフォルトでプロトコルを暗号化します。 Skycoinには中枢となるサーバがないため、あなたのデータは中央権力によって管理されません。 あなたは、あなた自身のプライバシーと自由を保持します。
+BBSはBulletin Board Systemの略です。 もともとBBSは、ユーザーのやりとりと、コンテンツのシェアができるDIYサーバーでした。 現代のBBSは、企業ではなくユーザーが支配権を持っているという、インターネットに対する別の未来像を提示しています。 Skycoin BBSは、初期の掲示板システムからインスピレーションを得て、分散型のユーザー中心のソーシャルメディアプラットフォームを作成します。
+Skycoinの分散型BBSアプリケーションのデータベースは、以前Aetherと呼ばれていたSkycoin CXOライブラリを使用してP2Pで複製されています。 ユーザーはSkyメッセンジャーのプロトタイプの投稿を送信します。 これは公開鍵間のマシンtoマシン通信のためのSkycoinのTOXのような規格です（github.com/skycoin/net）。
+Skycoin BBSを使用すると、あなたのデータを管理されることなく、ソーシャルメディアプラットフォームのすべての利点を楽しむことができます。 予定している機能には、ユーザープロファイル、コンテンツの投稿、投票(賛成／反対）、およびコメントが含まれます。 Coin HoursとSkycoinを使用してコンテンツに対して投げ銭を払うこともできます。 Skycoin BBSはユーザーが所有しているため、リクエストにより多くの機能が追加されています。</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v4.1 リリースのお知らせ</title>
+      <link>https://www.skycoin.net/ja/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/bbs/bbs-release-v4.1/</guid>
+      <description>Skycoin BBS v4.1がついにリリースされました！
+
+変更ログ  ユーザーインターフェイスの改善 サービス検出の実装（他のノードへの接続が自動的に管理されるようになりました） ボードコンテンツのリモート依頼の改善（サービス検出によって実装されました） ボードの作成とホスティングプロセスの簡略化 CXOデータ構造の改善 次のリリースでは、より多くのエキサイティングな機能がもたらされます！ このブログで最新の情報をチェックしてください。  バイナリ これらは、64ビットのWindows、Mac、Linuxで使用できます。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_4.1_windows_amd64.zip  ソースコード Githubで利用可能 https://github.com/skycoin/bbs
+コミュニティ クリックしてTelegramでの議論に参加しましょう!</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS v3.1 リリースのお知らせ</title>
+      <link>https://www.skycoin.net/ja/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ja/bbs/bbs-release-v3.1/</guid>
+      <description>Skycoin BBS v3.1がついにリリースされました！
+変更ログ  最新のCXOへのアップデート より簡単な差分管理のためのCXOデータ構造の再実装 さまざまな方法でデータを表示しやすくするための「ビュー」モジュールの導入 ボードへのto/fromファイルのエクスポート/インポートの実装 ユーザーのフォロー/回避の初期実装 UIの改善（作業中） ボードの自動P2Pリレー  バイナリ これらは、64ビットのWindows、Mac、Linuxで使用できます。
+ https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_linux_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_osx_amd64.zip https://downloads.skycoin.net/bbs/skycoin_bbs_3.1_windows_amd64.zip  ソースコード GitHubで利用可能
+https://github.com/evanlinjin/bbs
+コミュニティ クリックしてTelegramでの議論に参加しましょう!</description>
+    </item>
+    
+  </channel>
+</rss>

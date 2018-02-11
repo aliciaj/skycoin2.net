@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consensus on Skycoin Блог</title>
+    <link>https://www.skycoin.net/ru/tags/consensus/</link>
+    <description>Recent content in Consensus on Skycoin Блог</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ru/tags/consensus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Способы мотивации в архитектуре алгоритма консенсуса Obelisk</title>
+      <link>https://www.skycoin.net/ru/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>Это старое сообщение в одной из тем на bitcointalks от 19 Июня 2014
+ Цитата от: yxxyun 19 июня, 2014, 02:52:38 AM
+ Цитата от: skycoin 19 июня, 2014, 02:31:59 AM
+ Цитата от: FrictionlessCoin 18 июня, 2014, 09:15:07 PM
+ Цитата от: skycoin 18 июня, 2014, 09:08:56 PM
+Выдержка из апдейта:
+Мы нашли способ предотвращения &amp;ldquo;атаки Sybil&amp;rdquo;, благодаря использованию гибридной системы &amp;ldquo;Proof of State&amp;rdquo;.
+Для того, чтобы создать узел, Вы должны доказать наличие у вас монет.</description>
+    </item>
+    
+    <item>
+      <title>Подвержен ли Skycoin «Атаке 51%»?</title>
+      <link>https://www.skycoin.net/ru/statement/can-skycoin-be-51-attacked/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/can-skycoin-be-51-attacked/</guid>
+      <description>Из архивной ветки по теме Bitcoin от 16 Февраля 2016 года
+ Цитата iamback 16 Февраля, 2015, 09:28:38
+Идея о не-PoW консенсусе мертворожденная, хотя бы потому, что уже не будет времени выявлять её проблемы к моменту коллапса мировой экономики к 2016 году. Например, монопольная майнинг-атака не была выявлена (или, скажем, не являлась подтвержденной) вплоть до того момента, когда Сатоши опубликовал PoW. Поэтому, рынок не станет доверять “романам” о не-PoW. Вместо этого, я разработал PoW систему, которая устранит многие проблемы, способные повлиять на Bitcoin, включая ASIC.</description>
+    </item>
+    
+    <item>
+      <title>Давайте разберемся, каким, по нашему мнению, должен был быть биткойн</title>
+      <link>https://www.skycoin.net/ru/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>Перед вами комментарий из архива форума bitcointalk от 23 апреля, 2014 г
+ Цитата пользователя: JFK01 23 Апреля 2014, 13:54:50
+Я предполагаю, что Skycoin просто хочет сначала сделать предварительную оценку ситуации. В этом нет ничего плохого. Они ведь инженеры и хотят все протестировать. Они очень внимательно относятся к разработке. Это у них отлично получается. Так делай то, в чем ты хорош. Этот проект - настоящая авантюра.
+ Если взглянуть на самые ходовые монеты, такие как Peer Coin, Ripple, Bitcoin, Nxt, Litecoin, становится ясно, что большинство из них основываются на инновационной, фундаментальной модели безопасности биткойн, которая сама по себе хороша.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: Алгоритм консенсуса Skycoin |Информация</title>
+      <link>https://www.skycoin.net/ru/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ru/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Важное о консенсусах  Почему консенсус? Высокая масштабируемость и низкое энергопотребление Устойчивость к скоординированным атакам “Атака 51 процент” Скрытые IP адреса Независимость в синхронизации часов Два типа узлов: консенсуса и создания блоков  Как работает алгоритм консенсуса Skycoin Ссылки  Важное о консенсусах Почему консенсус? Алгоритм консенсуса Skycoin (называемый «Obelisk») синхронизирует состояние блокчейна Skycoin во всех узлах сети. Это приводит к согласованному учету, то есть при вычислении баланса результат, который получает каждый из узлов для конкретного открытого ключа (или адреса), всегда одинаков.</description>
+    </item>
+    
+  </channel>
+</rss>

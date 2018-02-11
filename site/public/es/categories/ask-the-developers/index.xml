@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ask the Developers on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/ask-the-developers/</link>
+    <description>Recent content in Ask the Developers on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/ask-the-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Registro de Telegram - Documentos Técnicos, Esclavitud y Anarquía</title>
+      <link>https://www.skycoin.net/es/ask-the-developers/telegram-log---whitepapers-slavery-anarchy/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/ask-the-developers/telegram-log---whitepapers-slavery-anarchy/</guid>
+      <description>Artem Kotelskiy
+Hey
+Descubrí que ambos documentos técnicos sobre el algoritmo de consenso obelisk fueron retirados de arxiv debido a errores. ¿Es esto cierto?
+¿Alguien del equipo puede abordar este problema, por favor?
+Monty Crypto (Xa no)
+Mmm, ¿acerca de Obelisk? Tenemos al menos 5 documentos acerca de la lógica subyacente, pero no sabía que ya se hubiese publicado algo específicamente sobre Obelisk.
+¿Qué documentos faltan?
+Synth [En respuesta a Artem Kotelskiy]</description>
+    </item>
+    
+    <item>
+      <title>La Gente Quiere Shitcoins (Monedas Basura)</title>
+      <link>https://www.skycoin.net/es/ask-the-developers/people-want-shitcoins/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/ask-the-developers/people-want-shitcoins/</guid>
+      <description>Extracto del canal de Telegram
+ Pregunta： Quiero decir, si Skycoin es tan bueno, definitivamente lo usaría para mi negocio en lugar del resto, pero ¿dónde podemos ver las evidencias? ¿Los experimentos y todo? ¿Hay algún sitio web con más información y datos? ¿La red ya es fuerte con muchos nodos?
+ La gente quiere shitcoins.
+Bitcoin (al menos al principio) y Skycoin (en este momento) tienen que enfrentar enormes barreras educativas y técnicas.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/categories/skywire/</link>
+    <description>Recent content in Skywire on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/categories/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>네트워크 중립성 롤백과 스카이코인이 어떻게 그것을 예방할 수 있는가</title>
+      <link>https://www.skycoin.net/ko/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</guid>
+      <description>2015년, FCC는 인터넷을 공용 유틸리티로 구분하는 네트워크 중립성 규칙을 제정했습니다. 이것은 인터넷 서비스 공급자(IPSs)가 특정 웹사이트를 다른 것과 비교하여 우선순위를 매기는 것을 예방하며, 기업과 개인이 만족할 수 있는 자유롭고 개방된 인터넷을 표방하고 있습니다.
+이제,트럼프가 임명한 FCC 의장인 Ajit Pai은, 네트워크 중립성 보호를 폐지하려는 투표를 발표했습니다. Pai는 그의 의제에 대한 엄청난 항의에도 불구하고, 10월 2일에 두 번째로 5 년 임기로 지명되었습니다. 수 만명의 서명이있는 청원서는 이 결과를 막을 힘이 없었습니다. Pai의 임명과 함께, 네트워크 중립성이 폐지되기까지는 시간 문제 일 뿐입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 : 차세대 인터넷</title>
+      <link>https://www.skycoin.net/ko/skywire/skywire-the-next-internet/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/skywire/skywire-the-next-internet/</guid>
+      <description>2017년 봄, FCC는 인터넷 서비스 제공 업체가 고객의 검색 습관에 대한 정보를 수집, 사용 및 판매할 수 있는 제안을 했습니다. IPS는 허가없이 이것을 수행할 수 있습니다. 고객은 선택할 수 없습니다. 이러한 기업 중 한 곳의 고객이라는 것은 당신이 단순히 추적되는 것에 대해 비용을 지불하고 있음을 의미합니다.
+고객 추적, 신뢰할 수 없는 서비스, 높은 요금, 긴 대기 시간 및 형편없는 고객 서비스로 인해 ISP는 미국에서 가장 혐오하는 회사가 되었습니다. 그렇다면 왜 고객이 청구서를 받은 후에 이 회사에 비용을 지불하는 것일까요?</description>
+    </item>
+    
+    <item>
+      <title>스카이코인 대 스카이와이어</title>
+      <link>https://www.skycoin.net/ko/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skycoin-vs-skywire/</guid>
+      <description>스카이코인과 skywire는 스카이코인 프로젝트의 두 가지 개별적인 요소입니다. 스카이코인은 블록체인입니다. Skywire 는메쉬 네트워크입니다.
+스카이코인이 먼저 만들어졌습니다. 그것은 독자적으로 운영될 수 있습니다. 스카이코인은 비트코인이 가지고 있는 문제점을 해소하기 위해 만들어졌습니다. 비트코인의 가장 큰 문제점은 비트코인의 중앙 집중화로 이어지는 채굴입니다. 비트코인의 또 다른 문제점인 암호화, 소프트웨어 버그들은 트랜젝션 가용화와 같은 문제를 야기했습니다.
+스카이코인은 Obelisk 라고 불리는 새로운 합의 알고리즘을 개발하여Obelisk 채굴(또는 다른 대안, 스테이크 증명등)을 제거했습니다 . 이것에 대해서는 백서 에 기술되어 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 - 스카이코인 메쉬넷(Meshnet) 프로젝트</title>
+      <link>https://www.skycoin.net/ko/overview/skywire---skycoin-meshnet-project/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/overview/skywire---skycoin-meshnet-project/</guid>
+      <description>소개 라우팅 : 개요 보상 : 보상 프로토콜 소스 라우팅 : 링크 계층 암호화  프로토콜 예시 : Nodes A and B 가능성 있는 개선사항:  IPv4 게이트웨이 : 현재의 IPS를 경유하는  예제 1 예제 2  스카이와이어 데몬 서비스 아키텍쳐  서비스 예제 : 블럭체인 동기화  멀티-홈 라우팅 및 링크 집계 메쉬넷 라우팅 : 저장 및 전송 저장 및 전송 : 용량 활용 저장 및 전송 : 예제  정상 작동의 예 혼잡이 있는 경우의 예 패킷 손실이 있는 경우의 예  소스라우팅 : 대역폭 시간지연 작업 저장 및 전송 : 용량 활용도, 서비스 품질 소스 라우팅 : 다중 경로 모바일 연결 소스 라우팅 : 노드 보안 소스 라우팅 : BGP의 제한 가상 경로 : 스카이와이어 네트워크 토폴로지 규모 소스 라우팅 : 가상 경로, SONET 기술 소스 라우팅 : 비대칭 연결 소스 라우팅 : 경로 검색  소개 스카이와이어의 목표 :</description>
+    </item>
+    
+    <item>
+      <title>메쉬넷의 대기시간과 개인정보보호에 관한 질문</title>
+      <link>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>이 글은 스카이와이로 불려지기 전의 스카이와이어 초기 형성에 대해 설명합니다. 2014년 8월 9일 자 비트코인 토크 게시글에서 인용하였습니다.
+출처 : CraigM 2014년 8월 9일, 오전 07:20:24
+ 메쉬넷은 tor보다 더 좋은 개인정보보호 도구이나, 대기시간이 더 적은 것이 맞습니까?
+모든 노드 운영자가 그들의 노드를 통해 데이터를 보내는 모든 사람에게 모든 트랜잭션을 설명하는 상세하며, 공개된 로그(개인 블록체인)를 기록하도록 강제하지 않습니까? 이것은 당신이 연결에 접속할 필요가 없다는 것을 제외하고, 제3자가 트래픽 관련 공격을 tor에서와 비슷하게 할 수 있는 것처럼 보입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어와 vi스크립트</title>
+      <link>https://www.skycoin.net/ko/skywire/skywire-and-viscript/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/skywire/skywire-and-viscript/</guid>
+      <description>소개 vi스크립트(Viscript) vi스크립트는 CLI 기반 크로스 플랫폼이며, 응용프로그램 런쳐이고, 이는 결국 클러스터 관리를 위해 사용된다. 이것은 시그널 서버로써 시그널 라이브러리를 기반으로 하기 때문에, 스카이와이어의 컴퍼넌트와 노드 같은 시그널 클라이언트를 관리할 수 있다. 이것은 GUI 및 헤드리스 모드에서 실행할 수 있습니다.
+Vi스크립트 GUI 스크린 샷: 우리는 meshnet-socks-server와 같은 config.yaml 파일에 app 구성을 추가할 수 있습니다.r:
+ 메쉬넷-소켓-서버r: daemon: true desc: DESCRIPTION GOES HERE path: bin/meshnet/meshnet-run-socks-server default_args: [] help: | [1] 앱의 이름, 반드시 유일해야 함 [2] 통신하는 앱의 노드 주소.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 채굴기 : 차세대 인터넷을 위한 하드웨어</title>
+      <link>https://www.skycoin.net/ko/statement/skywire-miner-hardware-for-the-next-internet/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skywire-miner-hardware-for-the-next-internet/</guid>
+      <description>Sign up to our mailing list for Skywire Miner updates: http://eepurl.com/c4DyAv
+진정으로 자유롭고 개방적인 인터넷을 어떻게 만들 수 있습니까? 이 질문에 답하기 위해 우리는 새로운 대체 인터넷인 스카이와이어를 개발했습니다. 스카이와이어는 대형 인터넷 서비스 제공 업체(ISP)로부터 통제권을 얻어 사용자에게 다시 되돌려주는 지금까지의 상식을 깨는 혁신적인 기술입니다. 이 P2P(peer-to-peer)모델은 중단, 속도저하 또는 감시없이 네트워크 중립성 및 콘텐츠 공유를 활성화 합니다. Skywire의 개방형 액세스 네트워크는 개인 정보를 보호하고 언론의 자유를 보장합니다. 스카이와이어를 만드는 우리의 사명은 보다 나은 인터넷의 미래를 만드는 데 기여하는 것입니다.</description>
+    </item>
+    
+    <item>
+      <title>스카이와이어 : 자유롭고 열린 인터넷</title>
+      <link>https://www.skycoin.net/ko/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/skywire-a-free-and-open-internet/</guid>
+      <description>인터넷의 우리에게 통제의 환영을 부여합니다. 우리는 구글, 페이스북, 애플 및 아마존에서 제공하는 서비스를 통해 즉각적인 사회활동, 소비 및 사업을 할 수 있습니다. 편리하다고 생각하십니까? 당신이 무엇을 포기하는지를 고려할 때 이것은 여전히 -입니다.
+우리는 우리의 온라인 생활을 통제하지 않습니다. 대기업 및 인터넷 서비스 제공 업체(ISP)는 데이터를 수집하고 움직임을 추적하며 우리의 경험을 공유합니다. 우리가 인터넷을 사용할 때마다, 우리는 이 회사들에게 힘을 부여합니다. 우리는 인터넷 생활을 소유하지 않습니다.
+점점 더 악화되고 있습니다. 기업 및 정부 기관은 인터넷의 자유를 위협하고 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

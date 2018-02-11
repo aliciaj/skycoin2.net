@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywire on Skycoin Blog</title>
+    <link>https://www.skycoin.net/fr/categories/skywire/</link>
+    <description>Recent content in Skywire on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/fr/categories/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Question à propos de la Latence et la confidentialité du Meshnet </title>
+      <link>https://www.skycoin.net/fr/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>*Cette publication fait référence à Skywire à ses débuts, avant qu&amp;rsquo;il ne soit nommé Skywire.Elle est tirée d&amp;rsquo;une publication parue sur Bitcointalk le 19 Aout 2014.
+Citation de : CraigM le 9 aout 2014, 7:20:24 AM
+ Le Meshnet est prévu pour être un outil de confidentialité avec des avantages comparables à TOR, mais avec une latence plus faible. C&amp;rsquo;est correct?
+Le Meshnet est prévu pour permettre le financement des nœuds à travers des micro-paiements en Skycoin afin de couvrir les couts de la bande passante, correct?</description>
+    </item>
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/fr/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin et Skywire sont 2 composants distincts du projet Skycoin. Skycoin est la blockchain tandis que Skywire est le réseau maillé
+Skycoin a été conçu en premier et peut fonctionner par lui même. Il a été créé pour résoudre les problèmes de centralisation que rencontre le Bitcoin avec le minage ainsi que les autres problèmes pour la plupart liés à la cryptographie ou aux bugs logiciels, comme par exemple la malléabilité des transactions.</description>
+    </item>
+    
+    <item>
+      <title>Mineur Skywire: Matériel pour l&#39;internet de demain</title>
+      <link>https://www.skycoin.net/fr/statement/skywire-miner-hardware-for-the-next-internet/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skywire-miner-hardware-for-the-next-internet/</guid>
+      <description>Comment pouvons-nous réellement créer un internet libre et ouvert ? Pour répondre à cette question, nous avons développé Skywire, un nouvel internet alternatif. Skywire est une nouvelle technologie révolutionnaire qui reprend le contrôle aux grands fournisseurs d&amp;rsquo;accès Internet (FAIs) et le rend aux utilisateurs. Son modèle de fonctionnement en pair à pair promeut la neutralité du réseau et permet le partage du contenu sans blocage, ralentissement ou censure. L&amp;rsquo;accès ouvert au réseau de Skywire préserve la vie privée et encourage la liberté d&amp;rsquo;expression.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Un internet libre et ouvert</title>
+      <link>https://www.skycoin.net/fr/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/fr/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Internet nous donne l&amp;rsquo;illusion de contrôle. Nous pouvons socialiser, consommer et faire des affaires instantanément grâce aux services fournis par Google, Facebook, Apple et Amazon. Cela semble pratique, n&amp;rsquo;est-ce pas ? Ca l&amp;rsquo;est - jusqu&amp;rsquo;à ce que vous considériez ce que à quoi vous renoncez.
+Nous ne contrôlons pas nos vies en ligne. Les grandes entreprises et les fournisseurs de services Internet (ISP) collectent nos données, suivent nos mouvements et façonnent nos expériences.</description>
+    </item>
+    
+  </channel>
+</rss>

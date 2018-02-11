@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Net Neutrality on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/tags/net-neutrality/</link>
+    <description>Recent content in Net Neutrality on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/tags/net-neutrality/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>El desmantelamiento de la neutralidad de la red y cómo Skycoin puede derrotarlo</title>
+      <link>https://www.skycoin.net/es/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/the-net-neutrality-rollback-and-how-skycoin-can-defeat-it/</guid>
+      <description>En el 2015, la FCC instituyó reglas de neutralidad de red clasificando a la Internet como una utilidad pública. Esto impidió que los proveedores de servicios de Internet (ISP) priorizaran ciertos sitios web sobre otros y fomentó una internet libre y abierta donde todas las empresas y personas pudieran prosperar.
+Ahora, bajo el mandato del presidente de la FCC designado por Trump, Ajit Pai, se avecina una votación para recortar las protecciones de la neutralidad de la red.</description>
+    </item>
+    
+  </channel>
+</rss>

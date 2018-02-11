@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on Skycoin Blog</title>
+    <link>https://www.skycoin.net/tags/privacy/</link>
+    <description>Recent content in Privacy on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Question Regarding Latency and Privacy of the Meshnet</title>
+      <link>https://www.skycoin.net/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</guid>
+      <description>This post refers to Skywire earlier on in its formation, before it was named Skywire. Adapted from a bitcointalk post dated August 09, 2014.
+Quote from: CraigM on August 09, 2014, 07:20:24 AM
+ The meshnet is intended to be a nice privacy tool with benefits comparable to tor, but lower latency correct?
+The meshnet is intended to allow funding nodes via micropayments in skycoin to cover bandwidth costs correct?</description>
+    </item>
+    
+  </channel>
+</rss>

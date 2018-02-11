@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distribution on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/tags/distribution/</link>
+    <description>Recent content in Distribution on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>No Hay un Evento de Distribución de Monedas (ICO) en este momento</title>
+      <link>https://www.skycoin.net/es/statement/no-coin-distribution-event-at-this-time/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/statement/no-coin-distribution-event-at-this-time/</guid>
+      <description>No estamos haciendo una ICO actualmente. El evento de distribución anterior finalizó el 31 de agosto de 2017.</description>
+    </item>
+    
+  </channel>
+</rss>

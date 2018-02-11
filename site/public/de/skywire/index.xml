@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywires on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/skywire/</link>
+    <description>Recent content in Skywires on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/skywire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skywire: Das nächste Internet</title>
+      <link>https://www.skycoin.net/de/skywire/skywire-the-next-internet/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/skywire/skywire-the-next-internet/</guid>
+      <description>Im Frühling 2017 hat die FCC einen Antrag gestellt, in welchem es den Internetdienstanbietern (ISP) erlaubt ist Informationen über Browser-Gewohnheiten zu sammeln, zu nutzen und zu verkaufen. ISPs können das ohne die Erlaubnis des Users machen. Kunden können sich nicht dagegen entscheiden. Ein Kunde dieser Firmen zu sein, bedeutet schlicht und ergreifend, dass man dafür bezahlt ausgespäht zu werden.
+Mit Kundenüberwachung, unverlässlicher Abdeckung, hohen Gebühren, langen Wartezeiten und schlechtem Kundenservice, sind die ISPs die meist gehassten Firmen in Amerika geworden.</description>
+    </item>
+    
+  </channel>
+</rss>

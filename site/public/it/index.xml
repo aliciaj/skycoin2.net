@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin Blog</title>
+    <link>https://www.skycoin.net/it/</link>
+    <description>Recent content on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solar Bankers è un esempio di Azienda che adotta la rivoluzionaria Skycoin Blockchain</title>
+      <link>https://www.skycoin.net/it/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/solar-bankers-is-one-example-of-a-company-adopting-the-revolutionary-skycoin-blockchain/</guid>
+      <description>Migliore velocità, migliore sicurezza, migliore privacy: Skycoin offre tutti questi vantaggi attraverso la sua piattaforma open source. La tecnologia innovativa che alimenta Skycoin è a disposizione di tutti. Oggi, sempre più aziende stanno notando i vantaggi di Skycoin e lo utilizzano per costruire le proprie attività.
+Un esempio è Solar Bankers, una nuova società energetica rivoluzionaria. Solar Bankers sta usando il potere della blockchain per decentralizzare il settore energetico. Con Solar Bankers, gli utenti possono generare elettricità solare nelle loro case tramite dispositivi solari brevettati ad alta tecnologia.</description>
+    </item>
+    
+    <item>
+      <title>Skyledger: Il vero futuro della blockchain</title>
+      <link>https://www.skycoin.net/it/statement/skyledger-blockchains-real-future/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skyledger-blockchains-real-future/</guid>
+      <description>Bitcoin avrebbe dovuto dare inizio a una nuova economia basata sulla decentralizzata tecnologia blockchain – ma non l’ha fatto. E non può farlo. Bitcoin ha delle importanti carenze tecniche che gli impediscono di raggiungere i suoi iniziali traguardi. Costruita su concetti difettosi e manipolata fino alla corruzione, questa criptovaluta è incapace di creare quel nuovo mondo che i suoi utenti speravano.
+Gli sviluppatori di Skycoin hanno capito che Bitcoin era destinato a fallire, e si sono proposti per trovare una soluzione.</description>
+    </item>
+    
+    <item>
+      <title>I problemi di consenso di Segwit2x e Bitcoin - Perchè Skycoin è superiore</title>
+      <link>https://www.skycoin.net/it/statement/segwit2x/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/segwit2x/</guid>
+      <description>Mercoledì scorso, gli sviluppatori di Bitcoin hanno sospeso i piani per introdurre il controverso aggiornamento del software Segwit2x. L&amp;rsquo;aggiornamento 2x avrebbe aumentato la dimensione di ogni blocco da 1 MB a 2 MB, raddoppiando la capacità di transazione di Bitcoin. Segwit2x era stato pianificato da diversi mesi ed è stato programmato per entrare in vigore intorno al 16 novembre.
+È evidente che Bitcoin abbia un problema di scalabilità. Segwit2x aveva lo scopo di risolvere questo problema aumentando le dimensioni del blocco.</description>
+    </item>
+    
+    <item>
+      <title>Motivazioni per la progettazione dell&#39;algoritmo di consenso Obelisk</title>
+      <link>https://www.skycoin.net/it/statement/obelisk-consensus-algorithm-design-motivations/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/obelisk-consensus-algorithm-design-motivations/</guid>
+      <description>Questo è un post archiviato da una discussione sul forum BitcoinTalks del 19 giugno 2014
+ Citazione di: yxxyun del 19 Giugno, 2014, 02:52:38 AM
+ Citazione di: skycoin del 19 Giugno, 2014, 02:31:59 AM
+ Citazione di: FrictionlessCoin del 18 Giugno, 2014, 09:15:07 PM
+ Citazione di: skycoin del 18 Giugno, 2014, 09:08:56 PM
+Aggiornamento di sviluppo:
+Abbiamo scoperto un modo per prevenire un attacco Sybil usando un sistema Proof of Stake ibrido.</description>
+    </item>
+    
+    <item>
+      <title>Piano di distribuzione di Skycoin</title>
+      <link>https://www.skycoin.net/it/statement/skycoin-distribution-plan/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skycoin-distribution-plan/</guid>
+      <description>Questo è un annuncio ufficiale su come verrà gestita la distribuzione di SKY d&amp;rsquo;ora in poi.
+Skycoin&amp;rsquo;s distribution has had a history of being unclear and handled different ways.
+Al momento non ci sono ICO. Nel prossimo futuro, ci sarà un OTC limitato, gestito da software.
+L&amp;rsquo;OTC sarà accessibile dal portafoglio e dal sito web.
+L&amp;rsquo;OTC avrà un limite totale, un limite giornaliero e un prezzo regolabile.
+Impostare il prezzo è un problema perché Skycoin è già sugli Exchange.</description>
+    </item>
+    
+    <item>
+      <title>CX Tutorial: Using Affordances to Build a Small Text-based Adventure</title>
+      <link>https://www.skycoin.net/it/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/</guid>
+      <description>Introduzione Architettura reattiva Sistema di convenienza Oggetti Conclusione  Introduzione Questo tutorial presenta un &amp;ldquo;gioco&amp;rdquo; basato sul testo (l&amp;rsquo;utente non interagisce con il programma, e non può influenzare le decisioni del personaggio) che utilizza una Architettura reattiva a determinare quali sono le possibili azioni che il personaggio del gioco può fare. Il codice sorgente completo può essere trovato in CX&amp;rsquo;s repository, nel file * examples / text-based-adventure.cx *.</description>
+    </item>
+    
+    <item>
+      <title>Obelisk: Skycoin Consensus Algorithm | Information Pages</title>
+      <link>https://www.skycoin.net/it/overview/obelisk-skycoin-consensus-algorithm-information-pages/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/overview/obelisk-skycoin-consensus-algorithm-information-pages/</guid>
+      <description>Punti Salienti del Consenso  Perchè Consenso Elevata Scalabilità e Basso Consumo Energetico Robusto ad Attacchi Coordinati “Attacco del 51 Percento” Indirizzi IP Nascosti Indipendenza dalla Sincronizzazione d&amp;rsquo;Orologio Due Tipi di Nodi: Consenso e Block-making  Come Funziona l&amp;rsquo;Algoritmo di Consenso Skycoin Referenze  Punti Salienti del Consenso Perchè Consenso L&amp;rsquo;algoritmo di consenso skycoin (&amp;ldquo;Obelisk&amp;rdquo;) sincronizza lo stato della blockchain Skycoin attraverso tutti i nodi della rete. Ciò risulta in una contabilità coerente, es: quando si calcola il saldo per una data chiave pubblica (o indirizzo) si ottiene lo stesso valore su ciascun nodo che ha eseguito il calcolo.</description>
+    </item>
+    
+    <item>
+      <title>CX Overview</title>
+      <link>https://www.skycoin.net/it/overview/cx-overview/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/overview/cx-overview/</guid>
+      <description>Introduzione a CX Archivio del Progetto Sintassi Affordances  Restrizioni Arity Restrizioni sui Tipi Restrizioni Esistenziali Restrizioni di Identificazione Restrizioni dei Confini Restrizioni Definite dall&amp;rsquo;Utente  Sistema di Typing Rigoroso Compilato e Interpretato  Read-Eval-Print Loop Comandi di Meta-programmazione Stepping Debugging Interattivo  Algoritmo Evolutivo Integrato Serializzazione  Introduzione a CX CX è sia un linguaggio di programmazione che una specifica designato per abbracciare un nuovo paradigma di programmazione basato sul concetto di &amp;ldquo;affordance&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin vs Skywire</title>
+      <link>https://www.skycoin.net/it/statement/skycoin-vs-skywire/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skycoin-vs-skywire/</guid>
+      <description>Skycoin e Skywire sono due componenti separate del progetto Skycoin. Skycoin è la blockchain. Skywire è la rete a maglie.
+Skycoin è stato costruito per primo. Può esistere da solo. È stato creato per affrontare i problemi che ha Bitcoin. Il più grande problema che ha Bitcoin è il mining, che porta alla centralizzazione di Bitcoin. Gli altri problemi che affliggevano Bitcoin erano per lo più legati alla crittografia o ai bug del software, causando problemi simili come malleabilità delle transazioni.</description>
+    </item>
+    
+    <item>
+      <title>Panoramica di Skycoin</title>
+      <link>https://www.skycoin.net/it/overview/skycoin-overview/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/overview/skycoin-overview/</guid>
+      <description>Introduzione a Skycoin Innovazioni e Difetti del Bitcoin e gli Attuali Protocolli Blockchain Innovazioni Prodotte dal Bitcoin Maggiori Difetti del Bitcoin Proprietá Desiderabili per Sistemi di Consenso Distribuito per Registri Finanziari La Filosofia di Sicurezza di Skycoin Trasparenza e Sicurezza: Obelisk e Canali di Trasmissione Pubblici Obelisk Semplice Algoritmo di Consenso Binario: Scegliere tra Due Blocchi Consenso su Scelte Multiple Concomitanti Diramate  Introduzione a Skycoin Skycoin é basato su una tecnologia che introduce una nuova crittografica primitiva conosciuta come un canale di trasmissione pubblica.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: una connessione Internet gratuita e aperta</title>
+      <link>https://www.skycoin.net/it/statement/skywire-a-free-and-open-internet/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/it/statement/skywire-a-free-and-open-internet/</guid>
+      <description>Internet ci dà l&amp;rsquo;illusione del controllo. Possiamo socializzare, spendere e fare affari istantaneamente attraverso i servizi forniti da Google, Facebook, Apple e Amazon. Sembra conveniente, giusto? Lo è - finché non consideri ciò che stai rinunciando.
+Non controlliamo le nostre vite online. Le grandi aziende e i provider di servizi Internet (ISP) raccolgono i nostri dati, tracciano i nostri movimenti e plasmano le nostre esperienze. Ogni volta che usiamo internet, diamo a queste società un potere totale su di noi.</description>
+    </item>
+    
+  </channel>
+</rss>

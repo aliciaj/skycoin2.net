@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ideology on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/tags/ideology/</link>
+    <description>Recent content in Ideology on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/tags/ideology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Die Bedeutung von Aether</title>
+      <link>https://www.skycoin.net/de/statement/the-meaning-of-aether/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/statement/the-meaning-of-aether/</guid>
+      <description>Dies ist ein archivierter Post aus dem Bitcointalksthread vom 5. Mai 2014.
+&amp;lsquo;Aethers originales Design hat sich in etwas entwickelt, das nun CXO genannt wird.*
+*Zitat von: Tobo am 4. Mai 2014 um 02:11:12 nachmittags* &amp;gt; Ich habe bemerkt, dass ihr bisher den Namen Ether verwendet habt, welcher schon von Ethereum benutzt wurde. Jetzt habt ihr ihn in Aether geändert, was ebenso von einigen Leuten in diesem Forum schon verwendet wurde.</description>
+    </item>
+    
+  </channel>
+</rss>

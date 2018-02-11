@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transaction Malleability on Skycoin 블로그</title>
+    <link>https://www.skycoin.net/ko/tags/transaction-malleability/</link>
+    <description>Recent content in Transaction Malleability on Skycoin 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/ko/tags/transaction-malleability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>비트코인이 있다고 생각하는 곳으로 나아가기</title>
+      <link>https://www.skycoin.net/ko/statement/getting-to-where-we-think-bitcoin-should-be/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/ko/statement/getting-to-where-we-think-bitcoin-should-be/</guid>
+      <description>이것은 2014년 4월 23일 비트코인토크에 게시된 내용입니다.
+ 출처 : JFK01, 2014년 4월 23일, 01:54:50 PM
+아마도 스카이코인은 단지 위험요인을 테스트하고 싶어하는 것 같습니다. 거기에는 아무런 문제가 없습니다. 그들은 기술자이며 모든 것을 테스트하려고 합니다. 그들은 개발에서도 매우 신중했습니다. 이것은 매우 좋은 일입니다. 당신이 잘 하는 것을 하십시오. 이 프로젝트는 장기간에 걸쳐 진행됩니다.
+ 인기 코인인 피어 코인, 리플, 비트코인, 넥스트, 라이트코인을 보면, 비트코인의 보안모델에 대한 근본적인 개선을 한 대부분의 코인이 매우 잘 만들어졌음을 분명히 알 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

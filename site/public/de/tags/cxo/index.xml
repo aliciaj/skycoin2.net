@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CXO on Skycoin Blog</title>
+    <link>https://www.skycoin.net/de/tags/cxo/</link>
+    <description>Recent content in CXO on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/de/tags/cxo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Die Bedeutung von Aether</title>
+      <link>https://www.skycoin.net/de/statement/the-meaning-of-aether/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/statement/the-meaning-of-aether/</guid>
+      <description>Dies ist ein archivierter Post aus dem Bitcointalksthread vom 5. Mai 2014.
+&amp;lsquo;Aethers originales Design hat sich in etwas entwickelt, das nun CXO genannt wird.*
+*Zitat von: Tobo am 4. Mai 2014 um 02:11:12 nachmittags* &amp;gt; Ich habe bemerkt, dass ihr bisher den Namen Ether verwendet habt, welcher schon von Ethereum benutzt wurde. Jetzt habt ihr ihn in Aether geändert, was ebenso von einigen Leuten in diesem Forum schon verwendet wurde.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin/CXO vs FileCoin/IPFS</title>
+      <link>https://www.skycoin.net/de/ask-the-developers/skycoin-vs-ipfs/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/ask-the-developers/skycoin-vs-ipfs/</guid>
+      <description>Wir wurden gefragt, was der Unterschied zwischen CXO und IPFS ist.
+FileCoin hat dieselben Ziele, wie ein Teil der Skycoin-Infrastruktur, aber wählt einen anderen Ansatz. Sie haben drei separate Protokolle:
+ IPLD IPFS Multi-formats  wohingegen,
+ IPLD ist eine Repräsentationssprache für unveränderbare Datenobjekte und Hashes ist. IPFS ein Dateisystem ist. Multi-formats ein sich selbstdefinierender Datenstandard ist.  Bei Skycoin erfüllt CXO diese drei Sachen auf einmal.
+ Multi-formats ist nur ein &amp;ldquo;Schema&amp;rdquo; in CXO IPLD ist einfach CXO (unveränderbare Datenstrukturen, Hashketten, Replikation, Merkle-Bäume etc.</description>
+    </item>
+    
+    <item>
+      <title>Skycoin BBS Entwicklungsupdate #1</title>
+      <link>https://www.skycoin.net/de/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/de/bbs/bbs-development-update-1/</guid>
+      <description>Eine Einführung BBS steht für schwarzes Brett-System (bulletin board system). Obwohl traditionelle BBS-System nicht mehr wirklich benutzt werden, waren BBS in der modernen Ära ein Vorreiter für soziale Netzwerke.
+Skycoin BBS ist eine der ersten Webapplikationen, welche unter Verwendung des Skycoin-Ökosystems implementiert werden. Skycoin versucht das Internet zu revolutionieren; Dezentralisierung und Verschlüsselung der Protokolle sind Standard.
+Skycoin BBS liegt eine selbstreplizierende Peer-to-Peer Datenbank mit dem Namen CXO (ein Teil des Skycoin-Ökosystems) zugrunde.</description>
+    </item>
+    
+  </channel>
+</rss>

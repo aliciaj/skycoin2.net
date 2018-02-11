@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development Updates on Skycoin Blog</title>
+    <link>https://www.skycoin.net/es/categories/development-updates/</link>
+    <description>Recent content in Development Updates on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/es/categories/development-updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anuncio de Lanzamiento de Skycoin BBS v4.1</title>
+      <link>https://www.skycoin.net/es/bbs/bbs-release-v4.1/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/bbs/bbs-release-v4.1/</guid>
+      <description>¡Skycoin BBS v4.1 ha sido lanzado!
+
+Registro de cambios  Mejoras en la interfaz de usuario. Se implementó el descubrimiento de servicios (las conexiones a otros nodos ahora se administran automáticamente). Se mejoró el envío remoto de contenido del tablón (implementado a través del descubrimiento de servicios). Proceso simplificado de creación y alojamiento de tablones (boards). Mejoras a la estructura de datos CXO.  ¡El próximo lanzamiento traerá aún más características interesantes!</description>
+    </item>
+    
+    <item>
+      <title>Anuncio de Lanzamiento de Skycoin BBS v3.1</title>
+      <link>https://www.skycoin.net/es/bbs/bbs-release-v3.1/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/bbs/bbs-release-v3.1/</guid>
+      <description>¡Skycoin BBS v3.1 finalmente ha sido lanzado!
+Registro de cambios  Actualizado para usar el último CXO. Se reimplementó la estructura de datos CXO, para facilitar la gestión del diff. Introducción de un módulo views para facilitar la implementación de diferentes formas de visualizar datos. Se implementó la posibilidad de exportar e importar tableros a y desde archivos. Implementación inicial de la funcionalidad de seguir y evitar usuarios. Interfaz de usuario mejorada (trabajo en progreso).</description>
+    </item>
+    
+    <item>
+      <title>Actualización de Desarrollo de Skycoin BBS #2</title>
+      <link>https://www.skycoin.net/es/bbs/bbs-development-update-2/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/bbs/bbs-development-update-2/</guid>
+      <description>¡Ha pasado poco más de un mes desde el lanzamiento de la versión 0.1, y la 0.2 pronto estará lista!
+Los cambios son los siguientes:
+ Utiliza la última versión de CXO (base de datos auto replicante de igual a igual). Reimplementación de los objetos y árbol de CXO (en preparación para nuevas funciones). Introducción a un módulo de views para una fácil implementación de diferentes formas de &amp;ldquo;ver&amp;rdquo; contenido.</description>
+    </item>
+    
+    <item>
+      <title>Actualización de desarrollo de Skycoin BBS #1</title>
+      <link>https://www.skycoin.net/es/bbs/bbs-development-update-1/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/es/bbs/bbs-development-update-1/</guid>
+      <description>Introducción BBS significa Bulletin Board System (Sistema de Tablón de Anuncios). Aunque los sistemas BBS tradicionales ya no se utilizan ampliamente, BBS en la era moderna es un icono para los servicios sociales.
+Skycoin BBS es una de las primeras aplicaciones web que se implantará utilizando el ecosistema de Skycoin. Skycoin intenta revolucionar la Internet; descentralizarla y encriptar protocolos por defecto.
+Subyacente a Skycoin BBS se encuentra una base de datos autorreplicante de igual a igual llamada CXO (parte del ecosistema Skycoin).</description>
+    </item>
+    
+  </channel>
+</rss>

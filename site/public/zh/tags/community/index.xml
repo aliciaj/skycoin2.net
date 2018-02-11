@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on 天空币博客</title>
+    <link>https://www.skycoin.net/zh/tags/community/</link>
+    <description>Recent content in Community on 天空币博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/zh/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin社区链接</title>
+      <link>https://www.skycoin.net/zh/statement/skycoin-community-links/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/zh/statement/skycoin-community-links/</guid>
+      <description> 与Skycoin团队联络 Skycoin团队电报(Telegram)最为火热活跃
+ Skycoin电报频道 Skycoin BBS 频道 Skycoin新闻频道 Skycoin赏金节目频道
+ Skycoin Slack 频道
+ Skycoin Discord 频道
+  邮件列表订阅  Skycoin通讯录  新闻更新  Skycoin 博客 Skycoin 推特 Skycoin Reddit Skycoin 脸书  媒体  Skycoin Youtube Skycoin Instagram  软件 所有代码都被发布到github上。欢迎代码贡献人员和测试人员加入。
+ Skycoin Github 组织 Skycoin 核心和钱包 Skycoin 移动钱包 Skywire (Meshnet) Skycoin BBS Skycoin CX Skycoin CXO Skycoin 信差 Skycoin 网站 Skycoin 博客  </description>
+    </item>
+    
+  </channel>
+</rss>
