@@ -10,7 +10,7 @@
 	color: white;
 	margin: 0 auto;
 	max-width: var(--max-width);
-	padding-bottom: 100px;
+	padding: 0 var(--standard-padding-mobile) 100px;
 	width: 100%;
 }
 
