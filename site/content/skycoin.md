@@ -3,6 +3,7 @@ title: "Skycoin: A cryptocurrency incentivizing decentralization, powering the b
 date: 2018-02-10T16:10:22-08:00
 signup: true
 herobg: hero-skycoin
+logoColor: light
 ---
 
 
