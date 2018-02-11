@@ -1,6 +1,17 @@
+.hero {
+	align-items: flex-end;
+	display: flex;
+	margin-top: -124px;
+	min-height: 600px;
+	padding: 124px 0 0;
+}
+
 .hero h1 {
 	color: white;
-	padding-bottom: 2em;
+	margin: 0 auto;
+	max-width: var(--max-width);
+	padding: 0 var(--standard-padding-mobile) 100px;
+	width: 100%;
 }
 
 .hero-skywire {

@@ -7,6 +7,7 @@
 @import "imports/base.css";
 
 /* Partials */
+@import "partials/headings.css";
 @import "partials/navigation.css";
 @import "partials/hero.css";
 @import "partials/accordion.css";

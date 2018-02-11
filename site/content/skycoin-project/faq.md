@@ -3,13 +3,6 @@ title: "FAQ"
 date: 2018-02-11T11:15:15-08:00
 herobg: bg-gray-light
 ---
-<!-- 
-FAQ
-
-
-Topics:
-
-Skycoin |  Skywire  |  Mining  |  Platform  |  Business  -->
 
 <nav>
 	<ul>
@@ -244,10 +237,6 @@ Skycoin |  Skywire  |  Mining  |  Platform  |  Business  -->
 	</li>
 
 </ul>
-
-
-
-
 
 
 
