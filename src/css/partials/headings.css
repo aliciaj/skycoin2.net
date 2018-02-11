@@ -3,6 +3,17 @@ h1 {
     font-size: 3.25em;
 }
 
+h2 {
+    font-family: var(--font-brand-bold);
+    font-size: 2.5em;
+}
+
+h3 {
+    font-family: var(--font-brand-bold);
+    font-size: 1.5em;
+    margin-bottom: 0.833333333em;
+}
+
 .gradient {
     background: var(--gradient-brand);
     -webkit-background-clip: text;
