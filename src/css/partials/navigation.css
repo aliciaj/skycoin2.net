@@ -36,7 +36,6 @@ nav ul {
 }
 
 .nav-link {
-	cursor: pointer;
 	font-family: var(--font-brand-bold);
 	font-size: 1em;
 	line-height: 1;
@@ -52,8 +51,12 @@ nav ul {
 	color: var(--color-light);
 }
 
-.nav-link:hover {
+.color-dark .nav-link:hover {
 	color: var(--color-brand);
+}
+
+.color-light .nav-link:hover {
+	color: var(--color-mid);
 }
 
 .has-dropdown .nav-link:after {
@@ -95,8 +98,12 @@ nav ul {
 	color: var(--color-light);
 }
 
-.dropdown-item:hover {
+.color-dark .dropdown-item:hover {
 	color: var(--color-brand);
+}
+
+.color-light .dropdown-item:hover {
+	color: var(--color-mid);
 }
 
 .nav-link.nav-item-markets {
@@ -110,7 +117,7 @@ nav ul {
 }
 
 .nav-link.nav-item-markets:hover {
-	color: var(--color-light);
+	color: var(--color-mid);
 }
 
 @media(--large) {

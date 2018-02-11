@@ -1,0 +1,10 @@
+h1 {
+    font-family: var(--font-brand-bold);
+    font-size: 3.25em;
+}
+
+.gradient {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
