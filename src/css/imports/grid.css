@@ -1,4 +1,5 @@
 .container {
+    padding: 0 var(--standard-padding-mobile);
     width: 100%;
 }
 
@@ -24,6 +25,7 @@
     .container {
         margin: 0 auto;
         max-width: var(--max-width);
+        padding: 0 var(--standard-padding-desktop);
     }
 
     .grid {
