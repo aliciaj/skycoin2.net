@@ -14,3 +14,11 @@
 .hero-skyledger {
 	background: url('/images/hero-skyledger-f.jpg');
 }
+
+.bg-gray-dark {
+	background: #2A2D32;
+}
+
+.bg-gray-light {
+	background: #212429;
+}
