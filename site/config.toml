@@ -65,7 +65,7 @@ pygmentsStyle = "murphy"
 	url = "/blog/"
 	weight = 50
 [[menu.main]]
-	name = "Buy"
+	name = "Buy Skycoin"
 	identifier = "markets"
 	url = "/markets/"
 	weight = 60

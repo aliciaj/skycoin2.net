@@ -1,13 +1,13 @@
-header {
+.site-header {
+	display: flex;
+	justify-content: space-between;
 	padding: 1.5em var(--standard-padding-mobile) var(--standard-padding-mobile);
 }
 
-.logo {
-	width: 25%;
-}
-
-nav {
-	width: 75%;
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .logo {
@@ -35,10 +35,83 @@ nav {
 	width: 1px;
 }
 
+.nav-link {
+	color: var(--color-dark);
+	cursor: pointer;
+	font-family: var(--font-brand-bold);
+	font-size: 1em;
+	line-height: 1;
+	text-decoration: none;
+	transition: all 100ms ease;
+}
+
+.nav-link:hover {
+	color: var(--color-brand);
+}
+
+.has-dropdown .nav-link:after {
+	content: "";
+	background: url("/images/down-carrot.svg") 0 0 no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	height: 5px;
+	margin: 0 0 0 7px;
+	width: 10px;
+}
+
+.has-dropdown ul {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	transition: all 200ms ease;
+}
+
+.has-dropdown:hover ul {
+	height: 50px;
+	padding: 0.45em 0;
+}
+
+.has-dropdown li {
+	margin: 0 30px 0 0;
+}
+
+.dropdown-item {
+	color: var(--color-dark);
+	text-decoration: none;
+}
+
+.dropdown-item:hover {
+	color: var(--color-brand);
+}
+
+.nav-item-markets {
+	background: var(--gradient-brand);
+	border-radius: 100px;
+	box-shadow: 0 8px 20px -4px rgba(0, 114, 255, 0.2);
+	color: var(--color-light);
+	padding: 1em 2em;
+	text-decoration: none;
+	transition: all 100ms ease;
+}
+
+.nav-item-markets:hover {
+	color: var(--color-light);
+}
+
 @media(--large) {
-	header {
+	.site-header {
 		margin: 0 auto;
 		max-width: var(--max-width);
 		padding: 44px var(--standard-padding-desktop) var(--standard-padding-desktop);
+	}
+
+	nav li {
+		float: left;
+		margin: 0 0 0 30px;
+	}
+
+	nav {
+		display: flex;
 	}
 }
