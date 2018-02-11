@@ -1,3 +1,7 @@
+.container {
+    width: 100%;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +21,11 @@
 }
 
 @media (--large) {
+    .container {
+        margin: 0 auto;
+        max-width: var(--max-width);
+    }
+
     .grid {
         margin: 0 auto;
         max-width: var(--max-width);
