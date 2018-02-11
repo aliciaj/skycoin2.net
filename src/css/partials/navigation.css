@@ -18,11 +18,11 @@ nav ul {
 	width: 150px;
 }
 
-.logo-dark {
+.color-dark .logo {
 	background: url("/images/logo.svg") 0 0 no-repeat;
 }
 
-.logo-light {
+.color-light .logo {
 	background: url("/images/logo-white.svg") 0 0 no-repeat;
 }
 
@@ -36,13 +36,20 @@ nav ul {
 }
 
 .nav-link {
-	color: var(--color-dark);
 	cursor: pointer;
 	font-family: var(--font-brand-bold);
 	font-size: 1em;
 	line-height: 1;
 	text-decoration: none;
 	transition: all 100ms ease;
+}
+
+.color-dark .nav-link {
+	color: var(--color-dark);
+}
+
+.color-light .nav-link {
+	color: var(--color-light);
 }
 
 .nav-link:hover {
@@ -77,15 +84,22 @@ nav ul {
 }
 
 .dropdown-item {
-	color: var(--color-dark);
 	text-decoration: none;
+}
+
+.color-dark .dropdown-item {
+	color: var(--color-dark);
+}
+
+.color-light .dropdown-item {
+	color: var(--color-light);
 }
 
 .dropdown-item:hover {
 	color: var(--color-brand);
 }
 
-.nav-item-markets {
+.nav-link.nav-item-markets {
 	background: var(--gradient-brand);
 	border-radius: 100px;
 	box-shadow: 0 8px 20px -4px rgba(0, 114, 255, 0.2);
@@ -95,7 +109,7 @@ nav ul {
 	transition: all 100ms ease;
 }
 
-.nav-item-markets:hover {
+.nav-link.nav-item-markets:hover {
 	color: var(--color-light);
 }
 
@@ -105,13 +119,14 @@ nav ul {
 		max-width: var(--max-width);
 		padding: 44px var(--standard-padding-desktop) var(--standard-padding-desktop);
 	}
+	
+	nav {
+		align-items: center;
+		display: flex;
+	}
 
 	nav li {
 		float: left;
 		margin: 0 0 0 30px;
-	}
-
-	nav {
-		display: flex;
 	}
 }
