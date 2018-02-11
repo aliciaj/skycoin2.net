@@ -19,181 +19,198 @@ pygmentsCodeFences = true
 pygmentsStyle = "murphy"
 
 [permalinks]
-    post = "/post/:year/:month/:day/:slug/"
-    note = "/note/:year/:month/:day/:slug/"
+	post = "/post/:year/:month/:day/:slug/"
+	note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Technology"
-    identifier = "technology"
-    url = "/"
-    weight = 1
+	name = "Technology"
+	identifier = "technology"
+	weight = 10
 [[menu.main]]
-    name = "Whitepapers"
-    identifier = "whitepapers"
-    url = "/whitepapers/"
-    weight = 2
+	name = "Skywire"
+	identifier = "skywire"
+	parent = "technology"
+	url = "/skywire"
+	weight = 11
 [[menu.main]]
-    name = "Roadmap"
-    identifier = "roadmap"
-    url = "/roadmap/"
-    weight = 3
+	name = "Skycoin"
+	identifier = "skycoin"
+	parent = "technology"
+	url = "/skycoin"
+	weight = 12
 [[menu.main]]
-    name = "Downloads"
-    identifier = "downloads"
-    url = "/downloads/"
-    weight = 4
+	name = "Skyledger"
+	identifier = "skyledger"
+	parent = "technology"
+	url = "/skyledger"
+	weight = 13
 [[menu.main]]
-    name = "Blog"
-    identifier = "blog"
-    url = "/blog/"
-    weight = 5
+	name = "Whitepapers"
+	identifier = "whitepapers"
+	url = "/whitepapers/"
+	weight = 20
 [[menu.main]]
-    name = "Buy"
-    identifier = "markets"
-    url = "/markets/"
-    weight = 6
+	name = "Roadmap"
+	identifier = "roadmap"
+	url = "/roadmap/"
+	weight = 30
+[[menu.main]]
+	name = "Downloads"
+	identifier = "downloads"
+	url = "/downloads/"
+	weight = 40
+[[menu.main]]
+	name = "Blog"
+	identifier = "blog"
+	url = "/blog/"
+	weight = 50
+[[menu.main]]
+	name = "Buy"
+	identifier = "markets"
+	url = "/markets/"
+	weight = 60
 
 [[menu.footer]]
-  name = "skycoin.net"
-  url = "https://www.skycoin.net/"
-  weight = 1
+	name = "skycoin.net"
+	url = "https://www.skycoin.net/"
+	weight = 1
 
 [[menu.footer]]
-  name = "Github"
-  url = "https://github.com/skycoin"
-  weight = 2
+	name = "Github"
+	url = "https://github.com/skycoin"
+	weight = 2
 
 [[menu.footer]]
-  name = "Twitter"
-  url = "https://twitter.com/skycoinproject"
-  weight = 3
+	name = "Twitter"
+	url = "https://twitter.com/skycoinproject"
+	weight = 3
 
 [[menu.footer]]
-  name = "Reddit"
-  url = "https://reddit.com/r/SkycoinProject"
-  weight = 4
+	name = "Reddit"
+	url = "https://reddit.com/r/SkycoinProject"
+	weight = 4
 
 [[menu.footer]]
-  name = "Telegram"
-  url = "https://t.me/Skycoin"
-  weight = 5
+	name = "Telegram"
+	url = "https://t.me/Skycoin"
+	weight = 5
 
 [[menu.footer]]
-  name = "Blockchain Explorer"
-  url = "https://explorer.skycoin.net/"
-  weight = 6
+	name = "Blockchain Explorer"
+	url = "https://explorer.skycoin.net/"
+	weight = 6
 
 [author]
-  name = "Skycoin"
+	name = "Skycoin"
 
 [params]
-  keywords = "skycoin"
-  rss = "/index.xml"
-  telegram = "https://t.me/Skycoin"
-  description = "Skycoin Project Updates"
-  email = ""
-  github = "skycoin"
-  twitter = "skycoinproject"
-  twitterAnalytics = "ny03t"
+	keywords = "skycoin"
+	rss = "/index.xml"
+	telegram = "https://t.me/Skycoin"
+	description = "Skycoin Project Updates"
+	email = ""
+	github = "skycoin"
+	twitter = "skycoinproject"
+	twitterAnalytics = "ny03t"
 
 [Languages]
 [Languages.en]
-  weight = -1
-  title = "Skycoin Blog"
-  languageName = "English"
+	weight = -1
+	title = "Skycoin Blog"
+	languageName = "English"
 
 [Languages.zh]
-  weight = 1
-  title = "天空币博客"
-  hasCJKLanguage = true
-  languageName = "中文"
+	weight = 1
+	title = "天空币博客"
+	hasCJKLanguage = true
+	languageName = "中文"
 
 [Languages.ru]
-  weight = 2
-  title = "Skycoin Блог"
-  languageName = "Русский"
+	weight = 2
+	title = "Skycoin Блог"
+	languageName = "Русский"
 
 [Languages.ko]
-  weight = 3
-  title = "Skycoin 블로그"
-  languageName = "한국어"
+	weight = 3
+	title = "Skycoin 블로그"
+	languageName = "한국어"
 
 [Languages.es]
-    weight = 4
-    title = "Skycoin Blog"
-    languageName = "Español"
+	weight = 4
+	title = "Skycoin Blog"
+	languageName = "Español"
 
 [Languages.de]
-    weight = 5
-    title = "Skycoin Blog"
-    languageName = "Deutsch"
+	weight = 5
+	title = "Skycoin Blog"
+	languageName = "Deutsch"
 
 [Languages.ja]
-    weight = 6
-    title = "Skycoin Blog"
-    languageName = "日本語"
+	weight = 6
+	title = "Skycoin Blog"
+	languageName = "日本語"
 
 [Languages.el]
-    weight = 7
-    title = "Skycoin Blog"
-    languageName = "Ελληνικά"
+	weight = 7
+	title = "Skycoin Blog"
+	languageName = "Ελληνικά"
 
 [Languages.fr]
-    weight = 8
-    title = "Skycoin Blog"
-    languageName = "Français"
+	weight = 8
+	title = "Skycoin Blog"
+	languageName = "Français"
 
 [Languages.pt]
-    weight = 9
-    title = "Skycoin Blog"
-    languageName = "Português"
+	weight = 9
+	title = "Skycoin Blog"
+	languageName = "Português"
 
 [Languages.it]
-    weight = 10
-    title = "Skycoin Blog"
-    languageName = "Italiano"
+	weight = 10
+	title = "Skycoin Blog"
+	languageName = "Italiano"
 
 [[menu.languages]]
-  name = "English"
-  weight = -1
-  url = "/"
+	name = "English"
+	weight = -1
+	url = "/"
 [[menu.languages]]
-  name = "中文"
-  weight = 1
-  url = "/zh/"
+	name = "中文"
+	weight = 1
+	url = "/zh/"
 [[menu.languages]]
-  name = "Русский"
-  weight = 2
-  url = "/ru/"
+	name = "Русский"
+	weight = 2
+	url = "/ru/"
 [[menu.languages]]
-  name = "한국어"
-  weight = 3
-  url = "/ko/"
+	name = "한국어"
+	weight = 3
+	url = "/ko/"
 [[menu.languages]]
-  name = "Español"
-  weight = 4
-  url = "/es/"
+	name = "Español"
+	weight = 4
+	url = "/es/"
 [[menu.languages]]
-  name = "Deutsch"
-  weight = 5
-  url = "/de/"
+	name = "Deutsch"
+	weight = 5
+	url = "/de/"
 [[menu.languages]]
-  name = "日本語"
-  weight = 6
-  url = "/ja/"
+	name = "日本語"
+	weight = 6
+	url = "/ja/"
 [[menu.languages]]
-  name = "Ελληνικά"
-  weight = 7
-  url = "/el/"
+	name = "Ελληνικά"
+	weight = 7
+	url = "/el/"
 [[menu.languages]]
-  name = "Français"
-  weight = 8
-  url = "/fr/"
+	name = "Français"
+	weight = 8
+	url = "/fr/"
 [[menu.languages]]
-  name = "Português"
-  weight = 9
-  url = "/pt/"
+	name = "Português"
+	weight = 9
+	url = "/pt/"
 [[menu.languages]]
-  name = "Italiano"
-  weight = 10
-  url = "/it/"
+	name = "Italiano"
+	weight = 10
+	url = "/it/"

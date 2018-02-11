@@ -5,9 +5,22 @@
 	<nav class="nav">
 		<ul>
 			{{ range .context.Site.Menus.main }}
+				{{ if .HasChildren }}
+				<li class="has-dropdown">
+					<span>{{ .Name }}</span>
+					<ul>
+						{{ range .Children }}
+						<li>
+							<a class="nav-link nav-item-{{ .Identifier }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+						</li>
+						{{ end }}
+					</ul>
+				</li>
+				{{ else }}
 				<li>
 					<a class="nav-link nav-item-{{ .Identifier }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
 				</li>
+				{{ end }}
 			{{ end }}
 		</ul>
 	</nav>
