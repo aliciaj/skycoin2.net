@@ -8,7 +8,6 @@ herobg: hero-skycoin
 
 <h2>Skycoin is the only cryptocurrency that doesn’t build in economic incentives for centralization</h2>
 
-
 This website was created by Peter Collingridge.
 
 <!-- can use these as backgrounds instead of objects as well -->
@@ -40,7 +39,8 @@ This website was created by Peter Collingridge.
 
 <h3>Skycoin’s cryptocurrency at a glance</h3>
 
-<h4>Free transactions //icon dollar bill with slash thru it </h4>
+<object type="image/svg+xml" data="/images/transaction.svg" class="icon-svg"></object>
+<h4>Free transactions </h4>
 <p>Skycoin has no transaction fees. Instead, users are able to spend coin hours to confirm transactions.</p>
 
 <object type="image/svg+xml" data="/images/lock.svg" class="icon-svg"></object>
@@ -52,7 +52,6 @@ This website was created by Peter Collingridge.
 <p>With no bottlenecks or fees, Skycoin’s two second transactions are faster than other cryptos and competitive with credit cards.</p>
 
 <object type="image/svg+xml" data="/images/eye.svg" class="icon-svg"></object>
-
 <h4>Private</h4>
 <p>The CoinJoin protocol mixes transactions up from multiple wallets, rendering transactions untraceable. </p>
 
