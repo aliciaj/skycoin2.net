@@ -13,12 +13,6 @@
 @import "partials/sign-up.css";
 @import "partials/accordion.css";
 @import "partials/sign-up.css";
-
-
-/* Accordion CSS raw because errors  */
-
-.topic-nav a {
-	text-decoration: none;
-}
+@import "partials/helpers.css";
 
 /* Pages */

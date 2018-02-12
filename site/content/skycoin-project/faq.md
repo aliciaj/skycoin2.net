@@ -1,12 +1,14 @@
 ---
-title: "FAQ test"
+title: "Frequently Asked Questions"
 date: 2018-02-11T11:15:15-08:00
 herobg: bg-gray-light
 ---
 
-<div class="container">
+<div class="container faq">
+
+	<h3 class="topics">Topics</h3>
+	
 	<nav>
-		<h3>Topics</h3>
 		<ul class="topic-nav">
 			<li><a class="js-anchor-link" href="#nav-skycoin">SkyCoin</a></li>
 			<li><a class="js-anchor-link" href="#nav-skywire">SkyWire</a></li>
@@ -15,8 +17,6 @@ herobg: bg-gray-light
 			<li><a class="js-anchor-link" href="#nav-business">Business</a></li>
 		</ul>
 	</nav>
-
-	nanannaanananananbatman
 
 	<h2 id="nav-skycoin">SkyCoin</h2>
 
