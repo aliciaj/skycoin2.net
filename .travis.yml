@@ -20,7 +20,7 @@ script:
 # - hugo --buildFuture --config config.toml --destination public -v
 
 after_success:
-- ls public/
+- ls dist/
 
 deploy:
   skip_cleanup: true
