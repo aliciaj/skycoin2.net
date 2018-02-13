@@ -23,7 +23,8 @@ $(function() {
 	    var scrollTo = target.offset().top;
 	    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
 	  }
-	});
+    });
+});
 	
 let signupName = document.querySelector('.sign-up-name');
 let signupEmail = document.querySelector('.sign-up-email');
