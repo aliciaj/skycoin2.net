@@ -1,6 +1,7 @@
 ---
 title: "Faq"
 date: 2018-02-11T19:37:06-08:00
+herobg: bg-gray-light
 ---
 
 
