@@ -1,7 +1,7 @@
 language: go
 
 go:
-- '1.8'
+- '1.9.x'
 
 install:
 - go get -v github.com/gohugoio/hugo
@@ -23,9 +23,9 @@ after_success:
 deploy:
   skip_cleanup: true
   provider: script
-  script: s3cmd --access_key="${AWS_ACCESS_KEY_ID}" --secret_key="${AWS_SECRET_ACCESS_KEY}" --region=ap-southeast-1 sync --delete-removed --acl-public --guess-mime-type --no-mime-magic --recursive public/ s3://www.skycoin.net/blog/
+  script: s3cmd --access_key="${AWS_ACCESS_KEY_ID}" --secret_key="${AWS_SECRET_ACCESS_KEY}" --region=ap-southeast-1 sync --delete-removed --acl-public --guess-mime-type --no-mime-magic --recursive public/ s3://staging3.skycoin.net/
   on:
     branch: master
 
 after_deploy:
-- s3cmd --access_key="${AWS_ACCESS_KEY_ID}" --secret_key="${AWS_SECRET_ACCESS_KEY}" --region=ap-southeast-1 ls s3://www.skycoin.net/blog/
+- s3cmd --access_key="${AWS_ACCESS_KEY_ID}" --secret_key="${AWS_SECRET_ACCESS_KEY}" --region=ap-southeast-1 ls s3://staging3.skycoin.net/
