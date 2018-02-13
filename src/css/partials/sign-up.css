@@ -1,0 +1,31 @@
+.sign-up {
+    background: var(--color-brand-secondary);
+    padding: 120px 0;
+}
+
+.sign-up p {
+    color: rgba(30, 34, 39, 0.6);
+    margin-bottom: 50px;
+    max-width: 460px;
+}
+
+.sign-up input[type=text],
+.sign-up input[type=email] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 0;
+    border-radius: 6px;
+    font-size: 0.875em;
+    padding: 1rem 0.625rem;
+    transition: all 100ms ease;
+}
+
+.sign-up input[type=text]:focus,
+.sign-up input[type=email]:focus,
+.sign-up input.not-empty {
+    background: var(--color-lightest);
+}
+
+.sign-up input:not(:focus).not-empty:invalid {
+    background: rgb(231, 76, 60, 0.4);
+    outline: 0;
+}

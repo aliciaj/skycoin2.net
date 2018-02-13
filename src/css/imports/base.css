@@ -25,3 +25,7 @@ b {
 	font-family: 'SkycoinSansBold', sans-serif;
 	font-weight: normal;
 }
+
+p {
+    line-height: 1.75;
+}
