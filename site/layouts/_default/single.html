@@ -1,9 +1,9 @@
 {{ partial "document-head.html" . }}
 {{ partial "header.html" (dict "context" . "logoColor" "light") }}
 
-<section>
+<section id="main">
 	<div class="hero {{ if .Params.herobg }}{{ .Params.herobg }}{{ end }}">
-        <h1 class="light">{{ .Title }}</h1>
+	    <h1 id="title">{{ .Title }}</h1>
     </div>
 
     <article id="content">

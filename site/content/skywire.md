@@ -27,7 +27,7 @@ herobg: hero-skywire
 
 <h3>Benefits of the new internet</h3>
 
-//design note: There are four of these on the design but that looks terrible, so cutting to four
+<!-- //design note: There are four of these on the design but that looks terrible, so cutting to four -->
 
 <h4>Privacy and Control</h4>
 <p>Our current internet environment allows for our personal information to be used freely by other companies and organizations, making us susceptible to unwanted solicitations and other more serious invasions of privacy. With Skywire, you retain your anonymity and your right to privacy.</p>
