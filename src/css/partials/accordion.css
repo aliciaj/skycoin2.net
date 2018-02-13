@@ -6,6 +6,8 @@
 
 .accordion h3 {
 	color: var(--color-brand);
+	text-indent: -1.3em;
+    margin-left: 1.3em;
 }
 
 /* Thumb */
@@ -44,4 +46,43 @@
 	transform: rotate(45deg);
 	top: -4px;
 	position: relative;
+}
+
+
+.topic-nav {
+	margin: 1em 0;
+	display: block;
+}
+
+.topic-nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+.topic-nav li:first-child {
+	margin-left: 0;
+}
+
+/* Accordion CSS raw because errors  */
+
+.topics {
+	margin-bottom: .5em;
+}
+
+.topic-nav a:hover {
+	color: blue;
+}
+
+.faq h2 {
+	font-size: 26px;
+	margin-left: 10px;
+	margin-top: 2em;
+}
+
+fc-blue {
+	color: blue;
+}
+
+.faq.container {
+	padding:  3em 14em;
 }
