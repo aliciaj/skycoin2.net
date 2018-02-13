@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #69 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #69">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-04-19">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-69/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="P2P">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #69</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h5 id="there-was-a-disappearing-coins-bug-on-windows">There was a &ldquo;disappearing coins&rdquo; bug on windows.</h5>
+
+<ul>
+<li>You download all ~120 blocks, you see 100 coins</li>
+<li>You close client, there is not sig signal for clear program exit triggered on windows, so you lose all the blocks (they are not saved to disc, like they are on exit, on linux)</li>
+<li>You open client and the coins are &ldquo;missing&rdquo;, until you redownload the blockchain to current head</li>
+</ul>
+
+<p>So coins were still there and appears to just be bug with blockchain not being saved to disc on exit on windows. So coins dont appear until the blockchain has been redownloaded.</p>
+
+<p>This needs to be fixed.</p>
+
+<h5 id="other-bugs-things-to-do">Other bugs/Things to do</h5>
+
+<ul>
+<li>Connecting to network takes a bit of time. Some users cannot connect at all.</li>
+<li>PEX stores and exchanges peer lists. It is exchanging peers that cannot be connected to (only allow outgoing connections). PEX should only store peers that allow incoming connections.</li>
+<li>PEX should keep time you last connected to peer and keep list sorted. So you immediately connect to old peers on restart.</li>
+<li>PEX should be moved into the skycoin repo, so we can update it</li>
+<li>PEX needs interface in GUI, to allow you to see peers you are connected to and to add peers by hand, as default connections</li>
+<li>PEX needs option to only connect to selected list of peers and not publicly (in case you need hide application)</li>
+<li>Networking is still TCP/IP. We need to upgrade to UDP with hole punching. Until then, it is very difficult to connect to people behind firewall. The connection interface is abstracted, so adding new types of connection type (HTTPS, UDP) should be easy</li>
+</ul>
+
+<h5 id="transaction-queue-todo">Transaction Queue TODO</h5>
+
+<ul>
+<li>The /transactions does not show pending transactions, but instead shows outputs. Need to fix this</li>
+<li>Need to show pending transactions in and out, for your wallet, in the gui</li>
+<li>Need to queue up transactions when multiple transactions are outgoing from same wallet</li>
+</ul>
+
+<p>There are a few hundred improvements, like this that need to be made until its perfect.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue d&#39;ensemble de CX | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Vue d&#39;ensemble de CX">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-06">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/fr/overview/cx-overview/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="CX">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../fr/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../fr/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../fr/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../fr/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../fr/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../fr/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../fr/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../fr/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Vue d&#39;ensemble de CX</h1>
+    </div>
+
+    <article id="content">
+        
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="1" -->
+
+<ul>
+<li><a href="#cx-introduction">Introduction du CX</a></li>
+<li><a href="#projects-repository">Dépot du projet</a></li>
+<li><a href="#syntax">Syntaxe</a></li>
+<li><a href="#affordances">Attributions</a>
+
+<ul>
+<li><a href="#arity-restrictions">Restrictions d&rsquo;arité</a></li>
+<li><a href="#type-restrictions">Restrictions de type</a></li>
+<li><a href="#existential-restrictions">Restrictions existentielles</a></li>
+<li><a href="#identifier-restrictions">Restrictions d&rsquo;identifiant</a></li>
+<li><a href="#boundaries-restrictions">Restrictions de limite</a></li>
+<li><a href="#user-defined-restrictions">Restrictions définies par l&rsquo;utilisateur</a></li>
+</ul></li>
+<li><a href="#strict-typing-system">Système de typage strict</a></li>
+<li><a href="#compiled-and-interpreted">Compilé et interprété</a>
+
+<ul>
+<li><a href="#read-eval-print-loop">Boucle Lecture-Evaluation-Affichage</a></li>
+<li><a href="#meta-programming-commands">Commandes de méta-programmation</a></li>
+<li><a href="#stepping">Stepping</a></li>
+<li><a href="#interactive-debugging">Débogage interactif</a></li>
+</ul></li>
+<li><a href="#integrated-evolutionary-algorithm">Algorithme évolutif intégré</a></li>
+<li><a href="#serialization">Serialisation</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="introduction-de-cx">Introduction de CX</h1>
+
+<p>CX est une spécification et un language de programmation conçu pour embracer un nouveau paradigme de language basé sur le concept d&rsquo;attribution.
+Les attributions permettent à un programme de savoir quelles actions ils peuvent faire ou non en leur sein.
+Par exemple, on peut demander à un programme quels arguments peuvent être envoyer à une fonction et le programme retournera une liste d&rsquo;actions possibles.
+Après avoir décidé quelle action de la liste est appropriée, nous pouvons choisir l&rsquo;une des options et le programme appliquera l&rsquo;action choisie.
+En raison du système d&rsquo;attribution de CX, un algorithme de programmation génétique est construit et fourni en tant que fonction native, laquelle peut  etre utilisé pour optimiser la structure du programme pendant son exécution.</p>
+
+<p>La spécification du CX établit que le compilateur et l&rsquo;interprétateur doivent être accessible au programmeur. L&rsquo;interpréteur peu être accédé à travers une boucle de lecture-evaluation-affichage, dans laquelle le programmeur peu interagir en ajoutant ou enlevant des éléments au programme. Une fois que le programme s&rsquo;est terminé, il peut être compilé dans le but d&rsquo;augmenter sa performance.</p>
+
+<p>Le sytème de typage dans le CX est très strict. La seule conversion de type &ldquo;implicite&rdquo; apparait quand le parseur détermine ce qui est un nombre entier, un nombre flottant, un booléen, une chaine de caractère ou un tableau. Par exemple, si une fonction requiert un nombre entier 64 bits, il est nécessaire d&rsquo;utiliser une fonction de conversion de type (cast) pour le convertir explicitement dans le type requis.</p>
+
+<p>Enfin, un programme CX peut être complètement sérialisé en un tableau d&rsquo;octets tout en maintenant sa structure et son statut d&rsquo;exécution. Cette version sérialisée d&rsquo;un programme peut être désérialisée plus tard et continuer son exécution sur n&rsquo;importe quelle appareil qui a un compilateur/interpréteur de CX.</p>
+
+<p>Dans les prochaines sections, les fonctionnalités du CX discutés dans le paragraphe du dessus seront décrites de manière plus détaillées.</p>
+
+<h1 id="dépot-du-projet">Dépot du Projet</h1>
+
+<p>Le code source du projet peut être téléchargé depuis son dépot Github :
+<a href="https://github.com/skycoin/cx">https://github.com/skycoin/cx</a>. Le dépot inclu le fichier de spécification, la documentation, des exemples et le code source.</p>
+
+<h1 id="syntaxe">Syntaxe</h1>
+
+<p>Comme mentionné dans l&rsquo;introduction, CX est à la fois une spécification et un
+langage de programmation. La spécification de CX n&rsquo;impose pas de syntaxe,
+mais plutôt les structures et les processus qu&rsquo;un dialecte CX doit
+mettre en œuvre pour être considéré comme un CX. En conséquence, on pourrait
+mettre en œuvre deux dialectes CX, l&rsquo;un avec une syntaxe Lisp-like et un autre avec une syntaxe C-like. Cette sous-langue est appelée CX Base,
+ou &ldquo;la langue de base&rdquo;. Dans ce document, une implémentation est utilisée pour
+mettre en évidence les capacités de la spécification, bien que son but
+n&rsquo;est pas seulement de servir comme un outil académique, mais de devenir un langage robuste à usage général.</p>
+
+<p>Le CX utilisé dans ce document a comme objectif d&rsquo;utiliser une syntaxe la plus proche possible de la syntaxe Go.</p>
+
+<h1 id="attributions">Attributions</h1>
+
+<p>Un programmeur doit prendre une multitude de décisions lors de la construction
+d&rsquo;un programme. Par exemple, combien de paramètres une fonction doit recevoir, combien
+de paramètres il doit retourner, quelles déclarations sont nécessaires pour obtenir
+la fonctionnalité souhaitée, quels arguments doivent être envoyés en tant que paramètres aux fonctions de déclarations&hellip; Le système d&rsquo;attribution de CX peut être interrogé pour obtenir une liste d&rsquo;actions qu&rsquo;il est possible d&rsquo;appliquer à un élement. Dans ce contexte, des exemples d&rsquo;éléments sont des fonctions, structures, modules et expressions.</p>
+
+<p>Sans avoir un ensemble de règles et de faits qui dictent ce que doit être la logique et le but d&rsquo;un programme, on peut tout de même déterminer certains éléments de base qui garantissent au moins qu&rsquo;un programme sera sémantiquement correct. Le système d&rsquo;attribution fournit des restrictions, en tant que première couche de filtrage, qui sont expliquées ci-dessous.</p>
+
+<h3 id="restriction-des-arités">Restriction des arités</h3>
+
+<p>Les expression dans CX peuvent retourner de multiple valeurs. Cela crée une difficulté pour le système d&rsquo;attribution vu que le nombre de variables qui recoivent les arguments de sortie d&rsquo;une expression a besoin de correspondre au nombre de sorties défini par l&rsquo;opérateur d&rsquo;expression.</p>
+
+<pre><code>out1, out2, ..., outN := op(inp1, inp2, ..., inpM)
+</code></pre>
+
+<p>Si l&rsquo;exemple ci-dessus est correct, alors <em>op</em> doit générer <em>N</em> arguments. Ce problème peut devenir encore plus difficile si nous
+considérons qu&rsquo;à l&rsquo;avenir, la définition de <em>op</em> peut être modifiée directement par le système d&rsquo;attribution ou par l&rsquo;utilisateur :
+dès que la définition de <em>op</em> change, de nouvelles attributions peuvent être appliqué à n&rsquo;importe quelle expression qui utilise <em>op</em> comme son opérateur, étant donné le nombre de variables de l&rsquo;expression recevant les arguments de sortie de <em>op</em> peut également avoir changé.</p>
+
+<p>La logique implique également que si le nombre de variables de réception correspond bien au nombre de paramètres de sortie de l&rsquo;expression de l&rsquo;opérateur, l&rsquo;action d&rsquo;ajouter de nouvelles variables de réception ne peut plus être exécuté.</p>
+
+<p>Les restrictions d&rsquo;arités s&rsquo;appliquent également aux arguments d&rsquo;entrée dans les expressions. En effet, si un appel de fonction a déjà ses arguments d&rsquo;entrée définis, alors le système d&rsquo;attribution ne devrait pas la mobiliser en ajoutant un autre argument comme action possible. De même, si une expression tente d&rsquo;appeler un opérateur avec moins d&rsquo;arguments que le nombre requis, le système d&rsquo;attribution, lorsqu&rsquo;il est interrogé, devrait indiquer au programmeur que l&rsquo;ajout d&rsquo;un nouvel argument à l&rsquo;appel de fonction est possible.</p>
+
+<p><strong>Exemple:</strong></p>
+
+<p><em>Remarque: la concaténation de chaîne n&rsquo;a pas encore été implémenté. De même, les fonctions d&rsquo;affichage ajoutent toujours une nouvelle ligne à la fin de la chaîne affichée. Une future version de l&rsquo;implémentation CX présentée dans ce document traitera de ces problèmes.</em></p>
+
+<pre><code>var age i32 = 18
+var steps i32 = 23
+
+func advance (direction str, numberSteps i32) () {
+    printStr(&quot;Advancing:&quot;)
+    printStr(direction)
+    printStr(&quot;Number of steps:&quot;)
+    printI32(numberSteps)
+}
+
+func main () () {
+    advance(&quot;North&quot;)
+}
+</code></pre>
+
+<p>Dans l&rsquo;exemple ci-dessus, l&rsquo;appel à <em>advance</em> dans la fonction <em>main</em> manque un argument. Si l&rsquo;on appel le système d&rsquo;attribution, le système devrait enrôler, entre autres, une action similaire à:</p>
+
+<pre><code>...
+(k)       AddArgument advance age
+(k+1)     AddArgument advance steps
+...
+</code></pre>
+
+<p>où k représente un index arbitraire. Comme on peut le voir, le système d&rsquo;attribution indique au programmeur que deux des actions possibles sont d&rsquo;ajouter un autre argument à la fonction d&rsquo;avance. Les définitions globales <em>age</em> et <em>steps</em> sont parmi les options pour agir comme arguments.</p>
+
+<p>Il est à noter que les attributions doivent toujours être énumérés, et leur ordre doivent être le même sur plusieurs appels du système d&rsquo;attribution. La raison derrière cela est que le programmeur devrait être en mesure d&rsquo;indiquer au système quelle est l&rsquo;attribution qui doit être appliqué après avoir examiné le résultat de la requête.</p>
+
+<h3 id="restrictions-de-type">Restrictions de Type</h3>
+
+<p>Le comportement classique dans les langages de programmation est d&rsquo;avoir un système de typage qui empêche le programmeur d&rsquo;envoyer des arguments de type inattendu aux appels de fonctions. Même dans les langages de programmation faiblement typés, une opération telle que <code>true / &quot;hello world&quot;</code> devrait générer une erreur (sauf bien sûr dans le cas d&rsquo;un <a href="https://fr.wikipedia.org/wiki/Langage_de_programmation_exotique">langage de programmation exotique</a>). CX suit un <a href="#strict-typing-system">système de typage très strict</a> et les arguments qui ne sont pas exactement du type attendu ne doivent pas être considérés comme des candidats aux actions d&rsquo;attribution (même si une solution de contournement consiste à envelopper ces arguments dans des fonctions de conversion de type avant d&rsquo;être affiché sous forme d&rsquo;attribution).</p>
+
+<p>Les restrictions de type doivent également être prises en compte lors de l&rsquo;attribution d&rsquo;une nouvelle valeur à une variable déjà existante. Dans CX, une variable déclarée d&rsquo;un certain type doit rester de ce type pendant toute sa durée de vie (sauf si elle est supprimée à l&rsquo;aide de commandes/fonctions de méta-programmation et créée à nouveau). Ainsi, par exemple, une variable déclarée détenant un nombre entier de 32 bits ne doit pas être considérée comme une candidate pour recevoir un argument de sortie de nombre flottant de 64 bits.</p>
+
+<h3 id="restrictions-existentielles">Restrictions existentielles</h3>
+
+<p>Ce type de restriction peut sembler trivial à première vue: si un élément n&rsquo;existe pas, il ne devrait pas y avoir d&rsquo;attribution qui l&rsquo;implique. Néanmoins, cette restriction devient un défi une fois que nous considérons une situation où une fonction a été renommée et déjà été utilisée comme opérateur dans des expressions tout au long d&rsquo;un programme. Si le programme est sous forme de code source, ce problème est réduit à un simple processus de «rechercher et remplacer», mais s&rsquo;il est en cours d&rsquo;exécution, le système d&rsquo;attribution devient très utile: un moyen de modifier l&rsquo;identifiant lié à cet opérateur.</p>
+
+<p>Même si un élément n&rsquo;a pas été renommé, déterminer si un élément existe ou non n&rsquo;est pas trivial. Les éléments à utiliser dans les attributions doivent être recherchés dans la portée actuelle de la pile d&rsquo;appels, dans la portée globale et dans les portées globales d&rsquo;autres modules.</p>
+
+<h3 id="restrictions-d-identificateur">Restrictions d&rsquo;identificateur</h3>
+
+<p>L&rsquo;ajout de nouveaux éléments nommés est généralement une action candidate pour les attributions. Une restriction qui se pose lorsque vous tentez d&rsquo;appliquer ce type d&rsquo;attribution est d&rsquo;assurer un identifiant unique pour le nouvel élément afin d&rsquo;éviter les redéfinitions. Le système d&rsquo;attribution peut soit générer un identifiant unique dans la portée de l&rsquo;élément, soit demander au programmeur de fournir un identifiant approprié.</p>
+
+<h3 id="restrictions-de-limites">Restrictions de limites</h3>
+
+<p>CX fournit des fonctions natives pour accéder et modifier des éléments à partir de tableaux. Voici des exemples de lecture/écriture de tableau :</p>
+
+<pre><code>readI32([]i32{0, 10, 20, 30}, 3)
+writeF32([]f32{0.0, 10.10, 20.20}, 1, 5.5)
+</code></pre>
+
+<p>Dans la première expression, un tableau de quatre entiers 32 bits est accessible à l&rsquo;index 3, qui renvoie le dernier élément du tableau. Dans la deuxième expression, le deuxième élément d&rsquo;un tableau de trois nombres flottants de 32 bits est changé en 5.5. Si l&rsquo;un de ces tableaux a été consulté en utilisant soit un indice négatif, soit un indice qui dépasse la longueur du tableau, une erreur &ldquo;out of boundaries&rdquo; est générée.</p>
+
+<p>En obéissant uniquement aux restrictions de type, le système d&rsquo;attribution indique au programmeur que tout argument entier de 32 bits peut être utilisé comme index pour accéder à n&rsquo;importe quel tableau. Bien que ces programmes compilent, des erreurs de limite sont très susceptibles de se produire si le programmeur ne prête pas une attention particulière à ce qui est choisi d&rsquo;être appliqué.</p>
+
+<p>Le système d&rsquo;attribution doit filtrer les propriétés selon les critères suivants: rejeter tout entier négatif de 32 bits et rejeter tout entier de 32 bits qui dépasse la longueur du tableau envoyé au tableau de lecture ou d&rsquo;écriture.</p>
+
+<h3 id="restrictions-définies-par-l-utilisateur">Restrictions définies par l&rsquo;utilisateur</h3>
+
+<p>*Note: Le système de restrictions définies par l&rsquo;utilisateur est encore à un stade expérimental *</p>
+
+<p>Les restrictions de base décrites ci-dessus devraient au moins garantir que le programme ne rencontre pas d&rsquo;erreurs d&rsquo;exécution. Ces restrictions devraient être suffisantes pour construire des systèmes intéressants, tel que l&rsquo;<a href="#integrated-evolutionary-algorithm">algorithme évolutif</a> natif de CX. Néanmoins, dans certaines situations, un système plus robuste est nécessaire. À cette fin, les clauses, les requêtes et les objets sont utilisés pour décrire l&rsquo;environnement d&rsquo;un module. Ces éléments sont définis en utilisant un interpréteur Prolog intégré ainsi que les fonctions natives de CX <em>setClauses</em>, <em>setQuery</em> et <em>addObject</em>.</p>
+
+<p>La description la plus générale de ce système de restriction est que le programmeur définit une série de clauses Prolog (faits et règles), qui seront interrogés à l&rsquo;aide de la requête Prolog définie, pour chacun des objets ajoutés. Cela sera difficile à comprendre sans un exemple pour clarifier un peu plus les concepts et le processus:</p>
+
+<pre><code>setClauses(&quot;move(robot, north, X, R) :- X = northWall, R = false.&quot;)
+
+setQuery(&quot;move(robot, %s, %s, R).&quot;)
+</code></pre>
+
+<p>Dans cet exemple, une seule règle est définie. La règle peut être interprétée comme &ldquo;si le robot veut se déplacer vers le nord, demandez ce qu&rsquo;est X. Si X est NorthWall, alors il ne peut pas se déplacer&rdquo;. La requête est juste une chaîne de format qui servira de requête pour l&rsquo;action <em>move</em> et pour l&rsquo;élément <em>robot</em> qui recevra deux autres arguments: une direction et un objet.</p>
+
+<p>Les objets peuvent être définie en utilisant la fonction <em>addObject</em> :</p>
+
+<pre><code>addObject(&quot;southWall&quot;)
+addObject(&quot;northWall&quot;)
+</code></pre>
+
+<p>Le système de restriction interroge le système pour chacun des objets présents dans le module. Dans cet exemple, le système effectuera d&rsquo;abord la requête &ldquo;move(robot, north, southWall)&rdquo; et le système répondra &ldquo;nil&rdquo;, ce qui signifie qu&rsquo;il n&rsquo;a aucune règle définie pour gérer cette situation et l&rsquo;action par défaut est de ne pas rejeter l&rsquo;attribution. La deuxième requête sera &ldquo;move(robot, north, northWall)&rdquo;, et le système répondra &ldquo;false&rdquo;. Dans ce cas, l&rsquo;attribution n&rsquo;a pas réussi à passer le test et est rejetée.</p>
+
+<p>L&rsquo;exemple ci-dessus illustre comment ces règles peuvent rejeter une attribution en utilisant une condition. Mais les règles peuvent également être utilisées pour accepter des attributions, même après avoir été annulés par des règles précédentes.</p>
+
+<pre><code>setClauses(&quot;move(robot, north, X, R) :- X = northWall, R = false.
+    move(robot, north, X, R) :- X = northWormhole, R = true.&quot;)
+
+setQuery(&quot;move(robot, %s, %s, R).&quot;)
+</code></pre>
+
+<p>La règle ajoutée dans le code ci-dessus indique au système d&rsquo;accepter le mouvement du robot vers le nord si un trou de ver (wormhole) est présent. Si le tableau d&rsquo;objet est laissé tel qu&rsquo;il a été défini précédemment, l&rsquo;attribution du mouvement sera encore rejetée, mais si <code>addObject(&quot;NorthWormhole&quot;)</code> est évalué, le &ldquo;northWormhole&rdquo; sera ajouté et le robot pourra passer à travers le mur à l&rsquo;aide du trou de ver.</p>
+
+<h1 id="système-de-typage-strict">Système de typage strict</h1>
+
+<p>Comme mentionné dans l&rsquo;introduction, il n&rsquo;y a pas de conversion de type implicite dans CX. De ce fait, plusieurs versions pour chacun des types primitifs sont définies dans le module de base. Par exemple, quatre fonctions natives pour l&rsquo;addition existent: addI32, addI64, addF32 et addF64.</p>
+
+<p>Le parseur attache un type par défaut aux données qu&rsquo;il trouve dans le code source: si un nombre entier est lu, son type par défaut est <em>i32</em> ou un nombre entier 32 bits; et si un nombre flottant est lu, son type par défaut est <em>f32</em> ou un nombre flottant 32 bits. Il n&rsquo;y a pas d&rsquo;ambiguïté avec d&rsquo;autres données lues par le parseur: <em>true</em> et <em>false</em> sont toujours booléens; une série de caractères entre deux guillemets sont toujours des chaînes; et le tableau doit indiquer son type avant la liste de ses éléments, par exemple, <code>[]i64{1, 2, 3}</code>.</p>
+
+<p>Pour les cas où le programmeur doit déléguer explicitement une valeur d&rsquo;un type à l&rsquo;autre, le module de base fournit un certain nombre de fonctions de conversion de type pour fonctionner avec des types primitifs. Par exemple, <code>byteAToStr</code> converti un ensemble d&rsquo;octets en chaîne, et<code>i32ToF32</code> converti un nombre entier de 32 bits en un nombre flottant de 32 bits.</p>
+
+<h1 id="compilation-et-interprétation">Compilation et Interprétation</h1>
+
+<p>La spécification de CX impose un dialecte CX pour fournir au développeur à la fois un interpréteur et un compilateur. Un programme interprété est beaucoup plus lent que son équivalent compilé mais permettra un programme plus flexible. Cette flexibilité provient de fonctions de méta-programmation et d&rsquo;attribution qui peuvent modifier la structure d&rsquo;un programme pendant son exécution.</p>
+
+<p>Un programme compilé nécessite une structure plus rigide qu&rsquo;un programme interprété car bon nombre des optimisations tirent parti de cette rigidité. En conséquence, le système d&rsquo;attribution et toute fonction qui opère dans la structure du programme seront limités en fonctionnalité dans un programme compilé.</p>
+
+<p>Le compilateur doit être utilisé lorsque la performance est la plus grande préoccupation, alors qu&rsquo;un programme doit être interprété lorsque le programmeur exige toute la flexibilité offerte par les fonctionnalités de CX. Dans les sous-sections suivantes, certaines de ces fonctionnalités sont présentées sans l&rsquo;objectif de servir de tutoriel, mais plutôt comme une simple introduction.</p>
+
+<h3 id="boucle-lecture-evaluation-affichage">Boucle Lecture-Evaluation-Affichage</h3>
+
+<p>La boucle Lecture-Evaluation-Affichage (REPL) est un outil interactif avec lequel un programmeur peut insérer de nouveaux éléments du programme et les faire évaluer. Le démarrage d&rsquo;une nouvelle session REPL affichera les messages suivants dans la console :</p>
+
+<pre><code>CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+* 
+</code></pre>
+
+<p>Le &ldquo;*&rdquo; indique au programmeur que REPL est prêt à recevoir une nouvelle ligne de code. La REPL continuera à lire les commentaires de l&rsquo;utilisateur jusqu&rsquo;à ce qu&rsquo;un point-virgule et un nouveau caractère de ligne soient rencontrés.</p>
+
+<p>Si aucun programme n&rsquo;a été initialement chargé dans la REPL, CX démarrera avec un programme vide. Cela peut être vu si la commande de méta-programmation <code>: dProgram true;</code> est donnée en entrée:</p>
+
+<pre><code>* :dProgram true;
+Program
+
+* 
+</code></pre>
+
+<p>La REPL n&rsquo;affiche que le mot &ldquo;Program&rdquo; suivi d&rsquo;une ligne vide. Dans un premier temps, un nouveau module et une nouvelle fonction peuvent être déclarés:</p>
+
+<p>En premières étapes, un nouveau module <em>principal</em> et une nouvelle fonction <em>principale</em> doivent être déclarés:</p>
+
+<pre><code>* package main;
+Program
+0.- Module: main
+
+* func main () () {};
+Program
+0.- Module: main
+	Functions
+		0.- Function: main () ()
+
+* 
+</code></pre>
+
+<p>Comme on peut le voir, la structure du programme est affichée chaque fois qu&rsquo;un nouvel élément est ajouté au programme.</p>
+
+<h3 id="commandes-de-méta-programmation">Commandes de Méta-programmation</h3>
+
+<p><code>:dProgram</code> a été utilisé dans la sous-section ci-dessus. Toute déclaration qui commence par deux points (:) fait partie d&rsquo;une catégorie d&rsquo;instructions connues sous le nom de &ldquo;commandes de méta-programmation&rdquo;.</p>
+
+<p>Déclarer des éléments dans la REPL demande à CX de les ajouter à la structure du programme. Mais, comme dans de nombreuses autres langages de programmation, ces déclarations sont limitées à seulement être ajoutées, voir au plus à être redéfinies.</p>
+
+<p>Ainsi, comme dans de nombreuses autres langages de programmation qui fournissent un REPL, le programmeur est limité à ajouter de nouveaux éléments à un programme voir au plus à redéfinir des éléments. Les commandes de méta-programmation permettent au programmeur d&rsquo;avoir plus de contrôle sur la modification de la structure du programme.</p>
+
+<p><code>: dProgram</code>,<code>: dState</code> et <code>: dStack</code> sont utilisés à des fins de débogage uniquement, en affichant respectivement la structure du programme, l&rsquo;état de l&rsquo;appel actuel et la pile d&rsquo;appel complète pour l&rsquo;utilisateur. <code>: step</code> indique à l&rsquo;interprèteur d&rsquo;aller en avant ou en arrière dans son exécution. <code>: package</code>,<code>: func</code> et <code>: struct</code>, appelés <em>sélecteurs</em>, sont utilisés pour modifier la portée du programme. <code>: rem</code> donne l&rsquo;accès du programmeur à <em>removers</em>, qui peut être utilisé pour supprimer sélectivement des éléments de la structure d&rsquo;un programme. <code>: aff</code> est utilisé pour accéder au système d&rsquo;attribution de CX; Cette commande de méta-programmation sert à interroger et à appliquer des options pour les différents éléments d&rsquo;un programme. Enfin, <code>: clauses</code> est utilisé pour définir les clauses d&rsquo;un module à utiliser par le <a href="#user-defined-restrictions">système de restrictions défini par l&rsquo;utilisateur</a>; <code>: object</code> et<code>: objects</code> sont utilisés pour ajouter et afficher des objets, <code>: query</code> est utilisé pour définir la requête du module, et enfin <code>: dQuery</code> est un assistant pour le débogage des restrictions définies par l&rsquo;utilisateur.</p>
+
+<h3 id="stepping">Stepping</h3>
+
+<p>Un programme démarré en mode REPL peut être initialisé avec une structure de programme définie dans un fichier source. Par exemple:
+répertoire actuel</p>
+
+<pre><code>$ ./cx --load examples/looping.cx
+
+</code></pre>
+
+<p>charge <code>looping.cx</code> dans le répertoire des exemples (la liste complète des exemples peut être trouvée dans <a href="https://github.com/skycoin/cx">le dépôt du projet</a>). Même si un programme a été chargé, il n&rsquo;a pas encore été exécuté. Dans la REPL, pour exécuter un programme il faut utiliser la commande de méta-programmation <code>: step</code>. Pour exécuter un programme jusqu&rsquo;à la fin il faut utiliser <code>: step 0;</code>. Mais <code>: step</code> est intéressant car il peut prendre d&rsquo;autres entiers comme argument (même des entiers négatifs). Par exemple:</p>
+
+<pre><code>CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+* :dStack false;
+
+* :step 5;
+0
+
+* :step 5;
+1
+
+* :step 5;
+2
+
+* 
+</code></pre>
+
+<p>Le programme <em>examples/looping.cx</em> se déroule en 5 étapes à la fois. Nous pouvons voir que 5 étapes sont nécessaires pour que le programme réévalue la condition <em>while</em>, affiche le compteur et ajoute 1 au compteur.</p>
+
+<p><code>:step -5</code>.</p>
+
+<pre><code>...
+
+* :step 5;
+2
+
+* :step -5;
+
+* :step 5;
+2
+
+* 
+</code></pre>
+
+<p>Après avoir demandé au CX d&rsquo;avancer à nouveau de 5 étapes, le 2 est à nouveau affiché sur la console. Il faut noter que le compteur n&rsquo;est pas simplement assigné avec une valeur différente. La pile d&rsquo;appel est retournée à un état précédent.</p>
+
+<h3 id="débogage-interactif">Débogage Interactif</h3>
+
+<p>Un programme CX entrera en mode REPL une fois qu&rsquo;une erreur aura été trouvée. Ce comportement donne au programmeur la possibilité de déboguer le programme avant de tenter de reprendre son exécution.</p>
+
+<p>Dans l&rsquo;exemple ci-dessous, une erreur de division par 0 est générée : la REPL avertit le programmeur de l&rsquo;erreur, le dernier appel dans la pile d&rsquo;appel est déversé et la REPL continue son exécution.</p>
+
+<pre><code>CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+* package main;
+
+* func main () () {};
+
+* :func main;
+main
+:func main {...
+	* foo := divI32(5, 3);
+main
+:func main {...
+	* bar := divI32(10, 0);
+main
+:func main {...
+	* :step 0;
+fn:main ln:0, 	locals: 
+&gt;&gt; 1
+fn:main ln:1, 	locals: foo: 1
+
+Call's State:
+foo:		1
+
+divI32() Arguments:
+0: 10
+1: 0
+
+0: divI32: Division by 0
+main
+:func main {...
+	* 
+</code></pre>
+
+<p>De même, si un programme est donné en tant qu&rsquo;entrée à l&rsquo;interpréteur CX sans appeler la REPL, mais qu&rsquo;une erreur est soulevée, la REPL sera appelé pour que le programmeur ou l&rsquo;administrateur système débogue le programme:</p>
+
+<pre><code>$ ./cx examples/program-halt.cx 
+1
+
+Call's State:
+nonAssign_0:		1
+nonAssign_1:		1
+
+divI32() Arguments:
+0: 5
+1: 0
+
+5: divI32: Division by 0
+CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+* 
+</code></pre>
+
+<h1 id="algorithme-évolutif-intégré">Algorithme évolutif intégré</h1>
+
+<p>Le système d&rsquo;attribution et les fonctions de méta-programmation dans CX apportent une flexibilité permettant de changer la structure du programme de manière supervisée. Cependant les attributions peuvent encore être automatisées en ayant une fonction qui sélectionne l&rsquo;indice de l&rsquo;attribution à appliquer.</p>
+
+<p><code>evolve</code> est une fonction native qui construit des fonctions définies par l&rsquo;utilisateur en utilisant des fonctionnalités aléatoires.</p>
+
+<p><code>evolve</code> suit les principes du calcul évolutif. En particulier, <code>evolve</code> effectue une technique appelée programmation génétique. La programmation génétique tente de trouver une combinaison d&rsquo;opérateurs et d&rsquo;arguments qui résoudront un problème. Par exemple, vous pouvez chargé <code>evolve</code> de trouver une combinaison d&rsquo;opérateurs qui, lorsque vous envoyez 10 comme argument, renvoie 20. Cela pourrait sembler banal, mais la programmation génétique et d&rsquo;autres algorithmes évolutifs peuvent résoudre des problèmes très complexes.</p>
+
+<p>Dans le répertoire <em>examples</em> du dépot github, on peut trouver un exemple (<em>examples/evolving-a-function.cx</em>) qui décrit le processus pour faire évoluer  une fonction <a href="https://fr.wikipedia.org/wiki/Ajustement_de_courbe">d&rsquo;ajustement de courbe</a>.</p>
+
+<h1 id="sérialisation">Sérialisation</h1>
+
+<p>Un programme CX peut être partiellement ou entièrement sérialisé sur un tableau d&rsquo;octets. Cette capacité de sérialisation permet à un programme de créer une image de programme (similaire aux <a href="https://fr.wikipedia.org/wiki/Image_syst%C3%A8me">images système</a>), où l&rsquo;état exact de la sérialisation du programme est maintenu. Cela signifie qu&rsquo;un programme sérialisé peut être désérialisé et reprendre son exécution plus tard. La sérialisation peut également être utilisée pour créer des sauvegardes.</p>
+
+<p>Un programme CX peut tirer parti de ses fonctionnalités intégrées pour créer des scénarios intéressants. Par exemple, un programme peut être sérialisé pour créer une sauvegarde de lui-même et démarrer un <a href="#integrated-evolutionary-algorithm">algorithme évolutif</a> sur l&rsquo;une de ses fonctions. Si l&rsquo;algorithme évolutif trouve une fonction qui fonctionne mieux que la définition précédente, on peut conserver cette nouvelle version du programme. Cependant, si l&rsquo;algorithme évolutif a bien fonctionné, le programme peut être restauré dans la sauvegarde enregistrée. Toutes ces tâches peuvent être automatisées.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

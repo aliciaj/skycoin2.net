@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is Skycoin Decentralized? | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Is Skycoin Decentralized?">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-04-19">
+    
+    <meta property="og:description" content="To prototype Skycoin, we used a mix of centralized and decentralized components for prototyping.  We prototyped Skycoin and the emphasis was getting each component working. Over time the centralized components have been replaced by fully decentralized components.">
+    <meta property="og:url" content="https://www.skycoin.net/drafts/is-skycoin-decentralized/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Decentralization">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Is Skycoin Decentralized?</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>To prototype Skycoin, we used a mix of centralized and decentralized components for prototyping.  We prototyped Skycoin and the emphasis was getting each component working. Over time the centralized components have been replaced by fully decentralized components. Skycoin will be fully independent of any developer run servers and infrastructure by the time Obelisk is finished.</p>
+
+<p><strong>Right now</strong>
+- the ledger is decentralized, everyone has a copy of the transaction ledger
+- transactions are decentralized and the transaction relay is peer to peer
+- blockchain consensus requires Obelisk for full decentralization</p>
+
+<p>For the mesh net, we will use a centralized routing database and payment clearing, to get it working as soon as possible. We have less than two months to do the ICO and get the meshnet working to stay on schedule. We will decentralize those components as soon as possible. However the priority is getting the network working as soon as possible.</p>
+
+<p>The meshnet balances being exchanged are microtransactions that should not pollute the blockchain, so we are creating a system where the balances are stored and moved around internally by a third party and automatically withdrawn to a wallet after a threshold balance is reached. The current Skycoin implementation allows coins to be divisible to 6 decimal places, but rejects transactions whose outputs are not a multiple of a whole coin, to reduce blockchain spam. This system will be replaced by the decentralized Gateway Protocol at some point.</p>
+
+<p>The idea is that we are making it easy to move around subcoin balances off chain and do microtransactions without polluting the blockchain. Then when your balance is large enough enough, it can be withdrawn to your wallet.</p>
+
+<h2 id="ideological-differences-in-skycoin-s-decentralization-philosophy">Ideological Differences in Skycoin&rsquo;s Decentralization Philosophy:</h2>
+
+<p>&ldquo;Decentralization&rdquo; means a lot of things to different people. Bitcoin has an ideology of &ldquo;decentralization&rdquo; in terms of zero trust and zero counter party risk. Bitcoin takes an ideologically motivated stance against trusted third parties. Skycoin accepts that complete technical decentralization is necessary, but rejects Bitcoin&rsquo;s ideological insistence against trusted third parties. For instance, anyone using and exchange or making a purchase is creating a trust relationship.</p>
+
+<p>Skycoin is not ideologically opposed to trusted third parties, as long as the user is the one choosing the third parties.</p>
+
+<p><strong>Bitcoin Decentralization</strong>: No Trusted Third Parties
+<strong>Skycoin Decentralization</strong>: No Trusted Third Parties When Possible, but Trusted 3rd Parties are OK when technically necessary and where choice of the third party is under control of the user</p>
+
+<p>The Bitcoin developers would reject any feature on ideological grounds, that would introduce a third third party relationship into any officially sanctioned part of the Bitcoin protocol, because it would compromise the ideological purity of Bitcoin&rsquo;s decentralization philosophy. Skycoin has technical decentralization but accepts that trusted third parties are sometimes a necessary evil (example: you cannot currently have exchanges without using a trusted third party).</p>
+
+<p>For example, If there are multiple exchanges and Skycoin has an exchange API, that API is interacting with a trusted third party. This is OK in Skycoin as long as we dont force the users to use a particular exchange and they choose which exchange they are extending trust to.</p>
+
+<p>In Skycoin, 3rd party escrow in the protocol is OK as long as the user gets to choose which escrow authorities they will accept. The Bitcoin developers are ideologically opposed to any third parties and would not include sanction for escrow in the protocol or client, unless it can be enforced mathematically and under zero trust assumptions.</p>
+
+<p>The Bitcoin developers are ideologically opposed to official support for anything that introduces trusted third parties into the Bitcoin protocol. Skycoin is slightly more pragmatic and accepts trusted third parties as a necessary evil for doing necessary things conveniently.</p>
+
+<p>For instance, the Bitcoin developers are ideologically opposed to a check pointing system. Skycoin will have a check pointing system where the hash of the current consensus block will be signed by a particular public key and broadcasted. The purpose being to detect network failures or a successful attack and trigger an alert for human action (to detect, not to take a specific action which may introduce a security vulnerability through the checkpoint system). Such a system can be extremely useful for determining if the local client state has diverged from the network because of an attack or manipulation and for prompting human action. If the checkpoints were published by the Skycoin developers, this would introduce a single point of centralization and possible security vulnerability. However, if the check pointing system is a service and trusted community members and other large Skycoin stakeholders are each able to publish their own checkpoints and each user is able to choose whose checkpoints their clients will verify against and to verify against multiple parties (no single point of failure), then it is acceptable within the Skycoin decentralization philosophy, but would be unacceptable in Bitcoin because it introduces a trusted third party.</p>
+
+<p>That is what &ldquo;decentralized but pragmatic&rdquo; means.</p>
+
+<h2 id="skycoin-controversy">Skycoin Controversy:</h2>
+
+<p>Skycoin will receive a lot of criticism from hardcore Bitcoin people, because Skycoin is taking the perfect ideologically pure, identity less, trustless, creditless garden of Eden that Bitcoin has created and reintroducing the sin of trust and credit that is required for day to day financial transactions.  Bitcoin takes an ideological perspective on money as a &ldquo;hard&rdquo; mathematical commodity concept, but Skycoin takes the perspectives of money as arising out of social relationships. The messaging systems (systems for communication), personal block chains (identity and markets) play a much larger role in the long term vision of Skycoin than Bitcoin, which merely aspires to be a mathematical perfect form of commodity money.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

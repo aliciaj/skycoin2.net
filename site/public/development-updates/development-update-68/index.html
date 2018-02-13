@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #68 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #68">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-04-18">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-68/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #68</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h2 id="new-bugs">New Bugs:</h2>
+
+<ul>
+<li>If you try to send and the send fails because of insufficient coins, it did not give a popup and only printed error in terminal. That is fixed now.</li>
+<li>There was a bug discovered yesterday, where you can do multiple transactions from the same inputs (only one of the transactions will succeed). So if you do two sends form same wallet and transaction propagation is not successful, then some of the transactions wont go through. Fixing this now.</li>
+<li>Transaction sync on connect may not be working. It works sometimes, but I think problem was somewhere else. I think network was experiencing a netsplit. Connecting to random nodes does not guarantee a robust network topology. We need to allow user to create persistent list of nodes you should always try to connect to. To ensure the core-nodes are fully connected.</li>
+<li>Two people reported disappearing and reappearing coins. there may be a bug in coin balance calculation. The coins never moved, but it is just bug in GUI, looking into this.</li>
+</ul>
+
+<h2 id="network-status">Network Status:</h2>
+
+<p>We will be out of things to code soon and then it will just be debugging and polish.</p>
+
+<p>There are cyber warfare drills and border gateway protocol redirect attacks in middle east that are deteriorating VPN service and dropping people from IRC in Europe. I think we were seeing internet kill switch tests yesterday. We were seeing protocol specific deterioration of VPS traffic between hosts, only for traffic passing between particular countries and only for VPN but not for HTTPS or SSH traffic. Skycoin block and transaction peer-to-peer propagation seem to be holding up and were only intermediately affected for a few hours, even through the vpn was out.</p>
+
+<p>We still have a lot to do in order to harden the network.</p>
+
+<p>Once Skywire is working, we might want to put in some networking instrumentation for transaction/block/consensus propagation and node connectivity and then have nodes publish/aggregate that. Quantitative data on block propagation and network state could be helpful. Then we can verify Sybil attacks, diagnose outages, detect net-splits and identify disruptive nodes, instead of just guessing.</p>
+
+<p>One of our site installations was using a consumer wifi router. The router was hacked and the DNS on the router was changed, so that it inserts popup ads into webpages. It could also hijack your computer if you downloaded an exe or and pdf, or potentially steal Bitcoin or other nasty things. We recommend routers with open source firmware like openwrt. Ubiquity hardware tends to be very and the security is much better than Linksys or other consumer routers.</p>
+
+<p>It is worth $80 to get a router and networking equipment, that is not going to get hijacked and get your stuff stolen. If a website has 3rd party http tracking stuff in it and the router dns hijacks the page, I think they can keylog whatever you type through javascript even if the webpage is https.</p>
+
+<h2 id="diagnostics">Diagnostics:</h2>
+
+<p>This is the crypto-logic level data. This is canonical and is more reliable than the gui.</p>
+
+<p><a href="http://skycoin-chompyz.c9.io/blockchain/blocks?start=0&amp;end=500">http://skycoin-chompyz.c9.io/blockchain/blocks?start=0&amp;end=500</a>
+<a href="http://skycoin-chompyz.c9.io/outputs">http://skycoin-chompyz.c9.io/outputs</a>
+<a href="http://skycoin-chompyz.c9.io/blockchain">http://skycoin-chompyz.c9.io/blockchain</a></p>
+
+<h5 id="this-is">This is</h5>
+
+<ul>
+<li>The blockchain (the ledger of transactions and blocks)</li>
+<li>The unspent output set (the current account balances)</li>
+<li>Tthe state of the client (the head block the client has)</li>
+</ul>
+
+<p>If you are running a local skycoin client you can access these locally using</p>
+
+<p><a href="http://127.0.0.1:6420/blockchain/blocks?start=0&amp;end=500">http://127.0.0.1:6420/blockchain/blocks?start=0&amp;end=500</a>
+<a href="http://127.0.0.1:6420/outputs">http://127.0.0.1:6420/outputs</a>
+<a href="http://127.0.0.1:6420/blockchain">http://127.0.0.1:6420/blockchain</a></p>
+
+<p>This is very clean. This is what I think a second gen interface should look like.</p>
+
+<p>The second generation is just cleaning up Bitcoin and making it usable. The third generation is where we begin to go beyond Bitcoin.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

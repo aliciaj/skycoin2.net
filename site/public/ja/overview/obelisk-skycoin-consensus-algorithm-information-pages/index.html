@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obelisk: Skycoin 合意形成アルゴリズム | 情報ページ | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Obelisk: Skycoin 合意形成アルゴリズム | 情報ページ">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-09">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/ja/overview/obelisk-skycoin-consensus-algorithm-information-pages/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Overview">
+    
+    <meta property="og:tags" content="Consensus">
+    
+    <meta property="og:tags" content="Obelisk">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ja/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ja/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ja/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ja/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ja/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ja/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ja/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ja/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Obelisk: Skycoin 合意形成アルゴリズム | 情報ページ</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p><img src="../../../img/obelisk-the-skycoin-consensus-algorithm.png" alt="Obelisk The Skycoin Consensus Algorithm" /></p>
+
+<ul>
+<li><a href="#合意形成の要点">合意形成の要点</a>
+
+<ul>
+<li><a href="#合意形成の理由">合意形成の理由</a></li>
+<li><a href="#高いスケーラビリティと低消費電力">高いスケーラビリティと低消費電力</a></li>
+<li><a href="#集団攻撃に対する堅牢性">集団攻撃に対する堅牢性</a></li>
+<li><a href="#「51％攻撃」">「51％攻撃」</a></li>
+<li><a href="#非表示のIPアドレス">非表示のIPアドレス</a></li>
+<li><a href="#クロック同期の独立性">クロック同期の独立性</a></li>
+<li><a href="#2つのタイプのノード：合意形成とブロック生成">2つのタイプのノード：合意形成とブロック生成</a></li>
+</ul></li>
+<li><a href="#Skycoin合意形成アルゴリズムはどのように動くか">Skycoin合意形成アルゴリズムはどのように動くか</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
+
+<h2 id="合意形成の要点">合意形成の要点</h2>
+
+<h3 id="合意形成の理由">合意形成の理由</h3>
+
+<p>Skycoin 合意形成アルゴリズム（&rdquo;Obelisk&rdquo;）は、すべてのネットワークノードでSkycoinブロックチェーンの状態を同期させます。
+これにより、一貫した会計処理が行われます。
+すなわち、所与の公開鍵（またはアドレス）のコインバランスを計算すると、計算を実行した各ノードで同じ値が得られます。</p>
+
+<h3 id="高いスケーラビリティと低消費電力">高いスケーラビリティと低消費電力</h3>
+
+<p>設計により、アルゴリズムはスケーラブルで計算コストがかからず、Proof-of-Workに代わるものです。
+したがって、低価格でエネルギー消費の少ない予算のハードウェアで合意形成アルゴリズムとブロック生成の両方を実行できるため、暗号通貨ネットワークを集権化の可能性に対してより堅牢にします。（すなわち、一般市民に手頃な価格のノードにより利用可能）</p>
+
+<h3 id="集団攻撃に対する堅牢性">集団攻撃に対する堅牢性</h3>
+
+<p>我々の合意形成アルゴリズムは、（i）収束が速く、（ii）最小のネットワークトラフィックを必要とし、（iii）組織化された悪意のあるネットワークによる大規模な集団攻撃に耐えることができます。
+このアルゴリズムは反復性がなく、高速であり、最近接の接続性（例えばメッシュネットワーク上）のみを有するスパースネットワーク上で実行することができ、接続グラフ内のサイクルの存在下でうまく動作します。（すなわち、DAGタイプの接続性は必要ありません。）</p>
+
+<h3 id="51-攻撃">「51％攻撃」</h3>
+
+<p>限られた意味においては、このアルゴリズムのベースバージョンはこの攻撃の対象となる可能性があります。
+具体的には、改変された、または悪意のある多数を占めるノードがプロトコル準拠およびUTXO準拠の候補ブロックを送ると、このようなブロックで合意形成を獲得してしまいます。
+しかし、ある種の違反のブロックが合意形成トライアルに参加する機会を得る前に、（未修正の）アルゴリズムによって、このブロックは削除されます。
+合意形成ノードは、未知のノード（すなわち、信頼されていない公開鍵によって署名された）から来る合意形成関連のメッセージが無視されるような方法で、Web-of-Trust（信用の輪）概念を任意に利用することができます。</p>
+
+<p>大多数の信用の輪メンバーが、無意識に悪意のあるノードを信頼できるノードのローカルリストに含める場合を除き、信用の輪モードを有効にすると、（a）ブロックチェーンフォークを引き起こしたり、（b）合意形成プロセスを中断させたりするために、非常に多数の悪意ある合意形成ノードを投入することはほとんど効果がありません。</p>
+
+<h3 id="非表示のipアドレス">非表示のIPアドレス</h3>
+
+<p>ノードは、それらの暗号化公開鍵によってアドレス指定されます。
+ノードのIPアドレスは、ノードが直接接続されているノードにのみ認識されます。</p>
+
+<h3 id="クロック同期の独立性">クロック同期の独立性</h3>
+
+<p>アルゴリズムは「ウォールクロック」（すなわちカレンダーの日付/時刻）を使用しません。
+代わりに、検証された合意形成およびブロックチェーン関連のメッセージから抽出されたブロックシーケンス番号が、ノードの内部時間を計算するために使用されます。
+これは非公式に「ブロッククロック」と呼ばれることがあります。</p>
+
+<h3 id="2つのタイプのノード-合意形成とブロック生成">2つのタイプのノード：合意形成とブロック生成</h3>
+
+<p>合意形成ノードは、1つまたは複数のブロック生成ノードから入力を受け取ります。
+合意形成とブロック生成のアルゴリズムは別々ですが、どちらも同じデータ構造で動作します。
+ここでは、合意形成アルゴリズムを理解するのに役立つブロック生成と、それがシステムの他の部分とどのように統合されるかについて説明します。</p>
+
+<p>どちらのタイプのノードも、常に入力者の検証と詐欺の検出を行います。
+不正または無効なメッセージは検出され、破棄され、伝播されません。
+疑わしい動きをするピアノードは切断され、その公開鍵はアクセス禁止されます。</p>
+
+<h2 id="skycoin合意形成アルゴリズムはどのように動くか">Skycoin合意形成アルゴリズムはどのように動くか</h2>
+
+<p>以下の説明は、
+（i）各ノードがブロック生成者かつ合意形成の参加者であり、
+（ii）非信頼ノードによって生成された合意形成関連メッセージが受け入れられている、すなわち信用の輪に基づくフィルタリングがない
+という状況を仮定します。
+Skycomin GitHubリポジトリでは、完全な実装（仮定を単純化していない）を利用できます。
+シミュレーション結果と詳細、1つの合意形成トライアルの図の例については、<a href="#references">[1]</a>を参照してください。
+Skycoinアルゴリズムとは異なりますが、信頼関係を持つネットワークのシミュレーションは、<a href="#references">[2]</a>で見つけることができます。
+Skycoin合意形成アルゴリズムは以下の通りです。</p>
+
+<p>1.　<em>ブロックの生成</em>
+各ブロック生成ノードは、新しいトランザクションを収集し、それらを所望のシーケンス番号のUTXOと照合し、対応するトランザクションを新しいブロックにパッケージ化し、ブロックをネットワークに流します。</p>
+
+<p>2.　<em>ブロックの収集</em>
+各合意形成ノードは、ブロック生成者によって生成されたブロックを収集し、それらをブロックのシーケンス番号で紐付けられたされたコンテナ（ブロックチェーンとは別）に配置します。</p>
+
+<p>3.　<em>勝利ブロックの選択</em>
+各合意形成ノードは、十分に大きな数<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>の候補ブロックを受信するか、または他の基準を満たした時点で、最も多数のブロック生成者によって作られたブロックを見つけます。
+結びつきは決定論的に計算されます。
+このようなブロックは 「ローカル勝者」 <sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>とラベル付けされ、ローカルブロックチェーンに追加されます。
+ローカル勝者のブロックシーケンス番号に対応するキー - 値ペアは削除され、ストレージが再利用されます。
+また、ローカル勝者のハッシュコードは流され、発表されます。</p>
+
+<p>4.　<em>検証ステップ</em>
+各ノードは、他のノードによって報告されたローカル勝者に関する統計を保持します。
+ローカル勝者がノードのすべてまたは大部分<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>によって報告されたとき、ノードは特定のシーケンス番号のグローバル勝者を決定します。
+グローバル勝者がローカル勝者である場合、ノードは上記のように機能し続けます。
+そうでなければ、ノードは、（a）ネットワークと再同期する、または（b）合意形成および/またはブロック生成への参加から脱落する、または&copy;ブロックチェーンを維持し、緊急停止を要求すること、の３つの中から、外部データおよびローカルログに基づいて決定します。</p>
+
+<h2 id="参考">参考</h2>
+
+<p>[1] johnstuartmill et al. A Distributed Consensus Algorithm for
+Cryptocurrency Networks.
+<a href="https://github.com/skycoin/whitepapers/blob/master/whitepaper_skycoin_consensus_v01_jsm.pdf">https://github.com/skycoin/whitepapers/blob/master/whitepaper_skycoin_consensus_v01_jsm.pdf</a>
+2016</p>
+
+<p>[2] Houwu Chen and Jiwu Shu. Sky: an Opinion Dynamics Framework and Model
+for Consensus over P2P Network.
+<a href="https://github.com/skycoin/whitepapers/blob/master/Sky-%20Opinion%20Dynamics%20Based%20Consensus%20for%20P2P%20Network%20with%20Trust%20Relationships.pdf">https://github.com/skycoin/whitepapers/blob/master/Sky-%20Opinion%20Dynamics%20Based%20Consensus%20for%20P2P%20Network%20with%20Trust%20Relationships.pdf</a>
+201?</p>
+
+<p><em>Read more:</em></p>
+
+<ul>
+<li><em><a href="https://www.skycoin.net/whitepapers">Skycoin 合意形成アルゴリズム　ホワイトペーパー</a></em></li>
+<li><em><a href="../../../statement/obelisk-the-skycoin-consensus-algorithm/">Obelisk Skycoin 合意形成アルゴリズム</a></em></li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">これは、アルゴリズムの設定可能なパラメータです。
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2">特定の理想的な条件の下では、（特定のブロックシーケンス番号に対して）ローカル勝者はすべて同じであり、すなわち同一のトランザクションセットです。 この違いは、ネットワークの待ち時間、トランザクションの頻度の高さ、シーケンス外のメッセージ配信、メッセージの消失、誤動作または悪意のあるノードなどによって発生します。
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+<li id="fn:3">この数は、例えば、信頼されたノードに、それらの信頼されたノードの公開鍵を再帰的に報告するように求めることによって決定することができます。
+ <a class="footnote-return" href="#fnref:3">↩</a></li>
+</ol>
+</div>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

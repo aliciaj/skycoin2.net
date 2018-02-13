@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obelisk: El Algoritmo de Consenso de Skycoin | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Obelisk: El Algoritmo de Consenso de Skycoin">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-08">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/es/statement/obelisk-the-skycoin-consensus-algorithm/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Statement">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../es/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../es/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../es/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../es/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../es/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../es/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../es/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../es/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Obelisk: El Algoritmo de Consenso de Skycoin</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p><img src="../../../img/obelisk-the-skycoin-consensus-algorithm.png" alt="Obelisk el algoritmo de consenso de Skycoin" /></p>
+
+<p>La cadena de bloques (blockchain) de Skycoin hace uso de un nuevo tipo de
+algoritmo de consenso llamado &ldquo;Obelisk&rdquo; que reemplaza tanto a la prueba de
+trabajo (&ldquo;PoW&rdquo;) como la prueba de participación (&ldquo;PoS&rdquo;).</p>
+
+<p>El objetivo de los desarrolladores de Skycoin era corregir los principales
+fallos de seguridad y las &ldquo;tendencias centralizadoras&rdquo; asociadas con las
+redes de cadenas de bloques en las que el consenso se basa en algoritmos
+PoW o PoS y la creación de monedas está ligada a un proceso de minería. Por
+lo tanto, Skycoin está tratando de crear una criptomoneda que cumpla mejor
+con la visión original de Satoshi de un sistema de moneda digital
+completamente descentralizado.</p>
+
+<p>Al hacer esto, la tecnología de Skycoin crea una red blockchain sin
+requisitos de minería, con suministros fijos de crypto-tokens, tiempos de
+transacción de 10 segundos y mayor seguridad. En un sistema en el que la
+conexión entre la creación de la moneda y el control de la red está cortada,
+los crypto-tokens pierden su función política y comienzan a funcionar más como
+una forma de propiedad digital, en estricto sentido.</p>
+
+<h2 id="prueba-de-trabajo-y-el-sistema-de-bitcoin">Prueba de trabajo y el sistema de Bitcoin</h2>
+
+<p>Pensar que el proceso de minería generaría una estructura de incentivos
+económicos que promovería la descentralización de la red fue un error de
+cálculo fundamental en la programación inicial de Bitcoin. De hecho, el
+vínculo entre el consenso y el poder de cómputo (hashing power) incentiva la
+compra de una capacidad de cómputo cada vez mayor, para controlar la red de
+consenso.</p>
+
+<p>La red de Bitcoin, por ejemplo, está controlada de facto por tres grupos de
+minería con fines de lucro que han podido concentrar una gran parte de la
+potencia de cómputo de la red en sus servidores. Estos grupos han comenzado a
+actuar como un cártel, estableciendo acuerdos para dividir el poder de cómputo
+entre ellos mismos. La relación entre la minería y el control de la red ya
+había sido identificada por Satoshi como la principal amenaza no criptográfica
+para la estabilidad de la red. Dicha relación permite, a los actores que
+acumulen suficiente poder de cómputo y logren una tasa de hash (hash rate)
+mayoritaria, falsificar o revertir las transacciones en la red mediante un
+ataque del 51%. Algunos argumentan que esta vulnerabilidad se ha vuelto menos
+apremiante en un ambiente donde el poder de cómputo está altamente centralizado
+en actores que han invertido grandes sumas de dinero en la red de Bitcoin y
+dependen, para supervivencia, de que la moneda mantenga un valor alto. Sin
+embargo, el poder de influir en la red todavía está muy concentrado, lo que
+va totalmente en contra del objetivo de una criptomoneda distribuida basada en
+un libro mayor (ledger).</p>
+
+<p>Así, el algoritmo PoW de la red Bitcoin introduce problemas de seguridad y
+monopolio al darle poder sobre la red a un actor capaz de movilizar
+suficientes recursos económicos como para controlar el proceso de minería.</p>
+
+<p>Esto también implica que el funcionamiento de la red es económica y
+ambientalmente ineficiente. La entrada continua de potencia de cómputo
+requerida por el proceso de minería consume grandes cantidades de electricidad,
+incurriendo en costos mensuales en el rango de las decenas de millones. Estos
+costos solo pueden compensarse con un crecimiento exponencial en la entrada de
+nuevo capital y de nuevos usuarios. Solo un número muy pequeño de monedas bien
+establecidas, como Bitcoin y Ethereum, podrán atraer suficientes usuarios para
+lograr un flujo continuo de ese tipo. En el caso de la mayoría de las otras
+monedas basadas en PoW / PoS, el costo de la minería PoW / PoS se paga mediante
+una valoración de mercado menor, dado que el dinero va siendo extraído de la
+moneda por los costos de minería, hasta que se abandona la moneda.</p>
+
+<blockquote>
+<p>En este momento, la economía de Bitcoin consiste en nuevos usuarios que
+invierten su dinero y luego el dinero se arroja en un pozo y se quema, en un
+ritual de sacrificio a los costos de electricidad de la minería. Si el usuario
+promedio tuviera que pagar directamente el costo de electricidad de los
+mineros, en forma de comisiones por las transacciones, en lugar de ser robados
+por ellos a través de la inflación generada por la creación de nuevas monedas,
+entonces cada transacción de Bitcoin costaría más de $50. Sería más costoso que
+una transferencia bancaria internacional.</p>
+</blockquote>
+
+<h2 id="la-tendencia-centralizadora-de-las-pruebas-de-participación-pos">La tendencia centralizadora de las pruebas de participación (PoS)</h2>
+
+<p>Aunque los algoritmos de prueba de participación abordan el problema de
+seguridad de los ataques del 51%, son posiblemente aún más vulnerables a la
+centralización que las redes PoW. En las redes PoS, la cantidad de
+criptomonedas en posesión de los participantes es la que determina su autoridad
+y poder de votación para implementar cambios técnicos en la red. Los
+participantes pueden minar una porción equivalente a la cantidad de monedas que
+poseen, independientemente del poder de cómputo.</p>
+
+<p>Este principio aumenta significativamente las barreras económicas para lanzar
+un ataque del 51%, porque es muy probable que el costo financiero de adquirir
+la mayoría de los tokens de la red, a través del mercado abierto, exceda la
+ganancia potencial. Si un atacante termina teniendo la participación
+mayoritaria en la red, será quien más sufra por el impacto del ataque hacia la
+estabilidad de la red o el valor externo de la criptomoneda.</p>
+
+<p>Sin embargo, aunque aumenta las barreras contra los ataques dirigidos por
+humanos en la red, los sistemas PoS crean un impulso centralizador que es tan
+fuerte como, si no más fuerte que, en el caso de los sistemas PoW. Tal como
+resume Joseph Young en su comparación de los dos sistemas en
+<a href="http://www.coinfox.info/">coinfox.info</a>, “Un sistema en el que la persona
+con mayor participación en monedas goza de un amplio control y autoridad sobre
+los aspectos técnicos y económicos de la red crea un gran problema de
+monopolio”. Mientras que en un sistema PoW la votación sobre la implementación
+de cambios técnicos en la red “está dividida entre mineros, desarrolladores y
+otros miembros cruciales de la comunidad”, en un sistema PoS “los usuarios con
+mayor participación en monedas tienen la capacidad técnica de hacer cualquier
+cambio que deseen sin tener en cuenta la voluntad de la comunidad, las empresas,
+los mineros y los desarrolladores. Esta centralización del poder de voto y,
+esencialmente, del control de la red, derrumba el propósito de una criptomoneda
+distribuida basada en el libro mayor, ya que contradice todo su principio de
+distribuir todos los elementos dentro de la red para evitar la presencia de
+una autoridad central”.</p>
+
+<h2 id="obelisk-el-algoritmo-de-consenso-distribuido-de-skycoin">Obelisk: el algoritmo de consenso distribuido de Skycoin</h2>
+
+<p>Para abordar este problema de centralización, Skycoin va más allá de
+PoW/PoS. Utiliza un algoritmo de consenso distribuido, llamado Obelisk, que
+distribuye la influencia sobre la red de acuerdo con una &ldquo;red de confianza&rdquo;.
+En esencia, cada nodo tiene una lista de otros nodos a los que se ha
+subscrito, y la densidad de la red de suscriptores de un nodo determina su
+influencia en la red. A cada nodo se le asigna una cadena de bloques personal
+que actúa como un &ldquo;canal de transmisión pública&rdquo; en el que todas las acciones
+de un nodo son registradas de manera visible y pública. Como todas las
+decisiones y comunicaciones de consenso se producen a través de las cadenas
+de bloques personales de cada nodo, la comunidad puede auditar muy fácilmente
+los nodos, en busca de fraudes o ilícitos. Cómo se toman las decisiones en
+la red y qué nodos influyen en esas decisiones es completamente transparente.</p>
+
+<p>El registro público dejado por el blockchain personal de cada nodo permite
+que la red reaccione a las deserciones cortando conexiones con los nodos poco
+confiables o maliciosos, contrayendo la red a un núcleo más pequeño y denso
+de nodos de confianza. Por lo tanto, en principio, si la comunidad no confía
+en los nodos que la representa o siente que el poder dentro de la red está
+demasiado concentrado (o no lo suficientemente concentrado) la comunidad puede
+cambiar colectivamente el equilibrio de poder de la red al cambiar
+colectivamente sus relaciones confianza en la red. La rendición de cuentas de
+los nodos a la comunidad y las auditorías de terceros, así como la
+transparencia del consenso, fortalecen la toma de decisiones colectiva y, por
+lo tanto, introducen un elemento altamente democrático y descentralizador en
+la red.</p>
+
+<p>Este sistema proporciona una moneda digital con tiempos de transacción
+significativamente reducidos, sin requisitos de minería y con mayor seguridad.</p>
+
+<p><em>Leer más:</em></p>
+
+<ul>
+<li><em><a href="https://www.skycoin.net/whitepapers">Skycoin Consensus Algorithm Whitepapers</a></em></li>
+<li><em><a href="../../../overview/obelisk-skycoin-consensus-algorithm-information-pages/">Obelisk: El Algoritmo de Consenso de Skycoin | Páginas de Información</a></em></li>
+</ul>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

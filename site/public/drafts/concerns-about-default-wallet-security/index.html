@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concerns about Default Wallet Security | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Concerns about Default Wallet Security">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-02-25">
+    
+    <meta property="og:description" content="Discussion regarding Default Wallet Security.">
+    <meta property="og:url" content="https://www.skycoin.net/drafts/concerns-about-default-wallet-security/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Wallet Security">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Concerns about Default Wallet Security</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>We are also concerned about &ldquo;<strong>Default Security</strong>&rdquo; for average user.</p>
+
+<p>Here is an example. Many people want &ldquo;vanity addresses&rdquo;. Third party services generate the addresses, then you import the private key. They store the private key, wait until you have a bunch of coins and then steal some of them! Users think it was trojan or they dont even know how the coins were stolen. To protect against that, we have to make sure vanity address gen is client side and integrated into the skycoin wallet. We have to make sure that the default way is the easiest way and that it is secure, for every single action that can result in coins being stolen or lost.</p>
+
+<p>Normally, when a vanity address theft happens, they only steal a fraction of the coins. The user wonder why they stole only a few and not every coin. If they had a trojan, why would someone steal a few coins when they could steal them all? The user is confused. It is because if they did transactions, then some of the coins are in the vanity address and some of the coins are in change addresses. The thief is the 3-rd party who generated the vanity address and they only have the private key for that address (which only has fraction of the keys in the wallet).</p>
+
+<p>A theft of a few coins, but not whole wallet can also occur when private keys are generated with a weak random number generator. Bitcoin was using OpenSSL and we are finding many many bugs in OpenSSL and many system random number generators are being discovered to be weak. So we are not using OpenSSL and we made sure Skycoin salts the key generation wont be compromised even if the random number generator is faulty. We are improving that even further in future with using SHA3 to accumulate entropy every random number call.</p>
+
+<p>I could write a 200 page book about every way that Bitcoin has been lost or stolen. We have to make hundreds of small, incremental changes over time.</p>
+
+<p>We have multiple wallets in Skycoin, because we have seen people delete wallets with bitcoin in them, because we had to swap out wallets. Its easy to overwrite a wallet with coins in it and panic. So we tried to make it easy to have multiple wallets loaded in Skycoin and make it easy to backup the wallets (a simple seed or pass phrase).</p>
+
+<p>We have deterministic wallets and only deterministic wallets as the default, because we have seen people lose coins unexpectedly by loading a wallet from backup after making transactions, because backups do not contain the newly generated change addresses! Bitcoind generates new change addresses after every transaction, which bitcoin are sent to. So if you restore a wallet from backup, you may be missing coins. This also means in Bitcoin, if you have two thumb drives with the same wallet on them and do transactions on each, they will end up with difference coin balances! Each wallet will have different change addresses after being used for a while!</p>
+
+<p>Skycoin doesn&rsquo;t do this at all, because it would mean unexpected behavior and people would lose coins. We made sure that the default behavior is exactly what users expect and that the defaults dont result in people losing coins.</p>
+
+<p>There are so many ways to lose coins in Bitcoin, that addressing every situation is overwhelming. We need to hire contractors to work on each little detail (vanity gen in wallet, locking/unlocking wallets, default on screen keyboard), because we will go mad otherwise. I think we have covered 90% of the causes of coin theft than the user could not control.</p>
+
+<p>We will add a password feature on wallet, but it is a false sense of security. It will stop someone from passively grabbing the wallet, but if they have a key logger, they will get the password. It does make it more difficult (grab file + keylogger). If you use an on-screen keyboard, then it makes it painful. It would put wallet theft beyond skill level of most script kiddies.</p>
+
+<p>The average user will lose more coins from unexpected behavior, than security. We have almost eliminated unexpected behavior. Exchanges are where we need enough software and hardware security to protect against government level infosec/hacker firms.</p>
+
+<h2 id="wallet-seed-security">Wallet Seed Security</h2>
+
+<p>We recommend creating a new wallet from scratch and using a strong password. Anything less than 12 characters will get brute forced. Some GPUs can brute force 2,600,000,000 passwords per second and anything less than 12 characters will get broken eventually (but is safe for small balances). Hackers combine very fast hash rates (trillions of passwords per second) with rainbow tables. So generally, most passwords comely used can be brute forced.</p>
+
+<p>Lowercase 10 letters/numbers: 51.7 BoE (bits of entropy)
+5 common words (2000 word dictionary): 54.8 BoE
+Mixed case 10 letters/numbers: 59.5 BoE
+6 common words (2000 word dictionary): 65.8 BoE
+Lower case 13 letters/numbers: 67.2 BoE
+Mixed case 13 letters/numbers: 77.4 BoE
+12 common words +120 BoE</p>
+
+<p>Brute forcing all wallets with 64 bits of entropy is doable in four years. Electrum pass phrases are 128 bits of entropy and this is minimum. Skycoin should adapt the electrum pass phrase model with 8 to 12 random words from dictionary. This is easier to write down than the hex. It is harder to screw up.</p>
+
+<p>If you need security, we recommend using a SHA256 hash as the seed. Or take a decent password, then add your phone number after it or birthdate. Something you will remember and that an attacker wont know usually.</p>
+
+<h2 id="how-to-get-a-wallet-seed">How to Get a Wallet Seed</h2>
+
+<p>Look at the interface, see <strong>&ldquo;import from seed button&rdquo;</strong>. This lets you type in a need seed/passphrase and generate a wallet</p>
+
+<p><img src="http://i.imgur.com/2nm1pkD.png" alt="" /></p>
+
+<p>New Wallet: creates a new wallet, with a random pass phrase (also called a seed)</p>
+
+<p>Import Wallet From Seed: Lets you generate a wallet from a pass phrase you choose (Which becomes the seed that generates the wallet)</p>
+
+<p>In the web-wallet, add /wallets to the URL and you can see your wallets and copy down the seed.</p>
+
+<h2 id="remote-wallet-example">Remote Wallet Example:</h2>
+
+<p>This is a remote wallet. Its public, so dont inport your wallet seed here. This is for publicly checking balances and demonstration.</p>
+
+<p><a href="http://skycoin-chompyz.c9.io/">http://skycoin-chompyz.c9.io/</a></p>
+
+<p>These are the &ldquo;outputs&rdquo;. This is where coins are stored. You can check balance here.</p>
+
+<p><a href="http://skycoin-chompyz.c9.io/outputs">http://skycoin-chompyz.c9.io/outputs</a></p>
+
+<p>If you open your wallet through the web interface and do &ldquo;/wallet&rdquo;, you get the list of wallets. As long as you have written down &ldquo;seed&rdquo;, then you cannot lose your coins.</p>
+
+<p><a href="http://skycoin-chompyz.c9.io/wallets">http://skycoin-chompyz.c9.io/wallets</a></p>
+
+<p>Try creating a wallet with a seed (import wallet from seed), then close the client, delete the wallet, then go and reimport the wallet from the seed. Make sure you get the same address and private key the second time.</p>
+
+<h2 id="wallet-seed-security-guidelines">Wallet seed security guidelines:</h2>
+
+<p>A small server with 100 AMD GPUs can brute force 1 trillion passwords per second.
+- 16 bits of entropy = 0.0000006 seconds to steal all coins secured with a password with 16 bits of entropy
+- 32 bits of entropy = 0.0042949 seconds to steal all coins secured with 32 bits of entropy
+- 48 bits of entropy = 281 seconds to steal all coins secured with 48 bits of entropy
+- 64 bits of entropy  = 18,000,000 seconds to steal all coins secured with 64 bits of entropy
+- 128 bits of entropy = 34,000,000,000,000,000,000 years to brute force at 1 trillion hashes/second
+- 256 bits of entropy = 34,000,000,000,000,000,000 years squared, to brute force at 1 trillion hashes/second</p>
+
+<p>numbers only password:
+- 3.3 bits per character</p>
+
+<p>lower case letters and numbers:
+- 5.2 bits per character</p>
+
+<p>lower and upper case letters and numbers:
+- 5.9 bits per character</p>
+
+<p>lower,upper case letters, numbers and symbols
+- 6.2 bits per character</p>
+
+<p>So a 10 digit number will have 3.3*10 bits = 33 bits of entropy. That password will be cracked in 0.0004 seconds and your coins will be looted.</p>
+
+<p>You think your wallet password is secure. Someone has a GPU cluster than can break that password. So once they get the wallet file, its over. If they are able to get your wallet file, it probably means you have key logger on your computer, so they just have to wait anyways.</p>
+
+<p>We are assuming worst case. This is for using md5 for hashing. The Skycoin deterministic wallet generation function uses SHA256 and elliptic curve multiplication operations, so is ten thousand to 1 million times slower. A top end Intel i7 can do about 1,000 to 8,000 passwords/second. So instead of taking 281 seconds, it actually takes atleast 281 thousand seconds to steal coins if your seed has 48 bits of entropy.</p>
+
+<p>64 bits is minimum that is secure. 128 is minimum recommended. Skycoin uses 256 bit by default.</p>
+
+<p>Human generated passwords are not secure either. They are not random. The theoretical entropy is higher than the actual entropy achieved in practice.</p>
+
+<p>We will switch to word based 128 bit pass phrases from word, that are machine generated, like Electrum uses. It is dangerous to allow users to choose their own passwords, but we allow this. Just make sure not to shoot yourself in the foot. It is safer to let the machine generate the seed for you.</p>
+
+<p>However, if you copy the seed into a clipboard then it can be stolen by trojan on computer. If you type the seed, it can be stolen by key logger or by radio emissions from your keyboard. Using an onscreen keyboard is safer.</p>
+
+<h2 id="hardware-key-storage-device">Hardware Key Storage Device:</h2>
+
+<p>For generating and loading keys on to a hardware key storage devices, we will need to fund open source hardware keypad. Could be $10 to $30.  A hardware key storage device can be as simple as a $1 ARM processor on a PCB board.</p>
+
+<p>This is a $1 ARM processor, 32 bit, 50 Mhz, 16 Kb of flash memory. Just enough for a program and a few private keys. The cost is $1.15 to manufacture. The PCB board is $0.10, the other components are less than a penny each and total unit will cost $0.30 within two years and the 500 Mhz ARM processors will be $1 soon.</p>
+
+<p><img src="http://i.imgur.com/9Njo470.jpg" alt="" /></p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

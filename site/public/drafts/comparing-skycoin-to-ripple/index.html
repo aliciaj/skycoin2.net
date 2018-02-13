@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparing Skycoin to Ripple | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Comparing Skycoin to Ripple">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-04-23">
+    
+    <meta property="og:description" content="In Ripple you have a bunch of node. If a peer rejects a transaction, then to achieve consensus, the connection&#39;s peers will drop the transaction and the rejection of the transaction propagates through the network. That means that a single bad node can freeze the assets in a particular address.">
+    <meta property="og:url" content="https://www.skycoin.net/drafts/comparing-skycoin-to-ripple/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Decentralization">
+    
+    <meta property="og:tags" content="Ripple">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Comparing Skycoin to Ripple</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>In Ripple you have a bunch of node. If a peer rejects a transaction, then to achieve consensus, the connection&rsquo;s peers will drop the transaction and the rejection of the transaction propagates through the network. That means that a single bad node can freeze the assets in a particular address.</p>
+
+<p>Ripple is must more vulnerable to government influence and control than Bitcoin, because control of the network is centralized in financial institutions. Nodes are run by exchanges (called gateways in ripple). Exchanges are highly regulated by governments. They need licenses and government and bank approval to operate. Governments can court order exchanges to block transactions for particular Ripple addresses and the exchanges must comply and have the ability to comply. Governments can impose Know Your Customer Requirements through the exchanges that control the key nodes in the network.</p>
+
+<p>The other flaw is that node consensus occurs in private in Ripple. Nodes can act maliciously and it cannot be detected by the public. In Skycoin, consensus is public record and malicious nodes can be held accountable. Ripple only works if you assume the nodes in the network are not malicious, which is a bad assumption.</p>
+
+<p>The other problem with the Ripple network is that most of the nodes are still run by the development organization. Control of the Ripple network is centralized with the developers. When you consider the number of secret court orders that many crypto companies have been receiving lately to backdoor their software, its very dangerous. The government has gone to companies like Google and Lavabit and told them &ldquo;You have to do this&rdquo; and they have to do it. They are not allowed to tell anyone. Companies that have tried to resist or fought the court orders or did not comply voluntarily have been crushed.</p>
+
+<p>You can comply with the court order, or you can comply with the court order.  Many people decide &ldquo;I am not going to do this&rdquo; and decide to shut down the company instead of complying with the order. The government produces another court order saying you are not allowed to shut down the company and still have to comply with the court order. They tell you that you will go to jail if you dont do it. This is what happened to Lavabit. Ripple will comply, they are not going to shutdown and lose their investors money and destroy the value of their stock options over ideological principals.</p>
+
+<p>Skycoin started with a central account like Ripple has, but later decided it was too dangerous for privacy and security. Skycoin and Bitcoin use outputs and generate new addresses for each transaction and we feel this is a better long term solution than the choice Ripple made.</p>
+
+<h2 id="skycoin-vs-ripple">Skycoin vs Ripple:</h2>
+
+<p>Skycoin is similar to Ripple at a high level, but with extreme differences
+- Skycoin uses Outputs and Addresses for increased privacy and security and Ripple uses Accounts (which we feel are dangerous)
+- Skycoin has block level consensus, Ripple does transaction level, which makes it easier to allow nodes to freeze assets
+- Skycoin node consensus decisions are public and published so nodes can be held accountable, Ripple node consensus decisions are made in secret
+- Skycoin gateway protocol is not on the blockchain and allows anyone to create any asset they want. Ripple&rsquo;s gateways only support a subset of hardcoded currency assets that Ripple decided to support and they are on the blockchain. Ripple does not support contracts, loans, options or more advanced scripted assets.
+- Skycoin nodes are run by users, Ripple nodes are run by financial institutions and the Ripple developers.
+- Skycoin is much much simpler than Ripple. The core of Skycoin is only a few thousand lines of code and easy to audit and verify. Ripple is a few hundred thousand lines of code and no one can understand how it works.
+- Skycoin is easy to run and users only have to run one program. Ripple requires running between one and three servers depending on what you are using Ripple for.</p>
+
+<p>Ripple is extremely innovative and a great accomplishment, but flawed. The inventor of Ripple has done many great things and has always been on the forefront of innovation. He created eDonkey, MtGox and Ripple. Every single thing he has ever done has been technologically innovative, ahead of its time, achieved great things and then collapsed.</p>
+
+<p>Jed McCaleb is like one of those bioroids from Blade Runner.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

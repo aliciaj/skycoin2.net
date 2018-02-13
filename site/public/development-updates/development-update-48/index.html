@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #48 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #48">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-12-25">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-48/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Wallet Development">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #48</h1>
+    </div>
+
+    <article id="content">
+        <nav>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#the-new-wallet-api-will-separate-out-checking-balances-getting-unspent-outputs-and-injection-transactions">The new wallet API will separate out checking balances, getting unspent outputs and injection transactions.</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#hardware-wallet">Hardware Wallet</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<p>I pushed a few fixes. The wallet is still buggy but looks great.</p>
+
+<p><img src="http://i.imgur.com/wj4zndy.png" alt="" /></p>
+
+<p>Refactoring is not as easy as I would like. If you split two modules in golang, that have minor depedencies, it will not compile because of circular dependencies. Golang can handle circular dependencies, but the language developers force this constraint upon the developer. This makes refactoring some things, drawn out. I cannot do a series of small, incremental refactors, but am forced to refactor five things at once. It is like untangling a ball of yarn.</p>
+
+<p>Working on migration to new API now.</p>
+
+<h6 id="the-new-wallet-api-will-separate-out-checking-balances-getting-unspent-outputs-and-injection-transactions">The new wallet API will separate out checking balances, getting unspent outputs and injection transactions.</h6>
+
+<ul>
+<li>the node is physically separated by an API layer from the private keys</li>
+<li>this makes hardware wallets easier</li>
+<li>this makes it easier to add Bitcoin, Dogecoin and Litecoin into the Skycoin wallet. Every coin can go through a common API interface.</li>
+<li>this means wallets can be like blockchain.info, but completely local. There is no risk of javascript injection or anyone stealing wallet through web-browser.</li>
+<li>nodes are able to query balances, create/sign transactions and inject transactions without running full blockchain. They can use remote nodes through same interface as local nodes.</li>
+<li>dark wallets will not work without a full transaction history. There is no way to do darkwallets in Skycoin with a thin client. Generating a shared address with recipient public key requires a full copy of the blockchain.</li>
+</ul>
+
+<h2 id="hardware-wallet">Hardware Wallet</h2>
+
+<p>This is a proposal for a graphical representation of 256 bit deterministic wallet seeds, in a form that can be committed to memory more easily than a 64 character hex string. It is designed to be easy to write down on paper, with human checkable error correction coding to reduce transcription errors.</p>
+
+<p>We think this is better than Trezor. Its very simple too. A OLED display ($5), a $2 32 bit arm processor and five buttons. We want a hardware wallet implementing this standard.</p>
+
+<p><a href="https://github.com/skycoin/skycoin/wiki/Brain-Wallet-Sigils">https://github.com/skycoin/skycoin/wiki/Brain-Wallet-Sigils</a></p>
+
+<p>There is a square with 4 quadrant. Each quadrant has a 3x3 grid, with 16 states per element. The advantage is that the format can be written on paper, can be inputted onto hardware device or can be remembered easily compared to a 64 bit hex string. There is also built-in human check-able error correction to prevent transcription errors.</p>
+
+<p><img src="http://i.imgur.com/nLEW5Kk.png" alt="" />
+<img src="http://i.imgur.com/NQXYm9D.png" alt="" /></p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

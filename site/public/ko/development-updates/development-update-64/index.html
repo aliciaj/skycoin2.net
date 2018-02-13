@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개발 업데이트 #64 | Skycoin 블로그</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="개발 업데이트 #64">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-04-02">
+    
+    <meta property="og:description" content="스카이코인 관련 최신 개발동향 소개">
+    <meta property="og:url" content="https://www.skycoin.net/ko/development-updates/development-update-64/">
+    <meta property="og:site_name" content="Skycoin 블로그">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="IPFS">
+    
+    <meta property="og:tags" content="Skycoin Merkle-DAG System">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ko/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ko/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ko/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ko/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ko/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ko/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ko/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ko/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">개발 업데이트 #64</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h2 id="ipfs-데모">IPFS 데모:</h2>
+
+<p>이것은 IPFS이며, Bitorrent의 후속작 입니다.</p>
+
+<p><a href="https://www.youtube.com/watch?v=8CMxDNuuAiQ">https://www.youtube.com/watch?v=8CMxDNuuAiQ</a></p>
+
+<h5 id="스카이코인-merkle-dag-시스템은-이를-기반으로-합니다">스카이코인 Merkle-dag 시스템은 이를 기반으로 합니다.</h5>
+
+<ul>
+<li>디렉토리는 노드의 목록입니다. 노드의 ID는 해시이며, 이는 직렬화 되어 있습니다.</li>
+<li>각 노드는 폴더 또는 파일입니다.</li>
+<li>파일의 내용은 해시입니다.</li>
+<li>소유자는 개인키를 사용하여 루트 해시에 서명합니다.</li>
+<li>노드 메타 데이터 및 파일은 P2P(peer-to-peer)로 복제됩니다.</li>
+<li>디렉터리는 하나로 표시됩니다.</li>
+</ul>
+
+<p>사용자는 그들이 업로드한 파일을 업데이트 할 수 있습니다. 자바 스크립트 파일이 있는 경우,
+서버에서 파일을 다시 요청하는 대신 페이지가 로드될 때 마다 해당 파일의 해시 이름이 지정됩니다.<br />
+만약 해시가 로컬 캐시에 있다면, 다시 다운로드할 필요가 없습니다.</p>
+
+<p>이것은 블록체인 다운로드 속도를 향상시킬 것이지만, 다른 응용 프로그램을 필요로 합니다. 그 스카이코인 버전은 다음과 같습니다.:
+- 스카이코인 원시 암호화를 사용하여 IPFS 버전을 제거했습니다.
+- 스카이와이어 연동</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

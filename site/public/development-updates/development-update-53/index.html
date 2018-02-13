@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #53 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #53">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-01-23">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-53/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Wallet Development">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #53</h1>
+    </div>
+
+    <article id="content">
+        <p>Overall, the architecture is very good. However, the details need polish. This involves removing code and simplifying, removing unnecessary things. I dont feel like the Bitcoin API has changed in five years. You still cannot check balances and get outputs for an address not in your wallet, in Bitcoin. So in some sense, the Skycoin API has evolved faster than in two days than Bitcoin did since launch.</p>
+
+<p>We are using JSON format, so people will not lose wallets like in Bitcoin where a new client cannot load an old wallet serialized with older version of the key-value store library. There are people who has 20,000 Bitcoin and deleted wallet because it said it has zero coins, (old wallet format, with new bitcoin client) when Bitcoind loaded wallet with silent error. You have to know there are coins in wallet and then export the privatekeys by hand, then import them by hand on command line to even know if there are coins in the wallet.</p>
+
+<p>Also, JSON is good, because you can pull out a single private key or address by hand. You have to do this on command line with Bitcoin.</p>
+
+<p>The seed value is good, because as long as you have that, you wont lose the coins.</p>
+
+<p>Multiple wallets in client is good (will be able to switch wallets from dropdown). Most people keep a small wallet (for mobile phone) and a larger wallet. People often delete wallets with coins in them by accident, because they have to rename, move wallets in bitcoind and restart client. Skycoin will have a button from creating a wallet from seed in the web wallet gui.</p>
+
+<p>There are a number of polish issues. Such as if you write a wallet to disc, but the power goes out. The write will &ldquo;finish but the hard drive didnt write the data to disc and your wallet is gone. So we can&rsquo;t overwrite the wallet, we write a new wallet, then we flush the disc cache by hand, then we rename the first wallet and then rename written wallet to first wallet, then we write random data over the old wallet, then delete it.  You have to make sure all of those steps occur.</p>
+
+<p>If you dont overwrite the old wallet with random data before deleting it, then it can be recovered from disc. If every transaction generates a new address and writes a new wallet to disc, you might have 200 copies of the wallet seed written to disc after a few hundred transactions. Someone could scan the empty space on disc and possibly steal the seed value, even if the wallet is &ldquo;deleted&rdquo;. So you have overwrite the wallet with random data before deleting it.</p>
+
+<p>I want to get it working, then get skywire prototyped and come back to polish it to that level later.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

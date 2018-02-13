@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #106 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #106">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2016-10-05">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-106/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Wallet Development">
+    
+    <meta property="og:tags" content="Exchange">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #106</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>Going through the launch check list</p>
+
+<p>Mostly check commit log:
+- <a href="https://github.com/skycoin/skycoin">https://github.com/skycoin/skycoin</a></p>
+
+<ul>
+<li>block storage is done. Key/value store. boltdb. memory mapped files</li>
+<li>blockchain history API is done. GUI is in progress.</li>
+<li>first version of website is done. Second version in progress, then will be on domain. will post screenshots soon</li>
+<li>some consensus simulations using random mean field sampling are in the repo in the /src/ directory now. We have someone starting on the public broadcast channel implementation and then remaining integration tasks. This should not block exchange listing, but may drag on for a while.</li>
+<li>fifty tickets on UI and GUI bug fixes. Everything critical fixed.</li>
+</ul>
+
+<h5 id="todo">Todo:</h5>
+
+<ul>
+<li>CLI for exchanges</li>
+<li>WebRPC API for exchanges and documentation</li>
+<li>GUI for blockchain history API</li>
+</ul>
+
+<h2 id="wallet">Wallet:</h2>
+
+<p>We have +50 tickets on development tasks for wallet QA, bugs, improvements and user interface behavior.</p>
+
+<p>We are transitioning towards an electrum style wallet.</p>
+
+<p><img src="http://i.imgur.com/bNujGY9.png" alt="" />
+<img src="http://i.imgur.com/YQ98nB1.png" alt="" />
+<img src="http://i.imgur.com/IJKQW4Y.png" alt="" />
+<img src="http://i.imgur.com/XTejwZv.png" alt="" />
+<img src="http://i.imgur.com/iWqazAK.png" alt="" /></p>
+
+<h2 id="exchange-listing-checklist">Exchange Listing Checklist</h2>
+
+<p>Of the five things that were required, three of them are now done.
+- block storage is done
+- blockchain history API is done
+- website is done</p>
+
+<p>The last thing that is required is now
+- CLI + WebRPC client for exchanges + documentation (required for exchange listing)
+- Blockchain explorer front-end (required for exchange list. This was supposed to be done two days ago, but have not checked yet).
+- documentation, info-graphics and technical information on website (this will be iterative over months)
+- consensus integration (this is not blocking anything)</p>
+
+<p>Our first exchange integration for testing and QA will be with a darkpool liquidity provider/market maker who sits on both sides of the order book and arbitrages from the major exchanges across multiple coins. Then will work on the large exchanges.</p>
+
+<p>I think we have the APIs in place for automatic conversion between Bitcoin and Skycoin, in the wallet, so we can do something like Ethereum&rsquo;s &ldquo;ShapeShift&rdquo;.</p>
+
+<p>Then after launch, wallet and future improvements
+- Add Shapeshift
+- Add multicoin support (Skycoin, Bitcoin, Ethereum)
+- Electrum style interface
+- Wallet encryption</p>
+
+<h2 id="misc">Misc</h2>
+
+<p>I want to say more about project management and changes and how we are dealing with this, but would be too long.</p>
+
+<p>We are spawning off different project groups, with a single focus (website, marketing, coin, wallet QA, meshnet, applications, build/DevOps, consensus, exchange integration, mobile wallet team, project manager for customer facing applications for tech that was spun off or licensed to corporate clients, etc&hellip;). For development we are doing one to three developers per area and each developer has single focus or task.</p>
+
+<p>&ldquo;The last 10% is 90% of the work&rdquo;, is especially true for launching. Getting everything that needs to be in place ready, is a time sink. I think its taking six people, two months to get the requirements for listing done after the coin was &ldquo;finished&rdquo; and &ldquo;working&rdquo;.</p>
+
+<p>So now we are focusing on one or two top priorities at a time and then assigning resources to them, to make incremental progress. Instead of doing long term R&amp;D and research of indefinite duration. We are also delegating or spinning off as many project groups we can and getting dedicated project managers to manage particular sub-projects. (wallet QA and wallet improvements has dedicated project manager now).</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

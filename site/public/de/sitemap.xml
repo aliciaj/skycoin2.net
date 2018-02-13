@@ -583,52 +583,6 @@
   </url>
   
   <url>
-    <loc>https://www.skycoin.net/de/tags/ask-the-developers/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.skycoin.net/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.skycoin.net/zh/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://www.skycoin.net/ru/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://www.skycoin.net/ko/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.skycoin.net/es/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://www.skycoin.net/ja/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.skycoin.net/fr/tags/ask-the-developers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.skycoin.net/de/tags/ask-the-developers/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.skycoin.net/de/categories/ask-the-developers/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -671,6 +625,52 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://www.skycoin.net/de/categories/ask-the-developers/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.skycoin.net/de/tags/ask-the-developers/</loc>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.skycoin.net/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.skycoin.net/zh/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://www.skycoin.net/ru/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://www.skycoin.net/ko/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.skycoin.net/es/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://www.skycoin.net/ja/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.skycoin.net/fr/tags/ask-the-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.skycoin.net/de/tags/ask-the-developers/"
                 />
   </url>
   
@@ -1375,57 +1375,6 @@
   </url>
   
   <url>
-    <loc>https://www.skycoin.net/de/tags/skyledger/</loc>
-    <lastmod>2017-12-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.skycoin.net/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.skycoin.net/zh/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://www.skycoin.net/ru/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://www.skycoin.net/ko/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.skycoin.net/es/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://www.skycoin.net/ja/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.skycoin.net/fr/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://www.skycoin.net/it/tags/skyledger/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.skycoin.net/de/tags/skyledger/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.skycoin.net/de/categories/skyledger/</loc>
     <lastmod>2017-12-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1477,53 +1426,53 @@
   </url>
   
   <url>
-    <loc>https://www.skycoin.net/de/tags/skywire/</loc>
-    <lastmod>2017-11-07T00:00:00+00:00</lastmod>
+    <loc>https://www.skycoin.net/de/tags/skyledger/</loc>
+    <lastmod>2017-12-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.skycoin.net/tags/skywire/"
+                href="https://www.skycoin.net/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://www.skycoin.net/zh/tags/skywire/"
+                href="https://www.skycoin.net/zh/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://www.skycoin.net/ru/tags/skywire/"
+                href="https://www.skycoin.net/ru/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://www.skycoin.net/ko/tags/skywire/"
+                href="https://www.skycoin.net/ko/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.skycoin.net/es/tags/skywire/"
+                href="https://www.skycoin.net/es/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://www.skycoin.net/ja/tags/skywire/"
+                href="https://www.skycoin.net/ja/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.skycoin.net/fr/tags/skywire/"
+                href="https://www.skycoin.net/fr/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://www.skycoin.net/it/tags/skywire/"
+                href="https://www.skycoin.net/it/tags/skyledger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://www.skycoin.net/de/tags/skywire/"
+                href="https://www.skycoin.net/de/tags/skyledger/"
                 />
   </url>
   
@@ -1579,6 +1528,57 @@
   </url>
   
   <url>
+    <loc>https://www.skycoin.net/de/tags/skywire/</loc>
+    <lastmod>2017-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.skycoin.net/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.skycoin.net/zh/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://www.skycoin.net/ru/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://www.skycoin.net/ko/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.skycoin.net/es/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://www.skycoin.net/ja/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.skycoin.net/fr/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://www.skycoin.net/it/tags/skywire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.skycoin.net/de/tags/skywire/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.skycoin.net/de/skywire/</loc>
     <lastmod>2017-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1616,62 +1616,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://www.skycoin.net/de/skywire/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.skycoin.net/de/tags/statement/</loc>
-    <lastmod>2017-12-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.skycoin.net/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.skycoin.net/zh/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://www.skycoin.net/ru/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://www.skycoin.net/ko/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.skycoin.net/es/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://www.skycoin.net/ja/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="el"
-                href="https://www.skycoin.net/el/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.skycoin.net/fr/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://www.skycoin.net/it/tags/statement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.skycoin.net/de/tags/statement/"
                 />
   </url>
   
@@ -1728,6 +1672,62 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://www.skycoin.net/de/categories/statement/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.skycoin.net/de/tags/statement/</loc>
+    <lastmod>2017-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.skycoin.net/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.skycoin.net/zh/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://www.skycoin.net/ru/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://www.skycoin.net/ko/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.skycoin.net/es/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://www.skycoin.net/ja/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://www.skycoin.net/el/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.skycoin.net/fr/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://www.skycoin.net/it/tags/statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.skycoin.net/de/tags/statement/"
                 />
   </url>
   
