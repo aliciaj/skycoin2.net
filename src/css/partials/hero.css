@@ -14,6 +14,10 @@
 	width: 100%;
 }
 
+.container .hero h1 {
+	padding: 0 0 100px;
+}
+
 .hero-skywire {
 	background: url('/images/hero-skywire-f.jpg');
 }
@@ -32,4 +36,8 @@
 
 .bg-gray-light {
 	background: #212429;
+}
+
+.hero--empty {
+	min-height: auto;
 }

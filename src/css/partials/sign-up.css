@@ -15,6 +15,7 @@
     border: 0;
     border-radius: 6px;
     font-size: 0.875em;
+    margin: 0 1.25rem 0 0;
     padding: 1rem 0.625rem;
     transition: all 100ms ease;
 }
@@ -28,4 +29,43 @@
 .sign-up input:not(:focus).not-empty:invalid {
     background: rgb(231, 76, 60, 0.4);
     outline: 0;
+}
+
+.skyminer-signup {
+    margin-top: 20px;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.hidden-checkbox:checked + .fancy-label:after {
+    background: url("/images/checked.svg") 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.fancy-label {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.fancy-label:before {
+    content: "";
+    background: var(--color-lightest);
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    height: 20px;
+    width: 20px;
+}
+
+.fancy-label:after {
+    content: "";
+    display: block;
+    height: 18px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    width: 18px;
 }

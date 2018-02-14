@@ -30,19 +30,19 @@ pygmentsStyle = "murphy"
 	name = "Skywire"
 	identifier = "skywire"
 	parent = "technology"
-	url = "/skywire"
+	url = "/skywire/"
 	weight = 11
 [[menu.main]]
 	name = "Skycoin"
 	identifier = "skycoin"
 	parent = "technology"
-	url = "/skycoin"
+	url = "/skycoin/"
 	weight = 12
 [[menu.main]]
 	name = "Skyledger"
 	identifier = "skyledger"
 	parent = "technology"
-	url = "/skyledger"
+	url = "/skyledger/"
 	weight = 13
 [[menu.main]]
 	name = "Whitepapers"

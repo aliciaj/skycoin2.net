@@ -2,42 +2,77 @@
 {{ partial "header.html" (dict "context" . "logoColor" "dark") }}
 
 <main>
-	<div class="container">
+	<section class="container">
 		<!-- //start section A -->
-		<h1 class="gradient">Cryptocurrency is only part of the story. Skycoin is creating a new decentralized internet and paying the who power it.</h1>
+		<div class="hero hero--empty">
+			<h1 class="gradient">Cryptocurrency is only part of the story. Skycoin is creating a new decentralized internet and paying the who power it.</h1>
+		</div>
 		<!-- 	//end section A
 		-------
 		//start section b -->
 
 		<!-- //yellow -->
-		<h4>Skycoin is an entire ecosystem: </h4>
+		<h4>Skycoin is an entire ecosystem:</h4>
 
 		<!-- //line detail -->
 		<!-- //gradient text -->
-		<h2>Skycoin </h2>
+		<div class="grid">
+			<div class="column--half card-technology">
+				<a href="/skycoin/">
+					<img src="/images/technology-skycoin.jpg" alt="graphic representing Skycoin" />
+					<div class="card-content">
+						<strong>Technology</strong>
+						<h2>Skycoin</h2>
+						<p>A cryptocurrency native to the Skycoin network</p>
+					</div>
+				</a>
+			</div>
 
-		<p>A cryptocurrency native to the Skycoin network</p>
+			<!-- //line detail -->
+			<div class="column--half card-technology">
+				<a href="/skywire/">
+					<img src="/images/technology-skywire.jpg" alt="graphic representing Skywire" />
+					<div class="card-content">
+						<strong>Technology</strong>
+						<h2>Skywire</h2>
+						<p>An anonymous, decentralized mesh internet</p>
+					</div>
+				</a>
+			</div>
 
-		<!-- //line detail -->
-		<h2>Skywire </h2>
+			<!-- //line detail -->
+			<div class="column--half card-technology">
+				<a href="/skyminer/">
+					<img src="/images/technology-skyminer.jpg" alt="graphic representing Skyminer" />
+					<div class="card-content">
+						<h2>Skyminer</h2>
+						<p>The hardware and access point for Skywire</p>
+					</div>
+				</a>
+			</div>
 
-		<p>An anonymous, decentralized mesh internet</p>
+			<!-- //line detail -->
+			<div class="column--half card-technology">
+				<a href="/skyledger/">
+					<img src="/images/technology-skyledger.jpg" alt="graphic representing Skyledger" />
+					<div class="card-content">
+						<h2>Skyledger</h2>
+						<p>Our decentralized open blockchain network</p>
+					</div>
+				</a>
+			</div>
 
-		<!-- //line detail -->
-		<h2>Skyminer</h2>
-
-		<p>The hardware and access point for Skywire</p>
-
-		<!-- //line detail -->
-		<h2>Skyledger </h2>
-
-		<p>Our decentralized open blockchain network</p>
-
-		<!-- //line detail -->
-		<h2>Skysuite</h2>
-
-		<p>A suite of decentralized applications</p>
-
+			<!-- //line detail -->
+			<div class="column--half card-technology">
+				<a href="/skysuite/">
+					<img src="/images/technology-skysuite.jpg" alt="graphic representing Skysuite" />
+					<div class="card-content">
+						<h2>Skysuite</h2>
+						<p>A suite of decentralized applications</p>
+					</div>
+				</a>
+			</div>
+		</div>
 
 		<!-- (Body text, set off by an image to the right of the constellation image we have on other branding assets)  -->
 		<p>Together, the Skycoin ecosystem fulfills the promise of decentralization -- while also working towards the elimination of mining rewards, developing energy-efficient custom hardware, lightning-fast transaction speeds, and the creation of a more secure, private internet alternative.</p>
@@ -59,7 +94,7 @@
 		<!-- (Image off to the right that shows the obilyk) -->
 
 		<!-- //link More on the company Skycoin. -->
-	</div>
+	</section>
 
 	{{ partial "signup.html" . }}
 	{{ partial "sponsors.html" . }}
