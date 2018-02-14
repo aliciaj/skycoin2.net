@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #26 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #26">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-06-22">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-26/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Research Update">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #26</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h2 id="summary">Summary:</h2>
+
+<p>The darknet repo has been removed and moved into Skywire and Whitepaper.</p>
+
+<p>Two thousand lines of coin have been removed from Skywire. It does the same thing, is much cleaner now. The daemon almost works. Will have some development documentation and sample apps soon.</p>
+
+<h6 id="the-remaining-issues-for-the-meshnet-darknet-have-been-worked-out-specifically">The remaining issues for the meshnet/darknet have been worked out, specifically:</h6>
+
+<ul>
+<li>preventing circular routes (denial of service)</li>
+<li>allowing multi-hop routes to be established quickly without incurring round trip latency for each hop</li>
+<li>binary wire protocol format</li>
+</ul>
+
+<p>There is architectural issue, about the relationship between gnet, Skywire and the relay service. It was not clear whether these should be merged into a single library or whether the darknet router should be a service in Skywire or if Skywire should sit on top of the darknet. There are several constraints:
+- the lowest level router must be something that can be implemented in C and has small ASIC foot print
+- there has to be separation between the Golang layer and C layer
+- some components such as DHT, operate both on the darknet and over UDP over IP</p>
+
+<p>The darknet router service was originally going to be a service in Skywire, but it will now be an independent implementation with Skywire connectivity being built over the darknet.</p>
+
+<h6 id="the-darknet-router-has-to-handle-several-cases">The darknet router has to handle several cases:</h6>
+
+<ul>
+<li>connectivity between nodes over public IP</li>
+<li>connectivity between nodes over private ethernet segment (nodes connected over IP but not necessarily connected over public internet)</li>
+<li>nodes which are connected and peered over wifi</li>
+<li>nodes which are connected over darknet through routes over the darknet, but where there is not not necessarily direct connectivity</li>
+</ul>
+
+<h6 id="this-is-complicated-by-there-being-different-types-of-connectivity">This is complicated by there being different types of connectivity:</h6>
+
+<ul>
+<li>a node could be directly connected to another node over TCP/ip</li>
+<li>a node could advertise connectivity from multiple 3rd party nodes (TOR hidden service type operation). For instance, an application creates routes to four nodes and then advertise that you can connect to the application from routes to any of those four nodes. The person connecting only knows the intermediate, advertised nodes.  The advertised nodes only each know the previous hop in route for node connecting to them, but does not know the origin node identity.</li>
+</ul>
+
+<h6 id="this-was-confusing-until-we-figured-out-that-there-are-actually-two-identities-and-pubkeys">This was confusing, until we figured out that there are actually two identities and pubkeys:</h6>
+
+<ul>
+<li>one pubkey is for the router. Only one computer is allowed to run with each pubkey. The pubkey identifies a unique router and each router has a particular connection topology to the other routers. The connection topography is public. These represent the physical routing topography of the network.</li>
+<li>one pubkey is for the application or service. An application or service can establish connectivity to a router and advertise connectivity to the service, from that router. To connect to an application, you need to know a router that is advertising the application and you need the application pubkey.</li>
+</ul>
+
+<p>In other words, router addresses are not necessarily the terminal point for routes. This is not intuitive at all, but there are several reasons to separate out the topology for physically routing messages and the 0addresses for communication end-points (addresses that receive messages). In IP we take it for granted that routers and communication end-points are in the same address space, but this assumption complicates the design of the darknet. This also means that communication end-points on the network are intrinsically multi-home.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

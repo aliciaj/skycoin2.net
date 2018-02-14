@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #67 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #67">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-04-17">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-67/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #67</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>Fixed a lot of bugs.</p>
+
+<p>The top levels, the gui and json are not as polished as lower levels (blockchain/crypto). I have not even looked at some of this code and discovering new things. There were things implemented, I didnt know we had working and things that needed to be cleaned up.</p>
+
+<ul>
+<li>There was a coinhour calculate bug that prevented transactions in strange cases. I hardcoded coinhour fee for transactions to 1, to get it working, but then after receiving coins, some people were unable to send them out.</li>
+<li>There was bug where sometimes send failed if balance for wallet was split among multiple inputs. Should be fixed now.</li>
+<li>I am removing code, simplifying the top level. We are at point for several months, where most of work is removing code, simplifying.</li>
+<li>Most users are behind firewall, they can connect out but not in. Two servers are running with open ports. We need more servers with open ports, running the client</li>
+<li>We need indicator for how many clients you are connected to, what block number is and time since last new block</li>
+<li>We need button for connecting to server by hand</li>
+<li>We need better configuration for how many outgoing connections to maintain, how many incoming connections and a list of server that you should always be connected to. Once Skywire is working, you will be able to just put in address/pubkey hash and then have authenticated communication to end point and that will speed up network a lot. Right now, it is possible to flood network with dead nodes or bad nodes and prevent honest nodes from connecting.</li>
+<li>We need json function for returning the pending unconfirmed transactions. This is six or twelve lines of code and almost done. (see below)</li>
+<li>We need the pending transactions for your wallet (incoming and outgoing) to show in the interface</li>
+<li>We need the unspent output set at <a href="http://127.0.0.1:6420/outputs">http://127.0.0.1:6420/outputs</a> to be sorted, either by time, block # or output id. We store a metadata uint64, that indexes each output, so you can say &ldquo;output 15&rdquo; created by &ldquo;transaction 3&rdquo; and each output and transactions will have a unique sequentially numbered int, for a given chain. However this value is not in the hash and may change if the transactions are migrated to another ledger, but the transactions/output hash will be same.</li>
+<li>If there are N-transactions from same wallet, we need to freeze later transactions (return error) or queue up transactions. The outputs from the wallet will be spend, so if the first transaction clears the second will be invalid (it needs to use outputs of the wallets after transaction 1 clears, not outputs that existed at time transaction was created).</li>
+<li>Base58 encodes addresses as integers. Some private keys generate addresses that decode to less than length of what addresses should be. I tested 128,000 random addresses during testing and decoding never failed for any of them. If someone has a private key, where people are unable to send to that address, because it is invalid please go into <a href="http://127.0.0.1:6420/wallets">http://127.0.0.1:6420/wallets</a> and send me the wallet seed to BM-2cXFat4fHmeRe8EFJjY3Dzo6RoifcgiKgp . No one will have coins in this address, because send fails because address is invalid, but it seems to happen to a few person. I cannot tell if people are copy/pasting addresses incorrectly or if its a base58 issue</li>
+<li>When a new block is minted, if you are connected to three people, you will request block as soon as you get notification. So you will end up making 3 download requests and getting block three times. This speeds up block propagation, so may not be a bug.</li>
+<li>Skycoin still kills someone&rsquo;s wifi for unknown reasons (one user has reported). This may be DHT (which is same as bitorrent uses). The issue is probably the router firmware.</li>
+<li>PEX may need to be modified, so that it only keeps list of clients that allow incoming connections. If you cannot connect to the peer, knowing about them does not help the client.</li>
+</ul>
+
+<p>People have reported that port 6000 is X11. Skycoin to prevent blocking by ISPs is not bound to particular port. DHT assumes port 6000. So disable DHT and then make sure you have people in your peer list, or manually connect to server. Once you are finding peers through PEX, you dont need DHT and port does not matter.</p>
+
+<h2 id="other">Other:</h2>
+
+<p>There are API commands I did not know about, that I just found in the code. Someone should document the API/json urls</p>
+
+<p>You can test these on <a href="http://skycoin-chompyz.c9.io/blockchain/block?seq=5">http://skycoin-chompyz.c9.io/blockchain/block?seq=5</a></p>
+
+<h5 id="get-blockchain-head-header">Get blockchain head, header:</h5>
+
+<p><a href="http://127.0.0.1:6420/blockchain">http://127.0.0.1:6420/blockchain</a>
+Get block as JSON
+<a href="http://127.0.0.1:6420/blockchain/block?seq=5">http://127.0.0.1:6420/blockchain/block?seq=5</a>
+Get range of blocks as JSON
+<a href="http://127.0.0.1:6420/blockchain/blocks?start=2&amp;end=30">http://127.0.0.1:6420/blockchain/blocks?start=2&amp;end=30</a></p>
+
+<h5 id="unspent-outputs">Unspent Outputs:</h5>
+
+<p><a href="http://127.0.0.1:6420/outputs">http://127.0.0.1:6420/outputs</a></p>
+
+<h5 id="get-network-connections">Get Network Connections:</h5>
+
+<p><a href="http://127.0.0.1:6420/network/connections">http://127.0.0.1:6420/network/connections</a> (renamed from /api/network/connections )</p>
+
+<h5 id="make-a-network-connection-to-peer">Make a network connection to peer:</h5>
+
+<p><a href="http://127.0.0.1:6420/network/connection?addr=127.0.0.1:6000">http://127.0.0.1:6420/network/connection?addr=127.0.0.1:6000</a> (renamed from /api/network/connections )</p>
+
+<h5 id="blockchain-progress">Blockchain Progress:</h5>
+
+<p><a href="http://127.0.0.1:6420/blockchain/progress">http://127.0.0.1:6420/blockchain/progress</a></p>
+
+<p>This is the highest block you know about. If you are not connected to anyone it will be zero, I think. There appears to be off by one error.</p>
+
+<h2 id="documentation">Documentation:</h2>
+
+<p><a href="https://github.com/skycoin/skycoin/blob/master/src/gui/wallet.go">https://github.com/skycoin/skycoin/blob/master/src/gui/wallet.go</a></p>
+
+<p>In /src/gui/wallet.go there is a URL handler that returns the JSON serialization of the unspent output set. Let us look at how that is implemented.</p>
+
+<p>We define a function, that handles the URL request. Grabs the outputs from Visor and then returns the JSON or 404 error.</p>
+
+<pre><code>// Returns the outputs for a wallet
+func getOutputsHandler(gateway *daemon.Gateway) http.HandlerFunc {
+   return func(w http.ResponseWriter, r *http.Request) {
+      ret := gateway.Visor.GetUnspentOutputReadables(gateway.V)
+      SendOr404(w, ret)
+   }
+}
+</code></pre>
+
+<p>Then we add the handler to :</p>
+
+<pre><code>func RegisterWalletHandlers(mux *http.ServeMux, gateway *daemon.Gateway) {}...
+
+//get set of unspent outputs
+mux.HandleFunc(&quot;/outputs&quot;, getOutputsHandler(gateway))
+</code></pre>
+
+<p>So it is about 7 lines of code, to expose the outputs as JSON. The &ldquo;readable&rdquo; for converting internal Skycoin objects to json is in /src/visor/readable.go <a href="https://github.com/skycoin/skycoin/blob/master/src/visor/readable.go">https://github.com/skycoin/skycoin/blob/master/src/visor/readable.go</a></p>
+
+<p>Looking at the godoc for Visor, we can see the functions it exposes</p>
+
+<p><a href="https://godoc.org/github.com/skycoin/skycoin/src/visor#Visor">https://godoc.org/github.com/skycoin/skycoin/src/visor#Visor</a></p>
+
+<p>Visor is one of the dirty libraries that need to be refactored and cleaned up. However it is very clean already. Some cleanup steps could be
+- Moving blocks into a blockstore library that visor pulls in and removing block serialization/saving to disc from visor
+- Removing the remaining functions in &ldquo;spend.go&rdquo; and moving into wallet handler
+- Fixing the unit tests
+- Exposing the full blockchain client API over network with Golang/RPC (partially implemented?)
+- Moving the readable to its own library or subfolder
+- Deleting json_rpc.go (which is empty)
+- Decide if the JSON api web server should be in visor, instead of gui or if it should be its own library or should stay where it is
+- Move the functionality out of /src/daemon into /src/visor and deprecate the existing daemon for the skywire daemon, making visor top level instead of daemon being top level</p>
+
+<p>There is no transaction history. You can look at the blocks and the transactions using json API. You can check balances by looking for your address in the unspent output set ( <a href="http://skycoin-chompyz.c9.io/outputs">http://skycoin-chompyz.c9.io/outputs</a> ).</p>
+
+<h5 id="the-coin-history-and-skycoin-blockchain-exporer-should">The coin history and Skycoin blockchain exporer, should</h5>
+
+<ul>
+<li>Go through block by block, creating index of addresses, transactions, blocks</li>
+<li>Be its own library</li>
+<li>Should run in the skycoin web wallet, locally, not on third party site</li>
+<li>Should have a JSON api</li>
+</ul>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #86 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #86">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-09-26">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-86/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Marketing">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #86</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>There are some improvements coming up
+- Deprecation of the C secp256k1 library for golang version
+- Dependency vendoring. Means all dependencies of skycoin will be inside of the skycoin repo, for version 1.5. Improves security, makes it so that no one can insert a back door in an upstream library
+- golang almost has deterministic builds working. This will be exciting. If two people build the binary from source on different machines, they get SHA256 identical binaries. This guarantees the absence of backdoors.
+- Cross compilation. Windows, OSX, Linux and ARM builds, all from same machine. Automated. This will save a lot of time. Windows builds are the most frustrating part.
+- This is major milestone in terms of pain and things I want to check off. We are still waiting for golang 1.5 for some of these features.</p>
+
+<p>Once it is running on a formally verified L4 linux, on a raspberry pi or ARM processor, then we will have highest level of security hardening that is currently possible.</p>
+
+<p>This is an absolute and very satisfactory grade of security. There are very few components. No buffer overflows attacks and the number of components is small enough that the security model is intuitive and simple.</p>
+
+<p>One of the largest problems right now, that stops Bitcoin from capturing the largest flows of money is that Bitcoin is unknowable. After &ldquo;Signature Malleability&rdquo; and other incidents, there was always a persistent fear of sea monsters in the Bitcoin ecosystem.</p>
+
+<h2 id="exchange-liquidity">Exchange/Liquidity:</h2>
+
+<p>We are getting a wrapper over gocoin, that will allow us to check balances for Bitcoin addresses and inject transactions. Skycoin can already generate Bitcoin addresses and public keys.</p>
+
+<p>The second generation bootstraps upon the first, so the API is simpler and legacy system can be skipped completely. It took Bitcoin two years to get over this hurdle. This is one of the four major long term milestones we need to check off.</p>
+
+<h2 id="marketing">Marketing:</h2>
+
+<p>Coin adaption is a process of behavior change.</p>
+
+<ul>
+<li>information influences beliefs and values</li>
+<li>beliefs and values influence behavior</li>
+</ul>
+
+<p>Human behavior changes according to the Hegelian dielectric. Discontent creates the need for change. “Only a crisis—actual or perceived––produces real change.&rdquo;</p>
+
+<p>The background that drove Bitcoin was ideological. Bitcoin grew out of the same discontent as the occupy movement and it was destroyed when the community was taken over, infiltrated and diverted from ideological issues to issues of mere price and what the coin price was at today. That is when Bitcoin lost the ability to covert, motivate or interest members outside of the existing community.</p>
+
+<p>Bitcoin died when the movement was diverted from issues of values and goals and aspiration, to mere greed. That is when Bitcoin become controllable, inert and aimless.</p>
+
+<p>Every single person who represented the ideological, aspiration or liberatory aspect of Bitcoin has been arrested, alienateded, marginalized or otherwise systematically driven out of the community, while the banal and corrupt has been promoted in power and influence.</p>
+
+<h5 id="the-bitcoin-community">The Bitcoin community</h5>
+
+<ul>
+<li>is divided by idle speculation</li>
+<li>has had the participatory aspect of the community eliminated by mining pool centralization</li>
+<li>has been cut up into vertically integrated corporate fiefdoms</li>
+<li>is falsely divided over &ldquo;512 KB blocks or 1024 KB blocks&rdquo; instead of unified behind the communities goals and aspirations</li>
+<li>the symbols and group unifying memes have all been scrubbed from /r/bitcoin and the major communities as policies</li>
+</ul>
+
+<p>We need to figure out what the group process for Skycoin should be, to form a powerful and effective community.</p>
+
+<ul>
+<li>membership</li>
+<li>communication channels</li>
+<li>goals, values, aspirations, objectives, planning organization</li>
+<li>the nature of the participatory element</li>
+<li>resources</li>
+</ul>
+
+<h2 id="survivable-organization-structures">Survivable Organization Structures:</h2>
+
+<p>Survivable organizations need to be resistant against network deconstruction and need to have intelligence, planning, goals and must be able to deploy resources and capacities in pursuit of those goals.</p>
+
+<p>This is one of the fatal flaws of Bitcoin.</p>
+
+<p>For the Skycoin community that is
+- personnel
+- developers
+- projects
+- servers, networking, storage, facilities
+- intelligence, planning, goal setting
+- information sharing
+- communication infrastructure (collaboration), standards</p>
+
+<p>We need to find the most effective neo-corporatist structure for accomplishing the project goals and for the benefit of the community.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

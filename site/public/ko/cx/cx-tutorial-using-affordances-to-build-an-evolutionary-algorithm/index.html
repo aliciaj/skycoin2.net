@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CX 튜토리얼 : 어포던스를 이용한 소규모 텍스트 기반 어드벤처 구축 | Skycoin 블로그</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="CX 튜토리얼 : 어포던스를 이용한 소규모 텍스트 기반 어드벤처 구축">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-20">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/ko/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/">
+    <meta property="og:site_name" content="Skycoin 블로그">
+    
+    
+    <meta property="og:tags" content="CX">
+    
+    <meta property="og:tags" content="CX Tutorials">
+    
+    <meta property="og:tags" content="Affordances">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ko/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ko/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ko/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ko/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ko/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ko/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ko/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ko/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">CX 튜토리얼 : 어포던스를 이용한 소규모 텍스트 기반 어드벤처 구축</h1>
+    </div>
+
+    <article id="content">
+        
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="2" -->
+
+<ul>
+<li><a href="#introduction">소개</a></li>
+<li><a href="#challenge-response-architecture">시도-응답 </a></li>
+<li><a href="#affordance-system">어포던스 시스템</a></li>
+<li><a href="#objects">객체</a></li>
+<li><a href="#conclusion">결론</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="소개">소개</h1>
+
+<p>이 튜토리얼은 텍스트 기반 &ldquo;게임&rdquo;(사용자가 프로그램과 상호작용하지 않으며,
+캐릭터의 결정에 영향을 줄 수 없으)으로 설명할 수 있으며, 이 게임은
+<a href="#challenge-response-architecture">시도-응답 아키텍처</a>를
+사용하여 게임의 캐릭터가 할 수 있는 행동을 결정합니다.
+전체 소스코드는 <a href="https://github.com/skycoin/cx">CX 저장소</a>의,
+<em>examples/text-based-adventure.cx</em> 파일에서 확인할 수 있습니다..</p>
+
+<p>이 게임은 괴물을 피해다니는 여행자의 모험을 묘사합니다.(할로윈이 다음달이군요, 드디어)
+만약 여행자가 정해진 시간 안에 살아남는다면
+(물론, 이것은 단순한 <em>for</em> 루프의 반복입니다만),
+괴물은 여행자를 쫓는 것을 멈출 것입니다.
+세션의 예는 다음과 같습니다.:</p>
+
+<pre><code>여행자가 길을 따라 가고 있습니다. 두려움을 참으면서 말입니다.
+울음소리와 으르렁 거리는 소리가 들리며, 몬스터가 나타납니다. 
+하룻밤만 더 버티면 살 수 있는 희망이 있기에, 용기가 생깁니다.
+단순하고, 심지어 멍청한 행동을 하지만, 여행자의 행동은 몬스터를 무력화시킵니다.
+북, 동, 서, 남쪽. 어떤 방향이라도 좋습니다.
+더 이상 몬스터를 찾을 수 없습니다.
+울음소리와 으르렁거리는 소리가 들리고, 몬스터가 나타납니다.
+여행자는 도망쳤고, 비겁한 행동이 그를 하루 더 살수 있게 합니다.
+
+당신은 살아남았습니다.
+</code></pre>
+
+<p>만약 그 여행자가 괴물과 싸우기로 결심하고 그의 영웅적 시도가 실패하면 게임이 종료됩니다.
+게임 결말의 예는 다음과 같습니다.:</p>
+
+<pre><code>북, 동, 서, 남쪽. 어떤 방향도 좋습니다.
+더 이상 몬스터를 찾을 수 없습니다.
+울음소리와 으르렁거리는 소리가 들리고, 몬스터가 나타납니다.
+하룻밤만 더 버티면 살 수 있는 희망이 있기에, 용기가 생깁니다.
+그러나 이 시도는 실패했고, 갑자기 이 모험은 끝이 납니다.
+
+당신은 죽었습니다.
+
+Call's State:
+flag:			true
+nonAssign_32:		&quot;&quot;
+
+halt() Arguments:
+0: &quot;당신은 죽었습니다.&quot;
+
+65: call to halt
+</code></pre>
+
+<p>보시다시피, 당신이 죽으면 오류가 발생합니다.
+(프로그래머에게는 끔찍한 상황이므로, 이것은 적절합니다.)</p>
+
+<h1 id="시도-응답-아키텍처">시도-응답 아키텍처</h1>
+
+<p>이 구조에서, 질문이 제기되고 다른 에이전트(이 경우, 함수)가 해당 질문에 반드시 답해야 합니다.
+할 수 있는 간단한 질문은 &ldquo;누가 현재 실행될 수 있습니까?&rdquo;
+이며 이 함수들은 실행이 허용될 것입니다.</p>
+
+<p>다음 함수 프로토 타입은 여행자의 모험 중에 발생할 수 있는 가능한 동작을 나타냅니다.</p>
+
+<pre><code>func walk (flag bool) () {}
+func noise (flag bool) () {}
+func consider (flag bool) () {}
+func chance (flag bool) () {}
+func fightResult (flag bool) () {}
+func theEnd (flag bool) () {}
+</code></pre>
+
+<h1 id="어포던스-시스템">어포던스 시스템</h1>
+
+<p>다른 함수는 함수 호출을 조정해야합니다.
+이 경우, CX의 어포던스 시스템을 이용하여 동작의 실행이 허용되는지
+아닌지를 판단할 수 있습니다.</p>
+
+<pre><code>yes := true
+no := false
+
+remArg(&quot;walk&quot;)
+affExpr(&quot;walk&quot;, &quot;yes|no&quot;, 0)
+:tag walk;
+walk(false)
+</code></pre>
+
+<p>위의 코드에서 <em>remArg ()</em> 는 &ldquo;walk&rdquo; 태그가 있는 표현식을 찾아 해당 인수를 제거합니다.
+이는 어포던스 시스템이 표현식의 연산자로 보낼 수 있는 인수를 목록화하기 위해 수행됩니다.
+다음, *affExpr ()*은 *walk*로 전송될 수 있는 인자들, 인자들의 사용가능 여부를 <em>예</em> 또는 <em>아니오</em>,
+그리고 당신이 반환한 어포던스 리스트에서 선택한 <em>0번째</em> 옵션&rdquo;을 CX에 알려줍니다.</p>
+
+<p>이전 절차는 여행자 모험 도중 발행할 수 있는 모든 행위에 적용됩니다.
+이러한 각 행위에 대한 허용 여부를 결정하기 위해 다음의 규칙이 쿼리됩니다.:</p>
+
+<pre><code>setClauses(&quot;
+          aff(walk, yes, X, R) :- X = monster, R = false.
+          aff(noise, yes, X, R) :- X = monster, R = false.
+
+          aff(consider, yes, X, R) :- R = false.
+          aff(chance, yes, X, R) :- R = false.
+          aff(fightResult, yes, X, R) :- R = false.
+          aff(theEnd, yes, X, R) :- R = false.
+
+          aff(consider, yes, X, R) :- X = monster, R = true.
+          aff(chance, yes, X, R) :- X = fight, R = true.
+          aff(fightResult, yes, X, R) :- X = fight, R = true.
+          aff(theEnd, yes, X, R) :- X = died, R = true.
+        &quot;)
+</code></pre>
+
+<p>첫 번째 규칙은 &ldquo;만약 당신이 <em>walk</em> 행위에 대해 *예*인자를 보내는 경우 쿼리됩니다.
+만약 <em>monster</em> 객체가 나타나면, 이 인수는 옵션이 <em>아닙니다.</em>&ldquo;로 읽을 수 있습니다.</p>
+
+<p>두 번째 블록의 규칙(첫번째 빈 줄 다음의 4가지 규칙)은
+어포던스 시스템에 &ldquo;절대로* <em>예</em> 변수를 허용하지 않습니다.
+우리는 이것을 기본 동작으로 하기를 원하지만,
+나중에 이 동작을 무력화하는 다른 규칙을 선언할 수 있습니다.
+이 무력화 프로세스는 최근 4개의 규칙에서 발생합니다.
+기본적으로, 이 규칙들의 블록은 만약 특정 객체가 오브젝트 스택에 있는 경우
+CX에 <em>예</em> 인수를 허용할 것을 알려줍니다.</p>
+
+<h1 id="객체">객체</h1>
+
+<p>일부 동작은 객체 스택에서 객체를 추가하거나 제거합니다.
+예를 들어, <em>noise</em> 동작이 몬스터를 표시하기로 결정할 때마다,
+<em>addObject</em>(&ldquo;몬스터&rdquo;)가 실행됩니다.
+만약 여행자가 싸움에서 도망 가기로 결정하면, &ldquo;몬스터&rdquo; 객체가 스택에서 제거됩니다.</p>
+
+<p><em>chance</em> 동작의 경우, 몬스터는 다음 동작을 무엇으로 할 지 결정하기 위해,
+좀 더 여행자를 관찰하는 결정을 내릴 수 있습니다.
+이렇게 하려면, &ldquo;싸움&rdquo; 개체가 제거되며(아직 몬스터가 싸움을 시작하고 싶어하지 않기 때문에),
+그러나 &ldquo;몬스터&rdquo; 객체는 남아있습니다.</p>
+
+<h1 id="결론">결론</h1>
+
+<p>CX의 어포던스 시스템은 객체와 규칙을 사용하여 어포던스를 필터링하는 방법에
+대한 복잡한 결정을 내립니다.
+객체를 사용하여 활성화 또는 비활성화 동작을 결정할 수 있습니다.
+이 예제에서는, 이 활성화 프로세스에 대해 적은 활동을 하고 있으며,
+이 구조를 사용하면 얻을 수 있는 이점이 거의 없는 것처럼 보일 수 있습니다.
+그럼에도 불구하고, 더 많은 객체를 포함하는 보다 복잡한 규칙을 정의할 수 있으며,
+하나의 규칙으로 대규모 네트워크에서 여러 노드를 활성화 할 수 있습니다.
+또한 이 예제에서 가능한 인수는 2가지로만 고려됩니다. :
+<em>예</em> 그리고 <em>아니오</em>; 우리는 불릿(booleans)타입 이외의 허용되는
+다른 타입에서 더 많은 인수와 행동을 가질 수 있습니다.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

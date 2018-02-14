@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #30 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #30">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-07-10">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-30/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Meshnet">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #30</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h2 id="summary">Summary:</h2>
+
+<p>IPv6 support is working. We were having trouble before. Many of the residential routers appear as IPv4 but actually have IPv6 public IP addresses and are IPv4 NATs.</p>
+
+<p>Configuring the IPv4 DNS settings on the local host does not override the IPv6 DNS server the router is using during 4to6 translation. We have no idea what is happening.</p>
+
+<p>We are not sure if IPv4 and IPv6 hosts are able to operate on the same DHT network.</p>
+
+<h2 id="meshnet-news">Meshnet News</h2>
+
+<p>The meshnet design is really a darknet, that allows ethernet and peering over wifi. This has several implications and we are still working out everything this implies</p>
+
+<h6 id="there-is-an-ipv6-tunnel-if-two-nodes-are-running-the-software">There is an IPv6 tunnel. If two nodes are running the software:</h6>
+
+<ul>
+<li>The traffic can be routed over the darknet</li>
+<li>This means automatic opportunistic encryption between end points</li>
+<li>The traffic can take multiple paths between the endpoints, meaning increased reliability</li>
+</ul>
+
+<h6 id="we-think-the-darknet-can-act-as-a-simple-corporate-vpn-replacement">We think the darknet can act as a simple corporate VPN replacement:</h6>
+
+<ul>
+<li>There is a plugin or service that runs a TUN adapter and authenticates with an organizations VPN</li>
+<li>There is a TUN adapter exposing the IPv6 address</li>
+<li>The VPN service identifies a correspondence between Skywire public keys (darknet addresses) and the private address space addresses</li>
+<li>The address space is private to an organization</li>
+<li>Traffic over the VPN is opportunistically encrypted automatically</li>
+<li>The VPN can identify &ldquo;gateways&rdquo; that act as bridges between the public IPv6 space and the private internal address space</li>
+<li>Non-native applications can run over the network without any software changes</li>
+</ul>
+
+<h2 id="skywire-multihoming-and-bgp">Skywire Multihoming and BGP</h2>
+
+<p>We proved that efficient stateless multihoming is impossible. IPv6 is stateless and Skywire routing is stateful.</p>
+
+<p>We accidentally noticed that Skywire can achieve IPv6 multihoming by tunneling IPv6 over Skywire.</p>
+
+<h6 id="we-noticed-several-things">We noticed several things:</h6>
+
+<ul>
+<li>IPv6 is not actually stateless. IPv6 is only &ldquo;stateless&rdquo; with respect the the address space, but the routing the routing tables still have state and are configured by BGP.</li>
+<li>It is not possible for a &ldquo;stateless&rdquo; protocol to support multihoming. That is why IPv6 multihoming standards have failed.</li>
+<li>the BGP tables are growing exponentially</li>
+<li>BGP cannot support multihoming</li>
+<li>BGP cannot support non-hierarchical, dense mesh like connectivity</li>
+</ul>
+
+<h6 id="we-believe-that-the-new-darknet-may-be-able-to-replace-bgp-for-routing-between-domains">We believe that the new darknet may be able to replace BGP for routing between domains</h6>
+
+<ul>
+<li>It is intrinsically multi-home</li>
+<li>It does not suffer from route flapping</li>
+<li>The routing within an autonomous system is extremely simple. Much simpler than parsing IP addresses. Skywire is actually a link layer protocol</li>
+<li>Gateway routers can choose the full network path for different types of traffic (routing VOIP and high priority traffic over shortest hop)</li>
+</ul>
+
+<h6 id="within-an-as">Within an AS:</h6>
+
+<ul>
+<li>A server operating over IPv6 over Skywire can have multiple network adapters but a single public IPv6 address</li>
+<li>Skywire automatically routes over the shortest hop path for the network topology</li>
+<li>There is a simple rule for determining if an IPv6 address is within the route prefix for the AS</li>
+<li>Traffic outside of the AS goes through the gateway routers</li>
+<li>Each server must support Skywire</li>
+</ul>
+
+<h6 id="the-tunnel-is">The tunnel is:</h6>
+
+<p>IPv6/IPv4 (private addresses) -&gt; Skywire -&gt; IPv6 (public address)</p>
+
+<p>In this tunneling application Skywire acts as intermediate layer between the physical network topology and the IP address space.</p>
+
+<h2 id="ipv6-address-space-reverse-compatibility">IPv6 Address Space Reverse compatibility</h2>
+
+<p>What we are trying to figure out, is whether the darknet can be reverse compatible with legacy applications at the application layer without modification, or whether the darknet will require application such as Bitorrent to be rewritten into the Skywire address space.</p>
+
+<h6 id="a-user-running-over-the-ipv6-reverse-comparability-adapter">A user running over the IPv6 reverse comparability adapter:</h6>
+
+<ul>
+<li>will be able to run applications within the Skywire address space without modification of the application</li>
+<li>only TCP/IP will be supported</li>
+<li>they will only be able to connect to other people in the darknet</li>
+<li>the traffic will be encrypted</li>
+<li>there will be privacy, but not at level of a native application (applications on the same &ldquo;IP&rdquo; will share route endpoints)</li>
+</ul>
+
+<p><strong>A native Skywire application</strong>
+- will have increased privacy (each application connection will have independent route endpoints)
+- will have application level control over routes and traffic policies  (low latency, high throughput and so on)</p>
+
+<p>External Traffic off the Skywire Darknet will go through a &ldquo;gateway&rdquo; which is similar to a VPS provider. Your IP to public will appear as the gateway server&rsquo;s IP. This is like a TOR exit node. However, for quality of service, a person will probably have to subscribe to an individual gateway service provider.</p>
+
+<p>Public gateways in TOR are unusable because their IPs are banned from most websites because of spamming. The IP addresses are also easier to identify than private gateways and are prime targets for monitoring. Private gateways are more difficult to identify and offer a higher quality of service.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

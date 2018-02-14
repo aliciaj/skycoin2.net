@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visión general de CX | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Visión general de CX">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-06">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/es/overview/cx-overview/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="CX">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../es/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../es/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../es/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../es/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../es/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../es/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../es/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../es/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Visión general de CX</h1>
+    </div>
+
+    <article id="content">
+        
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="2" -->
+
+<ul>
+<li><a href="#introducción-a-cx">Introducción a CX</a></li>
+<li><a href="#repositorio-del-proyecto">Repositorio del Proyecto</a></li>
+<li><a href="#sintaxis">Sintaxis</a></li>
+<li><a href="#affordances">&lsquo;Affordances&rsquo;</a>
+
+<ul>
+<li><a href="#restricciones-de-aridad">Restricciones de Aridad</a></li>
+<li><a href="#restricciones-de-tipo">Restricciones de Tipo</a></li>
+<li><a href="#restricciones-existenciales">Restricciones Existenciales</a></li>
+<li><a href="#restricciones-de-identificador">Restricciones de Identificador</a></li>
+<li><a href="#restricciones-de-límites">Restricciones de Límites</a></li>
+<li><a href="#restricciones-definidas-por-el-usuario">Restricciones Definidas por el Usuario</a></li>
+</ul></li>
+<li><a href="#sistema-de-tipado-estricto">Sistema de Tipado Estricto</a></li>
+<li><a href="#compilado-e-interpretado">Compilado e Interpretado</a>
+
+<ul>
+<li><a href="#loop-de-read-eval-print">&lsquo;Loop&rsquo; de Read-Eval-Print</a></li>
+<li><a href="#comandos-de-meta-programación">Comandos de Meta-Programación</a></li>
+<li><a href="#stepping">&lsquo;Stepping&rsquo;</a></li>
+<li><a href="#debugging-interactivo">&lsquo;Debugging&rsquo; Interactivo</a></li>
+</ul></li>
+<li><a href="#algoritmo-evolutivo-integrado">Algoritmo Evolutivo Integrado</a></li>
+<li><a href="#serialización">Serialización</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="introducción-a-cx">Introducción a CX</h1>
+
+<p>CX es tanto una especificación como un lenguaje de programación diseñado para
+adoptar un nuevo paradigma de programación basado en el concepto de &lsquo;affordances&rsquo;. &lsquo;Affordances&rsquo; permiten que un programa sepa qué acciones pueden y no pueden ser hechas por este. Por ejemplo, podemos preguntarle al programa qué argumentos se pueden enviar a una función, y el programa devolverá una lista de posibles acciones. Después de haber decidido qué acción de la lista es apropiada, podemos elegir una de las opciones y el programa
+aplicará la acción elegida. Como consecuencia del sistema &lsquo;Affordances&rsquo; de CX, un algoritmo de programación genética se construye y se proporciona como una función nativa, la cual se puede utilizar para optimizar la estructura del programa durante el tiempo de ejecución.</p>
+
+<p>La especificación CX declara que tanto un compilador como un intérprete
+deben ser accesibles para el programador. Se puede acceder al intérprete
+a través de un &lsquo;loop&rsquo; de read-eval-print, en el cual el programador puede agregar y eliminar interactivamente elementos a un programa. Una vez que el programa ha sido
+terminado, se puede compilar para aumentar su rendimiento.</p>
+
+<p>El sistema de tipado en CX es muy estricto. El único &ldquo;&lsquo;casting&rsquo; implícito&rdquo;
+ocurre cuando el analizador determina qué es un &lsquo;integer&rsquo;, un &lsquo;float&rsquo;, un
+&lsquo;boolean&rsquo;, un &lsquo;string&rsquo; o un &lsquo;array&rsquo;. Si una función requiere un integer de 64-bit, por ejemplo, uno tiene que usar una función de &lsquo;cast&rsquo; para convertirlo explícitamente al tipo requerido.</p>
+
+<p>Por último, un programa CX puede serializarse por completo en &lsquo;arrays&rsquo; de bytes,
+manteniendo su estado de ejecución y estructura. Esta versión serializada
+de un programa puede deserializarse más adelante y continuar su ejecución
+en cualquier dispositivo que tenga un intérprete/compilador de CX.</p>
+
+<p>En las siguientes secciones, las características de CX discutidas en los párrafos anteriores se describen más a detalle.</p>
+
+<h1 id="repositorio-del-proyecto">Repositorio del proyecto</h1>
+
+<p>El código fuente del proyecto se puede descargar desde su repositorio de Github: <a href="https://github.com/skycoin/cx">https://github.com/skycoin/cx</a>. El repositorio incluye el archivo de especificación, documentación, ejemplos, y el código fuente en sí.</p>
+
+<h1 id="sintaxis">Sintaxis</h1>
+
+<p>Como se mencionó en la introducción, CX es una especificación y un
+lenguaje de programación. La especificación CX no impone una sintaxis, sino más bien las estructuras y procesos que un dialecto CX debe
+implementar para ser considerado un CX. Como consecuencia, uno podría
+implementar dos dialectos CX, uno con una sintaxis parecida a &lsquo;Lisp&rsquo; y otro
+uno con una sintaxis parecida a &lsquo;C&rsquo;. Este lenguaje subyacente se llama Base CX,
+o &ldquo;el lenguaje base&rdquo;. En este documento, se utiliza una implementación para
+mostrar las capacidades de la especificación, aunque su propósito
+no es solo servir como una herramienta académica, sino convertirse en un completo y
+robusto lenguaje que se puede utilizar para fines generales.</p>
+
+<p>El CX utilizado en este documento tiene el objetivo de tener una sintaxis tan similar
+como sea posible a la sintaxis de &lsquo;Go&rsquo;.</p>
+
+<h1 id="affordances">Affordances</h1>
+
+<p>Un programador necesita tomar una plétora de decisiones mientras construye
+un programa, por ejemplo, cuántos parámetros debe recibir una función, cuántos
+parámetros deberá devolver, qué &lsquo;statements&rsquo; son necesarias para obtener la funcionalidad deseada, y qué argumentos deben enviarse como
+parámetros a las funciones de &lsquo;statement&rsquo;, entre otros. El sistema &lsquo;affordance&rsquo; en CX se puede consultar para obtener una lista de las posibles acciones
+que pueden ser aplicadas a un elemento. En este contexto, ejemplos de elementos son
+funciones, &lsquo;structs&rsquo;, módulos y expresiones.</p>
+
+<p>Sin tener un conjunto de reglas y hechos que dicten lo que debe ser la
+lógica y propósito detrás de un programa, uno puede determinar algunas
+restricciones básicas, que al menos garantizan que un programa será
+semánticamente correcto. El sistema &lsquo;affordance&rsquo; proporciona tales restricciones como la primera capa de filtrado, y se explican a continuación.</p>
+
+<h3 id="restricciones-de-aridad">Restricciones de Aridad</h3>
+
+<p>Las expresiones en CX pueden devolver múltiples valores. Esto crea un desafío
+para el sistema &lsquo;affordance&rsquo;, dado que el número de variables que reciben
+los argumentos de salida de una expresión deben coincidir con el número de
+salidas definidas por el operador de la expresión.</p>
+
+<pre><code>out1, out2, ..., outN := op(inp1, inp2, ..., inpM)
+</code></pre>
+
+<p>Si el ejemplo anterior es correcto, entonces <em>op</em> necesita generar <em>N</em>
+argumentos. Este problema puede ser aún más desafiante si
+consideramos que la definición de <em>op</em> puede ser cambiada por el sistema &lsquo;affordance&rsquo; en sí o por el usuario en el futuro: tan pronto como la definición de <em>op</em> cambie, nuevas &lsquo;affordances&rsquo; pueden ser aplicadas a cualquier expresión
+que use <em>op</em> como su operador, porque la cantidad de variables que
+reciben los argumentos del &lsquo;output&rsquo; de <em>op</em> ahora están en desajuste.</p>
+
+<p>La lógica anterior también insinúa que si el número de variables de recepción coincide con el número de parámetros de salida del operador de la expresión, la acción de agregar nuevas variables de recepción ya no puede ser realizada.</p>
+
+<p>Las restricciones de aridad también se aplican a los argumentos de entrada en expresiones, es decir, si una llamada a función ya tiene definidos todos sus argumentos de entrada,
+entonces el sistema &lsquo;affordance&rsquo; no debería enlistar agregar otro argumento
+como una posible acción. Del mismo modo, si una expresión está tratando de llamar a un
+operador con menos argumentos de los requeridos, el sistema &lsquo;affordance&rsquo;, al ser consultado, deberá decirle al programador que agregar un nuevo argumento a la llamada de función es posible.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<p><em>Nota: la concatenación de &lsquo;strings&rsquo; no ha sido implementada aún. También, las funciones de &lsquo;print&rsquo; siempre agregan una nueva línea al final del &lsquo;string&rsquo; impreso. Una versión futura de la implementación de CX presentada en este documento abordará estos problemas.</em></p>
+
+<pre><code>var edad i32 = 18
+var pasos i32 = 23
+
+func avanzar (dirección str, númeroPasos i32) () {
+    printStr(&quot;Avanzando:&quot;)
+    printStr(dirección)
+    printStr(&quot;Número de Pasos:&quot;)
+    printI32(númeroPasos)
+}
+
+func main () () {
+    avanzar(&quot;Norte&quot;)
+}
+</code></pre>
+
+<p>En el ejemplo anterior, la llamada a <em>avanzar</em> en la función <em>main</em>
+carece de un argumento. Si uno consulta el sistema &lsquo;affordance&rsquo;, el sistema
+deberia enlistar, entre otras cosas, una acción similar a:</p>
+
+<pre><code>...
+(k)       AddArgument avanzar edad
+(k+1)     AddArgument avanzar pasos
+...
+</code></pre>
+
+<p>donde &lsquo;k&rsquo; representa un índice arbitrario. Como se puede ver, el sistema &lsquo;affordance&rsquo; le está diciendo al programador que dos de las posibles acciones que se pueden son agregar otro argumento a la función de avance, y que las definiciones globales <em>edad</em> y <em>pasos</em> se encuentran entre las opciones para actuar como argumentos.</p>
+
+<p>Vale la pena mencionar que los &lsquo;affordances&rsquo; siempre deben ser enumerados, y su orden debe ser constante en varias llamadas a el sistema &lsquo;affordance&rsquo;. La razón detrás de esto es que el programador debería ser capaz de indicarle al sistema qué &lsquo;affordance&rsquo; se debe aplicar
+después de examinar el resultado de la consulta.</p>
+
+<h3 id="restricciones-de-tipo">Restricciones de Tipo</h3>
+
+<p>El comportamiento común en los lenguajes de programación es tener un sistema de tipado
+que restrinja al programador de enviar argumentos de tipos inesperados para llamar a las funciones. Incluso en lenguajes de programación débilmente tipados,
+una operación como <code>true /&quot; hello world &quot;</code> debería generar un error
+(a menos que sea el caso de algún <a href="https://en.wikipedia.org/wiki/Esoteric_programming_language">lenguaje esotérico</a>, claro está). CX sigue un <a href="#sistema-de-tipado-estricto">sistema de tipado estricto</a>, y argumentos que no son exactamente del tipo esperado no deben ser considerados como candidatos para acciones de &lsquo;affordances&rsquo; (aunque una solución alternativa es envolver estos argumentos en funciones de &lsquo;cast&rsquo; antes de mostrarse como &lsquo;affordances&rsquo;).</p>
+
+<p>Las restricciones de tipo también deben tenerse en cuenta al asignar un nuevo valor
+a una variable ya existente. En CX, una variable declarada de
+cierto tipo debe permanecer de ese tipo durante toda su vida (a menos que se elimine usando comandos/funciones de metaprogramación y sea creada de nuevo). Por lo tanto, una variable declarada para contener un &lsquo;integer&rsquo; de 32 bits no debería ser considerada como candidato para recibir un argumento de salida &lsquo;float&rsquo; de 64 bits, por así decirlo.</p>
+
+<h3 id="restricciones-existenciales">Restricciones Existenciales</h3>
+
+<p>Este tipo de restricción puede parecer trivial a primera vista: si
+un elemento no existe, un &lsquo;affordance&rsquo; que lo involucra no debería
+existir tampoco. Sin embargo, esta restricción se convierte en un desafío una vez que consideramos una situación en la cual se cambió el nombre de una función, y ya se ha utilizado como operador en expresiones a lo largo de un
+programa. Si el programa está en su forma de código fuente, este problema es
+reducido a un simple proceso de &ldquo;búsqueda y reemplazo&rdquo;, pero si es durante
+tiempo de ejecución, el sistema &lsquo;affordance&rsquo; se vuelve bastante útil: un &lsquo;affordance&rsquo;
+para cambiar el identificador vinculado a este operador.</p>
+
+<p>Incluso si un elemento no ha sido renombrado, determinar si un elemento
+existe o no, no es trivial. Los elementos a ser utilizados en &lsquo;affordances&rsquo;
+deben buscarse en el ámbito actual de la pila de llamadas, en el
+ámbito global, y en los ámbitos globales de otros módulos.</p>
+
+<h3 id="restricciones-de-identificador">Restricciones de Identificador</h3>
+
+<p>El agregar nuevos elementos con nombre son comúnmente acciones candidatas para &lsquo;affordances&rsquo;. Una restricción que surge al tratar de aplicar ese tipo de &lsquo;affordance&rsquo;,
+es asegurar un identificador único para el nuevo elemento para evitar
+redefiniciones. El sistema &lsquo;affordance&rsquo; puede generar un identificador único en el ámbito del elemento, o puede pedirle al programador que proporcionar un identificador adecuado.</p>
+
+<h3 id="restricciones-de-límites">Restricciones de Límites</h3>
+
+<p>CX proporciona funciones nativas para acceder y modificar elementos de
+&lsquo;arrays&rsquo;. Ejemplos de un lector de &lsquo;array&rsquo; y un escritor de &lsquo;array&rsquo; son:</p>
+
+<pre><code>readI32([]i32{0, 10, 20, 30}, 3)
+writeF32([]f32{0.0, 10.10, 20.20}, 1, 5.5)
+</code></pre>
+
+<p>En la primera expresión, se accede a un &lsquo;array&rsquo; de cuatro &lsquo;integers&rsquo; de 32 bits
+en el índice 3, lo que devuelve el último elemento del &lsquo;array&rsquo;. En la segunda
+expresión, el segundo elemento de un &lsquo;array&rsquo; de tres &lsquo;floats&rsquo; de 32 bits es
+cambiado a 5.5. Si se accede a cualquiera de estos &lsquo;arrays&rsquo; utilizando un
+índice negativo o un índice que excede la longitud del &lsquo;array&rsquo;, se genera un error &ldquo;fuera de límites&rdquo;.</p>
+
+<p>Al obedecer solo las restricciones de tipo, el sistema &lsquo;affordance&rsquo; dirá
+al programador que cualquier argumento &lsquo;integer&rsquo; de 32 bits se puede utilizar como un
+índice para acceder a cualquier &lsquo;array&rsquo;. Aunque estos programas compilarían, errores &ldquo;fuera de límites&rdquo; serían muy probables si el programador no prestar atención extra a lo que se está eligiendo para ser aplicado.</p>
+
+<p>El sistema &lsquo;affordance&rsquo; necesita filtrar los &lsquo;affordances&rsquo; de acuerdo con el siguiente criterio: descartar cualquier &lsquo;integer&rsquo; negativo de 32 bits y descartar
+cualquier &lsquo;integer&rsquo; de 32 bits que exceda la longitud del &lsquo;array&rsquo; que se envía a
+el lector o escritor de &lsquo;array&rsquo;.</p>
+
+<h3 id="restricciones-definidas-por-el-usuario">Restricciones Definidas por el Usuario</h3>
+
+<p><em>Nota: El sistema de restricciones definido por elusuario aún se encuentra en sus etapas experimentales.</em></p>
+
+<p>Las restricciones básicas descritas anteriormente deberían al menos garantizar que
+el programa no encuentre ningún error al tiempo de ejecución. Estas restricciones
+deberían ser suficientes para construir algunos sistemas interesantes, como el <a href="#algoritmo-evolutivo-integrado">algoritmo evolutivo</a> nativo de CX. Sin embargo,
+en algunas situaciones se requiere un sistema más robusto. Para este propósito,
+cláusulas, consultas y objetos se utilizan para describir el ambiente de un módulo. Estos elementos se definen mediante el uso de un intérprete de Prolog integrado y las funciones nativas de CX <em>setClauses</em>, <em>setQuery</em>, y <em>addObject</em>.</p>
+
+<p>La descripción más general de este sistema de restricciones es que el programador define una serie de cláusulas de Prolog (hechos y reglas), que será consultadas usando la consulta de Prolog definida, para cada uno de los objetos agregados. Esto difícilmente tendrá sentido para cualquiera que lea esto por primera vez. Un ejemplo aclararía un poco mejor los conceptos y proceso:</p>
+
+<pre><code>setClauses(&quot;mover(robot, norte, X, R) :- X = paredNorte, R = false.&quot;)
+
+setQuery(&quot;mover(robot, %s, %s, R).&quot;)
+</code></pre>
+
+<p>En este ejemplo, solo se define una regla. La regla puede ser aproximadamente
+interpretada como &ldquo;si el robot quiere moverse hacia el norte, pregunta qué es X. Si X
+es paredNorte, entonces no se puede mover&rdquo;. La consulta es solo un &lsquo;string&rsquo; de formato
+que servirá como una consulta para la acción <em>mover</em>, y para el elemento <em>robot</em> que recibirá dos argumentos más: una dirección y un objeto.</p>
+
+<p>Los objetos se pueden definir utilizando la función <em>addObject</em>:</p>
+
+<pre><code>addObject(&quot;paredSur&quot;)
+addObject(&quot;paredNorte&quot;)
+</code></pre>
+
+<p>El sistema de restricción consultará el sistema por cada uno de los objetos
+presentes en el módulo. En este ejemplo, el sistema primero realizará
+la consulta &ldquo;mover(robot, norte, paredSur)&rdquo; y el sistema responderá
+&ldquo;nil&rdquo;, lo que significa que no tiene ninguna regla definida para manejar
+tal situación, y la acción predeterminada es no descartar el
+&lsquo;affordance&rsquo;. La segunda consulta será &ldquo;mover(robot, norte, paredNorte)&rdquo;
+y el sistema responderá &ldquo;false&rdquo;. En este caso, el affordance no pasó la prueba y es descartado.</p>
+
+<p>El ejemplo anterior ilustra cómo estas reglas pueden negar un
+&lsquo;affordance&rsquo; usando una condición. Pero las reglas también se pueden usar para aceptar
+&lsquo;affordances&rsquo;, incluso después de ser negados por reglas anteriores.</p>
+
+<pre><code>setClauses(&quot;mover(robot, norte, X, R) :- X = paredNorte, R = false.
+    mover(robot, norte, X, R) :- X = agujeroNorte, R = true.&quot;)
+
+setQuery(&quot;mover(robot, %s, %s, R).&quot;)
+</code></pre>
+
+<p>La regla agregada en el código anterior le dice al sistema que acepte el movimiento del robot hacia el norte si hay un agujero. Si el &lsquo;array&rsquo; de objetos se deja como se definió anteriormente, el &lsquo;affordance&rsquo; de movimiento aún será descartado, pero si se evalúa <code>addObject (&quot;agujeroNorte&quot;)</code>, el &ldquo;agujeroNorte&rdquo; sera agregado y el robot podrá pasar
+a través de la pared usando el agujero.</p>
+
+<h1 id="sistema-de-tipado-estricto">Sistema de Tipado Estricto</h1>
+
+<p>Como se mencionó en la introducción, no hay un &lsquo;casting&rsquo; implícito en
+CX. Debido a esto, múltiples versiones para cada uno de los tipos primitivos
+se definen en el módulo central. Por ejemplo, existen cuatro funciones nativas para
+sumar: addI32, addI64, addF32 y addF64.</p>
+
+<p>El analizador adjunta un tipo predeterminado a los datos que encuentra
+en el código fuente: si se lee un &lsquo;integer&rsquo;, su tipo predeterminado es <em>i32</em>
+o &lsquo;integer&rsquo; de 32 bits; y si se lee un &lsquo;float&rsquo;, su tipo predeterminado es <em>f32</em> o &lsquo;float&rsquo; de 32
+bits. No hay ambigüedad con otros datos leídos por el analizador:
+<em>true</em> y <em>false</em> son siempre &lsquo;booleans&rsquo;; una serie de caracteres
+entre comillas dobles siempre son &lsquo;strings&rsquo;; un &lsquo;array&rsquo; necesita
+indicar su tipo antes de la lista de sus elementos, por ejemplo, <code>[]i64{1, 2,
+3}</code>.</p>
+
+<p>Para los casos en los que el programador necesita cambiar explícitamente un valor de un tipo a otro, el módulo central proporciona una cantidad de funciones de &lsquo;cast&rsquo; para trabajar con tipos primitivos. Por ejemplo, <code>byteAToStr</code> convierte un &lsquo;array&rsquo; de bytes a un &lsquo;string&rsquo;, y <code>i32ToF32</code> convierte un &lsquo;onteger&rsquo; de 32 bits
+a un &lsquo;float&rsquo; de 32 bits.</p>
+
+<h1 id="compilado-e-interpretado">Compilado e Interpretado</h1>
+
+<p>La especificación CX exige un dialecto CX para proporcionar al desarrollador
+con un intérprete y un compilador. Un programa interpretado es mucho más lento que su homólogo compilado, como es de esperarse, pero permitirá un programa más flexible. Esta flexibilidad proviene de funciones de meta-programación y &lsquo;affordances&rsquo;, que pueden modificar la estructura de un programa durante el tiempo de ejecución.</p>
+
+<p>Un programa compilado necesita una estructura más rígida que un programa interpretado, ya que muchas de las optimizaciones balancean esta rigidez. Como consecuencia, el sistema de &lsquo;affordance&rsquo; y cualquier función que opera sobre la estructura del programa tendrá una funcionalidad limitada en un programa compilado.</p>
+
+<p>El compilador debe usarse cuando el rendimiento es la mayor preocupación,
+mientras que un programa debe seguir siendo interpretado cuando el programador
+requiere toda la flexibilidad provista por las características de CX. En las siguientes subsecciones, se presentan algunas de estas características, sin el objetivo de servir como un tutorial, sino más bien como una mera introducción.</p>
+
+<h3 id="loop-de-read-eval-print">&lsquo;Loop&rsquo; de Read-Eval-Print</h3>
+
+<p>El &lsquo;loop&rsquo; read-eval-print (REPL) es una herramienta interactiva en la que el programador puede ingresar nuevos elementos del programa y evaluarlos. Comenzar una nueva sesión REPL imprimirá los siguientes mensajes en la consola:</p>
+
+<pre><code>CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+*
+</code></pre>
+
+<p>El &ldquo;*&rdquo; le dice al programador que el REPL está listo para recibir una nueva
+línea de código. El REPL continuará leyendo las entradas del usuario hasta que un punto y coma, y un caractér de nueva línea sean encontrados.</p>
+
+<p>Si no se cargó ningún programa inicialmente en el REPL, CX comenzará con
+un programa vacío. Esto se puede ver si el comando de meta-programación <code>:dProgram true;</code>
+se da como entrada:</p>
+
+<pre><code>* :dProgram true;
+Program
+
+*
+</code></pre>
+
+<p>El REPL solo imprime la palabra &ldquo;Program&rdquo; seguida de una línea vacía. Como primer paso, se pueden declarar un nuevo módulo y función:</p>
+
+<p>Como primeros pasos, un nuevo módulo <em>main</em> y una nueva función <em>main</em>
+deben declararse:</p>
+
+<pre><code>* package main;
+Program
+0.- Module: main
+
+* func main () () {};
+Program
+0.- Module: main
+	Functions
+		0.- Function: main () ()
+
+*
+</code></pre>
+
+<p>Como se puede ver, la estructura del programa se está imprimiendo cada vez que
+nuevo elemento se agrega al programa.</p>
+
+<h3 id="comandos-de-meta-programación">Comandos de Meta-Programación</h3>
+
+<p><code>:dProgram</code> se usó en la subsección anterior. Cualquier declaración que
+comienza con dos puntos (:) es parte de una categoría de instrucciones conocida como
+&ldquo;Comandos de meta-programación&rdquo;.</p>
+
+<p>La declaración de elementos en REPL indica a CX que los agregue a la estructura del programa. Pero, como en muchos otros lenguajes de programación, estas declaraciones están limitadas a solo ser agregadas, y como máximo a ser redefinidas.</p>
+
+<p>Pero, como en muchos otros lenguajes de programación que proporcionan un REPL, el
+programador está limitado a agregar elementos a un programa y, a lo mucho, redefinir elementos. Los comandos de meta-programación permiten al programador tener más control sobre como la estructura del programa esta siendo modificada.</p>
+
+<p><code>:dProgram</code>,<code>:dState</code>, y <code>:dStack</code> solo se usan con fines de &lsquo;debugging&rsquo;, al imprimir la estructura del programa, el estado actual de la llamada y la pila de llamadas completa al usuario, respectivamente. <code>:step</code> ordena al intérprete que avance o
+retroceda en su ejecución. <code>:package</code>,<code>:func</code>, y <code>:struct</code>, conocidos como <em>selectors</em>, se usan para cambiar el ámbito del programa. <code>:rem</code> da acceso al programador a <em>removers</em>, que pueden usarse de forma selectiva para remover elementos de la estructura de un programa. <code>:aff</code> se usa para acceder al sistema &lsquo;affordance&rsquo; de CX; este comando de meta-programación se usa para consultar y aplicar &lsquo;affordances&rsquo; para los diferentes elementos de un programa. Por último, <code>:cláuses</code> se utiliza para establecer las cláusulas de un módulo para ser utilizado por el <a href="#restricciones-definidas-por-el-usuario">sistema de restricciones definidas por el usuario</a>; <code>:object</code> y <code>:objects</code> se utilizan para agregar e imprimir objetos, respectivamente; y los dos últimos comandos de meta-programación: <code>:query</code>, que se utiliza para establecer la consulta del módulo, y <code>:dQuery</code> que es un ayudante para depurar las restricciones definidas por el usuario.</p>
+
+<h3 id="stepping">&lsquo;Stepping&rsquo;</h3>
+
+<p>Un programa iniciado en modo REPL se puede inicializar con una estructura de programa
+definida en un archivo de origen. Por ejemplo:
+directorio actual</p>
+
+<pre><code>$ ./cx --load examples/looping.cx
+
+</code></pre>
+
+<p>carga <code>looping.cx</code> desde el directorio de ejemplos (la lista completa de
+ejemplos se puede encontrar en el <a href="https://github.com/skycoin/cx">repositorio del proyecto</a>). Aunque un programa ha sido cargado, aún no ha sido ejecutado. En el REPL, para ejecutar un programa uno tiene que usar el comando de meta-programación <code>:step</code>. Para ejecutar un programa hasta el final, <code>:step 0;</code> debe ser utilizado. Pero <code>:step</code> es interesante porque puede tomar otros &lsquo;integers&rsquo; como su
+argumento (incluso &lsquo;integers&rsquo; negativos). Por ejemplo:</p>
+
+<pre><code>CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+* :dStack false;
+
+* :step 5;
+0
+
+* :step 5;
+1
+
+* :step 5;
+2
+
+*
+</code></pre>
+
+<p>El programa <em>examples/looping.cx</em> se ejecuta 5 pasos a la vez. Nosotros
+puede ver que se requieren 5 pasos para que el programa reevalúe la condición <em>while</em>, imprima el contador, y agregue 1 al contador.</p>
+
+<p>Del mismo modo, deberiamos &ldquo;retroceder en el tiempo&rdquo; si se indica al REPL que dé
+<code>:step -5</code>.</p>
+
+<pre><code>...
+
+* :step 5;
+2
+
+* :step -5;
+
+* :step 5;
+2
+
+*
+</code></pre>
+
+<p>Después de indicar a CX que avance 5 pasos nuevamente, el 2 se imprime nuevamente
+a la consola. Debe notarse que al contador no solo le es asignado un valor diferente. Lo que está sucediendo es que la pila de llamadas esta siendo revertida a un estado anterior.</p>
+
+<h3 id="debugging-interactivo">&lsquo;Debugging&rsquo; Interactivo</h3>
+
+<p>Un programa CX ingresará al modo REPL una vez que se haya encontrado un error. Este comportamiento le da al programador la oportunidad de depurar el programa antes de intentar reanudar su ejecución.</p>
+
+<p>En el siguiente ejemplo, se genera un error de división por 0, el REPL alerta al programador sobre el error, la última llamada en la pila de llamadas es arrojada, y el REPL continúa su ejecución.</p>
+
+<pre><code>CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+* package main;
+
+* func main () () {};
+
+* :func main;
+main
+:func main {...
+	* foo := divI32(5, 3);
+main
+:func main {...
+	* bar := divI32(10, 0);
+main
+:func main {...
+	* :step 0;
+fn:main ln:0, 	locals:
+&gt;&gt; 1
+fn:main ln:1, 	locals: foo: 1
+
+Call's State:
+foo:		1
+
+divI32() Arguments:
+0: 10
+1: 0
+
+0: divI32: Division by 0
+main
+:func main {...
+	*
+</code></pre>
+
+<p>Del mismo modo, si un programa se da como entrada al intérprete CX,
+sin llamar al REPL, pero se genera un error, el REPL será llamado para el programador o administrador del sistema para depurar el programa:</p>
+
+<pre><code>$ ./cx examples/program-halt.cx
+1
+
+Call's State:
+nonAssign_0:		1
+nonAssign_1:		1
+
+divI32() Arguments:
+0: 5
+1: 0
+
+5: divI32: Division by 0
+CX REPL
+More information about CX is available at https://github.com/skycoin/cx
+
+*
+</code></pre>
+
+<h1 id="algoritmo-evolutivo-integrado">Algoritmo Evolutivo Integrado</h1>
+
+<p>El sistema &lsquo;affordance&rsquo; y las funciones de meta-programación en CX permiten la flexibilidad de cambiar la estructura del programa de una manera supervisada. Sin embargo, las &lsquo;affordances&rsquo; pueden ser automatizadas teniendo una función que selecciona el índice del &lsquo;affordance&rsquo; por aplicarse.</p>
+
+<p><code>evolve</code> es una función nativa que construye funciones definidas por el usuario
+mediante el uso de &lsquo;affordances&rsquo; al azar. Un proceso iterativo se usa para probar.</p>
+
+<p><code>evolve</code> sigue los principios de la computación evolutiva. En
+en particular, &lsquo;evolve&rsquo; realiza una técnica llamada programación genética. La programación genética trata de encontrar una combinación de operadores y argumentos que resolverán un problema. Por ejemplo podrías instruir a <code>evolve</code> encontrar una combinación de operadores que, cuando se les envíe 10 como argumento, devuelvan 20. Esto puede sonar trivial, pero
+la programación genética y otros algoritmos evolutivos pueden resolver problemas muy complicados.</p>
+
+<p>En el directorio <em>examples</em> del repositorio, uno puede encontrar un
+ejemplo (<em>examples/evolving-a-function.cx</em>) que describe el proceso para
+evolucionar una funcion <a href="https://en.wikipedia.org/wiki/Curve_fitting">curve-fitting</a>.</p>
+
+<h1 id="serialización">Serialización</h1>
+
+<p>Un programa en CX se puede serializar parcial o totalmente a un &lsquo;array&rsquo; de bytes. Esta capacidad de serialización le permite a un programa crear una imagen del programa (similar a
+<a href="#https: //en.wikipedia.org/wiki/System_image">imágenes del sistema</a>), en la que se mantiene el estado exacto en el que se serializó el programa. Esto significa que un programa serializado puede ser deserializado, y reanudar su ejecución más adelante. La serialización también se puede usar para crear copias de seguridad.</p>
+
+<p>Un programa CX puede aprovechar sus características integradas para crear algunos escenarios interesantes. Por ejemplo, un programa puede ser serializado para crear una copia de seguridad de sí mismo, y comenzar un <a href="#algoritmo-evolutivo-integrado">algoritmo evolutivo</a> en una de sus funciones. Si el algoritmo evolutivo encuentra una función que tiene un mejor rendimiento que la definición anterior, uno puede quedarse con esta nueva versión del programa. Sin embargo, si el algoritmo evolutivo
+funcionó mal, el programa se puede restaurar a la copia de seguridad guardada. Todas estas tareas pueden ser automatizadas.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

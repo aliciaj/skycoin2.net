@@ -1,10 +1,11 @@
 ---
-title: "Skywire: Connect, Share, Earn."
-date: 2018-02-10T14:13:32-08:00
+title: 'Skywire: Connect, Share, Earn.'
+date: 2018-02-10 14:13:32 -0800
 signup: true
 herobg: hero-skywire
----
+type: page
 
+---
 <img src="/images/big-skywire-diagram.jpg" alt="Skywire Diagram">
 <img src="/images/little-skywire-diagram.jpg" alt="Skywire Diagram">
 

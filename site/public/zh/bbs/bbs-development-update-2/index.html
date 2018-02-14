@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>天空币BBS开发更新#2 | 天空币博客</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="天空币BBS开发更新#2">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-08-31">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/zh/bbs/bbs-development-update-2/">
+    <meta property="og:site_name" content="天空币博客">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="BBS">
+    
+    <meta property="og:tags" content="CXO">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../zh/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../zh/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../zh/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../zh/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../zh/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../zh/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../zh/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../zh/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">天空币BBS开发更新#2</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>自版本0.1发布以来已经有一个多月了，0.2即将到来！</p>
+
+<p>更改如下：</p>
+
+<ul>
+<li>使用最新的CXO版本（点对点自复制数据库）。</li>
+<li>重新实现CXO对象和树（为新功能准备）。</li>
+<li>引入“views”模块，轻松实现多种“查看”内容的不同方式。</li>
+<li>初始实现用户关注/忽略。</li>
+<li>完全改版的UI.</li>
+</ul>
+
+<h2 id="cxo变更">CXO变更</h2>
+
+<p>CXO已被大量重构，现在更快更稳定。 API已经被更好地与散列数组一起使用 - 具有恒定的访问时间，更快的复制速度和直接使用给定散列值访问元素的能力。</p>
+
+<p>CXO的这些变化促使BBS跟着改变了大部分的代码库。
+<a href="https://github.com/skycoin/cxo">在这里查看CXO仓库.</a></p>
+
+<h2 id="cxo数据结构变更">CXO数据结构变更</h2>
+
+<p>对数据结构的更改是为了解决以下问题：</p>
+
+<p>1.实现一个结构，以便将来可以将用户数据迁移到自己独立的根。
+2.轻松确定根序列之间的“差异”（a.k.a变化）。 这将对编译视图和向最终用户提供实时更新非常有用。
+3.轻松确定不同根类型的根对象类型。</p>
+
+<p><img src="../../../bbs/img/bbs_cxo_datastructure_v0.2.png" alt="Skycoin BBS v0.2 CXO Datastructure" /></p>
+
+<p><code>RootPage</code>对象决定了root的类型。 目前，所有数据都在每个板块上的一根根树下累积。 在未来，主题(线索)和用户将有自己的根。</p>
+
+<p>在将来，“BoardPage”将有一个公钥列表，而不是主题的hrefs，因为主题将有自己的根。 这使主题易于在板之间迁移。</p>
+
+<p><code>DiffPage</code>用于确定“BoardPage”根的根序列之间的变化。 这本质上是一组不断增加的数组，其中长度的增加被解释为变化。</p>
+
+<p><code>UsersPage</code>将成为一个公钥列表（这些将是一个公告板上的“参与者”）。 每个用户将有自己的根。</p>
+
+<h2 id="视图模块实现">视图模块实现</h2>
+
+<p>视图本质上只是一个接口：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#289;font-weight:bold">type</span> View <span style="color:#289;font-weight:bold">interface</span> {
+
+	<span style="color:#666;font-style:italic">// Init initiates the view.
+</span><span style="color:#666;font-style:italic"></span>	Init(pack <span style="color:#333">*</span>skyobject.Pack, headers <span style="color:#333">*</span>pack.Headers, mux <span style="color:#333">*</span>sync.Mutex) <span style="color:#66f;font-weight:bold">error</span>
+
+	<span style="color:#666;font-style:italic">// Update updates the view.
+</span><span style="color:#666;font-style:italic"></span>	Update(pack <span style="color:#333">*</span>skyobject.Pack, headers <span style="color:#333">*</span>pack.Headers, mux <span style="color:#333">*</span>sync.Mutex) <span style="color:#66f;font-weight:bold">error</span>
+
+	<span style="color:#666;font-style:italic">// Get obtains information from the view.
+</span><span style="color:#666;font-style:italic"></span>	Get(id <span style="color:#66f;font-weight:bold">string</span>, a <span style="color:#333">...</span><span style="color:#289;font-weight:bold">interface</span>{}) (<span style="color:#289;font-weight:bold">interface</span>{}, <span style="color:#66f;font-weight:bold">error</span>)
+}</code></pre></div>
+<p>目前，所有编译的视图都存储在内存中。 但是，当我们的用户群增加时，这将变得不切实际。 在将来的版本中，视图将存储在磁盘上的键值存储中。</p>
+
+<p>对于版本0.2，有两个<code>View</code>实现; 一个用于内容（Boards / threads / posts / votes），一个用于编辑每个用户的关注/忽略列表。</p>
+
+<h2 id="新用户体验">新用户体验</h2>
+
+<p>在写这篇文章的时候，几乎已经完成了。 下面链接是关于这项工作的YouTube视频：</p>
+
+<p><a href="https://youtu.be/Oue3WVkmGh4"><img src="https://i.ytimg.com/vi/Oue3WVkmGh4/0.jpg" alt="天空币 BBS展示4" /></a></p>
+
+<p>为了跟进最新的天空币BBS开发，加入我们在Telgram上的<a href="https://t.me/skycoinbbs">天空币BBS社区</a></p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

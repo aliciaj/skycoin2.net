@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #49 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #49">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-01-03">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin.">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-49/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Roadmap">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #49</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>The tutorial on Cipher is done.</p>
+
+<p><a href="https://github.com/skycoin/skycoin/wiki/cipher">https://github.com/skycoin/skycoin/wiki/cipher</a></p>
+
+<p>This library handles address generation, deterministic wallets, signing transactions with private keys and encrypting data to a public key. It is the core of the Skycoin Project. The coin and everything else is built on top of this.</p>
+
+<h2 id="roadmap">Roadmap</h2>
+
+<p>In Bitcoin a public key has an address that you can send coins to. In Skycoin at the coin level it is exactly the same.</p>
+
+<p>At the networking level, however public keys can represent servers, devices, darknet nodes or processes. They are communication end-points. So if all the light bulbs in your house had CPUs and were running Skywire, they would have public keys and you would be able to connect to them from a hash of the public key and turn the lights on and off from the internet. For some end-points knowledge of a private-key might represent access, ownership, or ability to control.</p>
+
+<p>The cryptography layer is done. It does everything we need and its a solid foundation.</p>
+
+<p>The coin layer is done and completely implemented, but is undergoing a few updates. It just needs to be launched publicly. Some parts of consensus are still in development and will be added when they are ready (they need the next layer to operate).</p>
+
+<p>The next layer is a networking layer. That is where the new development is shifting. The coin has components which will be rebuilt on top of this layer. The network layer is focused on public keys as communication end-points. The darknet router overlays the internet or other networking infrastructure. It provides transit between nodes and has some privacy properties. This is similar to a VPN. This is the layer that file storage, processes and user applications interface with. This is the foundation for &ldquo;Distributed Applications&rdquo; (no one knows what a distributed application is yet because they dont exist, but they will defined as whatever can be built on top of these platforms).</p>
+
+<p>This is part of the effort to &ldquo;build the new internet&rdquo;. Which came out of OP Redecentralize. There are hundreds of projects working towards this goal, but they are currently, fragmented, non-interoperable and a small piece of a much larger mosaic that is emerging. We are trying to set the standards for the base layers.</p>
+
+<p>Then the meshnet is just a physical extension of the lower layer. It is just a physical connectivity between darknet nodes, that transits locally in dedicated point-to-point manner instead of over the legacy internet. The legacy internet can in-turn be tunneled over the meshnet, just as a VPN tunnels traffic. As soon as the networking layer is done, the physical meshnet is plug-and-play in a few hundred lines of code. This is part of the transition towards community ownership of the networking infrastructure and escaping centralized corporate control of communications.</p>
+
+<p>The ideological roots of Bitcoin originated in agoric computing. Bitcoin is neither inevitable, nor apolitical but rather was a vision of the future. It took thirty years until each pieces of the solution, until each each component was developed to enable the realization of that future. Satoshi assembled the pieces and we have sat back for six years in reflection of what Bitcoin means in historical context and what it means for the direction society is heading. In the past year, there has been frantic land grab as people staked out key positions in the ecosystem, staking claims to wealth, but also a lack of direction, lack of purpose, an aimlessness, coupled with a feeling of banality. Disillusionment with the level of impact Bitcoin has had. Greed, theft and betrayal as all the scammers in the world flock to the GoxCoins.</p>
+
+<p>As soon as components of the networking stage are finished, the project development will need to branch out and begin pursuing multiple sub-projects to achieve relevance. This is the stage focused on user acquisition and being useful, rather than being a marketing gimmick. There is a very non-linear relationship between work and output here. There are dozens of things we could build or do that people would say &ldquo;thats cool&rdquo; but have no impact and there are things that are trivial and have a potentially very high impact.</p>
+
+<p>We perceive a huge gap between the visionary, future sounding unproven &ldquo;revolutionary features&rdquo; of smart contracts and distributed widgets that send investors and marketers in to a frenzy and the very banal demands of usability, security and other requirements for mainstream adaption that still need to be addressed.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

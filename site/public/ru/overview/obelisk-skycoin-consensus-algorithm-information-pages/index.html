@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obelisk: Алгоритм консенсуса Skycoin |Информация | Skycoin Блог</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Obelisk: Алгоритм консенсуса Skycoin |Информация">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-09">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/ru/overview/obelisk-skycoin-consensus-algorithm-information-pages/">
+    <meta property="og:site_name" content="Skycoin Блог">
+    
+    
+    <meta property="og:tags" content="Overview">
+    
+    <meta property="og:tags" content="Consensus">
+    
+    <meta property="og:tags" content="Obelisk">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ru/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ru/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ru/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ru/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ru/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ru/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ru/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ru/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Obelisk: Алгоритм консенсуса Skycoin |Информация</h1>
+    </div>
+
+    <article id="content">
+        
+
+<ul>
+<li><a href="#[Важное-о-консенсусах">Важное о консенсусах</a>
+
+<ul>
+<li><a href="#Почему-консенсус">Почему консенсус?</a></li>
+<li><a href="#Высокая-масштабируемость-и-низкое-энергопотребление">Высокая масштабируемость и низкое энергопотребление</a></li>
+<li><a href="#Устойчивость-к-скоординированным-атакам">Устойчивость к скоординированным атакам</a></li>
+<li><a href="#%E2%80%9CАтака-51-процент%E2%80%9D">“Атака 51 процент”</a></li>
+<li><a href="#Скрытые-IP-адреса">Скрытые IP адреса</a></li>
+<li><a href="#Независимость-в-синхронизации-часов">Независимость в синхронизации часов</a></li>
+<li><a href="#Два-типа-узлов-консенсуса-и-создания-блоков">Два типа узлов: консенсуса и создания блоков</a></li>
+</ul></li>
+<li><a href="#Как-работает-алгоритм-консенсуса-Skycoin">Как работает алгоритм консенсуса Skycoin</a></li>
+<li><a href="#Ссылки">Ссылки</a></li>
+</ul>
+
+<h2 id="важное-о-консенсусах">Важное о консенсусах</h2>
+
+<h3 id="почему-консенсус">Почему консенсус?</h3>
+
+<p>Алгоритм консенсуса Skycoin (называемый «Obelisk») синхронизирует состояние
+блокчейна Skycoin во всех узлах сети. Это приводит к согласованному учету,
+то есть при вычислении баланса результат, который получает каждый из узлов
+для конкретного открытого ключа (или адреса), всегда одинаков.</p>
+
+<h3 id="высокая-масштабируемость-и-низкое-энергопотребление">Высокая масштабируемость и низкое энергопотребление</h3>
+
+<p>По своей конструкции алгоритм представляет собой масштабируемую и
+не требующую больших вычислительных мощностей альтернативу алгоритму
+proof-of-work, поэтому как работа алгоритм консенсуса, так и действия
+по созданию блоков могут выполняться на бюджетном оборудовании, которое
+имеет невысокую цену и низкое потребление энергии, что делает криптовалютную
+сеть более надежной для возможных попыток централизации (т. е. узлы будут
+доступными для широкой публики).</p>
+
+<h3 id="устойчивость-к-скоординированным-атакам">Устойчивость к скоординированным атакам</h3>
+
+<p>Наш алгоритм консенсуса (1) сходится быстро, (2) требует минимального
+сетевого трафика и (3) может противостоять крупномасштабной
+скоординированной атаке хорошо организованной сети вредоносных узлов.
+Алгоритм не итеративный, быстрый, может быть запущен в разреженной сети
+при наличии связи только с ближайшим соседом (например, в ячеистой сети)
+и хорошо работает при наличии в подключении циклических графов (то есть
+подключение
+<a href="https://ru.wikipedia.org/wiki/Направленный_ациклический_граф">DAG-типа</a>
+не требуется).</p>
+
+<h3 id="атака-51-процент">“Атака 51 процент”</h3>
+
+<p>При определенных условиях базовая версия алгоритма может быть подвержена
+этой атаке. В частности, когда модифицированные или злонамеренные узлы
+находятся в большинстве и транслируют протокол-совместимый и UTXO-
+совместимый блок-кандидат, такой блок выиграет консенсус.
+Однако блок с любым видом несоответсвия отбрасывается
+(не модифицированным) алгоритмом прежде, чем блок получит шанс
+участвовать в консенсусном соревновании.</p>
+
+<p>Узлы консенсуса могут опционально использовать концепцию «Web-of-Trust»,
+при этом связанные с консенсусом сообщения, поступающие от неизвестных
+узлов (т. е. подписанных ненадежными открытыми ключами), игнорируются.</p>
+
+<p>Когда включен режим Web-of-Trust, запуск очень большого количества узлов
+злонамеренного консенсуса для того, чтобы (a) вызвать форк блокчейна или
+(б) нарушить процесс консенсуса, будет иметь незначительный эффект, если
+только подавляющее большинство участников Web-of-Trust невольно
+не включают эти вредоносные узлы в свои локальные списки доверенных узлов.</p>
+
+<h3 id="скрытые-ip-адреса">Скрытые IP адреса</h3>
+
+<p>Узлы адресуются через их криптографический открытый ключ.
+IP-адрес узла известен только тем узлам, к которым он подключен напрямую.</p>
+
+<h3 id="независимость-в-синхронизации-часов">Независимость в синхронизации часов</h3>
+
+<p>Алгоритм не использует «настенные часы» (то есть календарную дату/время).
+Вместо этого для вычисления внутреннего времени узла используются номера
+блоков, которые извлекаются из проверенных сообщений, связанных с
+консенсусом и блокчейном.
+Это можно неофициально назвать «часы блока».</p>
+
+<h3 id="два-типа-узлов-консенсуса-и-создания-блоков">Два типа узлов: консенсуса и создания блоков</h3>
+
+<p>Консенсусный узел получает данные  от одного или нескольких узлов,
+создающих блоки. Алгоритмы для консенсуса и создания блоков разные,
+но оба они оперируют одними и теми же структурами данных.
+Мы отдельно упоминаем о создании блоков, так как это поможет понять
+алгоритм консенсуса и то, как он интегрируется с остальной системой.</p>
+
+<p>Оба типа узлов всегда производят авторизацию и проверку фальсифиции даты.
+Мошеннические или недействительные сообщения выявляются, отбрасываются и
+далее не передаются; узлы одного ранга, участвующие в подозрительных
+действиях, отключаются, а их открытые ключи попадают в бан.</p>
+
+<h2 id="как-работает-алгоритм-консенсуса-skycoin">Как работает алгоритм консенсуса Skycoin</h2>
+
+<p>Для упрощения пояснений предположим:  (1) каждый узел одновременно
+участвует и создании блоков, и в консенсусе,
+и (2) принимаются генерируемые ненадежными узлами сообщения,
+связанные с консенсусом, то есть никакая фильтрация на основе Web-of-Trust
+не выполняется. Полная реализация (т. е. без этих упрощающих предположений)
+будет доступна на GitHub проекта Skycoin.
+Результаты моделирования и подробный, схематический пример одного
+консенсусного исследования см. <a href="#ссылки">[1]</a>.
+Моделирование сети с доверительными отношениями, хотя и с использованием
+алгоритма, отличного от Skycoin, можно найти в <a href="#ссылки">[2]</a>.
+Вот описание алгоритма консенсуса Skycoin:</p>
+
+<ol>
+<li><p><em>Создание блоков</em>. Каждый блок-узел собирает новые транзакции,
+проверяет их против UTXO (Unspent Transaction Output - &ldquo;список&rdquo;
+непотраченных транзакций), упаковывает совместимые транзакции
+в новый блок и транслирует блок в сеть.</p></li>
+
+<li><p><em>Сбор блоков</em>.  Каждый консенсусный узел собирает блоки,
+сгенерированные узлами-создателями блоков и помещает, указав
+последовательный номер блока, в контейнер (отдельно от блокчейна).</p></li>
+
+<li><p><em>Выбор выигрышного блока</em>. Каждый консенсусный узел, получив
+ достаточно большое количество [*1] блоков-кандидатов или при
+ выполнении других критериев, находит блок, созданный наибольшим
+ числом узлов-созидателей.
+ Связи решаются <a href="https://ru.wikipedia.org/wiki/Детерминированность">детерминистически</a>.
+Такой блок помечается как «локальный победитель» [*2] и добавляется
+к локальному блокчейну. Пара ключ-значение, соответствующая
+ номеру локального победителя, удаляется из контейнера, таким
+ образом освобождается хранилище. Хеш-код местного победителя
+     транслируется/объявляется.</p></li>
+
+<li><p><em>Шаг верификации</em>. Каждый узел сохраняет статистику по локальным
+     победителям, о которых сообщают другие узлы. Когда местные победители
+ будут сообщены всеми или большинством узлов [*3], узел определяет
+     глобального победителя для текущего порядкового номера. Если глобальным
+победителем является локальный победитель, тогда узел продолжает
+ действовать по указанной схеме. В противном случае узлы принимают решение,
+ основываясь на внешних данных и локальных журналах, или
+ (а) провести повторную синхронизацией с сетью
+или (б) отказаться от участия в консенсусе и/или создании блока,
+или &copy; о сохранения блокчейна и запросе экстренной остановки.</p></li>
+</ol>
+
+<p>[*1]: Это один из конфигурационных параметров алгоритма.</p>
+
+<p>[*2]: В подобных идеальных условиях локальные победители (для присвоения
+     текущего порядкового номера блока) одни и те же, то есть включают
+     идентичный набор транзакций. Разница возникает из-за латентности сети,
+     высокой частоты транзакций, доставки сообщений вне очереди, потери
+     сообщения, сбоя в узле или действий вредоносных узлов и т.д.</p>
+
+<p>[*3]: Это число может быть определено, например, путем запроса к доверенным
+узлам рекурсивно сообщить открытые ключи их доверенных узлов.</p>
+
+<h2 id="ссылки">Ссылки</h2>
+
+<p>[1] johnstuartmill et al. A Distributed Consensus Algorithm for
+Cryptocurrency Networks.
+<a href="https://github.com/skycoin/whitepapers/blob/master/whitepaper_skycoin_consensus_v01_jsm.pdf">https://github.com/skycoin/whitepapers/blob/master/whitepaper_skycoin_consensus_v01_jsm.pdf</a>
+2016</p>
+
+<p>[2] Houwu Chen and Jiwu Shu. Sky: an Opinion Dynamics Framework and Model
+for Consensus over P2P Network.
+<a href="https://github.com/skycoin/whitepapers/blob/master/Sky-%20Opinion%20Dynamics%20Based%20Consensus%20for%20P2P%20Network%20with%20Trust%20Relationships.pdf">https://github.com/skycoin/whitepapers/blob/master/Sky-%20Opinion%20Dynamics%20Based%20Consensus%20for%20P2P%20Network%20with%20Trust%20Relationships.pdf</a>
+201?</p>
+
+<p><em>Читайте для подробностей:</em></p>
+
+<ul>
+<li><em><a href="https://www.skycoin.net/whitepapers">Skycoin Consensus Algorithm Whitepapers</a></em></li>
+<li><em><a href="../../../statement/obelisk-the-skycoin-consensus-algorithm/">Obelisk The Skycoin Consensus Algorithm</a></em></li>
+</ul>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

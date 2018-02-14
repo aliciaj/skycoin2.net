@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overview of Obelisk: Distributed Consensus  | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Overview of Obelisk: Distributed Consensus ">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2013-12-27">
+    
+    <meta property="og:description" content="A brief overview of the distributed consesus behind Skycoin ">
+    <meta property="og:url" content="https://www.skycoin.net/drafts/overview-of-obelisk/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Obelisk">
+    
+    <meta property="og:tags" content="Consensus">
+    
+    <meta property="og:tags" content="Bitcoin">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Overview of Obelisk: Distributed Consensus </h1>
+    </div>
+
+    <article id="content">
+        
+
+<h1 id="overview-of-obelisk-distributed-consensus">Overview of Obelisk: Distributed Consensus</h1>
+
+<p>In Obelisk, each person runs their own Obelisk nodes. Each node has a set of trust relationships with other nodes. Each node has a list of servers it &ldquo;trusts&rdquo;. A new node can be initialized by randomly choosing a few dozen existing nodes to trust, with only two or three of the nodes being nodes run by trusted institutions or persons.</p>
+
+<p>Servers publish &ldquo;blocks&rdquo; every 5 seconds. Blocks are sequential and it is detected when a node backdate a block or retroactively change an already published block. It uses a very secure linked time stamping scheme.  The block publishing creates a &ldquo;public broadcast channel&rdquo; and that is the key primitive in the Obelisk protocol.</p>
+
+<p>In Ripple, clients can cheat or fail to obey the protocol and it cant be detected. Consensus protocols only work if all nodes obey the protocol, which is a bad assumption if there are financial incentives to cheat.</p>
+
+<p>Skycoin solves this by having Obelisk nodes publish both their decisions and the data needed to reconstruct the decisions. Obelisk nodes receive blocks from other nodes, time stamp them and include the time stamps in their blocks. We can audit servers for causal violations.</p>
+
+<p>Obelisk nodes publish enough information for 3rd parties to replicate their internal state. During an audit a 3rd party can reconstruct the internal state and simulate decisions of a particular Obelisk node and will produce the same successor block as what the server published, if the server is in fact obeying the protocol.</p>
+
+<p>If a node cheats, other nodes will sever their trust relationship with it. You can create a proof that a node cheated and it give it other node and they can verify it. If the node is colluding or something something strange, that is not provably wrong, it can be detected because decisions are public and people running nodes can make decisions about their trust relationships with the colluding nodes.</p>
+
+<p>Obelisk is a very simple protocol. Obelisk is designed to be simple to allow  security properties to be easily modeled with mathematics and simulation.</p>
+
+<h2 id="alternative-uses-for-obelisk">Alternative Uses for Obelisk:</h2>
+
+<p>With a well defined state machine and scripting language, Obelisk may in in the future support OT style digital contacts off the block chain which can be executed between counter parties. Each counter party would be an Obelisk node with its own independent block chain.</p>
+
+<p>However, right now are extremely focused on a version of Obelisk specialized for blockchain consensus.</p>
+
+<h2 id="open-problems">Open Problems:</h2>
+
+<p>When Skycoin development began, there were two open problems with Obelisk. The first problem was proving the identity of a node without key reuse. Key reuse introduces timing side channel attacks and weakens the crpytographic security of Skycoin. In our security audits we found that attacks on the identity infrastructure for Obelisk nodes would be significantly easier than attacks on the Skycoin blockchain and transaction infrastructure.</p>
+
+<p>It was not until last week that we had a solution to avoid key reuse in the identity protocol. We have a very good solution now, that meets our standards for elegance and cryptographic security.</p>
+
+<p>The second problem, is that consensus protocols need to take into account netsplits. If connectivity is severed between two sub-graphs of the network, it breaks some of the assumptions when the networks remerge. We like the assumption that a block is consensus is final once it has been reached because it eliminates double spending. However, if two subgraphs come to different irreversible consensus results during a netsplit, it is problematic. Either the fork must become permanent or consensus is not in-fact irreversible.</p>
+
+<p>The netsplit problem is not unique to Skycoin and is actually much worse in Bitcoin. There are netsplit based attacks on Bitcoin that allow double spending. The ability to selectively control the peers a node can connect to, enables very specific and highly targeted attacks that Bitcoin does not even attempt to address. This attacks require control of hardware at the ISP level and we have not seen them yet, so they are still theoretical.</p>
+
+<p>Skycoin has a preliminary solution to the network split problem.  However, it is not high on our priority list right now.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

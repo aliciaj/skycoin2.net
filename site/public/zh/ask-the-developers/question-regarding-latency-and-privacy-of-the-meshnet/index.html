@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>讨论Meshnet的时间延迟和隐私安全相关的问题 | 天空币博客</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="讨论Meshnet的时间延迟和隐私安全相关的问题">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-08-18">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/zh/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/">
+    <meta property="og:site_name" content="天空币博客">
+    
+    
+    <meta property="og:tags" content="Ask the Developers">
+    
+    <meta property="og:tags" content="Skywire">
+    
+    <meta property="og:tags" content="Meshnet">
+    
+    <meta property="og:tags" content="Privacy">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../zh/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../zh/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../zh/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../zh/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../zh/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../zh/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../zh/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../zh/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">讨论Meshnet的时间延迟和隐私安全相关的问题</h1>
+    </div>
+
+    <article id="content">
+        
+
+<p>本博客文章内容讲所的是_Skywire_形成初期，在_Skywire_这个名字被使用之前的内容。此文章是从_2014_年_8_月_9_日发表在_bitcointalk_论坛上的博客文章改编而来。</p>
+
+<p>引用自：<strong>CraigM</strong> 2014年8月9日，上午 07:20:24</p>
+
+<blockquote>
+<p>Meshnet是设计作为一个效益可以媲美tor的隐私工具, 并且拥有更低的延迟时间，这是正确的吗？</p>
+
+<p>Meshnet的设计是允许资金节点通过Skycoin里的小额支付来覆盖带宽成本，是正确的吗？这难道不会让所有的节点因为需要存储交易记录和详细的发布日志而造成压力吗？（在他们个人的区块链上）这些日志描述了所有与通过他们节点发送的所有人相对应的交易数据。这看起来像是它将允许任何第三方来进行流量相关攻击，就像tor上的攻击，差异在于你不需要登录到那些连接。即便他们最后没有被公开检查，记录一切数据看起来或许有些真正面对的问题（执法部门可能会对它提出要求，同时也可能占用太多的存储空间）</p>
+
+<p>最初的版本是打算用中心化的路由服务器来寻找路由，这正确吗？这意味着如果你想和某人连接（另一端），你必须把这件事告诉第三方，这正确吗？除非这个逻辑被修复，否则它似乎并不是一个类似Tor的隐私服务。是否有理由相信你们将很快能找到解决方案吗？（或者：解决这个问题难不？）</p>
+
+<p>你如何找到一条可靠的第三方的路由，同时为你寻找另一端的路由？ 我假设你这是特殊情况（不要使用发送方路由选择），但如果您有其他（更好的）设计，我会感兴趣和好奇。</p>
+</blockquote>
+
+<h2 id="问题回应">问题回应</h2>
+
+<p>是的。它实际上比TCP/IP更加快速。ISPs采用&quot;热土豆&quot;的路由算法。Skywire的延迟不应当比TCP/IP来得糟糕，因此理论上应当更快。</p>
+
+<p><strong>其隐私保证是：</strong></p>
+
+<ul>
+<li>每个节点只知道前一个节点和下一个节点</li>
+<li>节点之间的传输是加密的</li>
+<li>传输是端对端加密的</li>
+<li>传输的节点是受保护的，通过对节点的端点采用公钥，从而达到传输免受中间人的攻击。（网络地址在网络上使用的是公钥）</li>
+<li>所有加密都是可拒绝和短期的 （节点间会快速更换加密KEY）</li>
+<li>协议的设计是为了阻止深度数据包检查来识别运行节点用户的企图（不是固定端口，不是已知的电报形式的明文，主干网和其它的节点是固定连接的）</li>
+</ul>
+
+<p>所以它可以解释为像一个支持带宽小额支付功能的超低延迟的TOR。</p>
+
+<ul>
+<li>它比HTTPS更安全，隐私性更高</li>
+<li>它比TOR更快，可扩展，但是仍然会遭受一些攻击</li>
+<li>它的代码比TOR的简单得多，因此后门和隐藏的弱点被展示的空间很小。在整个实施过程中只有一个外部依赖方（截止最新开发进展，已经消除了全部外部依赖)</li>
+<li>如果你需要绝对地安全，并且能够防御时序攻击，你应该使用一个混合服务或者在暗网上运行比特信息。</li>
+<li>所有低延迟网络都可能受到时序攻击</li>
+</ul>
+
+<h2 id="路由服务器">路由服务器</h2>
+
+<p>是的，路由服务器是个薄弱环节。为了实现最大化的隐私，你应当运行你自己的内部路由服务器。</p>
+
+<p>另一种方式是你使用公共路由服务器，你可以设计通过多个节点连接到它，它虽然也无法识别出你。尽管如此，相比起来还是运行自己的节点路由器会更加安全。</p>
+
+<h2 id="处理带宽的小额支付">处理带宽的小额支付</h2>
+
+<p>小额支付的处理方式是通过一个第三方。节点连接到一个&rdquo;<strong>网关</strong>&ldquo;，然后在网关存储一枚币来获得一个信用点。目前节点可以和网关产生匿名的64位的&quot;地址&quot;。网关不知道连接过来的节点身份。它只知道此连接节点之前通过的上一个节点。</p>
+
+<p>因此，你如果给网关搭建12个连接，它们看起来像连接到网关的12个不同的用户。最终发送到网关的通信将通过一个非同步的通信通道。</p>
+
+<p>节点传输着带宽，其他连接到同一个网关的节点也一样传输着带宽。两个节点间将可以通过网关彼此支付，而网关不会知道两个节点的身份。当一个节点有足够多的币信用值时（一整个币，节点收到的币如果每满一个数量后，就自动存储及生成一个新地址另存进去），它就能生成一个新的天空币地址，并且可以把币从原有地址转到新的地址。因此网关每次只需要处理单个节点比较小的交易金额（同时可以多个节点进行）。</p>
+
+<p>天空币协议中的网关是指任何持有天空币的服务器或者代表第三方的账户余额。网关是存款机构，它们有自己的协议和API。</p>
+
+<p><strong>最终结论：</strong></p>
+
+<ul>
+<li>将会由多个网关和交叉网关进行币的转移。这些交易的发生是在私下进行的，除非你从网关提币，否则交易数据不会出现在区块链上。</li>
+<li>网关间的通信将通过一个非同步的通信通道来进行（每一个信息通道将得到一个新的匿名身份）</li>
+<li>网关协议的部分是OT实现，允许你证明某个特别的网关是否在盗币。你给网关的每个API函数调用签名，然后网关执行并签名相关的输出。因此会有一个串连起来的签名和交易数据，在不伪造签名的情况下网关无法让币消失。如果你把币存储在某个地方，而它们却消失了，你因此可以公布你的交易日志，然后被指定的节点拥有者不得不展示一个你所授权的币的去向日志。如果它们不能调用一个已签名的API函数，那就证明它正在撒谎或者不诚实。</li>
+<li>最终交易所将会按照网关协议来运行</li>
+</ul>
+
+<p>你建议对于网关内的内部余额来搭建一条公链是很有意思的。我认为将内部交易放到一条公共的个人区块链上，可以保护用户隐私的同时也可以让交易所保持诚实。</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

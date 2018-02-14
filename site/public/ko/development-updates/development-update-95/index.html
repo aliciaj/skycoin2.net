@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개발 업데이트 #95 | Skycoin 블로그</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="개발 업데이트 #95">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2016-01-06">
+    
+    <meta property="og:description" content="스카이코인 관련 최신 개발동향 소개">
+    <meta property="og:url" content="https://www.skycoin.net/ko/development-updates/development-update-95/">
+    <meta property="og:site_name" content="Skycoin 블로그">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ko/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ko/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ko/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ko/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ko/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ko/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ko/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ko/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">개발 업데이트 #95</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h2 id="크로스-컴파일">크로스 컴파일</h2>
+
+<h5 id="스카이코인을-크로스-컴파일-하려면-다음을-수행하십시오">스카이코인을 크로스 컴파일 하려면 다음을 수행하십시오.:</h5>
+
+<p>Gox 설치:
+<a href="https://github.com/mitchellh/gox">https://github.com/mitchellh/gox</a> 을 방문하십시오.
+gox -build-toolchain</p>
+
+<h5 id="컴파일">컴파일:</h5>
+
+<p>cd $GOPATH/src/github.com/skycoin/skycoin
+$G = skycoin-0.3
+gox -output=&ldquo;$HOME/builds/$G-{{.OS}}-{{.Arch}}/$G/address_gen&rdquo; ./address_gen/
+gox -output=&ldquo;$HOME/builds/$G-{{.OS}}-{{.Arch}}/$G/skycoin&rdquo; ./skycoin/</p>
+
+<p>이것은 ARM 용 NaCl(기본 클라이언트)을 출력합니다.
+- 기본 클라이언트는 Google이 브라우저 및 전화로 메모리 보안, 응용 프로그램을 실행하기 위한 실행용 샌드박스입니다.
+- 이것은 네트워킹 및 디렉토리 액세스를 추상화 합니다.
+- 이것은 Android 앱의 차세대 표준이며 플래시를 대체할 것입니다.
+- 이것은 기본 클라이언트용 LLVM과 유사한 휴대용 기본 클라이언트입니다.</p>
+
+<p>현재, 대부분의 거래소는 PHP와 원격 코드 실행 취약점을 포함하는 XML 기반 소프트웨어 라이브러리를 사용하고 있습니다.
+새로운 악용사례가 매일마다 늘고 있으며, 기존의 취약점들도 발전하고 있습니다. 비트코인도 마찬가지입니다.</p>
+
+<p>장기간 보안을 유지하려면, 가능한 한 기계에 가깝게 다가가야 합니다.
+과도한 의존성에 대한 의존성을 없애기 위해 우리가 이것을 조작할 수 없는 비 메모리 보안 언어로 구현하였으며, 악용하거나 코드 라인 수를 줄일 수 없습니다.
+- 라즈베리 파이 또는 ARM 하드웨어(마이크로 코드 악용 없음, MIPS 또는 RISC-V 지향)
+- L4 커널(35,000라인, +2만 라인 대체, 공식적으로 입증됨, 사용자 공간의 모든 동작 및 드라이버)
+- Libre 리눅스 드라이버 (바이너리 blobs을 대체하는 오픈소스 드라이버)
+- 최종 빌드</p>
+
+<p>이것은 적절한 보안과 지역 사용자를 위한 최소한의 요구사항입니다.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

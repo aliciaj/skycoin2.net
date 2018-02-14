@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorial de CX: Uso de Affordances para construir una pequeña aventura basada en texto | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Tutorial de CX: Uso de Affordances para construir una pequeña aventura basada en texto">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-20">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/es/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="CX">
+    
+    <meta property="og:tags" content="CX Tutorials">
+    
+    <meta property="og:tags" content="Affordances">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../es/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../es/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../es/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../es/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../es/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../es/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../es/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../es/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Tutorial de CX: Uso de Affordances para construir una pequeña aventura basada en texto</h1>
+    </div>
+
+    <article id="content">
+        
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="2" -->
+
+<ul>
+<li><a href="#introducción">Introducción</a></li>
+<li><a href="#arquitectura-desafio-respuesta">Arquitectura desafio-respuesta</a></li>
+<li><a href="#sistema-de-affordance">Sistema de Affordance</a></li>
+<li><a href="#objetos">Objetos</a></li>
+<li><a href="#conclusión">Conclusión</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="introducción">Introducción</h1>
+
+<p>Este tutorial presenta un &ldquo;juego&rdquo; basado en texto
+(el usuario no interactúa con el programa y no puede
+influir en las decisiones del personaje) que usa una
+<a href="#arquitectura-desafio-respuesta">Arquitectura desafio-respuesta</a> para determinar cuáles
+son las posibles acciones que puede hacer el personaje
+del juego. El código fuente completo se puede encontrar
+en el <a href="https://github.com/skycoin/cx">repositorio de CX</a>, en el archivo <em>examples/text-based-adventure.cx</em>.</p>
+
+<p>El juego describe la aventura de un viajero que está
+escapando de un monstruo (después de todo, Halloween viene el mes siguiente).
+Si el viajero sobrevive cierto número de horas
+(bueno, estas son solo repeticiones en un bucle <em>for</em>),
+el monstruo dejará de perseguir al viajero. A continuación,
+un ejemplo de una sesión:</p>
+
+<pre><code>El viajero sigue el camino, asegurándose de ignorar dolor alguno.
+Aullando y gruñendo, el monstruo viene.
+La valentía aparece a la vista, con la esperanza de vivir otra noche.
+Ingenuo e incluso tonto, pero el acto del viajero deja al monstruo entumecido.
+Norte, este, oeste, sur. Cualquier dirección es buena,
+siempre y cuando no se encuentre ningún monstruo.
+Aullando y gruñendo, el monstruo viene.
+El viajero huye, y la cobardía lo deja vivir otro día.
+
+Sobreviviste.
+</code></pre>
+
+<p>Si el viajero decide luchar contra el monstruo y su intento heroico
+falla, el juego termina. Un ejemplo de finalización de juego es:</p>
+
+<pre><code>Norte, este, oeste, sur. Cualquier dirección es buena,
+siempre y cuando no se encuentre ningún monstruo.
+Aullando y gruñendo, el monstruo viene.
+La valentía aparece a la vista, con la esperanza de vivir otra noche.
+Pero el fracaso describe esta lucha y, de repente, esta aventura llega a su fin.
+
+Has muerto.
+
+Call's State:
+flag:			true
+nonAssign_32:		&quot;&quot;
+
+halt() Arguments:
+0: &quot;Has muerto.&quot;
+
+65: call to halt
+</code></pre>
+
+<p>Como puede ver, se genera un error si muere (esto es adecuado,
+es una situación aterradora para un programador).</p>
+
+<h1 id="arquitectura-desafio-respuesta">Arquitectura desafio-respuesta</h1>
+
+<p>En esta arquitectura, surge una pregunta y diferentes agentes (en
+este caso, funciones) deben responder esta pregunta. Una simple pregunta
+que se puede preguntar es &ldquo;¿Quién puede ser ejecutado en este momento?&rdquo; y aquellas
+funciones que se puedan ejecutar lo harán.</p>
+
+<p>Los siguientes prototipos de funciones representan las posibles acciones que
+puede ocurrir durante la aventura del viajero.</p>
+
+<pre><code>func walk (flag bool) () {}
+func noise (flag bool) () {}
+func consider (flag bool) () {}
+func chance (flag bool) () {}
+func fightResult (flag bool) () {}
+func theEnd (flag bool) () {}
+</code></pre>
+
+<h1 id="sistema-de-affordance">Sistema de Affordance</h1>
+
+<p>Otra función debe coordinar las llamadas de función. En este caso,
+El sistema de Affordance de CX se usa para determinar si una acción
+puede ser ejecutada o no.</p>
+
+<pre><code>yes := true
+no := false
+
+remArg(&quot;walk&quot;)
+affExpr(&quot;walk&quot;, &quot;yes|no&quot;, 0)
+:tag walk;
+walk(false)
+</code></pre>
+
+<p>En el código anterior, <em>remArg()</em> busca una expresión con la etiqueta &ldquo;walk&rdquo;
+y elimina su argumento. Esto se hace para lograr que
+el sistema de affordance registre los argumentos que se pueden enviar al
+operador de expresión. A continuación, <em>affExpr()</em> le dice a CX &ldquo;entre todos los
+argumentos que se pueden enviar a <em>walk</em>, dime si <em>yes</em> o no <em>no</em> puede
+ser utilizado como argumentos, y aplica la opción <em>0th</em> de la lista de affordance
+que devuelvas&rdquo;.</p>
+
+<p>El procedimiento anterior se aplica a todas las acciones que pueden suceder
+durante la aventura del viajero. Para cada una de estas acciones, se consultan
+las siguientes reglas para determinar si la acción debería ser
+permitida o no:</p>
+
+<pre><code>setClauses(&quot;
+          aff(walk, yes, X, R) :- X = monster, R = false.
+          aff(noise, yes, X, R) :- X = monster, R = false.
+
+          aff(consider, yes, X, R) :- R = false.
+          aff(chance, yes, X, R) :- R = false.
+          aff(fightResult, yes, X, R) :- R = false.
+          aff(theEnd, yes, X, R) :- R = false.
+
+          aff(consider, yes, X, R) :- X = monster, R = true.
+          aff(chance, yes, X, R) :- X = fight, R = true.
+          aff(fightResult, yes, X, R) :- X = fight, R = true.
+          aff(theEnd, yes, X, R) :- X = died, R = true.
+        &quot;)
+</code></pre>
+
+<p>La primera regla se puede leer como: &ldquo;Se me preguntará si se está considerando
+enviar el argumento <em>yes</em> a la acción <em>walk</em>. Pero si el objeto
+<em>monster</em> está presente, entonces este argumento es <em>no</em> automáticamente.</p>
+
+<p>Las reglas en el segundo bloque (las 4 reglas después de la primera línea vacía)
+le dicen al sistema de affordance que &ldquo;nunca&rdquo; acepte un argumento <em>yes</em>. Hacemos
+esto porque queremos que este sea el comportamiento predeterminado, pero podemos
+más tarde declarar reglas que anulen este comportamiento. Este proceso de anulación
+ocurre con las últimas 4 reglas. Básicamente, este bloque de reglas
+le está diciendo a CX que acepte <em>yes</em> como argumentos si un objeto en particular está
+presente en la pila de objetos.</p>
+
+<h1 id="objetos">Objetos</h1>
+
+<p>Algunas de las acciones agregan o eliminan objetos de la pila de objetos. Por
+ejemplo, siempre que la acción <em>noise</em> decida hacer que el monstruo
+aparezca, <em>addObject(&ldquo;monster&rdquo;)</em> se ejecuta. Si el viajero decide
+huir de la lucha, el objeto &ldquo;monster&rdquo; se elimina de la pila de objetos.</p>
+
+<p>En el caso de la acción <em>chance</em>, el monstruo puede decidir
+perdonar al viajero unos segundos más para ver lo que decide hacer.
+Para hacer esto, el objeto &ldquo;fight&rdquo; se elimina (ya que el monstruo no quiere comenzar una pelea),
+pero el objeto &ldquo;monster&rdquo; permanece.</p>
+
+<h1 id="conclusión">Conclusión</h1>
+
+<p>El sistema de affordance de CX utiliza objetos y
+reglas para tomar decisiones complejas sobre cómo se filtrarán las affordances.</p>
+
+<p>Al usar objetos, podemos decidir qué acciones se activarán o desactivarán.
+Para este ejemplo, se está considerando una pequeña cantidad de acciones
+para este proceso de activación, y el beneficio de usar esta arquitectura
+podría parecer inútil a primera vista. Sin embargo, se podrían definir
+reglas más complejas que involucren más objetos, y una sola regla podría
+estar a cargo de activar varios nodos en una gran red de acciones. Además,
+en este ejemplo solo se consideran dos argumentos posibles: <em>yes</em> y <em>no</em>; podríamos
+tener más argumentos y acciones que acepten diferentes tipos de argumentos
+distintos de booleans.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

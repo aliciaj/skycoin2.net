@@ -6,10 +6,76 @@
     <description>Recent content on Skycoin Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2018 11:15:15 -0800</lastBuildDate>
     
 	<atom:link href="https://www.skycoin.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://www.skycoin.net/skycoin-project/faq/</link>
+      <pubDate>Sun, 11 Feb 2018 11:15:15 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/skycoin-project/faq/</guid>
+      <description>SkyCoin SkyWire Mining Platform Business   SkyCoin What is SkyCoin? SkyCoin is the centerpiece of a large ecosystem; a currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees &amp; quantum resistance, SkyCoin is a third-generation cryptocurrency supporting a new free and open internet.
+SkyCoin&#39;s consensus algorithm, Obelisk, is designed to achieve true decentralization of blockchain consensus, replacing both Proof of Work (“PoW”) and Proof of Stake (“PoS”).</description>
+    </item>
+    
+    <item>
+      <title>Skyledger: A platform powering the next generation of cryptocurrencies  </title>
+      <link>https://www.skycoin.net/skyledger/</link>
+      <pubDate>Sun, 11 Feb 2018 06:30:24 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/skyledger/</guid>
+      <description>Join the growing number of companies growing their business on our blockchain. Skyledger gives developers a private blockchain that is fully customizable to their needs and equipped with all the benefits of Skycoin technology. A launchpad for scalable, secure, and decentralized applications by 3rd parties—Skyledger is the solution for businesses seeking to adopt blockchain architecture. Obelisk consensus algorithm Skycoin developers spent seven years of research and development building out Obelisk, a consensus algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Downloads</title>
+      <link>https://www.skycoin.net/downloads/</link>
+      <pubDate>Sat, 10 Feb 2018 20:34:13 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://www.skycoin.net/roadmap/</link>
+      <pubDate>Sat, 10 Feb 2018 20:34:04 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/roadmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whitepapers</title>
+      <link>https://www.skycoin.net/whitepapers/</link>
+      <pubDate>Sat, 10 Feb 2018 20:33:43 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/whitepapers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skycoin: A cryptocurrency incentivizing decentralization, powering the blockchain internet</title>
+      <link>https://www.skycoin.net/skycoin-project/</link>
+      <pubDate>Sat, 10 Feb 2018 16:10:22 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/skycoin-project/</guid>
+      <description>Skycoin is the only cryptocurrency that doesn’t build in economic incentives for centralization This website was created by Peter Collingridge.
+ 
+First and second generation cryptocurrencies were built on systems that were always going to devolve into centralization: Skycoin isn’t.  In first generation crypros, proof-of-work concentrated influence among mining pools based on who can supply the resource intensive miners with cheap power. In second generation cryptos, proof-of-stake gave more and more power to those who had a greater stake, creating incentivization of centralization.</description>
+    </item>
+    
+    <item>
+      <title>Skywire: Connect, Share, Earn.</title>
+      <link>https://www.skycoin.net/skywire/</link>
+      <pubDate>Sat, 10 Feb 2018 14:13:32 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/skywire/</guid>
+      <description>Skywire isn’t just a network. It’s anonymous, decentralized protocol poised to become the internet of the future.  Access a private, decentralized network. Earn money to power it. Imagine an internet that gives individuals and businesses total privacy and control of their data: One that lets you do everything you do today – except instead of only being able to pay for this service, you also earn income by using it.</description>
+    </item>
     
     <item>
       <title>Skycoin Digest: The 5 Pillars of Skycoin [INFOGRAPHIC]</title>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CXチュートリアル: アフォーダンスを使って小さなテキストベースのアドベンチャーを構築する | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="CXチュートリアル: アフォーダンスを使って小さなテキストベースのアドベンチャーを構築する">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-20">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/ja/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="CX">
+    
+    <meta property="og:tags" content="CX Tutorials">
+    
+    <meta property="og:tags" content="Affordances">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ja/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ja/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ja/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ja/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ja/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ja/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ja/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ja/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">CXチュートリアル: アフォーダンスを使って小さなテキストベースのアドベンチャーを構築する</h1>
+    </div>
+
+    <article id="content">
+        
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="2" -->
+
+<ul>
+<li><a href="#%e3%82%a4%e3%83%b3%e3%83%88%e3%83%ad%e3%83%80%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3">イントロダクション</a></li>
+<li><a href="#%e3%83%81%e3%83%a3%e3%83%ac%e3%83%b3%e3%82%b8%2d%e3%83%ac%e3%82%b9%e3%83%9d%e3%83%b3%e3%82%b9%2d%e3%82%a2%e3%83%bc%e3%82%ad%e3%83%86%e3%82%af%e3%83%81%e3%83%a3">チャレンジ-レスポンス アーキテクチャ</a></li>
+<li><a href="#%e3%82%a2%e3%83%95%e3%82%a9%e3%83%bc%e3%83%80%e3%83%b3%e3%82%b9%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0">アフォーダンスシステム</a></li>
+<li><a href="#%e3%82%aa%e3%83%96%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88">オブジェクト</a></li>
+<li><a href="#%e7%b5%90%e8%ab%96">結論</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="イントロダクション">イントロダクション</h1>
+
+<p>このチュートリアルでは、チャレンジ-レスポンス アーキテクチャを使用して、ゲームのキャラクターが実行可能なアクションが何であるかを判断する、テキストベースの「ゲーム」（ユーザーがプログラムとやりとりすることはなく、キャラクターの意思決定に影響を与えることはできない）を示します 。
+完全なソースコードは、 <a href="https://github.com/skycoin/cx">CXのリポジトリ</a>の*examples/text-based-adventure.cx*ファイルにあります。</p>
+
+<p>このゲームは、モンスターから逃れる旅行者の冒険を描いています（ハロウィンはとうとう来月に迫っています）。
+旅行者が特定の時間を生き抜いた場合（これは*for*ループの繰り返しです）、モンスターは旅行者の追跡をやめます。
+セッションの例は次のとおりです。</p>
+
+<pre><code>The traveler keeps following the lane, making sure to ignore any pain.
+Howling and growling, the monster is coming.
+Bravery comes into sight, in the hope of living for another night.
+Naive, and even dumb, but the traveler's act leaves the monster numb.
+North, east, west, south. Any direction is good,
+as long as no monster can be found.
+Howling and growling, the monster is coming.
+The traveler runs away, and cowardice lets him live for another day.
+
+You survived.
+</code></pre>
+
+<p>旅行者がモンスターと戦うことを決意し、彼の英雄的な試みが失敗した場合、ゲームは終了します。
+ゲームのエンディングの例は次のとおりです。</p>
+
+<pre><code>North, east, west, south. Any direction is good,
+as long as no monster can be found.
+Howling and growling, the monster is coming.
+Bravery comes into sight, in the hope of living for another night.
+But failure describes this fend and, suddenly, this adventure comes to an end.
+
+You died.
+
+Call's State:
+flag:			true
+nonAssign_32:		&quot;&quot;
+
+halt() Arguments:
+0: &quot;You died.&quot;
+
+65: call to halt
+</code></pre>
+
+<p>ご覧のように、あなたが死ぬとエラーが発生します（これはプログラマーにとって恐ろしい状況です）。</p>
+
+<h1 id="チャレンジ-レスポンス-アーキテクチャ">チャレンジ-レスポンス アーキテクチャ</h1>
+
+<p>このアーキテクチャでは、質問が提起され、異なるエージェント（この場合は関数）がその質問に答える必要があります。
+問われ得るシンプルな質問は、「誰がこの時点で実行され得るか？」であり、実行が許されている機能はそうするでしょう。</p>
+
+<p>次の関数プロトタイプは、旅行者の冒険中に発生する可能性があるアクションを表しています。</p>
+
+<pre><code>func walk (flag bool) () {}
+func noise (flag bool) () {}
+func consider (flag bool) () {}
+func chance (flag bool) () {}
+func fightResult (flag bool) () {}
+func theEnd (flag bool) () {}
+</code></pre>
+
+<h1 id="アフォーダンスシステム">アフォーダンスシステム</h1>
+
+<p>別の関数は関数呼び出しを整合させる必要があります。
+この場合、CXのアフォーダンスシステムが、アクションの実行が許されているかどうかを決定することに使われます。</p>
+
+<pre><code>yes := true
+no := false
+
+remArg(&quot;walk&quot;)
+affExpr(&quot;walk&quot;, &quot;yes|no&quot;, 0)
+:tag walk;
+walk(false)
+</code></pre>
+
+<p>上記のコードでは、<em>remArg()</em> は &ldquo;walk&rdquo;タグを持つ式を探し、その引数を削除します。
+これは、式の演算子に送ることができる引数をアフォーダンスシステムに列挙させるために行われます。
+次に、*affExpr()*　はCXに、「*walk*に送ることができるすべての引数の中で、<em>yes</em> か <em>no</em> が引数として使えるか私に教えてくれ、そしてあなたが返すアフォーダンスリストのインデックス0のオプションを適用してくれ」と指示します。</p>
+
+<p>前の手順は、旅行者の冒険の間に起こり得るすべての行動に適用されます。
+これらのアクションごとに、アクションが許可されるべきかどうかを決定するために、次のルールが照会されます。</p>
+
+<pre><code>setClauses(&quot;
+          aff(walk, yes, X, R) :- X = monster, R = false.
+          aff(noise, yes, X, R) :- X = monster, R = false.
+
+          aff(consider, yes, X, R) :- R = false.
+          aff(chance, yes, X, R) :- R = false.
+          aff(fightResult, yes, X, R) :- R = false.
+          aff(theEnd, yes, X, R) :- R = false.
+
+          aff(consider, yes, X, R) :- X = monster, R = true.
+          aff(chance, yes, X, R) :- X = fight, R = true.
+          aff(fightResult, yes, X, R) :- X = fight, R = true.
+          aff(theEnd, yes, X, R) :- X = died, R = true.
+        &quot;)
+</code></pre>
+
+<p>最初のルールは次のように読むことができます。「あなたが*walk*アクションに*yes*引数を送ることを検討しているなら、このルールは照会されます。オブジェクト*monster*が存在する場合、この引数はオプションではありません。</p>
+
+<p>2番目のブロック（最初の空行の後の4つのルール）のルールは、アフォーダンスシステムに*yes*引数を &ldquo;決して&rdquo;受け入れないよう指示します。
+これをデフォルトの動作にしたいのでこれを行いますが、後でこの動作をオーバーライドするルールを宣言することができます。
+このオーバーライドプロセスは、最後の4つのルールで発生します。
+基本的に、このルールブロックは、特定のオブジェクトがオブジェクトスタックに存在する場合、引数として*yes*を受け入れるようにCXに指示します。</p>
+
+<h1 id="オブジェクト">オブジェクト</h1>
+
+<p>いくつかのアクションは、オブジェクトスタックにオブジェクトを追加または削除します。
+例えば、*noise*アクションがモンスターを出現させることを決めると、<em>addObject(&ldquo;monster&rdquo;)</em> が実行されます。
+旅行者が戦いから逃げることを決定した場合、「モンスター」オブジェクトはスタックから取り除かれます。</p>
+
+<p>*chance*アクションの場合は、モンスターは、旅行者が次に何をするか見極めるために、彼に数秒与えることを決定できます。
+これを行うには、「戦闘」オブジェクトが削除されます（モンスターはまだ戦いを開始したくないため）、しかし、「モンスター」オブジェクトは残ります。</p>
+
+<h1 id="結論">結論</h1>
+
+<p>CXのアフォーダンスシステムは、オブジェクトとルールを使用して、アフォーダンスをどのようにフィルタリングするかについて複雑な決定を行います。</p>
+
+<p>オブジェクトを使用することで、どのアクションを有効または無効にするかを決めることができます。
+この例では、この有効化プロセスでは少量のアクションしか考慮されていないので、このアーキテクチャを使用する利点は、一見すると無意味に見える可能性があります。
+それにもかかわらず、より多くのオブジェクトを含むより複雑なルールを定義することができ、単一のルールは、大規模なネットワークで複数のノードを有効化する役割を担うことができます。
+また、この例では、考えられる2つの引数*yes*と*no*のみが考慮されますが、より多くの引数や、ブーリアン以外のさまざまな種類の引数を受け入れるアクションを持つこともできます。</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

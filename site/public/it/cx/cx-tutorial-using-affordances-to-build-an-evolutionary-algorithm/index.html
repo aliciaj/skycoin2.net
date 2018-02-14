@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CX Tutorial: Using Affordances to Build a Small Text-based Adventure | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="CX Tutorial: Using Affordances to Build a Small Text-based Adventure">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-09-20">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/it/cx/cx-tutorial-using-affordances-to-build-an-evolutionary-algorithm/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="CX">
+    
+    <meta property="og:tags" content="CX Tutorials">
+    
+    <meta property="og:tags" content="Affordances">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../it/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../it/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../it/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../it/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../it/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../it/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../it/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../it/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">CX Tutorial: Using Affordances to Build a Small Text-based Adventure</h1>
+    </div>
+
+    <article id="content">
+        
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="2" -->
+
+<ul>
+<li><a href="#introduzione">Introduzione</a></li>
+<li><a href="#architettura-reattiva">Architettura reattiva</a></li>
+<li><a href="#sistema-di-convenienza">Sistema di convenienza</a></li>
+<li><a href="#oggetti">Oggetti</a></li>
+<li><a href="#conclusione">Conclusione</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="introduzione">Introduzione</h1>
+
+<p>Questo tutorial presenta un &ldquo;gioco&rdquo; basato sul testo (l&rsquo;utente non interagisce
+con il programma, e non può influenzare le decisioni del personaggio) che utilizza una
+<a href="#architettura-reattiva">Architettura reattiva</a> a
+determinare quali sono le possibili azioni che il personaggio del gioco può fare.
+Il codice sorgente completo può essere trovato in
+<a href="https://github.com/skycoin/cx">CX&rsquo;s repository</a>, nel file * examples / text-based-adventure.cx *.</p>
+
+<p>Il gioco descrive l&rsquo;avventura di un viaggiatore che fugge da un
+mostro (Halloween arriverà il prossimo mese, dopotutto). Se il viaggiatore
+sopravvive un certo numero di ore (beh, queste sono solo iterazioni in un loop <em>for</em>),
+il mostro la smetterà di inseguire il viaggiatore. Un esempio di
+una sessione di gioco è qui descritta:</p>
+
+<pre><code>Il viaggiatore continua a seguire il percorso, assicurandosi di ignorare qualsiasi dolore.
+Ululando e ringhiando, il mostro sta arrivando.
+Il coraggio entra in scena, nella speranza di vivere per un'altra notte.
+Ingenuo, e anche stupido, ma l'atto del viaggiatore lascia intorpidito il mostro.
+Nord Est Ovest Sud. Ogni direzione è buona,
+finché non si trova alcun mostro.
+Ululando e ringhiando, il mostro sta arrivando.
+Il viaggiatore scappa via e la codardia lo lascia vivere per un altro giorno.
+
+Sopravvivi.
+</code></pre>
+
+<p>Se il viaggiatore decide di combattere il mostro e il suo eroico tentativo
+fallisce, il gioco finisce. Un esempio di fine del gioco è:</p>
+
+<pre><code>Nord, Est, Ovest, Sud. Ogni direzione è buona,
+finché non si trova alcun mostro.
+Ululando e ringhiando, il mostro sta arrivando.
+Il coraggio entra in scena, nella speranza di vivere per un'altra notte.
+Ma il fallimento descrive questa parvenza e, improvvisamente, quest'avventura finisce.
+
+Muori.
+
+Call's State:
+flag:			true
+nonAssign_32:		&quot;&quot;
+
+halt() Arguments:
+0: &quot;Muori.&quot;
+
+65: call to halt
+</code></pre>
+
+<p>Come puoi vedere, viene generato un errore se muori (questo è appropriato,
+è una situazione spaventosa per un programmatore).</p>
+
+<h1 id="archittettura-reattiva">Archittettura reattiva</h1>
+
+<p>In questa architettura, viene posta una domanda e diversi agenti (in
+questo caso, funzioni) devono rispondere a questa domanda. Una semplice domanda
+quello che può essere chiesto è &ldquo;Chi deve essere eseguito in questo momento?&rdquo; e coloro
+le cui funzioni che possono essere eseguite lo faranno.</p>
+
+<p>I seguenti prototipi di funzioni rappresentano le possibili azioni che
+possono accadere durante l&rsquo;avventura del viaggiatore.</p>
+
+<pre><code>func walk (flag bool) () {}
+func noise (flag bool) () {}
+func consider (flag bool) () {}
+func chance (flag bool) () {}
+func fightResult (flag bool) () {}
+func theEnd (flag bool) () {}
+</code></pre>
+
+<h1 id="sistema-di-convenienza">Sistema di convenienza</h1>
+
+<p>Un&rsquo;altra funzione deve coordinare le chiamate delle funzioni. In questo caso,
+Il sistema di convenienza di CX viene utilizzato per determinare se ad un&rsquo;azione è consentita
+l&rsquo;esecuzione o no.</p>
+
+<pre><code>yes := true
+no := false
+
+remArg(&quot;walk&quot;)
+affExpr(&quot;walk&quot;, &quot;yes|no&quot;, 0)
+:tag walk;
+walk(false)
+</code></pre>
+
+<p>Nel codice sopra, * remArg () * cerca un&rsquo;espressione con l&rsquo;etichetta &ldquo;walk&rdquo;
+e rimuove il suo argomento. Questo è fatto al fine di elencare al
+sistema di convenineza gli argomenti che possono essere inviati
+all&rsquo;operatore di espressione. Successivamente, * affExpr () * sta dicendo a CX &ldquo;tra tutti gli
+argomenti che possono essere inviati a * walk *, dimmi se * yes * or no * no * possa
+essere usato come argomento, e applicare l&rsquo;opzione * 0th * dall&rsquo;elenco di convenienza
+vhe viene restituito. &ldquo;</p>
+
+<p>La procedura precedente viene applicata a tutte le azioni che possono accadere
+durante l&rsquo;avventura del viaggiatore. Per ciascuna di queste azioni,
+vengono richieste le seguenti regole per determinare se l&rsquo;azione dovrebbe essere
+permessa o no:</p>
+
+<pre><code>setClauses(&quot;
+          aff(walk, yes, X, R) :- X = monster, R = false.
+          aff(noise, yes, X, R) :- X = monster, R = false.
+
+          aff(consider, yes, X, R) :- R = false.
+          aff(chance, yes, X, R) :- R = false.
+          aff(fightResult, yes, X, R) :- R = false.
+          aff(theEnd, yes, X, R) :- R = false.
+
+          aff(consider, yes, X, R) :- X = monster, R = true.
+          aff(chance, yes, X, R) :- X = fight, R = true.
+          aff(fightResult, yes, X, R) :- X = fight, R = true.
+          aff(theEnd, yes, X, R) :- X = died, R = true.
+        &quot;)
+</code></pre>
+
+<p>La prima regola può essere letta come &ldquo;Sarò interrogato se stai considerando
+di inviare l&rsquo;argomento * yes * all&rsquo;azione * walk *. Se l&rsquo;oggetto
+* monster * è presente, quindi questo argomento * non * è un&rsquo;opzione. &ldquo;</p>
+
+<p>Le regole nel secondo blocco (le 4 regole dopo la prima riga vuota)
+dicono al sistema di convenienza di accettare &ldquo;mai&rdquo; un argomento * si *. Noi facciamo
+questo perché vogliamo che questo sia il comportamento predefinito, ma possiamo farlo
+successivamente dichiarare regole che prevalgono su questo comportamento. Questo processo <em>override</em>
+avviene con le ultime 4 regole. Fondamentalmente, questo blocco di regole
+sta dicendo a CX di accettare * sì * come argomenti se un particolare oggetto è
+presente nella pila degli oggetti.</p>
+
+<h1 id="oggetti">Oggetti</h1>
+
+<p>Alcune azioni aggiungono o rimuovono oggetti dalla pila di oggetti. Per
+esempio, ogniqualvolta l&rsquo;azione * noise * decida di far apparire il mostro
+* addObject (&ldquo;monster&rdquo;) * viene eseguito. Se il viaggiatore decide di farlo
+scappare dal combattimento, l&rsquo;oggetto &ldquo;mostro&rdquo; viene rimosso dalla pila.</p>
+
+<p>Nel caso dell&rsquo;azione * chance *, il mostro può decidere di risparmiare
+il viaggiatore ancora qualche secondo per vedere cosa deciderà di fare.
+Per fare ciò, l&rsquo;oggetto &ldquo;fight&rdquo; viene rimosso (come il mostro
+non voglio ancora iniziare un combattimento), ma l&rsquo;oggetto &ldquo;mostro&rdquo; rimane.</p>
+
+<h1 id="conclusione">Conclusione</h1>
+
+<p>Il sistema di convenienza di CX utilizza oggetti e regole per prendere complesse
+decisioni su come verranno filtrate le convenienze.</p>
+
+<p>Usando gli oggetti, possiamo decidere quali azioni saranno attivate o
+disattivate. Per questo esempio, una piccola quantità di azioni sono considerate
+per questo processo di attivazione ma il vantaggio di utilizzare questa
+architettura potrebbe sembrare inutile a prima vista. Tuttavia, regole
+più complesse potrebbero essere definite che coinvolgono più oggetti e una singola
+regola potrebbe essere responsabile dell&rsquo;attivazione di diversi nodi in una grande rete
+di azioni. Inoltre, in questo esempio ci sono solo due possibili argomenti
+considerati: * sì * e * no *; potremmo avere più argomenti e azioni
+che accettani diversi tipi di argomenti diversi dai booleani.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

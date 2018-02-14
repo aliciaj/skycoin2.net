@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Update #2 | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  
+    <meta property="og:title" content="Development Update #2">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-02-01">
+    
+    <meta property="og:description" content="Release notes highlighting the current development behind Skycoin  ">
+    <meta property="og:url" content="https://www.skycoin.net/development-updates/development-update-2/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Development">
+    
+    <meta property="og:tags" content="Wallet Development">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Development Update #2</h1>
+    </div>
+
+    <article id="content">
+        
+
+<h2 id="summary">Summary:</h2>
+
+<p>We are finishing networking. The test net client will be released at least one week before anything else. We want to make sure the client is working on all operating systems before launch.</p>
+
+<p>For now, you can run wallet with:
+ &gt;cd skycoin/cmd/wallet/wallet.go
+ &gt;go run ./wallet.go</p>
+
+<p>There are new tools in skycoin/cmd/ for generating addresses from the command line.</p>
+
+<p>After launch several applications will be announced which are being built on Skycoin. In particular
+- Secure messaging
+- Low latency, high bandwidth darknet using Skycoin as bandwidth credits (&ldquo;proof of bandwidth&rdquo;, users receive skycoin for providing bandwidth to network, based upon cjdns)
+- Peer-to-peer distributed altcoin exchange with escrow</p>
+
+<p>The Skycoin main and test net are running. We are doing unit tests and windows builds right now.
+- Changes to the source code are tracked here
+<a href="https://github.com/skycoin/skycoin/commits/master">https://github.com/skycoin/skycoin/commits/master</a></p>
+
+<ul>
+<li><p>This is the top level API for the block chain parser
+<a href="http://godoc.org/github.com/skycoin/skycoin/src/coin">http://godoc.org/github.com/skycoin/skycoin/src/coin</a></p></li>
+
+<li><p>This is the top level API for the Skycoin networking daemon
+<a href="http://godoc.org/github.com/skycoin/skycoin/src/daemon">http://godoc.org/github.com/skycoin/skycoin/src/daemon</a></p></li>
+</ul>
+
+<h1 id="wallet-development">Wallet Development:</h1>
+
+<p>New version of Wallet is out:</p>
+
+<p><img src="http://i.imgur.com/fJJDUZc.png" alt="" /></p>
+
+<h1 id="milestones">Milestones:</h1>
+
+<ul>
+<li>The first client synced the blockchain on Feb 6, 2014. Will be publishing best testing instructions for testnet soon.</li>
+</ul>
+
+<h1 id="ongoing-development">Ongoing Development:</h1>
+
+<ol>
+<li>Windows Builds</li>
+<li>Obelisk white paper</li>
+<li>Documentation for developers</li>
+<li>Long term project plans</li>
+<li>The alpha client uses a central server to produce and sign blocks until Obelisk is ready. This allows the coin to trade and be tested before Obelisk is completely implemented. The existing blockchain will roll over when Obelisk is ready.</li>
+</ol>
+
+<p>One of the applications under development is the Skycoin darknet routing protocol. The Skycoin routing node enables &ldquo;link aggregation&rdquo; across multiple computers which are connected by wifi. If you have a 10 Mb/s internet connection and you have fifteen neighbors with 10 Mb/s internet connections who are running a nodes, the router node can aggregate the wifi connections into a 160 Mb/s connection.</p>
+
+<ul>
+<li>Peers receive SKY for providing bandwidth and transport to the network and users spend SKY to consume network resources.</li>
+<li>Skycoin is designed with native support for off-blockchain transactions for low overhead bandwidth micro payments.</li>
+<li>The nodes relaying traffic are unable to determine the full network path of the traffic (onion routing)</li>
+<li>The nodes relaying traffic cannot see the the contents of the traffic (end-to-end encryption and link encryption).</li>
+<li>The router runs on $40 Rasberry pi hardware</li>
+<li>Skycoin routers can connect at 1 Gb/s over 15 km using 24 Ghz Ubiquity hardware</li>
+<li>Software defined radio devices running on FPGAs are in development</li>
+</ul>
+
+<p>Skycoin is an attack on ISPs and wireless companies in the same way that Bitcoin is an attack on the banks. One of the long term goals of the Skycoin project to create the financial incentive and software infrastructure required for community ISPs. The Skycoin project is attempting to create the financial incentives to deploy open access community mesh networks that span the last mile between homes and fiber.</p>
+
+<p>The routing protocol will be on github within two months and the coin will be launched within a week.</p>
+
+<p>Skycoin can be used for peer to peer payments like Bitcoin, but is currently primarily the base credit unit and transaction layer for implementation of several proof-of-bandwidth and distributed service protocols currently under development.</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

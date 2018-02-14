@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skycoin/CXO vs FileCoin/IPFS | Skycoin Blog</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  
+    <meta property="og:title" content="Skycoin/CXO vs FileCoin/IPFS">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2017-08-09">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.skycoin.net/ja/ask-the-developers/skycoin-vs-ipfs/">
+    <meta property="og:site_name" content="Skycoin Blog">
+    
+    
+    <meta property="og:tags" content="Ask the Developers">
+    
+    <meta property="og:tags" content="CXO">
+    
+    <meta property="og:tags" content="Skywire">
+    
+    <meta property="og:tags" content="IPFS">
+    
+    
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-105234182-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</head>
+
+<body>
+<header class="site-header color-light">
+	<div class="logo-container">
+		<a href="../../../" class="logo"><span>Skycoin</span></a>
+	</div>
+	<nav class="nav">
+		<ul>
+			
+				
+				<li class="has-dropdown">
+					<span class="nav-link">Technology</span>
+					<ul>
+						
+						<li>
+							<a class="dropdown-item nav-item-skywire" href="../../../ja/skywire">Skywire</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skycoin" href="../../../ja/skycoin">Skycoin</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-item nav-item-skyledger" href="../../../ja/skyledger">Skyledger</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-whitepapers" href="../../../ja/whitepapers/">Whitepapers</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-roadmap" href="../../../ja/roadmap/">Roadmap</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-downloads" href="../../../ja/downloads/">Downloads</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-blog" href="../../../ja/blog/">Blog</a>
+				</li>
+				
+			
+				
+				<li>
+					<a class="nav-link nav-item-markets" href="../../../ja/markets/">Buy Skycoin</a>
+				</li>
+				
+			
+		</ul>
+	</nav>	
+</header>
+
+<section id="main">
+	<div class="hero ">
+	    <h1 id="title">Skycoin/CXO vs FileCoin/IPFS</h1>
+    </div>
+
+    <article id="content">
+        <p>私たちは、<a href="https://github.com/skycoin/cxo">CXO</a>とIPFSの違いは何かを尋ねられました。
+File CoinはSkycoinインフラの一部と同じ目的を持っていますが、異なるアプローチを採用しています。
+彼らは3つの別々のプロトコルを持っています。</p>
+
+<ul>
+<li>IPLD</li>
+<li>IPFS</li>
+<li>Multi-formats</li>
+</ul>
+
+<p>これらの役目は、</p>
+
+<ul>
+<li>IPLDは不変データオブジェクトとハッシュの表現言語です。</li>
+<li>IPFS はファイルシステムです。</li>
+<li>Mult-formatsは自己記述データ規格です。</li>
+</ul>
+
+<p>Skycoinでは、CXOはこれら3つすべてを行います。</p>
+
+<ul>
+<li>Mult-formatsは、CXOの単なる「概要」です。</li>
+<li>IPLDはCXOです（不変データ構造、ハッシュチェーン、レプリケーション、マークル木など）。</li>
+<li>IPFSはCXO上の単なるアプリケーションです（CXOは不変オブジェクトシステムであり、ファイルは単なるオブジェクトです。そのため、ファイルは単なるオブジェクトの種類なので特別な処理は必要ありません）。</li>
+</ul>
+
+<p>FileCoinは ”proof of storage”(プルーフ・オブ・ストレージ)を行います。
+Skycoinは技術的なアプローチが異なります。”proof of storage”の証明が複雑すぎて、ユーザーが望むものではなく、また、実際のボトルネックではないと考えているからです。</p>
+
+<p>IPFS / IPLD / Filecoinは、既存のWebインフラとJavaScriptが統合するように設計されています。
+既存のエコシステムには必要な数学的特性がないため（javascriptは決め手に乏しく、ブラウザ間で実装が異なります。
+そのため、ブロックチェーンに適用したり、以前からある問題のために全面的に使用することはできません）、スカイコインは新しいエコシステムを導入しています（<a href="https://github.com/skycoin/cxo">skywire</a>、CXO、CX）。</p>
+
+<p>さらに、プライバシーとセキュリティを一番に優先させることはできないため、ハードウェアからすべてのコンポーネントを適切に設計する必要があります。
+Skycoinは、自己完結型の規格とエコシステムを導入することで、より簡単な実装を可能にする、数学的に厳密で洗練されたアプローチを採用しています。</p>
+
+<p>このことから、File Coinは既存のインターネットと統合され、インポートできる、ただのjavascriptライブラリになります。
+Skycoinは、並行プロトコルとハードウェアを備えた新しいインターネットを提供します。</p>
+
+<p>不正確さとインピーダンスの不一致は常にシステムインターフェイスで発生するので、Skycoinはコンポーネントを最小化し、自己完結型で、モジュール間の依存関係を最小限に抑えるアプローチを取っていました。
+私たちがインセンティブのための“proof of storage” をしなかった理由の1つは、ファイルストレージをブロックチェーンに依存させる必要があり、ブロックチェーンのオーバーヘッドを追加せずにファイルストレージがすでに効率的に動作していると感じたためです。
+これはユーザーのインセンティブを与えるための適切な場所ではありませんでした。</p>
+
+<p>私たちは、ユーザーが十分なコインを入れていなかったからといって、アーケードマシンのように単純にシャットダウンするような「新しいインターネット」を構築したくはありませんでした。
+私たちは、ボタンクリック、ファイルのダウンロード、アクションなど、各アクションにコストがかからないとき、個々の機能ために支払わなければならないユーザーエクスペリエンスを求めていませんでした。</p>
+
+<p>だから、Maidsafe、Ethereum、FileCoin / IPFSは、すべて異なったアプローチと哲学を持っていますが、同じ方向に向かっています。しかし、その規模と技術的な実装には大きな違いがあります。</p>
+
+<ul>
+<li>Ethereumは世界のすべてを単一のブロックチェーンに入れようとしています（skycoinはコインの支払いを除いてブロックチェーンにほとんど何も載せません。skycoinはすべてのトークンを1つの巨大なブロックチェーンに入れる代わりに、ERC20トークン版の個別ブロックチェーンを持っています）。</li>
+<li>MaidSafeはIDに関係し、最長のブロックチェーンを持っています（スカイコインにはグローバルIDがありますが、IDは単に公開鍵であり、疑似匿名性を持っています）。</li>
+<li>FileCoinは &ldquo;proof of storage&rdquo;に関係し、ファイル保存のみを行います (Skycoinは通信と計算を最初から含みますが、SkyCoinのストレージメカニズムはブロックチェーンとは独立しており、間接的にしか収益化されません)。</li>
+<li>Golemは、サーバー/ GPUをコインのために1時間単位でレンタルすることにのみ関係します（これは、Bitcoinが採用するEC2と同じで、高度なネットワークのマイナーな機能に過ぎません）。</li>
+</ul>
+
+<p>Skycoinプロジェクトの問題の1つは、ドキュメンテーションと<a href="https://github.com/skycoin/bbs">Whitepapers</a>は合意形成（すでに2年経ちます）の作業のみをカバーしており、現在の開発作業とエコシステムは示されていないということです。
+したがって、ウェブサイトを更新する必要があり、それぞれのサブプロジェクトについて新しいホワイトペーパーが必要になります。
+たとえば、CXOアプリケーション（<a href="https://github.com/skycoin/bbs">BBS</a>）は既にテストされ軽量化されていますが、CXOのホワイトペーパーはまだ書かれていません。</p>
+
+<p>そのため我々は、マーケティングとコミュニケーションバックログの作成を急ぎ行っている最中です。</p>
+
+    </article>
+
+    
+    
+</section>
+
+<footer style="background-color:darkgray;">
+    <a href="">SkyCoin Logo</a>
+    <p>En, Cn, Ko, Jp</p>
+    <nav>
+        <div>
+            <ul>
+                <li>SkyCoin</li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="https://explorer.skycoin.net/app/blocks/1">Blockchain Explorer</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Technology</li>
+                <li>
+                    <a href="">SkyWire</a>
+                </li>
+                <li>
+                    <a href="../../../skycoin">SkyCoin</a>
+                </li>
+                <li>
+                    <a href="">SkyMiner</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href=""></a>Community</li>
+                
+                    <li><a class="footer__link" href="https://www.skycoin.net/">skycoin.net</a></li>
+                
+                    <li><a class="footer__link" href="https://github.com/skycoin">Github</a></li>
+                
+                    <li><a class="footer__link" href="https://twitter.com/skycoinproject">Twitter</a></li>
+                
+                    <li><a class="footer__link" href="https://reddit.com/r/SkycoinProject">Reddit</a></li>
+                
+                    <li><a class="footer__link" href="https://t.me/Skycoin">Telegram</a></li>
+                
+                    <li><a class="footer__link" href="https://explorer.skycoin.net/">Blockchain Explorer</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li>
+                    <a>Email Us</a>
+                </li>
+                <li>
+                    <a href="https://www.skycoin.net/mailing-list/" target="_blank">Mailing List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+    
+
+    <script src="../../../app.js"></script>
+
+
+  <script>
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+  </script>
+
+  <script src="../../../app.js"></script>
+
+  
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (window.twttr) {
+      twttr.conversion.trackPid('ny03t', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    } </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ny03t&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+  
+
+</body>
+</html>

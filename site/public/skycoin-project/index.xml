@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skycoin-projects on Skycoin Blog</title>
+    <link>https://www.skycoin.net/skycoin-project/</link>
+    <description>Recent content in Skycoin-projects on Skycoin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 11:15:15 -0800</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/skycoin-project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://www.skycoin.net/skycoin-project/faq/</link>
+      <pubDate>Sun, 11 Feb 2018 11:15:15 -0800</pubDate>
+      
+      <guid>https://www.skycoin.net/skycoin-project/faq/</guid>
+      <description>SkyCoin SkyWire Mining Platform Business   SkyCoin What is SkyCoin? SkyCoin is the centerpiece of a large ecosystem; a currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees &amp; quantum resistance, SkyCoin is a third-generation cryptocurrency supporting a new free and open internet.
+SkyCoin&#39;s consensus algorithm, Obelisk, is designed to achieve true decentralization of blockchain consensus, replacing both Proof of Work (“PoW”) and Proof of Stake (“PoS”).</description>
+    </item>
+    
+  </channel>
+</rss>
