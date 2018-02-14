@@ -1,7 +1,23 @@
 
 import $ from "jquery";
 
-console.log("🦊 Hello! Edit me in src/js/app.js");
+
+
+if($('.js-dropdown').length){
+    var dropdown = document.querySelector('.js-dropdown'),
+      list = dropdown.querySelector('.js-dropdown-list'),
+      current = dropdown.querySelector('.js-dropdown-current');
+
+    current.addEventListener('click', function(e) {
+      list.classList.toggle('header-dropdown__list_show');
+
+      document.addEventListener('click', function(e) {
+        if(!dropdown.contains(e.target)) {
+          list.classList.remove('header-dropdown__list_show');
+        }
+      });
+    }, false)
+}
 
 $(function() {
 	// (Optional) Active an item if it has the class "is-active"	
@@ -16,31 +32,35 @@ $(function() {
 		});
 	}
 
-	$('.js-anchor-link').click(function(e){
-	  e.preventDefault();
-	  var target = $($(this).attr('href'));
-	  if(target.length){
-	    var scrollTo = target.offset().top;
-	    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
-	  }
-    });
-});
-	
-let signupName = document.querySelector('.sign-up-name');
-let signupEmail = document.querySelector('.sign-up-email');
-
-const checkInputs = (input, value) => {
-    if (value) {
-        input.classList.add('not-empty');
-    } else {
-        input.classList.remove('not-empty');
+	if($('.accordion').length){
+		$('.accordion').click(function(e){
+		  e.preventDefault();
+		  var target = $($(this).attr('href'));
+		  if(target.length){
+		    var scrollTo = target.offset().top;
+		    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+		  }
+	    });
     }
+});
+
+if($('.sign-up-name').length){
+	let signupName = document.querySelector('.sign-up-name');
+	let signupEmail = document.querySelector('.sign-up-email');
+
+	const checkInputs = (input, value) => {
+	    if (value) {
+	        input.classList.add('not-empty');
+	    } else {
+	        input.classList.remove('not-empty');
+	    }
+	}
+
+	signupName.addEventListener('input', () => {
+	    checkInputs(signupName, signupName.value);
+	});
+
+	signupEmail.addEventListener('input', () => {
+	    checkInputs(signupEmail, signupName.value);
+	});
 }
-
-signupName.addEventListener('input', () => {
-    checkInputs(signupName, signupName.value);
-});
-
-signupEmail.addEventListener('input', () => {
-    checkInputs(signupEmail, signupName.value);
-});

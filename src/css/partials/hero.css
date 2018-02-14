@@ -26,10 +26,12 @@
 	background: url('/images/hero-skyledger-f.jpg');
 }
 
-.bg-gray-dark {
+.bg-gray-dark.hero {
 	background: #2A2D32;
+	min-height: auto;
 }
 
 .bg-gray-light {
 	background: #212429;
+	min-height: auto;
 }
