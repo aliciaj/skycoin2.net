@@ -29,3 +29,7 @@ b {
 p {
     line-height: 1.75;
 }
+
+img {
+	max-width: 100%;
+}
