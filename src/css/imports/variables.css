@@ -2,7 +2,8 @@
 	--color-lightest: #FFF;
 	--color-light: #FBFBFB;
 	--color-mid: #CECFD0;
-	--color-dark: #23262B;
+    --color-dark: #23262B;
+    --color-darker: #1E2227;
 	--color-darkest: #000;
     --color-brand: #0072FF;
     --color-brand-secondary: #FFC125;

@@ -1,0 +1,12 @@
+.cta {
+    border-radius: 100px;
+    border: 0;
+    font-family: var(--font-brand-bold);
+    font-size: 0.9375em;
+    padding: 0.75rem 2.75rem;
+}
+
+.cta--dark {
+    background: var(--color-darker);
+    color: var(--color-light);
+}
