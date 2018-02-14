@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+section.container {
+    padding: 60px var(--standard-padding-mobile);
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +30,10 @@
         margin: 0 auto;
         max-width: var(--max-width);
         padding: 0 var(--standard-padding-desktop);
+    }
+
+    section.container {
+        padding: 120px var(--standard-padding-desktop);
     }
 
     .grid {

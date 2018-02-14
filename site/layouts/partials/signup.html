@@ -9,19 +9,14 @@
       name="mc-embedded-subscribe-form"
       class="validate">
       <div>
-        <input type="text" name="" placeholder="Name" class="sign-up-name">
-        <input type="email" name="EMAIL" class="sign-up-email required email" id="mce-EMAIL" placeholder="Email" />
-        <input type="submit" name="subscribe" value="Sign Up" />
+        <input type="text" name="" placeholder="Name" class="sign-up-name" required>
+        <input type="email" name="EMAIL" class="sign-up-email required email" id="mce-EMAIL" placeholder="Email" required />
+        <input type="submit" name="subscribe" value="Sign Up" class="cta cta--dark" />
       </div>
-
-      <input
-        type="checkbox"
-        value="1"
-        name="group[1057][1]"
-        id="mce-group[1057]-1057-0"
-        checked
-      />
-      <Label htmlFor="mce-group[1057]-1057-0">I am interested in the Skyminer</Label>
+      <div class="skyminer-signup">
+        <input type="checkbox" value="1" name="group[1057][1]" id="mce-group[1057]-1057-0" checked class="hidden-checkbox" />
+        <label for="mce-group[1057]-1057-0" class="fancy-label">I am interested in the Skyminer</label>
+      </div>
     </form>
   </div>
 </div>

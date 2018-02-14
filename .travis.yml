@@ -17,7 +17,6 @@ before_script:
 
 script:
 - npm run build
-# - hugo --buildFuture --config config.toml --destination public -v
 
 after_success:
 - ls dist/
